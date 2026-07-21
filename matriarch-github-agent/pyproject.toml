@@ -1,0 +1,14 @@
+[project]
+name = "matriarch-kb"
+version = "1.0.0"
+description = "Moog Matriarch knowledge base for GitHub / coding agents (manual 012023)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Local transcription from Matriarch_Manual_012023" }]
+
+[project.scripts]
+matriarch-kb = "matriarch_kb.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["matriarch_kb*"]
