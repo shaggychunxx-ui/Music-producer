@@ -57,7 +57,7 @@ CATEGORIES: dict[str, dict[str, Any]] = {
                 "name": "Chord Flamming and Strumming",
                 "concept": (
                     "A human pianist's fingers do not strike a chord at the exact same "
-                    "millisecond; a guitarist strokes strings sequentially."
+                    "millisecond; a guitarist strums strings sequentially."
                 ),
                 "applications": [
                     "Drag the start times of individual chord notes to cascade upward "
@@ -160,7 +160,7 @@ CATEGORIES: dict[str, dict[str, Any]] = {
             "cc_automation": {
                 "name": "Continuous Controller (CC) Automation",
                 "concept": (
-                    "Instruments like violins, trumpets, and vocal chords constantly "
+                    "Instruments like violins, trumpets, and vocal cords constantly "
                     "change volume, timbre, and vibrato after the note has started."
                 ),
                 "applications": [
