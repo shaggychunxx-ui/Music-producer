@@ -1,0 +1,8 @@
+[project]
+name = "theory-kb"
+version = "1.0.0"
+description = "Advanced Music Theory (modes) knowledge base for GitHub agents"
+requires-python = ">=3.10"
+
+[project.scripts]
+theory-kb = "theory_kb.__main__:main"
