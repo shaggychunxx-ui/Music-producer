@@ -1,0 +1,155 @@
+# Recording and Mixing Techniques for Different Music Genres
+Source: https://pirate.com/en/blog/recording-mixing-techniques-different-genres/
+Author: Will Bradbury / October 31, 2024
+Site: PIRATE.COM (Pirate Studios)
+
+## Thesis
+Genres differ not only in musical content but in production quality and convention. Tailor recording and mixing to genre intent (e.g. pure folk vocal vs club-ready drum & bass).
+
+### Contrasting examples (intro)
+- Folk singer + acoustic: preserve purity, sparse mix, wide dynamic range, possibly room noise for atmosphere; home listening context.
+- Drum & bass + warped acapella: heavy compression, careful EQ, sound-system impact at club volume.
+
+Same tools (EQ, etc.) can produce opposite aesthetics depending on intent.
+
+---
+
+## What Are Recording and Mixing Techniques?
+
+### Recording
+Everything before a sound file exists in the DAW:
+- Amp choice (e.g. rock guitar amp shapes tone)
+- Microphone selection (condenser for detail/modern; ribbon for warm/natural jazz interplay)
+- Capture of performance and space
+
+### Mixing
+After recording, usually in a DAW: balance and refine elements into a cohesive track.
+Core toolkit: EQ, compression, FX, panning — each used differently by genre.
+
+Related Pirate articles (links from original):
+- Music production overview
+- How to mix music
+- Essential recording studio equipment
+- VST plugins
+- How to sample a song
+- AI tools for music production
+
+---
+
+## Core Mixing Tools
+
+### EQ — Shaping & Sculpting
+- Boost/cut frequency ranges
+- Cut low end to reduce mud; boost mids for vocal presence
+- Genre weight differs:
+  - Pop: bright, polished; boosted highs; controlled mids; clarity and punch
+  - Metal: scalpel carving for distorted guitars + aggressive drums; emphasize low mids and highs for intensity
+- Always ask: what should come forward? what feeling?
+
+### Compression — Punch & Tightness
+- Reduces dynamic range above threshold; tracks, buses, or mix bus
+- Hip-hop / electronic: heavier compression for punchy kick/bass
+- Jazz / classical: subtle or none to keep natural dynamics
+- Settings (attack, release, ratio) are genre- and source-specific
+- Heavy compression → aggressive sound; over-compress → dull/squashed
+
+### FX — Depth & Texture
+- Reverb: space (room to hall)
+- Chorus: width/richness
+- Saturation: harmonic warmth (subtler than distortion)
+- Shoegaze: heavy reverb + chorus (ethereal wash)
+- Classical: minimal FX; natural room acoustics
+- Genre-defining pedals/plugins common
+
+### Panning — Space & Sensation
+- Stereo placement to reduce clashes
+- Traditional L/R vs modern mid-side (M/S) control of width/focus
+- Orchestral: stage-realistic positions
+- Electronic: creative movement across field
+
+---
+
+## Rock / Indie
+
+Evolution: borrowed polish from pop while keeping impact.
+
+- **Distortion**: cornerstone on guitars; The Strokes even distorted Casablancas’ vocal mic for Is This It gritty lo-fi
+- **Layer guitars**: re-record riffs with different FX/pan for depth
+- **Parallel / New York compression**: blend heavily compressed + dry (esp. drums) for punch without killing dynamics (e.g. Chris Lord-Alge)
+- **Analogue character**: Neve 1073, UA 1176 favorites; saturation/warmth
+- **Reverb on guitars**: plate (bright/metallic) to hall (ambient)
+
+---
+
+## Pop / Hip-hop / R&B
+
+Polished, high-production studio craft.
+
+- **Autotune**: creative signature (Billie Eilish, Travis Scott, etc.)
+- **Harmonies**: quieter, heavily processed layers for lushness
+- **Surgical EQ**: carve harshness; vocal clarity (e.g. Max Martin approach)
+- **Sampling**: foundational hip-hop craft (e.g. Kanye-style transform of records)
+- **808s**: Roland-lineage low-end pulse across beat-driven pop/hip-hop/R&B (Marvin Gaye → Drake lineage cited)
+
+---
+
+## Dance Music
+
+Designed for large sound systems; clarity and impact at high volume.
+
+- **Mix check in mono**: clubs often mono; solidify kick/bass; avoid phase collapse
+- **Split bass**: sub-bass + mid-bass for tight/phat low end without mud
+- **Sidechain compression**: duck bass/other elements to kick → pumping (e.g. Actress “Lost” ghost-kick idea)
+- **Automation**: especially melodic elements and drops; signature plugin chains
+
+---
+
+## Jazz / Folk / Classical / Experimental
+
+Showcase performance and instrument mastery; capture natural acoustic environment.
+
+- **Room acoustics + mic placement**: critical (e.g. Al Schmitt jazz/classical approach)
+- **Minimal processing**: spare compression/EQ; preserve dynamics (classical emotional range)
+- Experimental: maximal processing often **pre-recording**; avoid “fixing” in the mix
+- **Reverb**: natural halls (convolution/Altiverb-class tools)
+- **Ambient samples**: immersive soundscape layer (experimental)
+
+---
+
+## Notable Plugins and FX (examples from article)
+
+| Tool | Type | Associated use |
+|------|------|----------------|
+| Big Muff Pi | Fuzz pedal | Nirvana, Muse, Hendrix, Smashing Pumpkins |
+| Pro Co RAT | Distortion pedal | Blur, Arctic Monkeys, Radiohead |
+| UA 1176 | Compressor/limiter | Rock (Green Day/Nirvana etc.) |
+| Antares Auto-Tune | Pitch | Ubiquitous pop/hip-hop |
+| Pultec EQP-1A | Tube EQ | Industry standard (Daft Punk → Calvin Harris cited) |
+| Bricasti M7 | Reverb | Al Schmitt jazz/pop |
+| Eventide H3000 | Multi FX | Brian Eno signature |
+| Valhalla VintageVerb | Reverb plugin | Cross-genre popular |
+
+Workflow tip: reverse-engineer favorite records by researching artist/producer gear.
+
+---
+
+## Bottom-up vs Top-down Mixing
+
+### Bottom-up
+- Start with individual tracks (kick, bass, lead vocal…)
+- Precise per-element balance; good for complex multi-part productions
+- Avoid later conflicts by detailing early
+
+### Top-down
+- Process whole mix first (bus compressors, mix EQ, saturation)
+- Establish vibe/tonal balance early
+- Common in pop/electronic for cohesive sound quickly
+- Can reduce over-processing of individuals
+- Pros often keep signature master-bus chains as templates
+
+---
+
+## Closing philosophy
+- No absolute right/wrong; justify technique against intent
+- Develop personal signature notes (e.g. “chorus on Y, pan hats L/R, compress after A if B…”)
+- Keep learning new plugins/tools including AI production tools

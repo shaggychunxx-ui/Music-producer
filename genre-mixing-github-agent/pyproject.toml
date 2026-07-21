@@ -1,0 +1,8 @@
+[project]
+name = "genre-mix-kb"
+version = "1.0.0"
+description = "Genre-specific recording and mixing knowledge base"
+requires-python = ">=3.10"
+
+[project.scripts]
+genre-mix-kb = "genre_mix_kb.__main__:main"
