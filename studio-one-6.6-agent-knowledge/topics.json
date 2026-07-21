@@ -1,0 +1,1431 @@
+{
+  "product": "PreSonus Studio One",
+  "version": "6.6",
+  "topic_to_chapters": {
+    "editions": [
+      {
+        "slug": "01-introduction",
+        "title": "Introduction",
+        "path": "chapters/01-introduction.md"
+      }
+    ],
+    "prime": [
+      {
+        "slug": "01-introduction",
+        "title": "Introduction",
+        "path": "chapters/01-introduction.md"
+      }
+    ],
+    "artist": [
+      {
+        "slug": "01-introduction",
+        "title": "Introduction",
+        "path": "chapters/01-introduction.md"
+      }
+    ],
+    "professional": [
+      {
+        "slug": "01-introduction",
+        "title": "Introduction",
+        "path": "chapters/01-introduction.md"
+      }
+    ],
+    "overview": [
+      {
+        "slug": "01-introduction",
+        "title": "Introduction",
+        "path": "chapters/01-introduction.md"
+      }
+    ],
+    "install": [
+      {
+        "slug": "02-installation-activation",
+        "title": "Installation and Activation",
+        "path": "chapters/02-installation-activation.md"
+      }
+    ],
+    "activate": [
+      {
+        "slug": "02-installation-activation",
+        "title": "Installation and Activation",
+        "path": "chapters/02-installation-activation.md"
+      }
+    ],
+    "license": [
+      {
+        "slug": "02-installation-activation",
+        "title": "Installation and Activation",
+        "path": "chapters/02-installation-activation.md"
+      }
+    ],
+    "content installation": [
+      {
+        "slug": "02-installation-activation",
+        "title": "Installation and Activation",
+        "path": "chapters/02-installation-activation.md"
+      }
+    ],
+    "my.presonus": [
+      {
+        "slug": "02-installation-activation",
+        "title": "Installation and Activation",
+        "path": "chapters/02-installation-activation.md"
+      }
+    ],
+    "system requirements": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "audio device": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "midi": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "i/o setup": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "content management": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "new song": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "notion": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      },
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "colors": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "customization": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "recovery": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "options": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "undo": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "retrospective recording": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "mix engine": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "delay compensation": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "dropout protection": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "transport": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "key commands": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "smart templates": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      },
+      {
+        "slug": "05-pages",
+        "title": "Pages",
+        "path": "chapters/05-pages.md"
+      }
+    ],
+    "control link": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      },
+      {
+        "slug": "15-control-link",
+        "title": "Control Link",
+        "path": "chapters/15-control-link.md"
+      },
+      {
+        "slug": "15-control-link",
+        "title": "Control Link",
+        "path": "chapters/15-control-link.md"
+      }
+    ],
+    "performance monitor": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "note repeat": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "video player": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      },
+      {
+        "slug": "20-video",
+        "title": "Video Playback and Sync",
+        "path": "chapters/20-video.md"
+      }
+    ],
+    "start page": [
+      {
+        "slug": "05-pages",
+        "title": "Pages",
+        "path": "chapters/05-pages.md"
+      }
+    ],
+    "song page": [
+      {
+        "slug": "05-pages",
+        "title": "Pages",
+        "path": "chapters/05-pages.md"
+      }
+    ],
+    "show page": [
+      {
+        "slug": "05-pages",
+        "title": "Pages",
+        "path": "chapters/05-pages.md"
+      }
+    ],
+    "project page": [
+      {
+        "slug": "05-pages",
+        "title": "Pages",
+        "path": "chapters/05-pages.md"
+      },
+      {
+        "slug": "16-mastering",
+        "title": "Mastering (Project Page)",
+        "path": "chapters/16-mastering.md"
+      }
+    ],
+    "quick switch": [
+      {
+        "slug": "05-pages",
+        "title": "Pages",
+        "path": "chapters/05-pages.md"
+      }
+    ],
+    "audio tracks": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "instrument tracks": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "metronome": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "loop recording": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "step record": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "track layers": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "cue mix": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "low-latency monitoring": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "print effects": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "monitor mix": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "events": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "mouse tools": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "clip gain": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "grid": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "comping": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "timestretch": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "transient detection": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "track transform": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "inspector": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "presets": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "sound variations": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "patterns": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "melodyne": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "macros": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "edit view": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "score": [
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "notation": [
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "staff": [
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "drum notation": [
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "tablature": [
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "lyrics": [
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "browser": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "search": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "instruments": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "effects": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      },
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "loops": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "files": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "cloud": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "shop": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "pool": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "arranger track": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "chord track": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "signature track": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "tempo track": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "lyrics track": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "scratch pad": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "bounce": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "folder tracks": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "track list": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "console": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "routing": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "fader flip": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "channel editor": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "groups": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "scenes": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "vca": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "listen bus": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "metering": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "marker track": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "mixdown": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "export stems": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "dolby atmos": [
+      {
+        "slug": "12-spatial-audio",
+        "title": "Spatial Audio",
+        "path": "chapters/12-spatial-audio.md"
+      }
+    ],
+    "spatial audio": [
+      {
+        "slug": "12-spatial-audio",
+        "title": "Spatial Audio",
+        "path": "chapters/12-spatial-audio.md"
+      },
+      {
+        "slug": "12-spatial-audio",
+        "title": "Spatial Audio",
+        "path": "chapters/12-spatial-audio.md"
+      }
+    ],
+    "renderer": [
+      {
+        "slug": "12-spatial-audio",
+        "title": "Spatial Audio",
+        "path": "chapters/12-spatial-audio.md"
+      }
+    ],
+    "immersive": [
+      {
+        "slug": "12-spatial-audio",
+        "title": "Spatial Audio",
+        "path": "chapters/12-spatial-audio.md"
+      }
+    ],
+    "adm": [
+      {
+        "slug": "12-spatial-audio",
+        "title": "Spatial Audio",
+        "path": "chapters/12-spatial-audio.md"
+      }
+    ],
+    "live performance": [
+      {
+        "slug": "13-show-page",
+        "title": "The Show Page",
+        "path": "chapters/13-show-page.md"
+      }
+    ],
+    "setlist": [
+      {
+        "slug": "13-show-page",
+        "title": "The Show Page",
+        "path": "chapters/13-show-page.md"
+      }
+    ],
+    "players": [
+      {
+        "slug": "13-show-page",
+        "title": "The Show Page",
+        "path": "chapters/13-show-page.md"
+      }
+    ],
+    "patches": [
+      {
+        "slug": "13-show-page",
+        "title": "The Show Page",
+        "path": "chapters/13-show-page.md"
+      }
+    ],
+    "performance view": [
+      {
+        "slug": "13-show-page",
+        "title": "The Show Page",
+        "path": "chapters/13-show-page.md"
+      }
+    ],
+    "show timeline": [
+      {
+        "slug": "13-show-page",
+        "title": "The Show Page",
+        "path": "chapters/13-show-page.md"
+      }
+    ],
+    "automation envelopes": [
+      {
+        "slug": "14-automation",
+        "title": "Automation",
+        "path": "chapters/14-automation.md"
+      }
+    ],
+    "automation modes": [
+      {
+        "slug": "14-automation",
+        "title": "Automation",
+        "path": "chapters/14-automation.md"
+      }
+    ],
+    "instrument part automation": [
+      {
+        "slug": "14-automation",
+        "title": "Automation",
+        "path": "chapters/14-automation.md"
+      }
+    ],
+    "midi controllers": [
+      {
+        "slug": "15-control-link",
+        "title": "Control Link",
+        "path": "chapters/15-control-link.md"
+      }
+    ],
+    "mapping": [
+      {
+        "slug": "15-control-link",
+        "title": "Control Link",
+        "path": "chapters/15-control-link.md"
+      }
+    ],
+    "mackie control": [
+      {
+        "slug": "15-control-link",
+        "title": "Control Link",
+        "path": "chapters/15-control-link.md"
+      }
+    ],
+    "hardware": [
+      {
+        "slug": "15-control-link",
+        "title": "Control Link",
+        "path": "chapters/15-control-link.md"
+      }
+    ],
+    "mastering": [
+      {
+        "slug": "16-mastering",
+        "title": "Mastering (Project Page)",
+        "path": "chapters/16-mastering.md"
+      }
+    ],
+    "track sequencing": [
+      {
+        "slug": "16-mastering",
+        "title": "Mastering (Project Page)",
+        "path": "chapters/16-mastering.md"
+      }
+    ],
+    "master device rack": [
+      {
+        "slug": "16-mastering",
+        "title": "Mastering (Project Page)",
+        "path": "chapters/16-mastering.md"
+      }
+    ],
+    "publishing": [
+      {
+        "slug": "16-mastering",
+        "title": "Mastering (Project Page)",
+        "path": "chapters/16-mastering.md"
+      }
+    ],
+    "song integration": [
+      {
+        "slug": "16-mastering",
+        "title": "Mastering (Project Page)",
+        "path": "chapters/16-mastering.md"
+      }
+    ],
+    "plugins": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "pro eq 3": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "dynamics": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "reverb": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "delay": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "distortion": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "modulation": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "pipeline xt": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "mix engine fx": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "sample one xt": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "presence xt": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "impact xt": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "maitai": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "mojito": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "multi instruments": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "note fx": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "studio one+": [
+      {
+        "slug": "19-collaboration",
+        "title": "Collaboration",
+        "path": "chapters/19-collaboration.md"
+      }
+    ],
+    "collaboration": [
+      {
+        "slug": "19-collaboration",
+        "title": "Collaboration",
+        "path": "chapters/19-collaboration.md"
+      },
+      {
+        "slug": "19-collaboration",
+        "title": "Collaboration",
+        "path": "chapters/19-collaboration.md"
+      }
+    ],
+    "workspaces": [
+      {
+        "slug": "19-collaboration",
+        "title": "Collaboration",
+        "path": "chapters/19-collaboration.md"
+      }
+    ],
+    "sharing documents": [
+      {
+        "slug": "19-collaboration",
+        "title": "Collaboration",
+        "path": "chapters/19-collaboration.md"
+      }
+    ],
+    "video track": [
+      {
+        "slug": "20-video",
+        "title": "Video Playback and Sync",
+        "path": "chapters/20-video.md"
+      }
+    ],
+    "sync": [
+      {
+        "slug": "20-video",
+        "title": "Video Playback and Sync",
+        "path": "chapters/20-video.md"
+      }
+    ],
+    "export video": [
+      {
+        "slug": "20-video",
+        "title": "Video Playback and Sync",
+        "path": "chapters/20-video.md"
+      }
+    ],
+    "import song data": [
+      {
+        "slug": "21-saving-import-export",
+        "title": "Saving, Import and Export",
+        "path": "chapters/21-saving-import-export.md"
+      }
+    ],
+    "export audio": [
+      {
+        "slug": "21-saving-import-export",
+        "title": "Saving, Import and Export",
+        "path": "chapters/21-saving-import-export.md"
+      }
+    ],
+    "export midi": [
+      {
+        "slug": "21-saving-import-export",
+        "title": "Saving, Import and Export",
+        "path": "chapters/21-saving-import-export.md"
+      }
+    ],
+    "aaf": [
+      {
+        "slug": "21-saving-import-export",
+        "title": "Saving, Import and Export",
+        "path": "chapters/21-saving-import-export.md"
+      }
+    ],
+    "zip": [
+      {
+        "slug": "21-saving-import-export",
+        "title": "Saving, Import and Export",
+        "path": "chapters/21-saving-import-export.md"
+      }
+    ],
+    "import other daws": [
+      {
+        "slug": "21-saving-import-export",
+        "title": "Saving, Import and Export",
+        "path": "chapters/21-saving-import-export.md"
+      }
+    ],
+    "index": [
+      {
+        "slug": "22-index",
+        "title": "Index",
+        "path": "chapters/22-index.md"
+      },
+      {
+        "slug": "22-index",
+        "title": "Index",
+        "path": "chapters/22-index.md"
+      }
+    ],
+    "lookup": [
+      {
+        "slug": "22-index",
+        "title": "Index",
+        "path": "chapters/22-index.md"
+      }
+    ],
+    "introduction": [
+      {
+        "slug": "01-introduction",
+        "title": "Introduction",
+        "path": "chapters/01-introduction.md"
+      }
+    ],
+    "installation and activation": [
+      {
+        "slug": "02-installation-activation",
+        "title": "Installation and Activation",
+        "path": "chapters/02-installation-activation.md"
+      }
+    ],
+    "setup": [
+      {
+        "slug": "03-setup",
+        "title": "Setup",
+        "path": "chapters/03-setup.md"
+      }
+    ],
+    "fundamentals": [
+      {
+        "slug": "04-fundamentals",
+        "title": "Fundamentals",
+        "path": "chapters/04-fundamentals.md"
+      }
+    ],
+    "pages": [
+      {
+        "slug": "05-pages",
+        "title": "Pages",
+        "path": "chapters/05-pages.md"
+      }
+    ],
+    "recording": [
+      {
+        "slug": "06-recording",
+        "title": "Recording",
+        "path": "chapters/06-recording.md"
+      }
+    ],
+    "editing": [
+      {
+        "slug": "07-editing",
+        "title": "Editing",
+        "path": "chapters/07-editing.md"
+      }
+    ],
+    "the score editor": [
+      {
+        "slug": "08-score-editor",
+        "title": "The Score Editor",
+        "path": "chapters/08-score-editor.md"
+      }
+    ],
+    "the browser": [
+      {
+        "slug": "09-browser",
+        "title": "The Browser",
+        "path": "chapters/09-browser.md"
+      }
+    ],
+    "arranging": [
+      {
+        "slug": "10-arranging",
+        "title": "Arranging",
+        "path": "chapters/10-arranging.md"
+      }
+    ],
+    "mixing": [
+      {
+        "slug": "11-mixing",
+        "title": "Mixing",
+        "path": "chapters/11-mixing.md"
+      }
+    ],
+    "the show page": [
+      {
+        "slug": "13-show-page",
+        "title": "The Show Page",
+        "path": "chapters/13-show-page.md"
+      }
+    ],
+    "automation": [
+      {
+        "slug": "14-automation",
+        "title": "Automation",
+        "path": "chapters/14-automation.md"
+      }
+    ],
+    "mastering (project page)": [
+      {
+        "slug": "16-mastering",
+        "title": "Mastering (Project Page)",
+        "path": "chapters/16-mastering.md"
+      }
+    ],
+    "built-in effects": [
+      {
+        "slug": "17-built-in-effects",
+        "title": "Built-In Effects",
+        "path": "chapters/17-built-in-effects.md"
+      }
+    ],
+    "built-in virtual instruments": [
+      {
+        "slug": "18-virtual-instruments",
+        "title": "Built-In Virtual Instruments",
+        "path": "chapters/18-virtual-instruments.md"
+      }
+    ],
+    "video playback and sync": [
+      {
+        "slug": "20-video",
+        "title": "Video Playback and Sync",
+        "path": "chapters/20-video.md"
+      }
+    ],
+    "saving, import and export": [
+      {
+        "slug": "21-saving-import-export",
+        "title": "Saving, Import and Export",
+        "path": "chapters/21-saving-import-export.md"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "slug": "01-introduction",
+      "title": "Introduction",
+      "path": "chapters/01-introduction.md",
+      "doc_start": 1,
+      "doc_end": 2,
+      "approx_tokens": 899
+    },
+    {
+      "slug": "02-installation-activation",
+      "title": "Installation and Activation",
+      "path": "chapters/02-installation-activation.md",
+      "doc_start": 3,
+      "doc_end": 11,
+      "approx_tokens": 5183
+    },
+    {
+      "slug": "03-setup",
+      "title": "Setup",
+      "path": "chapters/03-setup.md",
+      "doc_start": 12,
+      "doc_end": 42,
+      "approx_tokens": 20513
+    },
+    {
+      "slug": "04-fundamentals",
+      "title": "Fundamentals",
+      "path": "chapters/04-fundamentals.md",
+      "doc_start": 43,
+      "doc_end": 62,
+      "approx_tokens": 9602
+    },
+    {
+      "slug": "05-pages",
+      "title": "Pages",
+      "path": "chapters/05-pages.md",
+      "doc_start": 63,
+      "doc_end": 70,
+      "approx_tokens": 3832
+    },
+    {
+      "slug": "06-recording",
+      "title": "Recording",
+      "path": "chapters/06-recording.md",
+      "doc_start": 71,
+      "doc_end": 91,
+      "approx_tokens": 14622
+    },
+    {
+      "slug": "07-editing",
+      "title": "Editing",
+      "path": "chapters/07-editing.md",
+      "doc_start": 92,
+      "doc_end": 191,
+      "approx_tokens": 61065
+    },
+    {
+      "slug": "08-score-editor",
+      "title": "The Score Editor",
+      "path": "chapters/08-score-editor.md",
+      "doc_start": 192,
+      "doc_end": 210,
+      "approx_tokens": 12861
+    },
+    {
+      "slug": "09-browser",
+      "title": "The Browser",
+      "path": "chapters/09-browser.md",
+      "doc_start": 211,
+      "doc_end": 231,
+      "approx_tokens": 13023
+    },
+    {
+      "slug": "10-arranging",
+      "title": "Arranging",
+      "path": "chapters/10-arranging.md",
+      "doc_start": 232,
+      "doc_end": 267,
+      "approx_tokens": 20590
+    },
+    {
+      "slug": "11-mixing",
+      "title": "Mixing",
+      "path": "chapters/11-mixing.md",
+      "doc_start": 268,
+      "doc_end": 320,
+      "approx_tokens": 33163
+    },
+    {
+      "slug": "12-spatial-audio",
+      "title": "Spatial Audio",
+      "path": "chapters/12-spatial-audio.md",
+      "doc_start": 321,
+      "doc_end": 338,
+      "approx_tokens": 6511
+    },
+    {
+      "slug": "13-show-page",
+      "title": "The Show Page",
+      "path": "chapters/13-show-page.md",
+      "doc_start": 339,
+      "doc_end": 369,
+      "approx_tokens": 14781
+    },
+    {
+      "slug": "14-automation",
+      "title": "Automation",
+      "path": "chapters/14-automation.md",
+      "doc_start": 370,
+      "doc_end": 378,
+      "approx_tokens": 6159
+    },
+    {
+      "slug": "15-control-link",
+      "title": "Control Link",
+      "path": "chapters/15-control-link.md",
+      "doc_start": 379,
+      "doc_end": 388,
+      "approx_tokens": 6045
+    },
+    {
+      "slug": "16-mastering",
+      "title": "Mastering (Project Page)",
+      "path": "chapters/16-mastering.md",
+      "doc_start": 389,
+      "doc_end": 409,
+      "approx_tokens": 14464
+    },
+    {
+      "slug": "17-built-in-effects",
+      "title": "Built-In Effects",
+      "path": "chapters/17-built-in-effects.md",
+      "doc_start": 410,
+      "doc_end": 477,
+      "approx_tokens": 37999
+    },
+    {
+      "slug": "18-virtual-instruments",
+      "title": "Built-In Virtual Instruments",
+      "path": "chapters/18-virtual-instruments.md",
+      "doc_start": 478,
+      "doc_end": 532,
+      "approx_tokens": 40213
+    },
+    {
+      "slug": "19-collaboration",
+      "title": "Collaboration",
+      "path": "chapters/19-collaboration.md",
+      "doc_start": 533,
+      "doc_end": 546,
+      "approx_tokens": 5639
+    },
+    {
+      "slug": "20-video",
+      "title": "Video Playback and Sync",
+      "path": "chapters/20-video.md",
+      "doc_start": 547,
+      "doc_end": 553,
+      "approx_tokens": 2647
+    },
+    {
+      "slug": "21-saving-import-export",
+      "title": "Saving, Import and Export",
+      "path": "chapters/21-saving-import-export.md",
+      "doc_start": 554,
+      "doc_end": 559,
+      "approx_tokens": 3834
+    },
+    {
+      "slug": "22-index",
+      "title": "Index",
+      "path": "chapters/22-index.md",
+      "doc_start": 560,
+      "doc_end": 564,
+      "approx_tokens": 1641
+    }
+  ]
+}

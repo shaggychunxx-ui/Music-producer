@@ -1,0 +1,409 @@
+{
+  "product": "PreSonus Studio One",
+  "version": "6.6",
+  "manual": "Studio_One_6.6_Reference_Manual_EN.pdf",
+  "language": "en",
+  "sections": [
+    {
+      "slug": "01-introduction",
+      "title": "Introduction",
+      "doc_start": 1,
+      "doc_end": 2,
+      "path": "chapters/01-introduction.md",
+      "topics": [
+        "editions",
+        "Prime",
+        "Artist",
+        "Professional",
+        "overview"
+      ],
+      "chars": 3597,
+      "approx_tokens": 899
+    },
+    {
+      "slug": "02-installation-activation",
+      "title": "Installation and Activation",
+      "doc_start": 3,
+      "doc_end": 11,
+      "path": "chapters/02-installation-activation.md",
+      "topics": [
+        "install",
+        "activate",
+        "license",
+        "content installation",
+        "my.presonus"
+      ],
+      "chars": 20733,
+      "approx_tokens": 5183
+    },
+    {
+      "slug": "03-setup",
+      "title": "Setup",
+      "doc_start": 12,
+      "doc_end": 42,
+      "path": "chapters/03-setup.md",
+      "topics": [
+        "system requirements",
+        "audio device",
+        "MIDI",
+        "I/O setup",
+        "content management",
+        "new song",
+        "Notion",
+        "colors",
+        "customization",
+        "recovery",
+        "options"
+      ],
+      "chars": 82054,
+      "approx_tokens": 20513
+    },
+    {
+      "slug": "04-fundamentals",
+      "title": "Fundamentals",
+      "doc_start": 43,
+      "doc_end": 62,
+      "path": "chapters/04-fundamentals.md",
+      "topics": [
+        "undo",
+        "retrospective recording",
+        "mix engine",
+        "delay compensation",
+        "dropout protection",
+        "transport",
+        "key commands",
+        "smart templates",
+        "Control Link",
+        "performance monitor",
+        "note repeat",
+        "video player"
+      ],
+      "chars": 38411,
+      "approx_tokens": 9602
+    },
+    {
+      "slug": "05-pages",
+      "title": "Pages",
+      "doc_start": 63,
+      "doc_end": 70,
+      "path": "chapters/05-pages.md",
+      "topics": [
+        "Start page",
+        "Song page",
+        "Show page",
+        "Project page",
+        "Quick Switch",
+        "Smart Templates"
+      ],
+      "chars": 15328,
+      "approx_tokens": 3832
+    },
+    {
+      "slug": "06-recording",
+      "title": "Recording",
+      "doc_start": 71,
+      "doc_end": 91,
+      "path": "chapters/06-recording.md",
+      "topics": [
+        "audio tracks",
+        "instrument tracks",
+        "metronome",
+        "loop recording",
+        "step record",
+        "track layers",
+        "cue mix",
+        "low-latency monitoring",
+        "print effects",
+        "monitor mix"
+      ],
+      "chars": 58491,
+      "approx_tokens": 14622
+    },
+    {
+      "slug": "07-editing",
+      "title": "Editing",
+      "doc_start": 92,
+      "doc_end": 191,
+      "path": "chapters/07-editing.md",
+      "topics": [
+        "events",
+        "mouse tools",
+        "clip gain",
+        "grid",
+        "comping",
+        "timestretch",
+        "transient detection",
+        "track transform",
+        "inspector",
+        "presets",
+        "Sound Variations",
+        "patterns",
+        "Melodyne",
+        "macros",
+        "edit view"
+      ],
+      "chars": 244260,
+      "approx_tokens": 61065
+    },
+    {
+      "slug": "08-score-editor",
+      "title": "The Score Editor",
+      "doc_start": 192,
+      "doc_end": 210,
+      "path": "chapters/08-score-editor.md",
+      "topics": [
+        "score",
+        "notation",
+        "staff",
+        "drum notation",
+        "tablature",
+        "lyrics",
+        "Notion"
+      ],
+      "chars": 51446,
+      "approx_tokens": 12861
+    },
+    {
+      "slug": "09-browser",
+      "title": "The Browser",
+      "doc_start": 211,
+      "doc_end": 231,
+      "path": "chapters/09-browser.md",
+      "topics": [
+        "browser",
+        "search",
+        "instruments",
+        "effects",
+        "loops",
+        "files",
+        "cloud",
+        "shop",
+        "pool"
+      ],
+      "chars": 52095,
+      "approx_tokens": 13023
+    },
+    {
+      "slug": "10-arranging",
+      "title": "Arranging",
+      "doc_start": 232,
+      "doc_end": 267,
+      "path": "chapters/10-arranging.md",
+      "topics": [
+        "arranger track",
+        "chord track",
+        "signature track",
+        "tempo track",
+        "lyrics track",
+        "scratch pad",
+        "bounce",
+        "folder tracks",
+        "track list"
+      ],
+      "chars": 82361,
+      "approx_tokens": 20590
+    },
+    {
+      "slug": "11-mixing",
+      "title": "Mixing",
+      "doc_start": 268,
+      "doc_end": 320,
+      "path": "chapters/11-mixing.md",
+      "topics": [
+        "console",
+        "routing",
+        "fader flip",
+        "channel editor",
+        "groups",
+        "scenes",
+        "VCA",
+        "listen bus",
+        "metering",
+        "marker track",
+        "mixdown",
+        "export stems"
+      ],
+      "chars": 132655,
+      "approx_tokens": 33163
+    },
+    {
+      "slug": "12-spatial-audio",
+      "title": "Spatial Audio",
+      "doc_start": 321,
+      "doc_end": 338,
+      "path": "chapters/12-spatial-audio.md",
+      "topics": [
+        "Dolby Atmos",
+        "spatial audio",
+        "renderer",
+        "immersive",
+        "ADM"
+      ],
+      "chars": 26046,
+      "approx_tokens": 6511
+    },
+    {
+      "slug": "13-show-page",
+      "title": "The Show Page",
+      "doc_start": 339,
+      "doc_end": 369,
+      "path": "chapters/13-show-page.md",
+      "topics": [
+        "live performance",
+        "setlist",
+        "players",
+        "patches",
+        "performance view",
+        "show timeline"
+      ],
+      "chars": 59127,
+      "approx_tokens": 14781
+    },
+    {
+      "slug": "14-automation",
+      "title": "Automation",
+      "doc_start": 370,
+      "doc_end": 378,
+      "path": "chapters/14-automation.md",
+      "topics": [
+        "automation envelopes",
+        "automation modes",
+        "instrument part automation"
+      ],
+      "chars": 24639,
+      "approx_tokens": 6159
+    },
+    {
+      "slug": "15-control-link",
+      "title": "Control Link",
+      "doc_start": 379,
+      "doc_end": 388,
+      "path": "chapters/15-control-link.md",
+      "topics": [
+        "Control Link",
+        "MIDI controllers",
+        "mapping",
+        "Mackie Control",
+        "hardware"
+      ],
+      "chars": 24181,
+      "approx_tokens": 6045
+    },
+    {
+      "slug": "16-mastering",
+      "title": "Mastering (Project Page)",
+      "doc_start": 389,
+      "doc_end": 409,
+      "path": "chapters/16-mastering.md",
+      "topics": [
+        "Project page",
+        "mastering",
+        "track sequencing",
+        "master device rack",
+        "publishing",
+        "song integration"
+      ],
+      "chars": 57856,
+      "approx_tokens": 14464
+    },
+    {
+      "slug": "17-built-in-effects",
+      "title": "Built-In Effects",
+      "doc_start": 410,
+      "doc_end": 477,
+      "path": "chapters/17-built-in-effects.md",
+      "topics": [
+        "plugins",
+        "effects",
+        "Pro EQ 3",
+        "dynamics",
+        "reverb",
+        "delay",
+        "distortion",
+        "modulation",
+        "Pipeline XT",
+        "Mix Engine FX"
+      ],
+      "chars": 151999,
+      "approx_tokens": 37999
+    },
+    {
+      "slug": "18-virtual-instruments",
+      "title": "Built-In Virtual Instruments",
+      "doc_start": 478,
+      "doc_end": 532,
+      "path": "chapters/18-virtual-instruments.md",
+      "topics": [
+        "Sample One XT",
+        "Presence XT",
+        "Impact XT",
+        "MaiTai",
+        "Mojito",
+        "Multi Instruments",
+        "Note FX"
+      ],
+      "chars": 160852,
+      "approx_tokens": 40213
+    },
+    {
+      "slug": "19-collaboration",
+      "title": "Collaboration",
+      "doc_start": 533,
+      "doc_end": 546,
+      "path": "chapters/19-collaboration.md",
+      "topics": [
+        "Studio One+",
+        "collaboration",
+        "workspaces",
+        "sharing documents"
+      ],
+      "chars": 22559,
+      "approx_tokens": 5639
+    },
+    {
+      "slug": "20-video",
+      "title": "Video Playback and Sync",
+      "doc_start": 547,
+      "doc_end": 553,
+      "path": "chapters/20-video.md",
+      "topics": [
+        "video player",
+        "video track",
+        "sync",
+        "export video"
+      ],
+      "chars": 10588,
+      "approx_tokens": 2647
+    },
+    {
+      "slug": "21-saving-import-export",
+      "title": "Saving, Import and Export",
+      "doc_start": 554,
+      "doc_end": 559,
+      "path": "chapters/21-saving-import-export.md",
+      "topics": [
+        "import song data",
+        "export audio",
+        "export MIDI",
+        "AAF",
+        "zip",
+        "import other DAWs"
+      ],
+      "chars": 15339,
+      "approx_tokens": 3834
+    },
+    {
+      "slug": "22-index",
+      "title": "Index",
+      "doc_start": 560,
+      "doc_end": 564,
+      "path": "chapters/22-index.md",
+      "topics": [
+        "index",
+        "lookup"
+      ],
+      "chars": 6565,
+      "approx_tokens": 1641
+    }
+  ]
+}
