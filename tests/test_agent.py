@@ -43,7 +43,7 @@ def test_mastering_topic():
 
 def test_unrecognized_message_returns_fallback():
     agent = MusicProducerAgent()
-    response = agent.respond("qwertyuiop asdfgh")
+    response = agent.respond("Tell me about underwater basket weaving")
     assert "genre" in response.lower() or "mood" in response.lower()
 
 
