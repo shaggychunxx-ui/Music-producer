@@ -1,0 +1,2166 @@
+===== PAGE 1 =====
+StudioLive™ Series III 
+Digital Mix Console / Recorder with Motorized Faders
+Owner’s Manual
+www.presonus.com
+®
+English
+
+
+===== PAGE 2 =====
+Table of Contents
+1 
+Overview  —  1
+1.1 
+Introduction  —  1
+1.2 
+About this Manual  —  1
+1.3 
+Companion PreSonus Products   —  2
+1.4 
+What’s in the Box  —  3
+1.5 
+Additional Resources  —  4
+2 
+Getting Started  —  5
+2.1 
+Level Setting Procedure  —  5
+2.2 
+Useful Concepts  —  9
+2.2.1 
+Select Buttons and the Fat Channel  —  9
+2.2.2 
+Fat Channel Plugins  —  10
+2.2.3 
+FlexMixes  —  10
+2.2.4 
+Fader Layers  —  10
+2.2.5 
+DCA Groups  —  11
+2.2.6 
+Recording and Playback  —  11
+2.2.7 
+Digital Patching  —  11
+2.2.8 
+Projects, Scenes, and Presets  —  11
+2.2.9 
+User Profiles  —  12
+3 
+Hookup  —  13
+3.1 
+Rear Panel Configurations  —  13
+3.1.1 
+StudioLive 64S  —  13
+3.1.2 
+StudioLive 32S  —  13
+3.1.3 
+StudioLive 32SX  —  14
+3.1.4 
+StudioLive 32SC  —  14
+3.1.5 
+StudioLive 32 (Blue Model)  —  15
+3.1.6 
+StudioLive 24 (Blue Model)  —  15
+3.1.7 
+StudioLive 16 (Blue Model)  —  15
+3.2 
+Rear Panel Connections  —  16
+3.2.1 
+Analog Inputs  —  16
+3.2.2 
+Analog Outputs  —  17
+3.2.3 
+Digital and Networking  —  18
+3.2.4 
+Power  —  19
+3.3 
+Top Panel Connections  —  19
+3.4 
+Typical Band Setup Diagrams  —  20
+3.5 
+Typical Church Setup Diagrams  —  21
+4 
+Basic Mix Functions Overview  —  22
+4.1 
+Channel Strip Basics  —  22
+4.2 
+Fader Layers and Banks  —  23
+4.2.1 
+User Fader Layer  —  24
+4.3 
+Filter DCA Groups  —  25
+4.3.1 
+Creating Filter DCAs  —  25
+4.3.2 
+Editing or Deleting 
+a Filter DCA Group  —  26
+4.3.3 
+Managing DCA Group Masters  —  26
+4.3.4 
+DCA Group Options  —  27
+4.4 
+Main Meters  —  27
+4.5 
+Talkback System  —  27
+4.5.1 
+Talkback Edit Screen  —  28
+5 
+Buses and Routing  —  29
+5.1 
+FlexMixes  —  29
+5.2 
+Aux Mixes  —  30
+5.2.1 
+Pre/Post Channel Sends  —  31
+5.2.2 
+Creating Aux Mixes  —  31
+5.2.3 
+Working with External Effects 
+Processors  —  32
+5.3 
+Subgroups  —  33
+5.3.1 
+Creating a Subgroup  —  34
+5.3.2 
+Fixed Subgroups 
+(32-channel models only)  —  34
+5.3.3 
+Creating Instrument Subgroups  —  35
+5.4 
+Matrix Mixes  —  37
+5.4.1 
+Creating a Matrix Mix  —  37
+5.4.2 
+Creating a Front Fill Mix  —  38
+5.5 
+FX Buses   —  38
+5.5.1 
+Creating Internal Bus FX Mixes  —  39
+5.6 
+Main Mono/Center Bus 
+(StudioLive 64S only)  —  39
+5.6.1 
+Mono Bus Mode  —  40
+5.6.2 
+LCR Mode  —  41
+
+
+===== PAGE 3 =====
+6 
+The Fat Channel  —  43
+6.1 
+Overview  —  43
+6.1.1 
+A/B Comparison for EQ 
+and Dynamics Settings  —  44
+6.1.2 
+Copy/Paste & Preset Load/Save  —  44
+6.2 
+Fat Channel Navigation  —  46
+6.3 
+Input Mode  —  48
+6.4 
+Gate Mode (Dynamic Fat Channel)  —  50
+6.4.1 
+Dynamic Fat Channel Controls  —  50
+6.5 
+Compressor Mode (Dynamic Fat Channel)  —  51
+6.5.1 
+Standard Compressor  —  51
+6.5.2 
+Tube Leveling Amplifier  —  52
+6.5.3 
+Class-A FET Compressor  —  53
+6.6 
+EQ Mode (Dynamic Fat Channel)  —  54
+6.6.1 
+Standard EQ  —  54
+6.6.2 
+Passive Program EQ  —  55
+6.6.3 
+Vintage 1970s EQ  —  55
+6.7 
+Aux Sends Mode (Dynamic Fat Channel)  —  56
+6.8 
+Fat Channel Screens   —  57
+6.8.1 
+Channel Overview  —  57
+6.8.2 
+Channel Settings Screen  —  58
+6.8.3 
+Gate Overview Screen  —  59
+6.8.4 
+Compressor Overview Screens  —  60
+6.8.5 
+EQ Overview Screens  —  63
+6.8.6 
+Aux Sends Overview Screen  —  68
+6.9 
+User Mode  —  68
+6.10 
+Input Controls  —  68
+6.10.1 Input Source  —  68
+6.10.2 Input Meters  —  69
+6.10.3 Input Source Routing  —  69
+6.10.4 Polarity and Phantom Power  —  71
+6.10.5 Stereo Link  —  71
+6.11 
+Output Assignment Buttons  —  72
+6.11.1 Main/Mono Bus Assignment 
+(StudioLive 64S only)  —  72
+6.11.2 Main/Subgroup Assignment (All 32-Channel 
+StudioLive Models)  —  72
+7 
+Tape Controls  —  73
+7.1 
+Pairing a Bluetooth Device  —  73
+8 
+SD Recording  —  74
+8.1 
+Creating a New Session for Recording  —  74
+8.2 
+Loading a Session for Playback  —  75
+8.3 
+Capture Screen  —  75
+8.3.1 
+Recording Status Messages  —  76
+8.3.2 
+Transport Controls  —  77
+8.4 
+Virtual Sound Check  —  78
+9 
+Master Control  —  79
+9.1 
+StudioLive Series III FLEX DSP Rack Effects  —  79
+9.1.1 
+The Effects Editor  —  80
+9.1.2 
+Effects Types  —  80
+9.1.3 
+Effects Presets  —  85
+9.4 
+UCNET  —  86
+9.4.1 
+Mixer Nickname  —  86
+9.4.2 
+Permissions  —  86
+9.4.3 
+Software Control  —  87
+9.4.4 
+Control Network IP Address 
+Settings  —  88
+9.4.5 
+Transport Controls  —  88
+9.5 
+DAW Button  —  89
+9.6 
+Scenes and Projects  —  89
+9.6.1 
+Creating and Recalling Projects  —  89
+9.6.2 
+Creating and Recalling Scenes  —  90
+9.6.3 
+Filters  —  92
+9.6.4 
+List Editor  —  94
+9.6.5 
+Scene Safe  —  95
+9.6.6 
+AutoStore  —  95
+9.6.6 
+Reset  —  96
+9.6.7 
+Nulling Parameters  —  97
+
+
+===== PAGE 4 =====
+10 
+Monitoring Controls  —  98
+10.1 
+Solo Controls  —  98
+10.1.1 Solo Modes  —  99
+10.1.2 Using the Solo Bus for 
+Monitoring  —  100
+10.1.3 Using Solo in Place to 
+Set Up a Mix  —  101
+11 
+Graphic EQ  —  102
+11.1 
+Assigning GEQs   —  103
+11.2 
+Using the GEQ  —  103
+11.3 
+GEQ Presets  —  104
+11.4 
+Using the RTA to Ring Out Monitors  —  104
+12 
+Home  —  106
+12.1 
+System Screen  —  107
+12.1.1 Permissions  —  108
+12.1.2 User Buttons Assigns  —  108
+12.1.3 Fat Channel Load/Paste  —  109
+12.1.4 Firmware Update  —  110
+12.1.5 Link Aux Mutes  —  110
+12.2 
+User Profiles  —  110
+12.2.1 Default Administrator  —  111
+12.2.2 Creating a New Profile  —  112
+12.2.3 Edit User Permissions  —  114
+12.3 
+Audio Routing and the Digital Patching 
+Screen  —  115
+12.3.1 Digital Patching: Input Source  —  116
+12.3.2 Digital Patching: Analog Sends  —  116
+12.3.3 Digital Patching: AVB Sends  —  117
+12.3.4 Digital Patching: USB Sends  —  118
+12.3.5 Digital Patching: SD Card  —  119
+12.3.6 Digital Patching: AES  —  119
+12.4 
+Utilities  —  120
+12.5 
+Soft Power  —  120
+13 
+Resources  —  121
+13.1 
+Networking Overview  —  121
+13.1.1 Wired Ethernet Control Setup  —  121
+13.2 
+Stereo Microphone Placement  —  123
+13.2.1 Grand Piano  —  123
+13.2.2 Electric Guitar  —  123
+13.2.3 Acoustic Guitar  —  124
+13.2.4 Bass Guitar (Direct and Speaker)   —  124
+13.2.5 Drum Overheads (XY example)  —  125
+13.2.6 Snare Drum (top and bottom)   —  125
+13.3 
+Compression Setting Suggestions  —  126
+13.3.1 Vocals  —  126
+13.3.2 Percussion  —  126
+13.3.3 Fretted Instruments  —  126
+13.3.4 Keyboards  —  127
+13.3.5 Stereo Mix  —  127
+13.3.6 Effects  —  127
+13.4 
+EQ Frequency Guides  —  128
+13.4.1 What Frequencies to Cut and 
+Boost  —  128
+13.4.2 Instrument Ranges  —  129
+13.5 
+EQ Setting Suggestions  —  129
+13.5.1 Vocals  —  129
+13.5.2 Percussion  —  130
+13.5.3 Fretted Instruments  —  131
+13.5.4 Keyboards  —  131
+13.6 
+Using Input Delay  —  132
+13.6.1 Aligning the Backline with Vocal 
+Mic  —  132
+13.6.2 Aligning Direct and Mic’d Signals  —  133
+13.7 
+Using Output Delay  —  134
+13.7.1 Front-of-House   —  134
+13.7.2 Delay Systems  —  135
+13.7.3 Aligning Subs to Mains  —  136
+13.8 
+Sidechaining  —  137
+13.8.1 Sidechaining the Gate  —  137
+13.8.2 Sidechaining the Compressor  —  138
+
+
+===== PAGE 5 =====
+13.9 
+Effect Types  —  138
+13.9.1 Reverb and its Parameters  —  138
+13.9.2 Delay and its Parameters  —  139
+13.9.3 Chorus and Flange  —  139
+13.10 Using the RTA While Mixing  —  140
+14 
+Technical Information  —  141
+14.1 
+Specifications  —  141
+14.2 
+Default Routing  —  143
+14.2.1 Input Source  —  143
+14.2.2 Analog Sends  —  145
+14.2.3 AVB Sends  —  146
+14.2.4 USB Sends  —  147
+14.2.5 SD Card  —  149
+14.3 
+Block Diagrams  —  150
+14.4 
+Troubleshooting Information  —  150
+
+
+===== PAGE 6 =====
+1
+1 
+Overview 
+1.1 
+Introduction
+StudioLive™ Series III 
+Owner’s Manual
+1 
+Overview
+1.1 
+Introduction
+Thank you for purchasing your PreSonus® StudioLive™ Series III Digital Mixer. 
+PreSonus Audio Electronics has built your StudioLive mixer with high-grade 
+components to ensure optimum performance for many years to come. StudioLive 
+Series III breaks new boundaries for music performance and production. 
+We encourage you to contact us with questions or comments regarding this product. 
+PreSonus Audio Electronics is committed to constant product improvement, and 
+we value your suggestions highly. We believe the best way to achieve our goal 
+of constant product improvement is by listening to the real experts: our valued 
+customers. We appreciate the support you have shown us through the purchase of 
+this product.
+1.2 
+About this Manual
+We suggest that you spend some time with this manual before starting to work with 
+your StudioLive Series III mixer, to familiarize yourself with its features, workflows, and 
+connection procedures. This will help your setup process go as smoothly as possible. 
+This manual applies to all StudioLive Series III mixers. While every StudioLive Series 
+III mixer provides nearly identical mixing capabilities, some features and workflows 
+vary between models. Where these differences occur, they will be called out. All 
+illustrations for shared features and functions will show a StudioLive 64S.
+This manual covers the following hardware products:
+StudioLive Series III S Models
+••
+StudioLive 64S
+••
+StudioLive 32S
+••
+StudioLive 32SX
+••
+StudioLive 32SC
+StudioLive Series III Blue Models (requires v. 2.0 firmware or later)
+••
+StudioLive 32
+••
+StudioLive 24
+••
+StudioLive 16
+Throughout this manual, you will find Power User Tips, providing mixing tricks and 
+explanations of various useful audio terms. Near the end of this manual, you’ll find 
+a selection of audio tutorials, covering everything from microphone placement to 
+recommended equalizer and compression settings. We hope these tutorials help you 
+to get the most from your StudioLive Series III mixer.
+All models, except the StudioLive 64S, are 32-channel mixers and will be referred to 
+as such when differences occur between the StudioLive 64S and the other mixers in 
+the StudioLive Series III family.
+Thank you, once again, for purchasing our product. We are confident that you will 
+enjoy your new StudioLive.
+
+
+===== PAGE 7 =====
+2
+1 
+Overview 
+1.3 
+Companion PreSonus Products 
+StudioLive™ Series III 
+Owner’s Manual
+1.3 
+Companion PreSonus Products 
+Welcome to the PreSonus Ecosystem! As a solutions company, we believe the best 
+way to take care of our customers (that’s you) is to ensure that you have the best 
+possible experience from the beginning of your signal chain to the end. In order to 
+achieve this goal, we’ve prioritized seamless integration throughout every design 
+phase of these products from day one. The result is systems that communicate with 
+each other as intended— straight out of the box—without excessive 
+configuration hassle. 
+For more information on how our PreSonus AVB networking devices play so well with 
+one another, please review the PreSonus AVB Networking Guide. 
+For more information on individual products, please visit www.presonus.com.
+
+
+===== PAGE 8 =====
+3
+1 
+Overview 
+1.4 
+What’s in the Box
+StudioLive™ Series III 
+Owner’s Manual
+1.4 
+What’s in the Box
+In addition to a Visual Quick Start Guide, your StudioLive package contains the 
+following: 
+••
+A PreSonus StudioLive Series III digital recording and performance mixer
+••
+1 meter USB cable 
+ 
+ 
+••
+1 meter CAT6 Ethernet cable 
+ 
+ 
+••
+StudioLive Series III Quick Start Guide 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+••
+IEC power cord
+Power User Tip: All companion software and drivers for your PreSonus StudioLive Series 
+III mixer are available for download from your My PreSonus user account. Please visit 
+http://my.presonus.com and register your StudioLive Series III mixer to receive downloads 
+and licenses.
+
+
+===== PAGE 9 =====
+4
+1 
+Overview 
+1.5 
+Additional Resources
+StudioLive™ Series III 
+Owner’s Manual
+1.5 
+Additional Resources
+Software Guides: 
+••
+Capture 3 Reference Manual. Included with StudioLive mixers is Capture, a 
+digital-audio multitrack-recording application designed to make recording quick 
+and easy. 
+••
+Networking for StudioLive Remote Control. This guide will assist you in creating 
+a LAN network to remote control your StudioLive from a computer, tablet, or 
+mobile device. 
+••
+QMix-UC Reference Manual. This guide describes the features and functions 
+of QMix-UC with every StudioLive mixer model. QMix-UC lets up to 16 users 
+remotely control the Aux Mixes on your StudioLive using their smartphone.
+••
+Studio One Integration Reference Manual. Studio One Artist is included with 
+every StudioLive mixer. In addition to being a powerful DAW, Studio One provides 
+unique routing and integration features. This manual will help you get the most 
+from your StudioLive mixer when used with Studio One or Studio One Artist. 
+••
+UC Surface Reference Manual. This guide describes the features and functions 
+of UC Surface with every StudioLive mixer model. UC Surface can be used to 
+remotely control ever function on your StudioLive mixer or specific functions, 
+depending on the set permissions, or to turn your tablet into additional screens 
+for your mixer.
+••
+Using Your StudioLive as an Audio Interface with Universal Control Reference 
+Guide. This guide describes the features and functions Universal Control as well 
+as how to use your StudioLive mixer as an audio interface with your favorite DAW 
+application. 
+Additional Resources: 
+••
+StudioLive Series III AVB Networking Guide. This manual covers advanced AVB 
+audio networking configuration for the StudioLive Series III mixers. 
+••
+StudioLive Series III Fat Channel Plug-ins Addendum. Additional Fat Channel 
+plug-in models can be purchased from PreSonus.com. This guide covers the 
+installation and authorization process as well as the features of each plug-in 
+model.
+••
+StudioLive Series III HUI for ProTools DAW Control Addendum. StudioLive Series 
+III console mixers can control Avid ProTools® using HUI emulation.
+••
+StudioLive Series III MCU for Logic DAW Control Addendum. StudioLive Series 
+III console mixers can control Apple Logic® using Mackie Control Universal 
+emulation.
+••
+StudioLive Series III Stage Box Mode Addendum. The StudioLive Series III 
+rackmount mixers (StudioLive 32R, StudioLive 24R, StudioLive 16R) can be used as 
+advanced stage boxes for any StudioLive Series III console mixer. 
+••
+StudioLive Series III Studio One DAW Control Addendum. StudioLive Series III 
+console mixers can be used to control Studio One and Studio One Artist.
+
+
+===== PAGE 10 =====
+5
+2 
+Getting Started 
+2.1 
+Level Setting Procedure
+StudioLive™ Series III 
+Owner’s Manual
+2 
+Getting Started
+Before you begin, here are a few rules to get you started:
+••
+Always turn down the Main fader and both the Monitor and Phones knobs in the 
+Monitor section before making connections.
+••
+Before plugging or unplugging a microphone while other channels are active, 
+mute the channel to which you are connecting.
+••
+Your faders should be set on or near the “U” mark whenever possible. The “U” 
+indicates unity gain, meaning the signal is neither boosted nor attenuated.
+••
+Do not allow your inputs to clip. Watch the level meters; when signal nears 
+Clipping, the top LED illuminates, indicating that the analog-to-digital converters 
+are in danger of being overdriven. Overdriving the converters will cause digital 
+distortion, which has a negative effect on sound quality.
+Your P.A. and studio equipment should be powered on in the following order:
+••
+Sound sources (keyboards, direct boxes, microphones, etc.) connected to the 
+StudioLive inputs
+••
+StudioLive Series III mixer
+••
+Computer (if applicable)
+••
+Power amplifiers or powered loudspeakers
+When it is time to power down, your system should be turned off in the reverse order. 
+Now that you know what not to do, let’s get started!
+2.1 
+Level Setting Procedure
+1. 
+Plug a microphone into the Channel 1 input on your StudioLive Series III 
+with a standard XLR cable. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2. 
+Connect the main outputs of your StudioLive to your powered monitors (or 
+power amp if using passive speakers). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE 11 =====
+6
+2 
+Getting Started 
+2.1 
+Level Setting Procedure
+StudioLive™ Series III 
+Owner’s Manual
+3. 
+Plug your StudioLive into a power outlet and turn it on. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4. 
+Move all of the faders on your StudioLive down to the lowest setting. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5. 
+Press the Select button on Channel 1 to bring its settings into focus in the 
+Fat Channel. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6. 
+Press the Analog button in the Fat Channel to patch in the analog input. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Main
+Mix
+Mute
+Mute
+Mute
+Mute
+Mute
+Mute
+Mute
+27
+29
+31
+12 28
+14 30
+16 32
+E
+G
+B
+F
+D H
+17
+18
+19
+20
+21
+22
+2
+4
+6
+23
+24
+8
+25
+26
+10
+Inputs
+User
+Main
+Mix
+Next
+Prev
+Solo
+Mute
+Select
+Solo
+Mute
+Select
+Solo
+Mute
+Select
+Sol
+Mut
+Sele
+1 17
+18
+19
+20
+21
+22
+3
+5
+2
+4
+6
+23
+24
+7
+8
+Select
+Select
+Select
+Select
+Select
+Select
+Select
+Select
+Se
+6
+Ch. 6
+7
+Ch. 7
+8
+Ch. 8
+9
+Ch. 9
+10
+Ch. 10
+11
+Ch. 11
+12
+Ch. 12
+13
+Ch. 10
+
+
+===== PAGE 12 =====
+7
+2 
+Getting Started 
+2.1 
+Level Setting Procedure
+StudioLive™ Series III 
+Owner’s Manual
+7. 
+Press the Input button in the Fat Channel. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8. 
+Turn the first knob in the Fat Channel section (Preamp Gain) counter-
+clockwise to its lowest setting. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9. 
+If your microphone requires phantom power, press the +48v button in the 
+Fat Channel. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+10. Turn on your powered monitors or power amp.
+11. Speak or sing into your microphone at the same volume as the 
+performance. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12. Turn the first knob in the Fat Channel section (Preamp Gain) clockwise while 
+watching the Level (input) meter in the Fat Channel. Adjust the Preamp 
+Gain knob until the meter shows an average level around the middle of its 
+range. Avoid lighting the red (clip) LED at the top of the meter. 
+ 
+ 
+ 
+ 
+ 
+ 
+6
+Ch. 6
+7
+Ch. 7
+8
+Ch. 8
+9
+Ch. 9
+10
+Ch. 10
+11
+Ch. 11
+12
+Ch. 12
+13
+Ch. 10
+GATE
+Thresh
+-84.00 dB
+Gate
+COMP
+Thresh
+0.00 d
+Comp
+Select
+Select
+Select
+Select
+Select
+Select
+Select
+Select
+Sele
+8
+Ch. 8
+9
+Ch. 9
+10
+Ch. 10
+11
+Ch. 11
+12
+Ch. 12
+13
+Ch. 13
+13
+Ch. 13
+GATE
+Thresh
+-84.00 dB
+Gate
+COMP
+Thresh
+0.00 dB
+Comp
+
+
+===== PAGE 13 =====
+8
+2 
+Getting Started 
+2.1 
+Level Setting Procedure
+StudioLive™ Series III 
+Owner’s Manual
+13. Raise the Channel 1 fader to its “U” setting (unity gain). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+14. Press the “Main” button in the Fat Channel to assign Channel 1 to the Main 
+output bus. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+15. Raise the Main fader while singing or speaking into the microphone until 
+you are satisfied with output level. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16. Select the Fat Channel processor (Gate, Compressor, or EQ) you would like 
+to edit first. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+17. Use the controls in the Fat Channel or on the Touch Display to set the 
+parameters to taste. 
+ 
+StudioLive 32SX and 32SC Users will utilize the Touch Display to edit all Fat Channel 
+parameters. The controls in the Fat Channel are fixed to their designated function. 
+ 
+ 
+ 
+ 
+ 
+11 27
+13 29
+15 31
+12 28
+14 30
+16 32
+A
+E
+C
+G
+B
+F
+D H
+1 17
+18
+19
+20
+21
+22
+3
+5
+2
+4
+6
+23
+24
+7
+8
+25
+26
+9
+10
+Select
+Select
+Select
+Select
+Select
+Select
+Select
+Select
+Selec
+9
+Ch. 9
+10
+Ch. 10
+11
+Ch. 11
+12
+Ch. 12
+13
+Ch. 13
+14
+Ch. 14
+15
+Ch. 15
+16
+Ch. 13
+17
+Ch. 1
+1
+2
+3
+4
+5
+6
+7
+8
+GATE
+Release
+700 ms
+GATE
+Attack
+5 ms
+GATE
+Range
+-84.00 dB
+GATE
+Thresh
+-84.00 dB
+
+
+===== PAGE 23 =====
+18
+3 
+Hookup 
+3.2 
+Rear Panel Connections
+StudioLive™ Series III 
+Owner’s Manual
+Main / Mono level controls (32-channel models). All 32-channel StudioLive mixer 
+models are equipped with a level control to adjust the output level at the analog 
+stage. The Main (stereo) output attenuation control has a range of -80 to 0 dB. The 
+Mono output level control has a range of -80 to +6 dB.
+Note: This feature is not available on the StudioLive 64S 
+Monitor Outputs. This pair of balanced 1/4” TRS outputs are provided to connect a 
+pair of monitors in the control room or sound booth. The level is controlled by the 
+Monitor knob in the Monitors section on the top panel. 
+ 
+ 
+ 
+ 
+ 
+ 
+3.2.3 
+Digital and Networking
+AES Output. By default, the AES/EBU digital output receives the same signal as the 
+stereo Main outputs. However, you can route any of the mix buses, Tape input, or the 
+Solo bus to this output. Because the StudioLive cannot be synced externally, you will 
+need to use it as the master clock and set your AES-equipped device to receive word 
+clock externally via AES. Please consult the documentation for your external digital 
+device for instructions.
+Power User Tip: This output can also be connected to S/PDIF-format devices, through the 
+use of an AES/EBU-S/PDIF adapter. A standard XLR-RCA adapter will not function. AES/
+EBU-S/PDIF adapters contain impedance-matching circuitry that is required for proper 
+function.
+Audio Network. This connection accepts both locking XLR Ethernet (e.g. etherCON™) 
+and RJ45 connections and is used for AVB audio networking.
+For more information on AVB networking, see the StudioLive Series III AVB 
+Networking Guide. 
+ 
+ 
+ 
+ 
+ 
+Ethernet Port. This RJ45 port is used to connect your StudioLive to a standard LAN 
+network for control applications only.
+For more information on configuring a network for remotely controlling your mixer, 
+see the StudioLive Series III AVB Networking Guide.
+USB Port. This female USB-B jack provides connection to a computer for audio 
+interfacing, control, and file transfer duties. 
+ 
+ 
+ 
+
+
+===== PAGE 33 =====
+28
+4 
+Basic Mix Functions Overview 
+4.5 
+Talkback System
+StudioLive™ Series III 
+Owner’s Manual
+4.5.1 
+Talkback Edit Screen
+Press the Talkback Channel’s Select button to open the Talkback Edit screen, 
+giving you access to additional options.
+••
+Preamp Gain. Sets the preamp gain for the Talkback mic input.
+••
+Talk Destination. Use these buttons to select the mixes to which you’d like to 
+route the Talkback input.
+Power User Tip: While the Talkback has a dedicated rear-panel analog input, this can be 
+changed and sourced from any Analog, AVB, USB, or SD stream from the Digital Patching 
+menu. In this way, you can quickly patch playback to every wedge for rehearsal, use an 
+NSB-series stage box input, and much more. To change the source type of the Talkback 
+between Analog, Network, USB, or SD Card, use the Input Source buttons in the Fat 
+Channel. For more information on using the Digital Patching menu to change the 
+Talkback source, see Section 12.3.1.
+
+
+===== PAGE 43 =====
+38
+5 
+Buses and Routing 
+5.5 
+FX Buses 
+StudioLive™ Series III 
+Owner’s Manual
+Pre/Post Channel Sends 
+You can select the send positions for the channels routed to each Matrix mix. By 
+default, all Matrix mixes are set to Pre 1. This places the send of every input channel 
+to each aux bus before the fader, limiter, EQ, and compressor, but after the Polarity 
+Invert switch, high-pass filter, and gate. 
+From the FlexMix settings menu, you can choose between three send positions for 
+your mix: 
+Pre 1: Sends each channel to the Matrix bus after the polarity invert, high-pass filter, 
+and gate. 
+Pre 2: Sends each channel to the Matrix bus after all Fat Channel processing (polarity 
+invert, high-pass filter, gate, compressor, EQ, and limiter) but before the fader. 
+Post: Sends each channel to the Matrix bus after all Fat Channel processing (polarity 
+invert, high-pass filter, gate, compressor, EQ, and limiter), and after the fader. 
+Note: Buses on which a GEQ has been inserted will be sent to Matrix mixes before the GEQ.
+5.4.2 
+Creating a Front Fill Mix
+In some venues, the house PA doesn’t cover the front rows effectively. This can be 
+especially problematic in the band on stage is using in-ear monitors instead of floor 
+wedges. Without floor wedges the people seated in the first few rows are actually 
+“behind” the PA because they will hear more stage volume from the instruments on 
+stage than from the front-of-house system. This problem can be solved by placing a 
+few low profile speakers on the front edge of the stage to cover the first few rows of 
+the audience. 
+You will want to blend the Main Left/Right mix at a low level with the source signals 
+that may be difficult to hear, like the vocal and direct bass channels. 
+5.5 
+FX Buses 
+FX Buses act just like Aux mixes, but rather than feeding an output, they feed one of 
+the StudioLive’s internal effects processors. This allows you to customize the amount 
+of a channel’s signal that is being effected. Your StudioLive has dedicated FX buses, 
+each one feeding its own internal FX processor. The StudioLive 64S has 8 internal FX 
+buses; all other models have 4. 
+Pre/Post Channel Sends
+Like Aux mixes, you can select the send position for each channel that is routed to 
+an FX Mix. By default, all FX buses are set to Post. This places the send of every input 
+channel to each FX bus after the fader, limiter, EQ, and compressor, Polarity Invert 
+switch, high-pass filter, and gate. See Section 5.2 for more information on the other 
+available settings.
+
+
+===== PAGE 53 =====
+48
+6 
+The Fat Channel 
+6.3 
+Input Mode
+StudioLive™ Series III 
+Owner’s Manual
+8
+2
+3
+4
+5
+6
+7
+1
+9
+1. Processor On/Off. Enables/Disables the currently active processor.
+2. Input. For all StudioLive models, this opens the Channel Overview screen on the 
+Touch Display. For models equipped with a Dynamic Fat Channel, this button 
+will spill the Input layer controls onto the Fat Channel displays, encoders, and 
+buttons. See Sections 6.3 and 6.8.1.
+3. Gate. For all StudioLive models, this opens the Gate Overview screen on the 
+Touch Display. For models equipped with a Dynamic Fat Channel, this button 
+will spill the Gate controls onto the Fat Channel displays, encoders, and buttons. 
+See Sections 6.4 and 6.8.3.
+4. Comp. For all StudioLive models, this opens the Compressor Overview screen on 
+the Touch Display. For models equipped with a Dynamic Fat Channel, this button 
+will spill the Compressor controls onto the Fat Channel displays, encoders, and 
+buttons. See Sections 6.5 and 6.8.4.
+5. EQ. For all StudioLive models, this opens the EQ Overview screen on the Touch 
+Display. For models equipped with a Dynamic Fat Channel, this button will spill 
+the EQ controls onto the Fat Channel displays, encoders, and buttons. 
+See Sections 6.6 and 6.8.5.
+6. Aux Sends. For all StudioLive models, this opens the Aux Sends Overview 
+screen on the Touch Display. For models equipped with a Dynamic Fat Channel, 
+this button will spill the Aux Send levels, mutes, and pan controls for the 
+currently selected channel onto the Fat Channel displays, encoders, and buttons. 
+See Sections 6.7 and 6.8.6.
+7. User. Model-dependent:
+--
+StudioLive 32SX and 32SC. Opens User Profile screen on Touch Display.
+--
+All Other Models. Spills user-customizable parameters on Fat Channel 
+displays, encoders, and buttons. See Section 6.9.
+8. Fat Channel A/B. Switches between two different Fat Channel Settings. 
+See Section 6.1.1. 
+9. Prev/Next Page. Navigates to additional parameters (if available). Note: These 
+controls are not available on the StudioLive 32SX and 32SC.
+6.3 
+Input Mode
+Pressing the Input button in the Fat Channel gives you access to important controls 
+and informative displays for the currently selected channel or mix.
+Note: These controls are fixed on the StudioLive 32SX and 32SC. For all other models, 
+pressing holding the Input button will lock or unlock these functions to the Dynamic Fat 
+Channel controls.
+EQ
+COMP
+GATE
+PAN
+HI PASS
+PREAMP
+Gain
+Filter
+Thresh
+Gate
+Comp
+Center
+Thresh
+Gain
+EQ
+Freq
+EQ
+Q
+0.60
+1.40 kHz
+0.00 dB
+0.00 dB
+-84.00 dB
+< C >
+off
+0 dB
+B1
+B2
+B3
+B4
+AGC
+1
+2
+3
+4
+5
+6
+7
+8
+1. Preamp Gain (Input Channels only). Use the encoder to set the amount 
+of preamp gain applied to the currently selected channel. The scribble strip 
+displays the current gain level. Press the button below to enable Automatic Gain 
+Compensation. For more information on Gain Compensation, please see the 
+NSB-series Stage Box Owners Manual.
+
+
+===== PAGE 63 =====
+58
+6 
+The Fat Channel 
+6.8 
+Fat Channel Screens 
+StudioLive™ Series III 
+Owner’s Manual
+6.8.2 
+Channel Settings Screen
+When the overview screen for a channel or bus is open, can access the Channel 
+Settings screen by tapping on the Settings button (Call-out #3). 
+ 
+ 
+5
+4
+1
+2
+3
+1. Channel Name. Touch the name field to enter a new name with the onscreen 
+keyboard.
+2. Channel Type. Touch the type field to choose between the standard identifying 
+channel types (such as Guitars or Drums).
+3. Digital Send Options. Touch Pre (signal is sent before Fat Channel processing) 
+or Post (signal is sent after Fat Channel Processing) to choose the signal routing 
+when sending this channel or bus to a USB or network-connected audio device.
+4. Channel Color. Sets the color of a channel’s Select button. If no color is selected, 
+the Select button will be blue.
+5. Stereo Link Options. These options let you specify the linking behavior when 
+you link pairs of channels or buses, with the following options:
+--
+Preamp Level/Trim. Enable this option to link preamp level and trim 
+settings when channels are linked. Disable to allow these settings to be 
+individually set for each linked channel.
+--
+Panning. Enable this option for “stereo” panning mode, which lets you 
+use the pan controls on linked channels or buses to control overall stereo 
+“width.” Moving a pan control on a linked channel moves the corresponding 
+pan control the same amount in the opposite direction. Disable this option 
+to allow independent panning of linked channels or buses.
+--
+Fader Levels. Enable this option to link volume faders for linked pairs of 
+channels or buses. Disable it to allow independent manipulation of fader 
+levels for linked channels.
+--
+Comp./Limiter. Enable this option to link the compression and limiting 
+detection behavior for linked channels or buses. With this option on, signals 
+occurring either linked channel cause identical gain reduction behavior in 
+both. Disable this option to let the compressor/limiter act independently on 
+each linked channel.
+--
+Names. Enable this option to keep linked channel/bus names identical. 
+With this option on, a change to either name in a linked pair is reflected in 
+the other linked channel.
+Power User Tip: If one of the digital inputs (Network, USB, or SD) is selected as the channel 
+source, you will be presented with the option to designate the Digital Send source as 
+either Analog or Digital. This is a great way to use plugin processing as an insert. This is 
+also necessary if you’d like to record an AVB or USB input to the SD recorder. For more 
+information, please see the Using Your StudioLive as an Audio Interface with Universal 
+Control Reference Guide.
+
+
+===== PAGE 73 =====
+68
+6 
+The Fat Channel 
+6.9 
+User Mode
+StudioLive™ Series III 
+Owner’s Manual
+6.8.6 
+Aux Sends Overview Screen
+While Aux Sends Mode is engaged, the Touch Display displays the Aux Sends 
+Overview screen. This screen displays the send level of the Selected channel in 
+every FlexMix:
+6.9 
+User Mode
+The User Mode allows you to create your own custom Fat Channel controls. To assign 
+a function to an encoder and its adjacent button, press any unassigned button. This 
+will open the User Mode edit screen:
+When you are done assigning function, press the Done button on the Touch Display.
+To edit any function, press and hold any Fat Channel function button while User 
+mode is active.
+6.10 
+Input Controls
+6.10.1 
+Input Source
+When a channel is selected (rather than a bus or output), these four buttons give you 
+a choice of input type to be routed to that channel. Choose from the following:
+••
+Analog. Signal is routed from the corresponding analog input.
+••
+Network. Signal is routed from the corresponding channel from the AVB network 
+input (if applicable).
+••
+USB. Signal is routed from the corresponding USB audio channel, for playback 
+from a computer.
+••
+SD Card. Signal is routed from the corresponding channel of the currently loaded 
+multitrack recording on an inserted SD card.
+
+
+===== PAGE 83 =====
+78
+8 
+SD Recording 
+8.4 
+Virtual Sound Check
+StudioLive™ Series III 
+Owner’s Manual
+8.4 
+Virtual Sound Check
+We’ve all been there. The drummer is stuck in traffic. The guitarist is stuck at work. 
+And you’re stuck at front-of-house (FOH) with a hyped up lead singer and bass player 
+and no way to dial in a front-of-house mix, let alone set up the singer’s in-ear mix. 
+Don’t panic! With Capture’s Virtual Soundcheck mode, dialing a good rough mix 
+without the band—or with half the band missing—is quick and simple.
+1. To begin, create a new Session, press the Soundcheck button on your 
+StudioLive mixer. 
+2. This will launch the Load Session screen. Select the previously recorded session 
+you would like to use for your Virtual Soundcheck.
+3. The Recall button will begin to flash. Press the Recall button to load the saved 
+Session. This will also engage all the SD channel returns. 
+ 
+4. Your mixer scene is automatically saved with your Capture session. Enabling the 
+Load Mix function will load the saved StudioLive mix scene as well.
+5. Use the Transport controls to playback the recorded audio and dial in your mix.
+6. When you have finished setting up your mix, press the Soundcheck button again 
+to exit. This will close the Capture session and disengage all the SD returns on 
+your StudioLive, leaving the track labels on your mixer.
+
+
+===== PAGE 93 =====
+88
+9 
+Master Control 
+9.4 
+UCNET
+StudioLive™ Series III 
+Owner’s Manual
+9.4.4 
+Control Network IP Address Settings
+In the Control Network area of the UCNET screen, you’ll see the current IP address 
+of your StudioLive. This IP address can be assigned in one of three ways. Select the 
+necessary IP assignment mode by touching one of the following buttons:
+••
+Dynamic. The IP address is assigned automatically upon connection to the 
+network, and can shift to a new address when necessary due to changes in 
+network availability. In this mode, a Renew button is shown onscreen. Touch this 
+button to renew the DHCP lease for your StudioLive.
+••
+Static Self (Self-Assigned). The IP address is assigned automatically, but stays 
+the same thereafter until you need to change it. In this mode, an Apply button is 
+shown. Touch this button to auto-assign a new static IP address to your StudioLive.
+••
+Static Manual. The IP address can be set manually, and remains the same until it 
+is changed. In this mode, an Edit button is shown. Touch this button to open the 
+Static Manual Edit screen, where you can specify IP address, subnet mask, and 
+gateway settings for your StudioLive as needed for your network configuration. 
+Touch each field in the form to bring up an onscreen keyboard for entry. When 
+you’re finished entering the settings, press Apply to establish the new settings. To 
+exit without re-setting IP settings, touch the Cancel button.
+9.4.5 
+Transport Controls
+While your StudioLive Series III mixer is controlling a DAW, you can chose to have the 
+Transport section control the SD recorder when DAW mode is disabled, or continue 
+to control the Transport in your DAW whether or not DAW mode is active.
+For more information on using your StudioLive mixer as a controller for your DAW 
+application please review the following addendums:
+••
+StudioLive Series III Studio One DAW Control Addendum
+••
+StudioLive Series III MCU for Logic DAW Control Addendum
+••
+StudioLive Series III HUI Emulation for ProTools DAW Control Addendum
+
+
+===== PAGE 103 =====
+98
+10 
+Monitoring Controls 
+10.1 
+Solo Controls
+StudioLive™ Series III 
+Owner’s Manual
+10 
+Monitoring Controls
+ In addition to the main outputs, your StudioLive mixer features a set of monitor 
+outputs and a headphone jack, each with its own distinct signal path. While you can 
+use these outputs to listen to the main mix, you can also assign other signals to them, 
+such as Aux mixes, the solo bus, or the tape input. This allows easy monitoring of your 
+choice of signals as you work, while the full mix continues to flow from the main 
+outputs.
+The Monitors control section is where you interact with these outputs. Turn the 
+Monitor knob to set output level for the monitor outputs. Turn the Phones knob to 
+set headphone volume. To get into more advanced monitoring settings, press the 
+Edit button. This opens the Monitor screen on the Touch Display.
+On this screen, you can choose which signals to send to the monitor and headphone 
+outputs. Touch the Monitor button to configure signal routing for the monitor outs. 
+Press the Phones button to do so for the headphone output. In either case, a grid of 
+available sources is shown (Solo, Main, Tape, FlexMixes). Touching any one of these 
+sources routes it to the currently selected monitoring output.
+Power User Tip: When the Solo system is in CR (control room) mode, soloing a channel or 
+bus causes that signal to be sent to the monitor outputs, temporarily overriding any 
+preexisting routings to that output. When solo is disengaged, the routings you’ve chosen in 
+the Monitor screen are restored. For more information on Solo Modes, see Section 10.1.1.
+The Delay control allows you to adjust the amount of delay applied to the 
+headphone and control room output signals. Touch the Delay knob and turn the 
+Master Control encoder to add delay to either output. This is useful for aligning 
+the timing of the Front-of-House monitoring signal with the signal coming from 
+the Front-of-House PA system. The PA sound must traverse the distance from the 
+speakers to your mix position before you can hear it, so a certain amount of delay 
+occurs, which can obscure the finer details of your mix when using the monitor 
+outputs. Adjust this control until the phasing/flamming effects are minimized.
+10.1 
+Solo Controls
+The StudioLive features an independent Solo bus. This feature is extremely useful in 
+setting levels for monitor mixes, dialing in dynamics processing on each channel, and 
+fixing issues during a live show without interrupting the main mix.
+The Solo bus has three different modes: AFL (default), PFL, and SIP.
+••
+AFL (After-Fader Listen). AFL sends the channel or subgroup signal to the Solo 
+bus post-fader so that you can control the level of the soloed signal with the fader. 
+This is the StudioLive’s default setting.
+••
+PFL (Pre-Fader Listen). PFL sends the channel or subgroup signal to the Solo bus 
+before it reaches the fader so the fader does not affect the soloed signal.
+••
+SIP (Solo In Place). This is also known as “destructive solo.” When channels are 
+soloed in this mode, every channel that isn’t soloed will be muted, and only the 
+soloed channels will be sent to their assigned outputs. While useful in dialing in 
+dynamics during soundcheck, this mode is dangerous during a live show. We 
+recommend that this mode be turned off when mixing live events.
+Power User Tip: To unsolo all channels, press the Clear button in the Solo control section.
+
+
+===== PAGE 113 =====
+108
+12 
+Home 
+12.1 
+System Screen
+StudioLive™ Series III 
+Owner’s Manual
+12.1.1 
+Permissions
+Controlling your StudioLive remotely with UC Surface or QMix-UC for mobile devices 
+allows you to move about the venue freely. However, it can also put the full power 
+of the your mixer in multiple hands— some more adept than others. Therefore, your 
+StudioLive enables you to limit each wireless device’s access to the mixer features by 
+setting permissions.
+From the System menu press the Permissions button to set the level of control 
+available to each user. You can also reach these settings from the UCNET screen. For 
+more information on setting mixer permissions, see Section 9.4.2. 
+12.1.2 
+User Buttons Assigns
+Every StudioLive Series III mixers feature eight user-assignable buttons. These 
+buttons can control the following functions: Mute Groups 1-8, Tap Tempo A-D, Quick 
+Scenes 1-8, Scene Navigation, or DAW Navigation. By default, these buttons are 
+assigned to Mute Groups 1-8.
+Note: Because of their compact form fact, this feature is not available on the StudioLive 
+32SC and StudioLive 16.
+From the System menu, touch the User Assign button to set custom functions to the 
+User Buttons. When you first see this screen, you see the current assignments of each 
+User Button, each with its own Edit button: 
+ 
+ 
+Press the Edit button that corresponds to the User Button you want to edit, and you’ll 
+see a function assignment screen.
+
+
+===== PAGE 123 =====
+118
+12 
+Home 
+12.3 
+Audio Routing and the Digital Patching Screen
+StudioLive™ Series III 
+Owner’s Manual
+12.3.4 
+Digital Patching: USB Sends
+Selecting the USB Sends menu will allow you to patch any channel send or mix to any 
+USB driver send. Select the USB driver send to which you’d like to route your audio 
+first. Then select the channel or mix from the Available Source list to the right.
+Press the reset button to repatch the default routing.
+The following local StudioLive sources can be sent to the USB bus to be recorded in 
+your favorite DAW application:
+••
+Inputs
+••
+Aux In A L and R
+••
+Aux In B L and R
+••
+Tape In L and R
+••
+Talkback
+••
+FlexMixes
+••
+FX Send Mixes (pre-effects processor)
+••
+Subgroups A-D (32-channel models only)
+••
+Main Mix L and R
+••
+Mono bus (StudioLive 64S only)
+••
+Solo L and R
+Press Reset Sends while USB Sends is active to revert to the default settings. 
+ 
+
+
+===== PAGE 133 =====
+128
+13 
+Resources 
+13.4 
+EQ Frequency Guides
+StudioLive™ Series III 
+Owner’s Manual
+13.4 
+EQ Frequency Guides
+13.4.1 
+What Frequencies to Cut and Boost
+Instrument
+What to Cut
+Why to Cut
+What to Boost
+Why to Boost
+Human Voice
+7 kHz
+Sibilance
+8 kHz
+Big sound
+2 kHz
+Shrill
+3 kHz and above
+Clarity
+1 kHz
+Nasal
+200-400 Hz
+Body
+80 Hz and below
+Popping P’s
+Piano
+1-2 kHz
+Tinny
+5 kHz
+More presence
+300 Hz
+Boomy
+100 Hz
+Bottom end
+Electric Guitar
+1-2 kHz
+Shrill
+3 kHz
+Clarity
+80 Hz and below
+Muddy
+125 Hz
+Bottom end
+Acoustic Guitar
+2-3 kHz
+Tinny
+5 kHz and above
+Sparkle
+200 Hz
+Boomy
+125 Hz
+Full
+Electric Bass
+1 kHz
+Thin
+600 Hz
+Growl
+125 Hz
+Boomy
+80 Hz and below
+Bottom end
+String Bass
+600 Hz
+Hollow
+2-5 kHz
+Sharp attack
+200 Hz
+Boomy
+125 Hz and below
+Bottom end
+Snare Drum
+1 kHz
+Annoying
+2 kHz
+Crisp
+150-200 Hz
+Full
+80 Hz
+Deep
+Kick Drum
+400 Hz
+Muddy
+2-5 kHz
+Sharp attack
+80 Hz and below
+Boomy
+60-125 Hz
+Bottom end
+Toms
+300 Hz
+Boomy
+2-5 kHz
+Sharp attack
+80-200 Hz
+Bottom end
+Cymbals
+1 kHz
+Annoying
+7-8 kHz
+Sizzle
+8-12 kHz
+Brilliance
+15 kHz
+Air
+Horns
+1 kHz
+Honky
+8-12 kHz
+Big sound
+120 Hz and below
+Muddy
+2 kHz
+Clarity
+String section
+3 kHz
+Shrill
+2 kHz
+Clarity
+120 Hz and below
+Muddy
+400-600 Hz
+Lush and full
+
+
+===== PAGE 143 =====
+138
+13 
+Resources 
+13.9 
+Effect Types
+StudioLive™ Series III 
+Owner’s Manual
+13.8.2 
+Sidechaining the Compressor
+Sidechaining a compressor allows you to reduce the level of one input source to 
+make room for another. This is especially useful in live broadcast or application where 
+music and commentary are happening simultaneously. In recording applications, this 
+is generally accomplished with careful level automation. Compressor sidechaining 
+allows you to achieve a similar result without having to ride the faders. 
+Below are two of the most common uses:
+Dialogue Ducking. This is probably the most well-known compressor sidechaining 
+application. Consider a common House of Worship situation where the pastor is 
+leading a meditation while the piano or pre-recorded music is being played. Apply 
+a compressor on the stereo music track with a fairly low threshold, high ratio, a fast 
+attack and a long release time, using the pastor’s microphone channel as the key 
+source for the compressor. Now the compressor will react to level fluctuations from 
+the pastor’s microphone, allowing the music to naturally rise and fall in counterpoint 
+to the speech pattern. 
+Bringing Out the Kick Drum. In some instances, a synth bass line, or a busy bass 
+guitar part interferes with the kick drum presence and punch in the mix. For this 
+application, you will apply a compressor to the bass channel, using the kick drum 
+channel as the key source, allowing your kick drum to punch through the bass line.
+13.9 
+Effect Types
+Your StudioLive mixer is equipped with four stereo effects processors. Each of these 
+processors has its own aux bus, allowing you to independently control the mix of 
+channels feeding them. This section will guide you through the basics of several 
+common effect types.
+13.9.1 
+Reverb and its Parameters
+Reverberation—or reverb, as it is more commonly known—is perhaps the most 
+widely used effect. Natural reverb is created by sound waves reflecting off of a 
+surface or many surfaces. For example, when you walk across the wooden stage 
+in a large hall, thousands of reflections are generated almost instantaneously as 
+the sound waves bounce off the floor, walls, and ceilings. These are known as early 
+reflections, and their pattern provides psycho-acoustic indications as to the nature of 
+the space that you are in, even if you can’t see it. As each reflection is then reflected 
+off of more surfaces, the complexity of the sound increases, while the reverb slowly 
+decays.
+The reason for the widespread use of reverb in audio recording is fairly self-evident: 
+human beings don’t live in a vacuum. Because our brains receive cues about the 
+nature of the space around us based partially on audio reflections, a sense of space 
+makes an audio recording sound more natural and, therefore, more pleasing.
+Below are some of the most common reverb parameters for the reverb effects:
+Decay. Decay is the time (in seconds) required for the reflections (reverberation) to 
+die away. In most modern music production, reverb decay times of between one and 
+three seconds are prevalent. A reverb setting with strong early reflections and a quick 
+decay are a great way to create a stereo effect from a mono source.
+Predelay. Predelay is the time (in milliseconds) between the end of the initial sound 
+and the moment when the first reflections become audible. Imagine you’re back on 
+that stage in a large music hall. This time you stand on the very edge of the stage and 
+shout “Hello world!” toward the center of the hall. There will be a brief pause before 
+you hear the first noticeable reflections of your voice, because the sound waves 
+can travel much further before encountering a surface and bouncing back. (There 
+are closer surfaces, of course—notably the floor and the ceiling just in front of the 
+stage—but only a small part of the direct sound will go there, so those reflections 
+will be much less noticeable.) Adjusting the predelay parameter on a reverb allows 
+you to change the apparent size of the room without having to change the overall 
+decay time. This will give your mix a little more transparency by leaving some space 
+between the original sound and its reverb.
+
+
+===== PAGE 153 =====
+148
+14 
+Technical Information 
+14.2 
+Default Routing
+StudioLive™ Series III 
+Owner’s Manual
+USB Send
+(continued)
+StudioLive 64S
+(continued)
+StudioLive 32S
+(continued)
+StudioLive 32SX
+(continued)
+StudioLive 32SC
+(continued)
+StudioLive 32
+(continued)
+StudioLive 24
+(continued)
+StudioLIve 16
+(continued)
+USB Send 24
+Channel 24
+Channel 24
+Channel 24
+Channel 24
+Channel 24
+Channel 24
+Channel 24
+USB Send 25
+Channel 25
+Channel 25
+Channel 25
+Channel 25
+Channel 25
+Channel 25
+Channel 25
+USB Send 26
+Channel 26
+Channel 26
+Channel 26
+Channel 26
+Channel 26
+Channel 26
+Channel 26
+USB Send 27
+Channel 27
+Channel 27
+Channel 27
+Channel 27
+Channel 27
+Channel 27
+Channel 27
+USB Send 28
+Channel 28
+Channel 28
+Channel 28
+Channel 28
+Channel 28
+Channel 28
+Channel 28
+USB Send 29
+Channel 29
+Channel 29
+Channel 29
+Channel 29
+Channel 29
+Channel 29
+Channel 29
+USB Send 30
+Channel 30
+Channel 30
+Channel 30
+Channel 30
+Channel 30
+Channel 30
+Channel 30
+USB Send 31
+Channel 31
+Channel 31
+Channel 31
+Channel 31
+Channel 31
+Channel 31
+Channel 31
+USB Send 32
+Channel 32
+Channel 32
+Channel 32
+Channel 32
+Channel 32
+Channel 32
+Channel 32
+USB Send 33
+Channel 33
+Aux In 1 Left
+Aux In 1 Left
+Aux In 1 Left
+Aux In 1 Left
+Aux In 1 Left
+Aux In 1 Left
+USB Send 34
+Channel 34
+Aux In 1 Right
+Aux In 1 Right
+Aux In 1 Right
+Aux In 1 Right
+Aux In 1 Right
+Aux In 1 Right
+USB Send 35
+Channel 35
+Aux In 2 Left
+Aux In 2 Left
+Aux In 2 Left
+Aux In 2 Left
+Aux In 2 Left
+Aux In 2 Left
+USB Send 36
+Channel 36
+Aux In 2 Right
+Aux In 2 Right
+Aux In 2 Right
+Aux In 2 Right
+Aux In 2 Right
+Aux In 2 Right
+USB Send 37
+Channel 37
+Tape In Left
+Tape In Left
+Tape In Left
+Tape In Left
+Tape In Left
+Tape In Left
+USB Send 38
+Channel 38
+Tape In Right
+Tape In Right
+Tape In Right
+Tape In Right
+Tape In Right
+Tape In Right
+USB Send 39
+Channel 39
+Main Left
+Main Left
+Main Left
+Main Left
+Main Left
+Main Left
+USB Send 40
+Channel 40
+Main Right
+Main Right
+Main Right
+Main Right
+Main Right
+Main Right
+USB Send 41
+Channel 41
+---
+---
+---
+---
+---
+---
+USB Send 42
+Channel 42
+---
+---
+---
+---
+---
+---
+USB Send 43
+Channel 43
+---
+---
+---
+---
+---
+---
+USB Send 44
+Channel 44
+---
+---
+---
+---
+---
+---
+USB Send 45
+Channel 45
+---
+---
+---
+---
+---
+---
+USB Send 46
+Channel 46
+---
+---
+---
+---
+---
+---
+USB Send 47
+Channel 47
+---
+---
+---
+---
+---
+---
+USB Send 48
+Channel 48
+---
+---
+---
+---
+---
+---
+USB Send 49
+Channel 49
+---
+---
+---
+---
+---
+---
+USB Send 50
+Channel 50
+---
+---
+---
+---
+---
+---
+USB Send 51
+Channel 51
+---
+---
+---
+---
+---
+---
+USB Send 52
+Channel 52
+---
+---
+---
+---
+---
+---
+USB Send 53
+Channel 53
+---
+---
+---
+---
+---
+---
+USB Send 54
+Channel 54
+---
+---
+---
+---
+---
+---
+USB Send 55
+Channel 55
+---
+---
+---
+---
+---
+---
+USB Send 56
+Channel 56
+---
+---
+---
+---
+---
+---
+USB Send 57
+Channel 57
+---
+---
+---
+---
+---
+---
+USB Send 58
+Channel 58
+---
+---
+---
+---
+---
+---
+USB Send 59
+Channel 59
+---
+---
+---
+---
+---
+---
+USB Send 60
+Channel 60
+---
+---
+---
+---
+---
+---
+USB Send 61
+Channel 61
+---
+---
+---
+---
+---
+---
+USB Send 62
+Channel 62
+---
+---
+---
+---
+---
+---
+USB Send 63
+Channel 63
+---
+---
+---
+---
+---
+---
+USB Send 64
+Channel 64
+---
+---
+---
+---
+---
+---

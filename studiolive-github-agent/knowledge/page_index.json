@@ -1,0 +1,630 @@
+[
+  {
+    "page": 1,
+    "head": "StudioLive\u2122  Series III | Digital Mix Console / Recorder with Motorized Faders | Owner\u2019s Manual | www.presonus.com | \u00ae | English"
+  },
+  {
+    "page": 2,
+    "head": "Table of Contents | 1 | Overview\u2002 \u2014\u2002 1 | 1.1 | Introduction\u2002 \u2014\u2002 1 | 1.2 | About this Manual\u2002 \u2014\u2002 1 | 1.3"
+  },
+  {
+    "page": 3,
+    "head": "6 | The Fat Channel\u2002 \u2014\u2002 43 | 6.1 | Overview\u2002 \u2014\u2002 43 | 6.1.1 | A/B Comparison for EQ | and Dynamics Settings\u2002 \u2014\u2002 44 | 6.1.2"
+  },
+  {
+    "page": 4,
+    "head": "10 | Monitoring Controls\u2002 \u2014\u2002 98 | 10.1 | Solo Controls\u2002 \u2014\u2002 98 | 10.1.1\t Solo Modes\u2002 \u2014\u2002 99 | 10.1.2\t Using the Solo Bus for | Monitoring\u2002 \u2014\u2002 100 | 10.1.3\t Using Solo in Place to"
+  },
+  {
+    "page": 5,
+    "head": "13.9 | Effect Types\u2002 \u2014\u2002 138 | 13.9.1\t Reverb and its Parameters\u2002 \u2014\u2002 138 | 13.9.2\t Delay and its Parameters\u2002 \u2014\u2002 139 | 13.9.3\t Chorus and Flange\u2002 \u2014\u2002 139 | 13.10\t Using the RTA While Mixing\u2002 \u2014\u2002 140 | 14 "
+  },
+  {
+    "page": 6,
+    "head": "1 | 1 | Overview | 1.1 | Introduction | StudioLive\u2122 Series III | Owner\u2019s Manual | 1"
+  },
+  {
+    "page": 7,
+    "head": "2 | 1 | Overview | 1.3 | Companion PreSonus Products | StudioLive\u2122 Series III | Owner\u2019s Manual | 1.3"
+  },
+  {
+    "page": 8,
+    "head": "3 | 1 | Overview | 1.4 | What\u2019s in the Box | StudioLive\u2122 Series III | Owner\u2019s Manual | 1.4"
+  },
+  {
+    "page": 9,
+    "head": "4 | 1 | Overview | 1.5 | Additional Resources | StudioLive\u2122 Series III | Owner\u2019s Manual | 1.5"
+  },
+  {
+    "page": 10,
+    "head": "5 | 2 | Getting Started | 2.1 | Level Setting Procedure | StudioLive\u2122 Series III | Owner\u2019s Manual | 2"
+  },
+  {
+    "page": 11,
+    "head": "6 | 2 | Getting Started | 2.1 | Level Setting Procedure | StudioLive\u2122 Series III | Owner\u2019s Manual | 3."
+  },
+  {
+    "page": 12,
+    "head": "7 | 2 | Getting Started | 2.1 | Level Setting Procedure | StudioLive\u2122 Series III | Owner\u2019s Manual | 7."
+  },
+  {
+    "page": 13,
+    "head": "8 | 2 | Getting Started | 2.1 | Level Setting Procedure | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.\t Raise the Channel 1 fader to its \u201cU\u201d setting (unity gain)."
+  },
+  {
+    "page": 14,
+    "head": "9 | 2 | Getting Started | 2.2 | Useful Concepts | StudioLive\u2122 Series III | Owner\u2019s Manual | 2.2"
+  },
+  {
+    "page": 15,
+    "head": "10 | 2 | Getting Started | 2.2 | Useful Concepts | StudioLive\u2122 Series III | Owner\u2019s Manual | The StudioLive 32SX and 32SC feature a Fixed mode Fat Channel that is locked to the"
+  },
+  {
+    "page": 16,
+    "head": "11 | 2 | Getting Started | 2.2 | Useful Concepts | StudioLive\u2122 Series III | Owner\u2019s Manual | 2.2.5"
+  },
+  {
+    "page": 17,
+    "head": "12 | 2 | Getting Started | 2.2 | Useful Concepts | StudioLive\u2122 Series III | Owner\u2019s Manual | Scenes"
+  },
+  {
+    "page": 18,
+    "head": "13 | 3 | Hookup | 3.1 | Rear Panel Configurations | StudioLive\u2122 Series III | Owner\u2019s Manual | 3"
+  },
+  {
+    "page": 19,
+    "head": "14 | 3 | Hookup | 3.1 | Rear Panel Configurations | StudioLive\u2122 Series III | Owner\u2019s Manual | 3.1.3"
+  },
+  {
+    "page": 20,
+    "head": "15 | 3 | Hookup | 3.1 | Rear Panel Configurations | StudioLive\u2122 Series III | Owner\u2019s Manual | 3.1.5"
+  },
+  {
+    "page": 21,
+    "head": "16 | 3 | Hookup | 3.2 | Rear Panel Connections | StudioLive\u2122 Series III | Owner\u2019s Manual | 3.2"
+  },
+  {
+    "page": 22,
+    "head": "17 | 3 | Hookup | 3.2 | Rear Panel Connections | StudioLive\u2122 Series III | Owner\u2019s Manual | Talkback Mic Input. StudioLive mixers do not have a built-in talkback microphone,"
+  },
+  {
+    "page": 23,
+    "head": "18 | 3 | Hookup | 3.2 | Rear Panel Connections | StudioLive\u2122 Series III | Owner\u2019s Manual | Main / Mono level controls (32-channel models). All 32-channel StudioLive mixer"
+  },
+  {
+    "page": 24,
+    "head": "19 | 3 | Hookup | 3.3 | Top Panel Connections | StudioLive\u2122 Series III | Owner\u2019s Manual | 3.2.4"
+  },
+  {
+    "page": 25,
+    "head": "3 | Hookup | 3.4 | Typical Band Setup Diagrams | StudioLive\u2122 Series III | Owner\u2019s Manual | 20 | 3.4"
+  },
+  {
+    "page": 26,
+    "head": "3 | Hookup | 3.5 | Typical Church Setup Diagrams | StudioLive\u2122 Series III | Owner\u2019s Manual | 21 | 3.5"
+  },
+  {
+    "page": 27,
+    "head": "22 | 4 | Basic Mix Functions Overview | 4.1 | Channel Strip Basics | StudioLive\u2122 Series III | Owner\u2019s Manual | 4"
+  },
+  {
+    "page": 28,
+    "head": "23 | 4 | Basic Mix Functions Overview | 4.2 | Fader Layers and Banks | StudioLive\u2122 Series III | Owner\u2019s Manual | Level Meter"
+  },
+  {
+    "page": 29,
+    "head": "24 | 4 | Basic Mix Functions Overview | 4.2 | Fader Layers and Banks | StudioLive\u2122 Series III | Owner\u2019s Manual | Mix/FX Masters. When enabled, the master level for Subgroups, FlexMixes, and FX"
+  },
+  {
+    "page": 30,
+    "head": "25 | 4 | Basic Mix Functions Overview | 4.3 | Filter DCA Groups | StudioLive\u2122 Series III | Owner\u2019s Manual | To Edit the User layer, press and hold the Select button for the channel for which"
+  },
+  {
+    "page": 31,
+    "head": "26 | 4 | Basic Mix Functions Overview | 4.3 | Filter DCA Groups | StudioLive\u2122 Series III | Owner\u2019s Manual | 4.\t Press the \u201cEdit\u201d button on the Master Control Touch Display."
+  },
+  {
+    "page": 32,
+    "head": "27 | 4 | Basic Mix Functions Overview | 4.4 | Main Meters | StudioLive\u2122 Series III | Owner\u2019s Manual | 4.3.4"
+  },
+  {
+    "page": 33,
+    "head": "28 | 4 | Basic Mix Functions Overview | 4.5 | Talkback System | StudioLive\u2122 Series III | Owner\u2019s Manual | 4.5.1"
+  },
+  {
+    "page": 34,
+    "head": "29 | 5 | Buses and Routing | 5.1 | FlexMixes | StudioLive\u2122 Series III | Owner\u2019s Manual | 5"
+  },
+  {
+    "page": 35,
+    "head": "30 | 5 | Buses and Routing | 5.2 | Aux Mixes | StudioLive\u2122 Series III | Owner\u2019s Manual | To select the type of FlexMix functionality (Aux, Subgroup, or Matrix), touch the"
+  },
+  {
+    "page": 36,
+    "head": "31 | 5 | Buses and Routing | 5.2 | Aux Mixes | StudioLive\u2122 Series III | Owner\u2019s Manual | 3."
+  },
+  {
+    "page": 37,
+    "head": "32 | 5 | Buses and Routing | 5.2 | Aux Mixes | StudioLive\u2122 Series III | Owner\u2019s Manual | 4."
+  },
+  {
+    "page": 38,
+    "head": "33 | 5 | Buses and Routing | 5.3 | Subgroups | StudioLive\u2122 Series III | Owner\u2019s Manual | 3."
+  },
+  {
+    "page": 39,
+    "head": "34 | 5 | Buses and Routing | 5.3 | Subgroups | StudioLive\u2122 Series III | Owner\u2019s Manual | 5.3.1"
+  },
+  {
+    "page": 40,
+    "head": "35 | 5 | Buses and Routing | 5.3 | Subgroups | StudioLive\u2122 Series III | Owner\u2019s Manual | To add a channel to a fixed Subgroup:"
+  },
+  {
+    "page": 41,
+    "head": "36 | 5 | Buses and Routing | 5.3 | Subgroups | StudioLive\u2122 Series III | Owner\u2019s Manual | 4."
+  },
+  {
+    "page": 42,
+    "head": "37 | 5 | Buses and Routing | 5.4 | Matrix Mixes | StudioLive\u2122 Series III | Owner\u2019s Manual | 5."
+  },
+  {
+    "page": 43,
+    "head": "38 | 5 | Buses and Routing | 5.5 | FX Buses | StudioLive\u2122 Series III | Owner\u2019s Manual | Pre/Post Channel Sends"
+  },
+  {
+    "page": 44,
+    "head": "39 | 5 | Buses and Routing | 5.6 | Main Mono/Center Bus (StudioLive 64S only) | StudioLive\u2122 Series III | Owner\u2019s Manual | 5.5.1"
+  },
+  {
+    "page": 45,
+    "head": "40 | 5 | Buses and Routing | 5.6 | Main Mono/Center Bus (StudioLive 64S only) | StudioLive\u2122 Series III | Owner\u2019s Manual | 3."
+  },
+  {
+    "page": 46,
+    "head": "41 | 5 | Buses and Routing | 5.6 | Main Mono/Center Bus (StudioLive 64S only) | StudioLive\u2122 Series III | Owner\u2019s Manual | But what if you want more kick in your subwoofer? Or less keys?"
+  },
+  {
+    "page": 47,
+    "head": "42 | 5 | Buses and Routing | 5.6 | Main Mono/Center Bus (StudioLive 64S only) | StudioLive\u2122 Series III | Owner\u2019s Manual | When the Center Divergence control is set to 100% and the channel is panned to"
+  },
+  {
+    "page": 48,
+    "head": "43 | 6 | The Fat Channel | 6.1 | Overview | StudioLive\u2122 Series III | Owner\u2019s Manual | 6"
+  },
+  {
+    "page": 49,
+    "head": "44 | 6 | The Fat Channel | 6.1 | Overview | StudioLive\u2122 Series III | Owner\u2019s Manual | Input Channels"
+  },
+  {
+    "page": 50,
+    "head": "45 | 6 | The Fat Channel | 6.1 | Overview | StudioLive\u2122 Series III | Owner\u2019s Manual | The Save and Load buttons let you save and load Fat Channel presets, letting you"
+  },
+  {
+    "page": 51,
+    "head": "46 | 6 | The Fat Channel | 6.2 | Fat Channel Navigation | StudioLive\u2122 Series III | Owner\u2019s Manual | 4."
+  },
+  {
+    "page": 52,
+    "head": "47 | 6 | The Fat Channel | 6.2 | Fat Channel Navigation | StudioLive\u2122 Series III | Owner\u2019s Manual | Fixed Fat Channel"
+  },
+  {
+    "page": 53,
+    "head": "48 | 6 | The Fat Channel | 6.3 | Input Mode | StudioLive\u2122 Series III | Owner\u2019s Manual | 8"
+  },
+  {
+    "page": 54,
+    "head": "49 | 6 | The Fat Channel | 6.3 | Input Mode | StudioLive\u2122 Series III | Owner\u2019s Manual | 2.\t Pan. Use the encoder to set the currently selected channel or subgroup\u2019s"
+  },
+  {
+    "page": 55,
+    "head": "50 | 6 | The Fat Channel | 6.4 | Gate Mode (Dynamic Fat Channel) | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.4"
+  },
+  {
+    "page": 56,
+    "head": "51 | 6 | The Fat Channel | 6.5 | Compressor Mode (Dynamic Fat Channel) | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.\t Key Filter. This encoder sets, and the scribble displays, the frequency at which"
+  },
+  {
+    "page": 57,
+    "head": "52 | 6 | The Fat Channel | 6.5 | Compressor Mode (Dynamic Fat Channel) | StudioLive\u2122 Series III | Owner\u2019s Manual | compressed, or \u201csquashed,\u201d sound. All ranges of release can be useful, however, and y"
+  },
+  {
+    "page": 58,
+    "head": "53 | 6 | The Fat Channel | 6.5 | Compressor Mode (Dynamic Fat Channel) | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.5.3"
+  },
+  {
+    "page": 59,
+    "head": "54 | 6 | The Fat Channel | 6.6 | EQ Mode (Dynamic Fat Channel) | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.6"
+  },
+  {
+    "page": 60,
+    "head": "55 | 6 | The Fat Channel | 6.6 | EQ Mode (Dynamic Fat Channel) | StudioLive\u2122 Series III | Owner\u2019s Manual | When a bus is selected, the EQ has six bands. Use the Page navigation buttons to"
+  },
+  {
+    "page": 61,
+    "head": "56 | 6 | The Fat Channel | 6.7 | Aux Sends Mode (Dynamic Fat Channel) | StudioLive\u2122 Series III | Owner\u2019s Manual | 3.\t L-Mid Gain. Sets the amount of boost or cut to apply the low-mid-frequency"
+  },
+  {
+    "page": 62,
+    "head": "57 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.8"
+  },
+  {
+    "page": 63,
+    "head": "58 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.8.2"
+  },
+  {
+    "page": 64,
+    "head": "6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.8.3 | Gate Overview Screen"
+  },
+  {
+    "page": 65,
+    "head": "60 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.8.4"
+  },
+  {
+    "page": 66,
+    "head": "61 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | Power User Tip: Use the Shift or Tap buttons to \u201cnull\u201d button any parameter by pressing"
+  },
+  {
+    "page": 67,
+    "head": "62 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 5.\t Gain. Sets Make-up Gain for the Compressor."
+  },
+  {
+    "page": 68,
+    "head": "63 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.8.4.3\t Class-A FET Compressor Overview Screen"
+  },
+  {
+    "page": 69,
+    "head": "64 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | In addition to the three models that come with your StudioLive mixer, the following"
+  },
+  {
+    "page": 70,
+    "head": "65 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 1"
+  },
+  {
+    "page": 71,
+    "head": "66 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 5.\t Band 1 Select. Selects Band 1 for control via Gain (#1), Frequency (#2),"
+  },
+  {
+    "page": 72,
+    "head": "67 | 6 | The Fat Channel | 6.8 | Fat Channel Screens | StudioLive\u2122 Series III | Owner\u2019s Manual | 2"
+  },
+  {
+    "page": 73,
+    "head": "68 | 6 | The Fat Channel | 6.9 | User Mode | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.8.6"
+  },
+  {
+    "page": 74,
+    "head": "69 | 6 | The Fat Channel | 6.10 | Input Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | By pressing and holding any of these buttons, you\u2019ll enter Multi-Assign mode, which"
+  },
+  {
+    "page": 75,
+    "head": "70 | 6 | The Fat Channel | 6.10 | Input Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | Network Input Source"
+  },
+  {
+    "page": 76,
+    "head": "71 | 6 | The Fat Channel | 6.10 | Input Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.10.4"
+  },
+  {
+    "page": 77,
+    "head": "72 | 6 | The Fat Channel | 6.11 | Output Assignment Buttons | StudioLive\u2122 Series III | Owner\u2019s Manual | 6.11"
+  },
+  {
+    "page": 78,
+    "head": "73 | 7 | Tape Controls | 7.1 | Pairing a Bluetooth Device | StudioLive\u2122 Series III | Owner\u2019s Manual | 7"
+  },
+  {
+    "page": 79,
+    "head": "74 | 8 | SD Recording | 8.1 | Creating a New Session for Recording | StudioLive\u2122 Series III | Owner\u2019s Manual | 8"
+  },
+  {
+    "page": 80,
+    "head": "75 | 8 | SD Recording | 8.2 | Loading a Session for Playback | StudioLive\u2122 Series III | Owner\u2019s Manual | When you\u2019ve entered the artist name, performance name, or location for one Session,"
+  },
+  {
+    "page": 81,
+    "head": "76 | 8 | SD Recording | 8.3 | Capture Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | 12"
+  },
+  {
+    "page": 82,
+    "head": "77 | 8 | SD Recording | 8.3 | Capture Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | \u2022\u2022"
+  },
+  {
+    "page": 83,
+    "head": "78 | 8 | SD Recording | 8.4 | Virtual Sound Check | StudioLive\u2122 Series III | Owner\u2019s Manual | 8.4"
+  },
+  {
+    "page": 84,
+    "head": "79 | 9 | Master Control | 9.1 | StudioLive Series III FLEX DSP Rack Effects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9"
+  },
+  {
+    "page": 85,
+    "head": "80 | 9 | Master Control | 9.1 | StudioLive Series III FLEX DSP Rack Effects | StudioLive\u2122 Series III | Owner\u2019s Manual | If you have just one effects slot occupied by a delay effect, this button will s"
+  },
+  {
+    "page": 86,
+    "head": "81 | 9 | Master Control | 9.1 | StudioLive Series III FLEX DSP Rack Effects | StudioLive\u2122 Series III | Owner\u2019s Manual | \u2022\u2022"
+  },
+  {
+    "page": 87,
+    "head": "82 | 9 | Master Control | 9.1 | StudioLive Series III FLEX DSP Rack Effects | StudioLive\u2122 Series III | Owner\u2019s Manual | \u2022\u2022"
+  },
+  {
+    "page": 88,
+    "head": "83 | 9 | Master Control | 9.1 | StudioLive Series III FLEX DSP Rack Effects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.1.2.6\t Stereo Delay"
+  },
+  {
+    "page": 89,
+    "head": "84 | 9 | Master Control | 9.1 | StudioLive Series III FLEX DSP Rack Effects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.1.2.8\t Chorus"
+  },
+  {
+    "page": 90,
+    "head": "85 | 9 | Master Control | 9.1 | StudioLive Series III FLEX DSP Rack Effects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.1.3"
+  },
+  {
+    "page": 91,
+    "head": "86 | 9 | Master Control | 9.4 | UCNET | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.4"
+  },
+  {
+    "page": 92,
+    "head": "87 | 9 | Master Control | 9.4 | UCNET | StudioLive\u2122 Series III | Owner\u2019s Manual | UC Surface Device Permissions"
+  },
+  {
+    "page": 93,
+    "head": "88 | 9 | Master Control | 9.4 | UCNET | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.4.4"
+  },
+  {
+    "page": 94,
+    "head": "89 | 9 | Master Control | 9.5 | DAW Button | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.5"
+  },
+  {
+    "page": 95,
+    "head": "90 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | Saving a Project"
+  },
+  {
+    "page": 96,
+    "head": "91 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | Saving a Scene"
+  },
+  {
+    "page": 97,
+    "head": "92 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.6.3"
+  },
+  {
+    "page": 98,
+    "head": "93 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | Scene Filters"
+  },
+  {
+    "page": 99,
+    "head": "94 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.6.4"
+  },
+  {
+    "page": 100,
+    "head": "95 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.6.5"
+  },
+  {
+    "page": 101,
+    "head": "96 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | 9.6.6"
+  },
+  {
+    "page": 102,
+    "head": "97 | 9 | Master Control | 9.6 | Scenes and Projects | StudioLive\u2122 Series III | Owner\u2019s Manual | Their parameters will be set as follows:"
+  },
+  {
+    "page": 103,
+    "head": "98 | 10 | Monitoring Controls | 10.1 | Solo Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | 10"
+  },
+  {
+    "page": 104,
+    "head": "99 | 10 | Monitoring Controls | 10.1 | Solo Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | 10.1.1"
+  },
+  {
+    "page": 105,
+    "head": "100 | 10 | Monitoring Controls | 10.1 | Solo Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | 10.1.2"
+  },
+  {
+    "page": 106,
+    "head": "101 | 10 | Monitoring Controls | 10.1 | Solo Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | 10.1.3"
+  },
+  {
+    "page": 107,
+    "head": "102 | 11 | Graphic EQ | 10.1 | Solo Controls | StudioLive\u2122 Series III | Owner\u2019s Manual | 11"
+  },
+  {
+    "page": 108,
+    "head": "103 | 11 | Graphic EQ | 11.1 | Assigning GEQs | StudioLive\u2122 Series III | Owner\u2019s Manual | 11.1"
+  },
+  {
+    "page": 109,
+    "head": "104 | 11 | Graphic EQ | 11.3 | GEQ Presets | StudioLive\u2122 Series III | Owner\u2019s Manual | 11.3"
+  },
+  {
+    "page": 110,
+    "head": "105 | 11 | Graphic EQ | 11.4 | Using the RTA to Ring Out Monitors | StudioLive\u2122 Series III | Owner\u2019s Manual | 5.\t Feedback will show up as a line peak on the RTA."
+  },
+  {
+    "page": 111,
+    "head": "106 | 12 | Home | 11.4 | Using the RTA to Ring Out Monitors | StudioLive\u2122 Series III | Owner\u2019s Manual | 12"
+  },
+  {
+    "page": 112,
+    "head": "107 | 12 | Home | 12.1 | System Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.1"
+  },
+  {
+    "page": 113,
+    "head": "108 | 12 | Home | 12.1 | System Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.1.1"
+  },
+  {
+    "page": 114,
+    "head": "109 | 12 | Home | 12.1 | System Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | In this screen, you can choose the function to assign to the chosen button, in the"
+  },
+  {
+    "page": 115,
+    "head": "110 | 12 | Home | 12.2 | User Profiles | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.1.4"
+  },
+  {
+    "page": 116,
+    "head": "111 | 12 | Home | 12.2 | User Profiles | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.2.1"
+  },
+  {
+    "page": 117,
+    "head": "112 | 12 | Home | 12.2 | User Profiles | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.2.2"
+  },
+  {
+    "page": 118,
+    "head": "113 | 12 | Home | 12.2 | User Profiles | StudioLive\u2122 Series III | Owner\u2019s Manual | Default Project and Scene"
+  },
+  {
+    "page": 119,
+    "head": "114 | 12 | Home | 12.2 | User Profiles | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.2.3"
+  },
+  {
+    "page": 120,
+    "head": "115 | 12 | Home | 12.3 | Audio Routing and the Digital Patching Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.3"
+  },
+  {
+    "page": 121,
+    "head": "116 | 12 | Home | 12.3 | Audio Routing and the Digital Patching Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.3.1"
+  },
+  {
+    "page": 122,
+    "head": "117 | 12 | Home | 12.3 | Audio Routing and the Digital Patching Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | Press the reset button to repatch the default routing."
+  },
+  {
+    "page": 123,
+    "head": "118 | 12 | Home | 12.3 | Audio Routing and the Digital Patching Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.3.4"
+  },
+  {
+    "page": 124,
+    "head": "119 | 12 | Home | 12.3 | Audio Routing and the Digital Patching Screen | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.3.5"
+  },
+  {
+    "page": 125,
+    "head": "120 | 12 | Home | 12.4 | Utilities | StudioLive\u2122 Series III | Owner\u2019s Manual | 12.4"
+  },
+  {
+    "page": 126,
+    "head": "121 | 13 | Resources | 13.1 | Networking Overview | StudioLive\u2122 Series III | Owner\u2019s Manual | 13"
+  },
+  {
+    "page": 127,
+    "head": "122 | 13 | Resources | 13.1 | Networking Overview | StudioLive\u2122 Series III | Owner\u2019s Manual | 1.\t Connect standard CAT5e or CAT6 Ethernet cables from your computer\u2019s Ethernet"
+  },
+  {
+    "page": 128,
+    "head": "123 | 13 | Resources | 13.2 | Stereo Microphone Placement | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.2"
+  },
+  {
+    "page": 129,
+    "head": "124 | 13 | Resources | 13.2 | Stereo Microphone Placement | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.2.3"
+  },
+  {
+    "page": 130,
+    "head": "125 | 13 | Resources | 13.2 | Stereo Microphone Placement | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.2.5"
+  },
+  {
+    "page": 131,
+    "head": "126 | 13 | Resources | 13.3 | Compression Setting Suggestions | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.3"
+  },
+  {
+    "page": 132,
+    "head": "127 | 13 | Resources | 13.3 | Compression Setting Suggestions | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.3.4"
+  },
+  {
+    "page": 133,
+    "head": "128 | 13 | Resources | 13.4 | EQ Frequency Guides | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.4"
+  },
+  {
+    "page": 134,
+    "head": "129 | 13 | Resources | 13.5 | EQ Setting Suggestions | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.4.2"
+  },
+  {
+    "page": 135,
+    "head": "130 | 13 | Resources | 13.5 | EQ Setting Suggestions | StudioLive\u2122 Series III | Owner\u2019s Manual | Pop Male Vocals"
+  },
+  {
+    "page": 136,
+    "head": "131 | 13 | Resources | 13.5 | EQ Setting Suggestions | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.5.3"
+  },
+  {
+    "page": 137,
+    "head": "132 | 13 | Resources | 13.6 | Using Input Delay | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.6"
+  },
+  {
+    "page": 138,
+    "head": "133 | 13 | Resources | 13.6 | Using Input Delay | StudioLive\u2122 Series III | Owner\u2019s Manual | 5."
+  },
+  {
+    "page": 139,
+    "head": "134 | 13 | Resources | 13.7 | Using Output Delay | StudioLive\u2122 Series III | Owner\u2019s Manual | 6."
+  },
+  {
+    "page": 140,
+    "head": "135 | 13 | Resources | 13.7 | Using Output Delay | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.7.2"
+  },
+  {
+    "page": 141,
+    "head": "136 | 13 | Resources | 13.7 | Using Output Delay | StudioLive\u2122 Series III | Owner\u2019s Manual | It should be noted that frequencies in the sub-bass range of a delay system do not"
+  },
+  {
+    "page": 142,
+    "head": "137 | 13 | Resources | 13.8 | Sidechaining | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.8"
+  },
+  {
+    "page": 143,
+    "head": "138 | 13 | Resources | 13.9 | Effect Types | StudioLive\u2122 Series III | Owner\u2019s Manual | 13.8.2"
+  },
+  {
+    "page": 144,
+    "head": "139 | 13 | Resources | 13.9 | Effect Types | StudioLive\u2122 Series III | Owner\u2019s Manual | Early Reflections. Early reflections are those that reach the listener a few"
+  },
+  {
+    "page": 145,
+    "head": "140 | 13 | Resources | 13.10\t Using the RTA While Mixing | StudioLive\u2122 Series III | Owner\u2019s Manual | Below are some of the most common parameters for the flanger and chorus effects: | \u2022\u2022"
+  },
+  {
+    "page": 146,
+    "head": "141 | 14 | Technical Information | 14.1 | Specifications | StudioLive\u2122 Series III | Owner\u2019s Manual | 14"
+  },
+  {
+    "page": 147,
+    "head": "142 | 14 | Technical Information | 14.1 | Specifications | StudioLive\u2122 Series III | Owner\u2019s Manual | System Crosstalk"
+  },
+  {
+    "page": 148,
+    "head": "143 | 14 | Technical Information | 14.2 | Default Routing | StudioLive\u2122 Series III | Owner\u2019s Manual | 14.2"
+  },
+  {
+    "page": 149,
+    "head": "144 | 14 | Technical Information | 14.2 | Default Routing | StudioLive\u2122 Series III | Owner\u2019s Manual | Input"
+  },
+  {
+    "page": 150,
+    "head": "145 | 14 | Technical Information | 14.2 | Default Routing | StudioLive\u2122 Series III | Owner\u2019s Manual | Input"
+  },
+  {
+    "page": 151,
+    "head": "146 | 14 | Technical Information | 14.2 | Default Routing | StudioLive\u2122 Series III | Owner\u2019s Manual | 14.2.3"
+  },
+  {
+    "page": 152,
+    "head": "147 | 14 | Technical Information | 14.2 | Default Routing | StudioLive\u2122 Series III | Owner\u2019s Manual | AVB Send"
+  },
+  {
+    "page": 153,
+    "head": "148 | 14 | Technical Information | 14.2 | Default Routing | StudioLive\u2122 Series III | Owner\u2019s Manual | USB Send"
+  },
+  {
+    "page": 154,
+    "head": "149 | 14 | Technical Information | 14.2 | Default Routing | StudioLive\u2122 Series III | Owner\u2019s Manual | 14.2.5"
+  },
+  {
+    "page": 155,
+    "head": "150 | 14 | Technical Information | 14.3 | Block Diagrams | StudioLive\u2122 Series III | Owner\u2019s Manual | 14.3"
+  },
+  {
+    "page": 156,
+    "head": "Added bonus: PreSonus\u2019 previously Top Secret recipe for\u2026 | Garfish Balls | Ingredients: | \u2022\u2022 5 lbs ground garfish | \u2022\u2022 4 white potatoes | \u2022\u2022 1 large onion | \u2022\u2022 2 celery stalks | \u2022\u2022 1 bunch parsley"
+  },
+  {
+    "page": 157,
+    "head": "18011 Grand Bay Ct. \u2022 Baton Rouge, | Louisiana 70809 USA\u2022 1-225-216-7887 | www.presonus.com | Part# 70-22000045-F | \u00ae | StudioLive\u2122  Series III | Digital Mix Console / Recorder with Motorized Faders |"
+  }
+]
