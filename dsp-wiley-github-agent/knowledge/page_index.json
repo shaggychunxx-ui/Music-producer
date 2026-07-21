@@ -1,0 +1,1672 @@
+[
+  {
+    "page": 1,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 2,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 3,
+    "head": "Digital Audio Signal Processing",
+    "chars": 32
+  },
+  {
+    "page": 4,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 5,
+    "head": "Digital Audio Signal Processing | Second Edition | Udo Z\u00f6lzer | Helmut Schmidt University, Hamburg, Germany | A John Wiley & Sons, Ltd, Publication",
+    "chars": 140
+  },
+  {
+    "page": 6,
+    "head": "This edition \ufb01rst published 2008 | \u00a9 2008 John Wiley & Sons Ltd | First edition published under the title Digitale Audiosignalverarbeitung \u00a9 B. G. Teubner | Verlag, Stuttgart, 1995. Digital Audio Signal Processing was th",
+    "chars": 2450
+  },
+  {
+    "page": 7,
+    "head": "Contents | Preface to the Second Edition | ix | Preface to the First Edition | xi | 1 | Introduction | 1 | 1.1 | Studio Technology",
+    "chars": 2194
+  },
+  {
+    "page": 8,
+    "head": "vi | Contents | 3.2 | AD Converters | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 79 | 3.2.1 | Speci\ufb01cations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 79 | 3.2.2",
+    "chars": 3502
+  },
+  {
+    "page": 9,
+    "head": "Contents | vii | 5.5 | Java Applet \u2013 Audio Filters . . . . . . . . . . . . . . . . . . . . . . . . . . 180 | 5.6 | Exercises | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 181 | References . . . ",
+    "chars": 3424
+  },
+  {
+    "page": 10,
+    "head": "viii | Contents | 8.3 | Asynchronous Conversion | . . . . . . . . . . . . . . . . . . . . . . . . . . 246 | 8.3.1 | Single-stage Methods . . . . . . . . . . . . . . . . . . . . . . . . . 250 | 8.3.2 | Multistage Methods ",
+    "chars": 2223
+  },
+  {
+    "page": 11,
+    "head": "Preface to the Second Edition | This second edition represents a revised and extended version and offers an improved | description besides new issues and extended references. The contents of this book are | the basis of ",
+    "chars": 1123
+  },
+  {
+    "page": 12,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 13,
+    "head": "Preface to the First Edition | Digital audio signal processing is employed in recording and storing music and speech | signals, for sound mixing and production of digital programs, in digital transmission to | broadcast ",
+    "chars": 2955
+  },
+  {
+    "page": 14,
+    "head": "xii | Preface to the First Edition | are discussed. In Chapter 7 the dynamic range control of audio signals is described. | These methods are applied at several positions in the audio chain from the microphone | up to th",
+    "chars": 1708
+  },
+  {
+    "page": 15,
+    "head": "Chapter 1 | Introduction | It is hardly possible to make a start in the \ufb01eld of digital audio signal processing without | having a \ufb01rst insight into the variety of technical devices and systems of audio technology. | In ",
+    "chars": 1967
+  },
+  {
+    "page": 16,
+    "head": "2 | Introduction | Digital | Transmission | Digital Mixing Console | Digital Storage Media | Audio System | (CD,DVD, | Radio,PC) | Concert hall",
+    "chars": 2606
+  },
+  {
+    "page": 17,
+    "head": "1.2 Digital Transmission Systems | 3 | MASTER | SYNC | GENERATOR | MASTER | SYNC | GENERATOR | ROOM SIMULATOR | DIGITAL MULTITRACK",
+    "chars": 929
+  },
+  {
+    "page": 18,
+    "head": "4 | Introduction | modulation is carried out by a multi-carrier transmission technique (Coded Orthogonal | Frequency Division Multiplex, [Ala87, Kam92, Kam93, Tui93]). | \u001b | \u0012\u0002\b\u0007 | ( | \u0007 | \u0007 | (",
+    "chars": 1582
+  },
+  {
+    "page": 19,
+    "head": "1.2 Digital Transmission Systems | 5 | one broad-band transmitting signal. The synthesis \ufb01lter bank has several complex-valued | input signals and one complex-valued output signal. The real-valued band-pass signal is | o",
+    "chars": 1420
+  },
+  {
+    "page": 20,
+    "head": "6 | Introduction | Figure 1.8 DAB transmission technique. | The burst disturbances of consecutive bits are reduced to single bit errors by spreading | the bits over a longer period of time. The narrow-band disturbances a",
+    "chars": 635
+  },
+  {
+    "page": 21,
+    "head": "1.2 Digital Transmission Systems | 7 | OFDM Transmission. The OFDM transmission technique is shown in Fig. 1.9. The | technique stands out owing to its simple implementation in the digital domain. The data | sequence ct(",
+    "chars": 3855
+  },
+  {
+    "page": 22,
+    "head": "8 | Introduction | t | Figure 1.9 OFDM transmission. | Digital Radio Mondiale (DRM) | In the interest of national and international broadcasting stations a more widespread | program delivery across regional or worldwide ",
+    "chars": 807
+  },
+  {
+    "page": 23,
+    "head": "1.2 Digital Transmission Systems | 9 | Figure 1.10 OFDM transmission with a guard interval. | Internet Audio | The growth of the internet offers new distribution possibilities for information, but | especially for audio ",
+    "chars": 456
+  },
+  {
+    "page": 24,
+    "head": "10 | Introduction | still low compared to lossless audio and video formats. Since the transmission is based on | \ufb01le transfer of packets, the data rates strongly depend on the providing server, the actual | internet traf",
+    "chars": 2326
+  },
+  {
+    "page": 25,
+    "head": "1.3 Storage Media | 11 | Table 1.1 Speci\ufb01cations of the CD system [Ben88]. | Type of recording | Signal recognition | Optical | Storage density | 682 Mbit/in2 | Audio speci\ufb01cation | Number of channels",
+    "chars": 1770
+  },
+  {
+    "page": 26,
+    "head": "12 | Introduction | Table 1.2 Speci\ufb01cations of the R-DAT system [Ben88]. | Type of recording | Signal recognition | Magnetic | Storage capacity | 2 GB | Audio speci\ufb01cation | Number of channels",
+    "chars": 1516
+  },
+  {
+    "page": 27,
+    "head": "1.4 Audio Components at Home | 13 | Protection layer | CD Layer | Plastic | HD Layer | Laser Scanner | Plastic | Figure 1.13 Layer of the SACD. | Digital Versatile Disc \u2013 Audio (DVD-A)",
+    "chars": 1649
+  },
+  {
+    "page": 28,
+    "head": "14 | Introduction | Equalizer | Spectral modi\ufb01cation of the music signal in amplitude and phase and the automatic | correction of the frequency response from loudspeaker to listening environment are desired. | Room Simul",
+    "chars": 2944
+  },
+  {
+    "page": 29,
+    "head": "1.4 Audio Components at Home | 15 | \u0016 | 3 | \u0005\u0016 | 3 | \u0016 | 3 | \u0005\u0016 | 3",
+    "chars": 684
+  },
+  {
+    "page": 30,
+    "head": "16 | Introduction | & | \u0004 | \u0003 | \u000f | ;\u0005 | \u0012\u0012 | \u0016-.\u0010\u0007\u000e\u001a\t\u0007 | \u0016",
+    "chars": 964
+  },
+  {
+    "page": 31,
+    "head": "References | 17 | =\u0010\u0003\u0015\u0005 | \u0012\u0012 | \u000e, | -\u0005 | \u0012\u0012\u000e\u0016 | , | -\u0005 | \u0012\u0012\u000e\u0017",
+    "chars": 1597
+  },
+  {
+    "page": 32,
+    "head": "18 | Introduction | [ISO92] | ISO/IEC 11172-3: Coding of Moving Pictures and Associated Audio for Digital | Storage Media at up to 1.5 Mbits/s \u2013 Audio Part, International Standard, 1992. | [Jan03] | E. Janssen, D. Reefma",
+    "chars": 2375
+  },
+  {
+    "page": 33,
+    "head": "References | 19 | [Str99] | M. Streitenberger, H. Bresch, W. Mathis: A New Concept for High Performance | Class-D Audio Ampli\ufb01cation, Proc. AES 106th Convention, Preprint No. 4941, | Munich, 1999. | [Str01] | M. Streiten",
+    "chars": 1366
+  },
+  {
+    "page": 34,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 35,
+    "head": "Chapter 2 | Quantization | Basic operations for AD conversion of a continuous-time signal x(t) are the sampling | and quantization of x(n) yielding the quantized sequence xQ(n) (see Fig. 2.1). Before | discussing AD/DA c",
+    "chars": 1510
+  },
+  {
+    "page": 36,
+    "head": "22 | Quantization | Q | x(n) | x (n)=x(n)+e(n) | Q | e(n) | Q | _ | x (n)",
+    "chars": 1229
+  },
+  {
+    "page": 37,
+    "head": "2.1 Signal Quantization | 23 | For a uniform distributed random process, as in (2.3), the \ufb01rst two moments are given by | mE = E{E} = 0 | mean value | (2.5) | \u03c3 2 | E = E{E2} = Q2 | 12 | variance.",
+    "chars": 1438
+  },
+  {
+    "page": 38,
+    "head": "24 | Quantization | 0 | 0.5 | 1 | 1.5 | 2 | 2.5 | -1 | -0.5",
+    "chars": 1055
+  },
+  {
+    "page": 39,
+    "head": "2.1 Signal Quantization | 25 | 0 | 1 | 2 | 3 | 4 | 5 | n | t",
+    "chars": 860
+  },
+  {
+    "page": 40,
+    "head": "26 | Quantization | '\" | ) | \u0017) | 2) | <) | 5) | \u0005\u0017) | \u0005)",
+    "chars": 739
+  },
+  {
+    "page": 41,
+    "head": "2.1 Signal Quantization | 27 | The PDF of the output can hence be determined by convolution of a rect function [Lip92] | with the PDF of the input. This is followed by an amplitude sampling with resolution Q as | describ",
+    "chars": 1841
+  },
+  {
+    "page": 42,
+    "head": "28 | Quantization | 0 | \u000e\u000e\u000e7': | * | \u000e\u000e\u000e7\": | : | \u0001\u000e\u000e\u000e7 | * | '",
+    "chars": 1088
+  },
+  {
+    "page": 43,
+    "head": "2.1 Signal Quantization | 29 | terms of the PDF or the characteristic function: | E{Y m} = | \u0003 \u221e | \u2212\u221e | ympY (y) dy | (2.30) | = (\u2212j)m dmPY (ju) | dum",
+    "chars": 1388
+  },
+  {
+    "page": 44,
+    "head": "30 | Quantization | Similar to the one-dimensional quantization theorem, a two-dimensional theorem | [Wid61] can be formulated: the joint density function of the input can be reconstructed | from the joint density functi",
+    "chars": 1745
+  },
+  {
+    "page": 45,
+    "head": "2.1 Signal Quantization | 31 | The PDF of the quantization error is determined by the PDF of the input and can be | computed by shifting and windowing a zone. All individual zones are summed up for | calculating the PDF ",
+    "chars": 1188
+  },
+  {
+    "page": 46,
+    "head": "32 | Quantization | Hence, the PDF of the quantization error is | pE(e) = 1 | Qrect | \u0001 e | Q | \u0002 | . | (2.50)",
+    "chars": 1505
+  },
+  {
+    "page": 47,
+    "head": "2.1 Signal Quantization | 33 | Second-order Statistics of Quantization Error | To describe the spectral properties of the error signal, two values E1 (at time n1) and E2 | (at time n2) are considered [Lip92]. The joint P",
+    "chars": 1422
+  },
+  {
+    "page": 48,
+    "head": "34 | Quantization | The power density spectrum of the quantization error is then given by | SEE(ej\u0004) = | +\u221e | \u0006 | m=\u2212\u221e | rEE(m) e\u2212j\u0004m = Q2 | 12 , | (2.69)",
+    "chars": 1161
+  },
+  {
+    "page": 49,
+    "head": "2.1 Signal Quantization | 35 | with the characteristic function | PX(ju) = exp | \u0001\u2212u2\u03c3 2 | 2 | \u0002 | . | (2.76) | Using (2.57), the PDF of the quantization error is then given by",
+    "chars": 1340
+  },
+  {
+    "page": 50,
+    "head": "36 | Quantization | 2.2 | Dither | 2.2.1 | Basics | The requantization (renewed quantization of already quantized signals) to limited word- | lengths occurs repeatedly during storage, format conversion and signal process",
+    "chars": 1883
+  },
+  {
+    "page": 51,
+    "head": "2.2 Dither | 37 | For the mean of the output g(V ) as a function of the input V , we can write | g(V ) = | \u0006 | k | g(V + dk)P(dk). | (2.83) | The quadratic mean of the output g2(V ) for input V is given by | g2(V ) =",
+    "chars": 2117
+  },
+  {
+    "page": 52,
+    "head": "38 | Quantization | 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7",
+    "chars": 1225
+  },
+  {
+    "page": 53,
+    "head": "2.2 Dither | 39 | The integrals in (2.91) are independent of dk. Moreover, | k P(dk) = 1. With the mean | value of the quantization error | e = 1 | Q | \u0003 Q | 0 | Q(V ) dV",
+    "chars": 1906
+  },
+  {
+    "page": 54,
+    "head": "40 | Quantization | 0 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5",
+    "chars": 2302
+  },
+  {
+    "page": 55,
+    "head": "2.2 Dither | 41 | 0 | 5 | 10 | 15 | 20 | 25 | 30 | 35",
+    "chars": 1754
+  },
+  {
+    "page": 56,
+    "head": "42 | Quantization | -6 | -4 | -2 | 0 | 2 | 4 | 6 | x10-5",
+    "chars": 1009
+  },
+  {
+    "page": 57,
+    "head": "2.3 Spectrum Shaping of Quantization \u2013 Noise Shaping | 43 | -6 | -4 | -2 | 0 | 2 | 4 | 6 | x10-5",
+    "chars": 989
+  },
+  {
+    "page": 58,
+    "head": "44 | Quantization | -6 | -4 | -2 | 0 | 2 | 4 | 6 | x10-5",
+    "chars": 952
+  },
+  {
+    "page": 59,
+    "head": "2.3 Spectrum Shaping of Quantization \u2013 Noise Shaping | 45 | Figure 2.29 shows the weighting of power density spectrum by this noise shaping | technique. | ) | '7 | : | \"7 | : | \u00027",
+    "chars": 773
+  },
+  {
+    "page": 60,
+    "head": "46 | Quantization | and | e1(n) = y(n) \u2212x(n) | (2.119) | = d(n) + e(n) \u2212e(n \u22121). | (2.120) | For the Z-transforms we write | Y(z) = X(z) + E(z)(1 \u2212z\u22121) + D(z), | (2.121)",
+    "chars": 1437
+  },
+  {
+    "page": 61,
+    "head": "2.4 Number Representation | 47 | that the sensitivity of human hearing is high for frequencies between 2 and 6 kHz and | sharply decreases for high and low frequencies. Figure 2.32b also shows the inverse ISO | 389-7 thr",
+    "chars": 2243
+  },
+  {
+    "page": 62,
+    "head": "48 | Quantization | 10 | 2 | 10 | 3 | 10 | 4 | \u016620 | 0",
+    "chars": 1320
+  },
+  {
+    "page": 63,
+    "head": "2.4 Number Representation | 49 | 0 | 2 | 4 | 6 | 8 | 10 | 12 | 14",
+    "chars": 1254
+  },
+  {
+    "page": 64,
+    "head": "50 | Quantization | 0 | 100 | 200 | 300 | 400 | 500 | 600 | 700",
+    "chars": 952
+  },
+  {
+    "page": 65,
+    "head": "2.4 Number Representation | 51 | \u000e\u0005\u0017\u000e;\u0005\u0016 | \u0005\u00169\u0017\u000e;\u0005\u0016 | ' | \u0006\u0010\u0003 | \u0002-\u000e\u001b | \u0007\u0002\u0003\u0002\b | \u0017\u000e\u000e\u000e\u000e\u0005\u0016 | ;",
+    "chars": 616
+  },
+  {
+    "page": 66,
+    "head": "52 | Quantization | -xmax | +xmax | 0 | x | 0 | xQ | e | -1",
+    "chars": 1251
+  },
+  {
+    "page": 67,
+    "head": "2.4 Number Representation | 53 | Q | x(n) | x (n)=x(n)+e(n) | Q | x(n) | e(n) | x (n) | Q",
+    "chars": 2241
+  },
+  {
+    "page": 68,
+    "head": "54 | Quantization | \u0012 | \u00024 | \u00023 | \u0016 | \u0017\u0017 | 3 | .\u0010 | \b\"\u000e",
+    "chars": 768
+  },
+  {
+    "page": 69,
+    "head": "2.4 Number Representation | 55 | In the interval | 2EG \u2264x < 2EG+1, | (2.138) | the quantization step is given by | QG = 2\u2212(wM\u22121)2EG. | (2.139) | For the relative error | er = xQ \u2212x",
+    "chars": 1602
+  },
+  {
+    "page": 70,
+    "head": "56 | Quantization | Q | x(n) | x (n)= x(n) + x(n).e | Q | r(n) | e(n) | r | xQ(n)",
+    "chars": 2533
+  },
+  {
+    "page": 71,
+    "head": "2.4 Number Representation | 57 | 0 | 20 | 40 | 60 | 80 | 100 | 120 | -120",
+    "chars": 2358
+  },
+  {
+    "page": 72,
+    "head": "58 | Quantization | mantissa in \ufb02oating-point representation, some simpli\ufb01cations are produced while deter- | mining the control factor. | Mixing/Summation. While mixing signals into a stereo image, only multiplications ",
+    "chars": 2697
+  },
+  {
+    "page": 73,
+    "head": "2.6 Exercises | 59 | \u2013 high-pass dither \u2013 triangular probability density function and high-pass power | spectral density. | \u2022 Noise shaping | \u2013 \ufb01rst-order H(z) = z\u22121 | \u2013 second-order H(z) = \u22122z\u22121 + z\u22122 | \u2013 psychoacoustic",
+    "chars": 863
+  },
+  {
+    "page": 74,
+    "head": "60 | Quantization | 2. Derive the mean value, the variance and the peak factor PF of sequence e(n), if | the signal has a uniform probability density function in the range \u2212Q/2 < e(n) < | \u2212Q/2. Derive the signal-to-noise",
+    "chars": 2172
+  },
+  {
+    "page": 75,
+    "head": "References | 61 | 5. In the feedback structure we now use a psychoacoustic-based noise shaper which | uses the Wannamaker \ufb01lter coef\ufb01cients | h3 = [1.623, \u22120.982, 0.109], | h5 = [2.033, \u22122.165, 1.959, \u22121.590, 0.6149], | ",
+    "chars": 2080
+  },
+  {
+    "page": 76,
+    "head": "62 | Quantization | [Van89] | J. Vanderkooy,S. P. Lipshitz: Digital Dither: Signal Processing with Resolution | Far Below the Least Signi\ufb01cant Bit, Proc. AES Int. Conf. on Audio in Digital | Times, pp. 87\u201396, May 1989. |",
+    "chars": 661
+  },
+  {
+    "page": 77,
+    "head": "Chapter 3 | AD/DA Conversion | The conversion of a continuous-time function x(t) (voltage, current) into a sequence of | numbers x(n) is called analog-to-digital conversion (AD conversion). The reverse process | is known",
+    "chars": 2210
+  },
+  {
+    "page": 78,
+    "head": "64 | AD/DA Conversion | & | \u0004 | \u0003 | \u000f | ;\u0005 | \u0012\u0012 | '7\u0007: | '7",
+    "chars": 584
+  },
+  {
+    "page": 79,
+    "head": "3.1 Methods | 65 | a spectral uniform distribution in the frequency domain 0 \u2264f \u2264fS. The output of the DA | converter still has a periodic spectrum. However, this is weighted with the sinc function | (sinc = sin(x)/x), o",
+    "chars": 1911
+  },
+  {
+    "page": 80,
+    "head": "66 | AD/DA Conversion | leads to the noise power | N2 | B = \u03c3 2 | E = 2 | \u0003 fB | 0 | SEE(f ) df = Q2 | 12 .",
+    "chars": 2423
+  },
+  {
+    "page": 81,
+    "head": "3.1 Methods | 67 | & | \u0004 | \u0003 | \u000f | ;\u0005 | \u0012\u0012 | '7\u0007: | '7",
+    "chars": 1445
+  },
+  {
+    "page": 82,
+    "head": "68 | AD/DA Conversion | : | .: | \u0014: | -: | & | \u0004 | \u0003 | \u000f",
+    "chars": 832
+  },
+  {
+    "page": 83,
+    "head": "3.1 Methods | 69 | '7\u0007: | '\u00167\u0007: | \"7 | : | \u000f\u0001 | '\u00167\u0007: | / | -",
+    "chars": 537
+  },
+  {
+    "page": 84,
+    "head": "70 | AD/DA Conversion | 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70",
+    "chars": 540
+  },
+  {
+    "page": 85,
+    "head": "3.1 Methods | 71 | & | \u0004 | \u0003 | \u000f | ;\u0005 | \u0012\u0012 | '7\u0007: | '7",
+    "chars": 878
+  },
+  {
+    "page": 86,
+    "head": "72 | AD/DA Conversion | The error power in the frequency band [\u2212fB, fB] is given by | N2 | B = SEE(f )2 | \u0003 fB | 0 | 4[1 \u2212cos(\u0004)]2 df | (3.16) | \u2243Q2",
+    "chars": 716
+  },
+  {
+    "page": 87,
+    "head": "3.1 Methods | 73 | The Z-transform of the output obtained by addition and \ufb01ltering leads to | Y(z) = Y1(z) + (1 \u2212z\u22121)Y2(z) + (1 \u2212z\u22121)2Y3(z) | = X(z) + (1 \u2212z\u22121)E1(z) \u2212(1 \u2212z\u22121)E1(z) | + (1 \u2212z\u22121)2E2(z) \u2212(1 \u2212z\u22121)2E2(z) + (1 ",
+    "chars": 1155
+  },
+  {
+    "page": 88,
+    "head": "74 | AD/DA Conversion | Here w denotes the quantizer word-length of the delta-sigma modulator. The signal quanti- | zation after digital low-pass \ufb01ltering and downsampling by L can be performed with (3.25) | according to",
+    "chars": 971
+  },
+  {
+    "page": 89,
+    "head": "3.1 Methods | 75 | The transfer function in Fig. 3.16 can be written as | H(z) = | A0 + A1 | z\u22121 | 1\u2212z\u22121 + A2 | \u0018 | z\u22121 | 1\u2212z\u22121",
+    "chars": 1865
+  },
+  {
+    "page": 90,
+    "head": "76 | AD/DA Conversion | -140 | -120 | -100 | -80 | -60 | -40 | -20 | 0",
+    "chars": 761
+  },
+  {
+    "page": 91,
+    "head": "3.1 Methods | 77 | \u000f | \"7 | : | '7 | : | \"7 | : | '7",
+    "chars": 1082
+  },
+  {
+    "page": 92,
+    "head": "78 | AD/DA Conversion | -140 | -120 | -100 | -80 | -60 | -40 | -20 | 0",
+    "chars": 777
+  },
+  {
+    "page": 93,
+    "head": "3.2 AD Converters | 79 | 3.2 | AD Converters | The choice of an AD converter for a certain application is in\ufb02uenced by a number of | factors. It mainly depends on the necessary resolution for a given conversion time. Bot",
+    "chars": 1600
+  },
+  {
+    "page": 94,
+    "head": "80 | AD/DA Conversion | Aperture Jitter. The variation in aperture delay from sample to sample is called the aper- | ture jitter tADJ. The in\ufb02uence of aperture jitter limits the useful bandwidth of the sampled | signal. ",
+    "chars": 2240
+  },
+  {
+    "page": 95,
+    "head": "3.2 AD Converters | 81 | 333 | 33\u0016 | 3\u00163 | 3\u0016\u0016 | \u001633 | \u00163\u0016 | \u0016\u00163 | (",
+    "chars": 558
+  },
+  {
+    "page": 96,
+    "head": "82 | AD/DA Conversion | harmonics of the second to the ninth order are used to compute | THD = 20 log | \u221e | \u0006 | n=2 | [10(\u2212Xn/20)]2 dB | (3.37) | =",
+    "chars": 1621
+  },
+  {
+    "page": 97,
+    "head": "3.2 AD Converters | 83 | Half-\ufb02ash Converter. In half-\ufb02ash AD converters (Fig. 3.30), two m-bit parallel converters | are used in order to convert two different ranges. The \ufb01rst m-bit AD converter gives a | digital outpu",
+    "chars": 1758
+  },
+  {
+    "page": 98,
+    "head": "84 | AD/DA Conversion | ;\u000e.\u0010\u0007s | \u00061= | ;-.\u0010\u0007 | \u001a&$ | \u000f | \u0003\u0010\u0014 | ( | \u0007",
+    "chars": 1767
+  },
+  {
+    "page": 99,
+    "head": "3.2 AD Converters | 85 | ;\u000e.\u0010\u0007s | \u00061= | ;-.\u0010\u0007 | \u001a&$ | \u000f | \u0003\u0010\u0014 | @1, | $",
+    "chars": 1522
+  },
+  {
+    "page": 100,
+    "head": "86 | AD/DA Conversion | ;\u000e.\u0010\u0007s | \u000f | \u0003\u0010\u0014 | ( | \u0007 | \u0007 | \u0013\u0002\u0003\u0010\u0012\u0007\u0002\b | \u001b",
+    "chars": 1408
+  },
+  {
+    "page": 101,
+    "head": "3.3 DA Converters | 87 | & | \u0004 | \u0003 | \u000f | ;\u0005 | \u0012\u0012 | ;\u000e.\u0010\u0007s | \u0006",
+    "chars": 1183
+  },
+  {
+    "page": 102,
+    "head": "88 | AD/DA Conversion | 333 | 33\u0016 | 3\u00163 | 3\u0016\u0016 | \u001633 | \u00163\u0016 | \u0016\u00163 | \u001b",
+    "chars": 1236
+  },
+  {
+    "page": 103,
+    "head": "3.3 DA Converters | 89 | 333 | 33\u0016 | 3\u00163 | 3\u0016\u0016 | \u001633 | \u00163\u0016 | \u0016\u00163 | \u001b",
+    "chars": 1439
+  },
+  {
+    "page": 104,
+    "head": "90 | AD/DA Conversion | \u0013 | !\u0013 | !\u0017 | \u0013 | \u0013 | \u0013 | \u0013 | \u0013",
+    "chars": 1030
+  },
+  {
+    "page": 105,
+    "head": "3.3 DA Converters | 91 | \u0013 | \u001b | \u001b | \u001b | \u001b | !\u0017 | \u0017 | 2",
+    "chars": 763
+  },
+  {
+    "page": 106,
+    "head": "92 | AD/DA Conversion | 3.3.4 | R-2R Resistor Networks | The DA conversion with switched current sources can also be carried out with an R-2R | resistor network as shown in Fig. 3.48. In contrast to the method with weigh",
+    "chars": 1853
+  },
+  {
+    "page": 107,
+    "head": "3.4 Java Applet \u2013 Oversampling and Quantization | 93 | & | \u0004 | \u0003 | \u000f | ;\u0005 | \u0012\u0012 | \u0006 | \u0004\u0010",
+    "chars": 682
+  },
+  {
+    "page": 108,
+    "head": "94 | AD/DA Conversion | \u2022 Quantizer | \u2013 word-length w leads to quantization step size Q = 2w\u22121. | \u2022 Dither | \u2013 rect dither \u2013 uniform probability density function | \u2013 tri dither \u2013 triangular probability density function |",
+    "chars": 1445
+  },
+  {
+    "page": 109,
+    "head": "References | 95 | 2. Delta-sigma Conversion | 1. Why can we apply noise shaping in an oversampled AD converter? | 2. Show how the delta-sigma converter (DSC) has a lower quantization error power in | the base-band than a",
+    "chars": 2028
+  },
+  {
+    "page": 110,
+    "head": "96 | AD/DA Conversion | [Mat87] | Y. Matsuya et al: A 16-bit Oversampling A-to-D Conversion Technology Using | Triple-Integration Noise Shaping, IEEE J. Solid-State Circuits, Vol. SC-22, pp. | 921\u2013929, December 1987. | [",
+    "chars": 432
+  },
+  {
+    "page": 111,
+    "head": "Chapter 4 | Audio Processing Systems | Digital signal processors (DSPs) are used for discrete-time signal processing. Their ar- | chitecture and instruction set is specially designed for real-time processing of signal pr",
+    "chars": 1896
+  },
+  {
+    "page": 112,
+    "head": "98 | Audio Processing Systems | Table 4.1 CISC, RISC and DSP. | Type | Characteristics | CISC | Complex Instruction Set Computer | \u2022 von Neumann architecture | \u2022 assembler programming | \u2022 large number of instructions",
+    "chars": 2298
+  },
+  {
+    "page": 113,
+    "head": "4.1 Digital Signal Processors | 99 | external memories like EPROM, ROM and RAM. The connection of the external bus | system to the internal bus architecture has great in\ufb02uence on ef\ufb01cient execution of external | instruct",
+    "chars": 2657
+  },
+  {
+    "page": 114,
+    "head": "100 | Audio Processing Systems | Table 4.2 Fixed-point DSPs (Analog Devices AD, Texas Instruments TI, Motorola MOT, Agere | Systems AG). | Cycle time | Computation power | Type | Word-length | MHz/ns | MMACS",
+    "chars": 1318
+  },
+  {
+    "page": 115,
+    "head": "4.2 Digital Audio Interfaces | 101 | Table 4.3 Floating-point DSPs. | Cycle time | Computation power | Type | Word-length | MHz/ns | MFLOPS | ADSP 21364",
+    "chars": 1708
+  },
+  {
+    "page": 116,
+    "head": "102 | Audio Processing Systems | of the serial data bits is carried out with a biphase code. This is done with the help of an | XOR relationship between clock (of double bit rate) and the serial data bits (Fig. 4.5). | A",
+    "chars": 2261
+  },
+  {
+    "page": 117,
+    "head": "4.2 Digital Audio Interfaces | 103 | Table 4.4 Channel status bytes. | Byte | Description | 0 | Emphasis, sampling rate | 1 | Channel use | 2",
+    "chars": 791
+  },
+  {
+    "page": 118,
+    "head": "104 | Audio Processing Systems | Table 4.7 Channel mode. | 0 | None indicated (2 channel default) | 1 | Two channel | 2 | Monaural | 3",
+    "chars": 1039
+  },
+  {
+    "page": 119,
+    "head": "4.2 Digital Audio Interfaces | 105 | frame consists of 56 AES/EBU subframes. Each channel has a preamble containing the | information shown in Fig. 4.10. The bit 0 is responsible for identifying the \ufb01rst MADI | channel (",
+    "chars": 1546
+  },
+  {
+    "page": 120,
+    "head": "106 | Audio Processing Systems | \u0016 | \u0017 2 < | \u0017? \u0017I 23 2\u0016 | \u00174 | 3 | & | -\u0010 | \u000e\u0012",
+    "chars": 636
+  },
+  {
+    "page": 121,
+    "head": "4.3 Single-processor Systems | 107 | 4.3 | Single-processor Systems | 4.3.1 | Peripherals | A common system con\ufb01guration is shown in Fig. 4.12. It consists of a DSP, clock gener- | ation, instruction and data memory and ",
+    "chars": 1772
+  },
+  {
+    "page": 122,
+    "head": "108 | Audio Processing Systems | \u0016 | < | ? | \u0016\u0017 | \u0016> | \u00173 | \u0017< | \u0017?",
+    "chars": 897
+  },
+  {
+    "page": 123,
+    "head": "4.4 Multi-processor Systems | 109 | \u0001\u0005 | \u0001\u0013(/ | \u001a\u0005\u0013&/ | \u0001\u0005\u0013&/ | \u001a | & | $ | \u001a\u0006\u0001",
+    "chars": 765
+  },
+  {
+    "page": 124,
+    "head": "110 | Audio Processing Systems | \u001a\u0006\u0001 | \u001a\u0006\u0001 | \u001a\u0006\u0001 | \u001a\u0006\u0001 | \u0001\u001a&+& | \u0001\u001a&+& | Figure 4.20 Cascading and pipelining. | \u001a\u0006\u0001",
+    "chars": 929
+  },
+  {
+    "page": 125,
+    "head": "4.4 Multi-processor Systems | 111 | \u001a\u0006\u0001 | \u0006\"\u0012\u0007\u0002 | \u0012 | = | \u0012\u0007 | $ | \u0007\u0002\b | (",
+    "chars": 1007
+  },
+  {
+    "page": 126,
+    "head": "112 | Audio Processing Systems | $ | \u0007\u0002\b | \u001a\u0006\u0001 | / | - | \u0004\u0002 | \u0016 | \u001a\u0006\u0001",
+    "chars": 951
+  },
+  {
+    "page": 127,
+    "head": "References | 113 | the criteria for standard bus systems are data transfer rate, interrupt request and processing, | the option of several masters, auxiliary functions (power supply, bus error, battery buffer) | and mech",
+    "chars": 1761
+  },
+  {
+    "page": 128,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 129,
+    "head": "Chapter 5 | Equalizers | Spectral sound equalization is one of the most important methods for processing audio | signals. Equalizers are found in various forms in the transmission of audio signals from a | sound studio t",
+    "chars": 1805
+  },
+  {
+    "page": 130,
+    "head": "116 | Equalizers | 0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0 | 0.2",
+    "chars": 1531
+  },
+  {
+    "page": 131,
+    "head": "5.1 Basics | 117 | \u016620 | \u016615 | \u016610 | \u01665 | \u01663 | 0 | 5 | a) Band\u0166pass filters with constant relative bandwidth versus logarithmic frequency",
+    "chars": 983
+  },
+  {
+    "page": 132,
+    "head": "118 | Equalizers | x(n) | y(n) | f/Hz | BPN | BP1 | BP2 | A1 | A2",
+    "chars": 1570
+  },
+  {
+    "page": 133,
+    "head": "5.2 Recursive Audio Filters | 119 | 1\u20136 kHz frequency range into account. The 0 dB of the magnitude response of both | \ufb01lters is crossed at 1 kHz. The CCIR-468 weighting \ufb01lter has a gain of 12 dB at | 6 kHz. A variant of",
+    "chars": 2327
+  },
+  {
+    "page": 134,
+    "head": "120 | Equalizers | functions are given by | HLP(s) = | 1 | s2 + | 1 | Q\u221es + 1 | and | HLP(s) =",
+    "chars": 1293
+  },
+  {
+    "page": 135,
+    "head": "5.2 Recursive Audio Filters | 121 | Table 5.1 Transfer functions of low-pass and high-pass \ufb01lters. | Low-pass | H(s) = | 1 | s2 + | \u221a | 2s + 1 | second order",
+    "chars": 1629
+  },
+  {
+    "page": 136,
+    "head": "122 | Equalizers | where V0 determines the ampli\ufb01cation at \u03c9 = 0. By changing the parameter V0, any desired | boost (V0 > 1) and cut (V0 < 1) level can be adjusted. Figure 5.9 shows the frequency | responses for fc = 100",
+    "chars": 1252
+  },
+  {
+    "page": 137,
+    "head": "5.2 Recursive Audio Filters | 123 | \u0005L3 | \u0005\u0016 | \u000eL3 | \u0005L3 | \u0005\u0016 | 3 | \u000eL | ,",
+    "chars": 1328
+  },
+  {
+    "page": 138,
+    "head": "124 | Equalizers | \u0005\u0016 | L3 | \u0005\u0016 | L3 | , | \u0012\u0007 | $ | \u0007",
+    "chars": 1005
+  },
+  {
+    "page": 139,
+    "head": "5.2 Recursive Audio Filters | 125 | \u016620 | \u016615 | \u016610 | \u01665 | 0 | 5 | 10 | 15",
+    "chars": 1377
+  },
+  {
+    "page": 140,
+    "head": "126 | Equalizers | \u0005\u0016 | L3 | \u0005\u0016 | L3 | , | \u0012\u0007 | $ | \u0007",
+    "chars": 1027
+  },
+  {
+    "page": 141,
+    "head": "5.2 Recursive Audio Filters | 127 | \u016620 | \u016615 | \u016610 | \u01665 | 0 | 5 | 10 | 15",
+    "chars": 376
+  },
+  {
+    "page": 142,
+    "head": "128 | Equalizers | transformation given by | s = 2 | T | z \u22121 | z + 1. | (5.26) | Tables 5.2\u20135.5 contain the coef\ufb01cients of the second-order transfer function | H(z) = a0 + a1z\u22121 + a2z\u22122",
+    "chars": 1713
+  },
+  {
+    "page": 143,
+    "head": "5.2 Recursive Audio Filters | 129 | Table 5.3 Peak \ufb01lter design. | Peak (boost V0 = 10G/20) | a0 | a1 | a2 | b1 | b2 | 1 + V0",
+    "chars": 1488
+  },
+  {
+    "page": 144,
+    "head": "130 | Equalizers | H(z) | x(n) | y(n) | - | Boost | Cut | H0 | Figure 5.19 Filter structure for implementing boost and cut \ufb01lters.",
+    "chars": 1639
+  },
+  {
+    "page": 145,
+    "head": "5.2 Recursive Audio Filters | 131 | for boost, (5.30) can be rewritten as | H(s) = 1 | 2[1 + AB(s)] + 1 | 2V0[1 \u2212AB(s)]. | (5.35) | The bilinear transformation | s = 2 | T",
+    "chars": 871
+  },
+  {
+    "page": 146,
+    "head": "132 | Equalizers | with the boundary conditions | H(0) = V0, | H(\u221e) = 1, | can be decomposed as | H(s) = | s | s + \u03c9c/V0 | +",
+    "chars": 1135
+  },
+  {
+    "page": 147,
+    "head": "5.2 Recursive Audio Filters | 133 | with parameters (cut as in [Z\u00f6l95]) | d = \u2212cos(\u0004c), | (5.50) | V0 = H(ej\u0004c), | (5.51) | aB = 1 \u2212tan(\u03c9bT/2) | 1 + tan(\u03c9bT/2), | (5.52)",
+    "chars": 1088
+  },
+  {
+    "page": 148,
+    "head": "134 | Equalizers | The bilinear transformation applied to (5.63) again gives (5.59). The \ufb01lter structure is | identical for boost and cut. The frequency parameter aB for boost and aC for cut can be | calculated as | aB =",
+    "chars": 1181
+  },
+  {
+    "page": 149,
+    "head": "5.2 Recursive Audio Filters | 135 | with | A(z) = \u2212z\u22121 + aB | 1 + aBz\u22121 . | (5.72) | For cut, the decomposition can be given by | H(s) = | s + \u03c9c | s/V0 + \u03c9c",
+    "chars": 1175
+  },
+  {
+    "page": 150,
+    "head": "136 | Equalizers | implementation of a band-pass \ufb01lter as given by | H(z) = 1 | 2[1 \u2212A2(z)] | (5.79) | and | A2(z) = \u2212aB + (d \u2212daB)z\u22121 + z\u22122 | 1 + (d \u2212daB)z\u22121 \u2212aBz\u22122 , | (5.80)",
+    "chars": 1084
+  },
+  {
+    "page": 151,
+    "head": "5.2 Recursive Audio Filters | 137 | \u016620 | \u016615 | \u016610 | \u01665 | 0 | 5 | 10 | 15",
+    "chars": 349
+  },
+  {
+    "page": 152,
+    "head": "138 | Equalizers | \u016620 | \u016615 | \u016610 | \u01665 | 0 | 5 | 10 | 15",
+    "chars": 1964
+  },
+  {
+    "page": 153,
+    "head": "5.2 Recursive Audio Filters | 139 | The basis of the following considerations is the relationship between the coef\ufb01cient | sensitivity and roundoff noise. This was \ufb01rst stated by Fettweis [Fet72]. By increasing the | pol",
+    "chars": 7896
+  },
+  {
+    "page": 154,
+    "head": "140 | Equalizers | \"7 | : | '7 | : | \u0005\u0016 | \u0005\u0016 | \u0005. | \u0005.",
+    "chars": 4550
+  },
+  {
+    "page": 155,
+    "head": "5.2 Recursive Audio Filters | 141 | \"7 | : | '7 | : | \u0005\u0016 | \u0005\u0016 | \b\u000e\u0012\u0010 | \u000e\u000f",
+    "chars": 3810
+  },
+  {
+    "page": 156,
+    "head": "142 | Equalizers | shows that in this case the coef\ufb01cients b1 and b2 can be obtained by a linear combination | of the quantized coef\ufb01cients k1 and k2. The distance d of the pole from the point z = 1 | determines the coef",
+    "chars": 1811
+  },
+  {
+    "page": 157,
+    "head": "5.2 Recursive Audio Filters | 143 | -1 | -0.8 | -0.6 | -0.4 | -0.2 | 0 | 0.2 | 0.4",
+    "chars": 3888
+  },
+  {
+    "page": 158,
+    "head": "144 | Equalizers | The quantization error is added at every point of quantization and is \ufb01ltered by the cor- | responding transfer function G(z) to the output of the \ufb01lter. The variance of the output | quantization noise",
+    "chars": 1420
+  },
+  {
+    "page": 159,
+    "head": "5.2 Recursive Audio Filters | 145 | \"7 | : | '7 | : | \u0005\u0016 | \u0005\u0016 | \u0005. | \u0005.",
+    "chars": 2019
+  },
+  {
+    "page": 160,
+    "head": "146 | Equalizers | \"7 | : | '7 | : | \u0005\u0016 | \u0005\u0016 | \u0016 | \u0017",
+    "chars": 957
+  },
+  {
+    "page": 161,
+    "head": "5.2 Recursive Audio Filters | 147 | Table 5.8 Kingsbury \u2013 (a) noise transfer function, (b) quadratic L2 norm and (c) output noise variance | in the case of quantization after every multiplication. | (a) | G1(z) = | \u2212k1z ",
+    "chars": 1050
+  },
+  {
+    "page": 162,
+    "head": "148 | Equalizers | \"7 | : | '7 | : | \u0005\u0016 | \u0005\u0016 | \u0016 | \u0017",
+    "chars": 507
+  },
+  {
+    "page": 163,
+    "head": "5.2 Recursive Audio Filters | 149 | With regard to the implementation of the these \ufb01lters with digital signal processors, a | quantization after every multiplication is not necessary. Quantization takes place when the | ",
+    "chars": 1346
+  },
+  {
+    "page": 164,
+    "head": "150 | Equalizers | \"7 | : | '7 | : | \u0005\u0016 | \u0005\u0016 | \u0011 | \u0011",
+    "chars": 746
+  },
+  {
+    "page": 165,
+    "head": "5.2 Recursive Audio Filters | 151 | Z\u00f6lzer | Kingsbury | 60 | 70 | 80 | 90 | 100 | 2k",
+    "chars": 2285
+  },
+  {
+    "page": 166,
+    "head": "152 | Equalizers | x(n) | y(n) | z-1 | z-1 | -b1 | -b2 | z-1 | Q",
+    "chars": 610
+  },
+  {
+    "page": 167,
+    "head": "5.2 Recursive Audio Filters | 153 | structures already have zeros in their respective noise transfer functions, it is suf\ufb01cient to | use a simple feedback for the quantization error. By virtue of this extension, the bloc",
+    "chars": 985
+  },
+  {
+    "page": 168,
+    "head": "154 | Equalizers | \"7 | : | '7 | : | \u0005\u0016 | \u0016 | \u0017 | \u0016",
+    "chars": 1017
+  },
+  {
+    "page": 169,
+    "head": "5.2 Recursive Audio Filters | 155 | 200 | 12k | Direct form | (double zero at z=1) | 60 | 70 | 80 | 90",
+    "chars": 806
+  },
+  {
+    "page": 170,
+    "head": "156 | Equalizers | For a sinusoidal input signal of amplitude 1 we get \u2225X(ej\u0004)\u22251 = 1. For |yi(n)| \u22641 to be | valid, the scaling factor must be chosen as | Si = | 1 | \u2225Hi(ej\u0004)\u2225\u221e | . | (5.121) | The scaling of the input si",
+    "chars": 1619
+  },
+  {
+    "page": 171,
+    "head": "5.3 Nonrecursive Audio Filters | 157 | Limit Cycles | Limit cycles are periodic processes in a \ufb01lter which can be measured as sinusoidal signals. | They arise owing to the quantization of state variables. The different t",
+    "chars": 1498
+  },
+  {
+    "page": 172,
+    "head": "158 | Equalizers | 5.3.1 | Basics of Fast Convolution | IDFT Implementation with DFT Algorithm. The discrete Fourier transformation (DFT) | is described by | X(k) = | N\u22121 | \u0006 | n=0",
+    "chars": 1246
+  },
+  {
+    "page": 173,
+    "head": "5.3 Nonrecursive Audio Filters | 159 | 1. Exchange the real with the imaginary part of the spectral sequence | Y(k) = YI(k) + jYR(k). | 2. Transform with DFT algorithm | DFT[Y(k)] = yI(n) + jyR(n). | 3. Exchange the real",
+    "chars": 1452
+  },
+  {
+    "page": 174,
+    "head": "160 | Equalizers | and subtraction of (5.151) from (5.148) results in | 2YI(k) = ZR(N \u2212k) \u2212ZR(k) | (5.154) | \u2192YI(k) = 1 | 2[ZR(N \u2212k) \u2212ZR(k)]. | (5.155) | Considering the imaginary part of Z(k), adding (5.148) and (5.151)",
+    "chars": 1393
+  },
+  {
+    "page": 175,
+    "head": "5.3 Nonrecursive Audio Filters | 161 | so that the \ufb01ltered output sequence is given by | x\u2032(n) = z\u2032 | R(n), | (5.171) | y\u2032(n) = z\u2032 | I(n). | (5.172) | The \ufb01ltering of a stereo signal can hence be done by transformation i",
+    "chars": 1395
+  },
+  {
+    "page": 176,
+    "head": "162 | Equalizers | x | (n) | l+1 | x (n) | l | x | (n) | l+2",
+    "chars": 1191
+  },
+  {
+    "page": 177,
+    "head": "5.3 Nonrecursive Audio Filters | 163 | h (n) | 1 | h (n) | 2 | h (n) | P | Figure 5.57 Partitioning of the impulse response h(n). | If the length M of the impulse response is very long, it can be similarly partitioned in",
+    "chars": 934
+  },
+  {
+    "page": 178,
+    "head": "164 | Equalizers | An example of partitioning the impulse response into P = 4 parts is graphically shown in | Fig. 5.58. This leads to | y(n) = | \u221e | \u0006 | m=1 | \u0004 M1\u22121 | \u0006",
+    "chars": 780
+  },
+  {
+    "page": 179,
+    "head": "5.3 Nonrecursive Audio Filters | 165 | 1. Decomposition of the impulse response h(n) of length 4M: | h1(n) = h(n) | 0 \u2264n \u2264M \u22121, | (5.196) | h2(n \u2212M) = h(n) | M \u2264n \u22642M \u22121, | (5.197) | h3(n \u22122M) = h(n)",
+    "chars": 1433
+  },
+  {
+    "page": 180,
+    "head": "166 | Equalizers | 9. Inverse transformation: | em1(n) = IDFT[Zm(k)H1(k)] | n = 0, 1, . . . , 2M \u22121, | (5.214) | em2(n) = IDFT[Zm(k)H2(k)] | n = 0, 1, . . . , 2M \u22121, | (5.215) | em3(n) = IDFT[Zm(k)H3(k)]",
+    "chars": 2357
+  },
+  {
+    "page": 181,
+    "head": "5.3 Nonrecursive Audio Filters | 167 | represented by H0(z) is performed by direct convolution in the time domain. The frequency | and time domain parts are then overlapped and added. An alternative realization for fast ",
+    "chars": 1157
+  },
+  {
+    "page": 182,
+    "head": "168 | Equalizers | Hence, a \ufb01lter can be designed by ful\ufb01lling conditions in the frequency domain. The linear | phase is determined as | e\u2212j NF \u22121 | 2 | \u0004 = e\u2212j2\u03c0(NF \u22121/2)k/NF | (5.230) | = cos | \u0001",
+    "chars": 2532
+  },
+  {
+    "page": 183,
+    "head": "5.4 Multi-complementary Filter Bank | 169 | 0 | 2 | 4 | 6 | 8 | \u01660.2 | 0 | 0.2",
+    "chars": 1408
+  },
+  {
+    "page": 184,
+    "head": "170 | Equalizers | '7 | : | \"7 | : | =\u0001 | \u0017 | \u0017 | \u0017",
+    "chars": 770
+  },
+  {
+    "page": 185,
+    "head": "5.4 Multi-complementary Filter Bank | 171 | \u0002\u0010\u0016\u0013 | \u0002\u0010\u0017 | \u0002\u0010\u0015 | \u0002\u0010\u0013 | $\u0018\u0005\u0016 | \u0014 | \u0016 | *",
+    "chars": 1317
+  },
+  {
+    "page": 186,
+    "head": "172 | Equalizers | The extension to N subbands and performing the kernel \ufb01lter using complementary | techniques [Ram88, Ram90] leads to the multi-complementary \ufb01lter bank as shown in | Fig. 5.68. Delays are integrated in",
+    "chars": 2305
+  },
+  {
+    "page": 187,
+    "head": "5.4 Multi-complementary Filter Bank | 173 | N@\u0018\u0005\u0016 | L\u0006\u000e\u0006 | L\u0006\u000e\u0017 | L\u0006\u000e\u0016 | \u0005 | L\u0002\b\u0007\u0010\u0014\t\u0004\u000e\u0006\u0007\t\u0003\u0002\u0012 | =\u0006\u000e\u0016 | =\u0006\u000e\u0017",
+    "chars": 1251
+  },
+  {
+    "page": 188,
+    "head": "174 | Equalizers | \u0005 | \u0017 | \u0017 | =\u0001 | =\u0001 | \u0005 | \u0017 | \u0017",
+    "chars": 1034
+  },
+  {
+    "page": 189,
+    "head": "5.4 Multi-complementary Filter Bank | 175 | 5.4.2 | Example: Eight-band Multi-complementary Filter Bank | In order to implement the frequency decomposition into the eight bands shown in Fig. 5.70, | the multirate \ufb01lter s",
+    "chars": 2238
+  },
+  {
+    "page": 190,
+    "head": "176 | Equalizers | \u001a | \u001b | \u001b | \u0006\u0001 | \u0018\u0017 | \u001a | \u001b | \u001b",
+    "chars": 484
+  },
+  {
+    "page": 191,
+    "head": "5.4 Multi-complementary Filter Bank | 177 | \u001a\u000f\u0001 | = 7 : | \u0017 | \u001a=\u0001 | \u001b=\u0001 | \u001b\u000f\u0001 | \u001b\u000f\u0001 | = 7 :",
+    "chars": 1473
+  },
+  {
+    "page": 192,
+    "head": "178 | Equalizers | \u0002 | \u0002 | \u0002\u0010\u0013 | \u001a=\u00018\u001b=\u0001 | \u0002 | \u0002\u0010\u0013 | \u0013\u0002\u0010\u0015 | \u0002\u0010\u0012",
+    "chars": 1211
+  },
+  {
+    "page": 193,
+    "head": "5.4 Multi-complementary Filter Bank | 179 | -120 | -100 | -80 | -60 | -40 | -20 | 0 | 0",
+    "chars": 526
+  },
+  {
+    "page": 194,
+    "head": "180 | Equalizers | -120 | -100 | -80 | -60 | -40 | -20 | 0 | 0",
+    "chars": 1103
+  },
+  {
+    "page": 195,
+    "head": "5.6 Exercises | 181 | The following \ufb01lter functions can be selected on the lower right of the graphical user | interface: | \u2022 Low-/high-pass \ufb01lter (LP/HP) with control parameter | \u2013 cutoff frequency fc in hertz (lower ho",
+    "chars": 2027
+  },
+  {
+    "page": 196,
+    "head": "182 | Equalizers | Figure 5.77 Java applet \u2013 audio \ufb01lters. | 2. Parametric Audio Filters | 1. What is the basic idea of parametric \ufb01lters? | 2. What is the difference between the Regalia and the Z\u00f6lzer \ufb01lter structures? ",
+    "chars": 1214
+  },
+  {
+    "page": 197,
+    "head": "5.6 Exercises | 183 | 4. Shelving Filter: All-pass Form | Implement a \ufb01rst-order high shelving \ufb01lter for the boost and cut cases with the sampling | rate fS = 44.1 kHz, cutoff frequency fc = 10 kHz and gain G = 12 dB. | ",
+    "chars": 1633
+  },
+  {
+    "page": 198,
+    "head": "184 | Equalizers | 7. Quantization Effects in Recursive Audio Filters | 1. Why is the quantization of signals inside a recursive \ufb01lter of special interest? | 2. Derive the noise transfer function of the second-order dire",
+    "chars": 1800
+  },
+  {
+    "page": 199,
+    "head": "References | 185 | 9. FIR Filter Design by Frequency Sampling | 1. Why is frequency sampling an important design method for audio equalizers? How | do we sample magnitude and phase response? | 2. What is the linear phase",
+    "chars": 2034
+  },
+  {
+    "page": 200,
+    "head": "186 | Equalizers | [Cad87] | J. A. Cadzow: Foundations of Digital Signal Processing and Data Analysis, | New York: Macmillan, 1987. | [Cha78] | T. L. Chang: A Low Roundoff Noise Digital Filter Structure, Proc. Int. Symp.",
+    "chars": 2424
+  },
+  {
+    "page": 201,
+    "head": "References | 187 | [Garc02] | G. Garcia: Optimal Filter Partition for Ef\ufb01cient Convolution with Short | Input/Output Delay, Proc. 113th AES Convention, Preprint No. 5660, Los | Angeles, October 2002. | [Gol67] | B. Gold,",
+    "chars": 2347
+  },
+  {
+    "page": 202,
+    "head": "188 | Equalizers | [Mul76] | C. T. Mullis, R. A. Roberts: Synthesis of Minimum Roundoff Noise Fixed Point | Digital Filters, IEEE Trans. Circuits and Systems, pp. 551\u2013562, September | 1976. | [M\u00fcl99] | C. M\u00fcller-Tomfelde",
+    "chars": 2245
+  },
+  {
+    "page": 203,
+    "head": "References | 189 | [Sri77] | A. B. Sripad, D. L. Snyder: A Necessary and Suf\ufb01cient Condition for | Quantization Errors to be Uniform and White, IEEE Trans. ASSP, Vol. 25, | pp. 442\u2013448, October 1977. | [Tra77] | Tran-Tho",
+    "chars": 1696
+  },
+  {
+    "page": 204,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 205,
+    "head": "Chapter 6 | Room Simulation | Room simulation arti\ufb01cially reproduces the acoustics of a room. The foundations of room | acoustics are found in [Cre78, Kut91]. Room simulation is mainly used for post-processing | signals ",
+    "chars": 1753
+  },
+  {
+    "page": 206,
+    "head": "192 | Room Simulation | |h(n)| | Direct Signal | Early Reflections | Subsequent Reverberation | n | Figure 6.1 Room impulse response h(n) and simpli\ufb01ed decomposition into direct signal, early | re\ufb02ections and subsequent ",
+    "chars": 1600
+  },
+  {
+    "page": 207,
+    "head": "6.1 Basics | 193 | .:\u000eL\u0010\b\u0007 | \u0004\u000e\u001b | \u0003\u0002\u000e\u0006 | \b\u0014\u0002\u0012 | :\u000e\u0013\t\"\u000e+\b\t\u0014\u0010 | \u0003 | Figure 6.2 Model-based methods for calculating room impulse responses. | 6.1.3",
+    "chars": 1622
+  },
+  {
+    "page": 208,
+    "head": "194 | Room Simulation | r | (n) | XX | 0 | L | 2L | n | r",
+    "chars": 1543
+  },
+  {
+    "page": 209,
+    "head": "6.2 Early Re\ufb02ections | 195 | Gar95, Rei95, Ege96, M\u00fcl99, Joh00, M\u00fcl01, Garc02] and a hybrid approach based on | convolution and recursive \ufb01lters can be found in [Bro01]. Investigations regarding fast | convolution with s",
+    "chars": 2598
+  },
+  {
+    "page": 210,
+    "head": "196 | Room Simulation | \b\u0004\"\u000e\u0013\u0002%\u0004\u0002\u0014\u0007\u0010 | \u0012 | \u0006\u0010 | \u0004\t\u0007 | \b | \"7 | : | '7",
+    "chars": 1309
+  },
+  {
+    "page": 211,
+    "head": "6.2 Early Re\ufb02ections | 197 | Gerzon\u2019s Distance Algorithm. For a system simulating early re\ufb02ections produced by more | than one sound source, Gerzon\u2019s distance algorithm can be used [Ger92], where several | sound sources ",
+    "chars": 1473
+  },
+  {
+    "page": 212,
+    "head": "198 | Room Simulation | DEL | y(n) | x(n) | n | h(n) | Direct Signal | Early Reflections | Early Reflections",
+    "chars": 1168
+  },
+  {
+    "page": 213,
+    "head": "6.2 Early Re\ufb02ections | 199 | \"7 | : | \u001a | \u000f\u000e | \u001a | \u000f\u000e | '\u000e\u000e7 | :",
+    "chars": 856
+  },
+  {
+    "page": 214,
+    "head": "200 | Room Simulation | 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70",
+    "chars": 1342
+  },
+  {
+    "page": 215,
+    "head": "6.3 Subsequent Reverberation | 201 | \"7 | : | '7 | : | \u0005/ | \u0003 | Figure 6.13 Recursive comb \ufb01lter (g = feedback factor, M = delay length). | with",
+    "chars": 1229
+  },
+  {
+    "page": 216,
+    "head": "202 | Room Simulation | Another basis of the Schroeder algorithm is the all-pass \ufb01lter shown in Fig. 6.14 with | transfer function | H(z) = z\u2212M \u2212g | 1 \u2212gz\u2212M | (6.45) | = | z\u2212M | 1 \u2212gz\u2212M \u2212",
+    "chars": 1447
+  },
+  {
+    "page": 217,
+    "head": "6.3 Subsequent Reverberation | 203 | -1 | -0.8 | -0.6 | -0.4 | -0.2 | 0 | 0.2 | 0.4",
+    "chars": 916
+  },
+  {
+    "page": 218,
+    "head": "204 | Room Simulation | \"7 | : | '7 | : | \u0005/ | \u0003 | \u0005/ | \u0003",
+    "chars": 1492
+  },
+  {
+    "page": 219,
+    "head": "6.3 Subsequent Reverberation | 205 | \"7 | : | '7 | : | \u0005/ | \u0005\u0003 | \u0003 | \u0005/",
+    "chars": 1122
+  },
+  {
+    "page": 220,
+    "head": "206 | Room Simulation | \u0013\u0002^ ` | \u001b | ^ ` | % | \u0007 | =7%8\u0007: | Figure 6.19 Short-time spectra of a parallel circuit of comb \ufb01lters. | 0",
+    "chars": 746
+  },
+  {
+    "page": 221,
+    "head": "6.3 Subsequent Reverberation | 207 | With the constant radius r = g1/Mp | p | and the logarithmic parameters R = 20 log10 r and | Gp = 20 log10 gp, the attenuation per sampling period is given by | R = Gp | Mp | . | (6.6",
+    "chars": 1556
+  },
+  {
+    "page": 222,
+    "head": "208 | Room Simulation | The short-time spectra and the pole distribution of a parallel circuit with low-pass comb | \ufb01lters are presented in Fig. 6.22. Low eigenfrequencies decay more slowly than higher ones. | The circul",
+    "chars": 2347
+  },
+  {
+    "page": 223,
+    "head": "6.3 Subsequent Reverberation | 209 | $(/,\u0016 | \u001a | \u000f\u0017 | &\u0001\u0016 | / | $(/,\u0017 | $(/,2 | $(/,<",
+    "chars": 317
+  },
+  {
+    "page": 224,
+    "head": "210 | Room Simulation | In general, for N delay systems we can write | y(n) = | N | \u0006 | i=1 | ciqi(n) + dx(n), | (6.65) | qj(n + mj) =",
+    "chars": 2005
+  },
+  {
+    "page": 225,
+    "head": "6.3 Subsequent Reverberation | 211 | D(z) | A=UG | X(z) | Y(z) | Figure 6.25 Feedback system. | be described analytically, owing to the high order of the feedback system. In [Her94], it is | shown experimentally that the",
+    "chars": 1359
+  },
+  {
+    "page": 226,
+    "head": "212 | Room Simulation | With the feedback matrix | A = g | \u221a | 2 | \uf8ee | \uf8ef\uf8ef\uf8f0 | 0 | 1",
+    "chars": 2130
+  },
+  {
+    "page": 227,
+    "head": "6.4 Approximation of Room Impulse Responses | 213 | x(n) | gN | g3 | g2 | g1 | y(n) | gMIX | 1-gMIX",
+    "chars": 2613
+  },
+  {
+    "page": 228,
+    "head": "214 | Room Simulation | g | z-M | -g | A(z) | a) | A(z) | -g1 | b)",
+    "chars": 615
+  },
+  {
+    "page": 229,
+    "head": "6.4 Approximation of Room Impulse Responses | 215 | A | (z) | L1 | A | (z) | L2 | A | (z)",
+    "chars": 547
+  },
+  {
+    "page": 230,
+    "head": "216 | Room Simulation | By suitably adjusting the analysis \ufb01lter bank [Sch94], the subband impulse responses | are obtained directly from the cross-correlation function | hi \u2248rxiyi. | (6.75) | The subband impulse respons",
+    "chars": 1850
+  },
+  {
+    "page": 231,
+    "head": "6.5 Java Applet \u2013 Fast Convolution | 217 | to determine the coef\ufb01cient g [Sch94]. For M = N, the coef\ufb01cients in (6.78) of the numer- | ator polynomial are obtained directly from the impulse response | bn = hn, | n = 0, 1",
+    "chars": 1881
+  },
+  {
+    "page": 232,
+    "head": "218 | Room Simulation | Figure 6.34 Java applet \u2013 fast convolution. | 2. First Re\ufb02ections | For a given sound (voice sound) calculate the delay time of a single \ufb01rst re\ufb02ection. Write a | Matlab program for the following ",
+    "chars": 1479
+  },
+  {
+    "page": 233,
+    "head": "References | 219 | 2. All-pass Filters: Realize an all-pass structure as suggested by Schroeder. | (a) Why can we expect a better result with an all-pass \ufb01lter than with comb \ufb01lter? | Write a Matlab function for a comb a",
+    "chars": 2077
+  },
+  {
+    "page": 234,
+    "head": "220 | Room Simulation | [Cre78] | L. Cremer, H. A. M\u00fcller: Die wissenschaftlichen Grundlagen der Raumakustik, | Vols. 1 and 2, S. Hirzel Verlag, Stuttgart, 1976/78. | [Cre03] | L. Cremer, M. M\u00f6ser: Technische Akustik, Sp",
+    "chars": 2444
+  },
+  {
+    "page": 235,
+    "head": "References | 221 | [Iid95] | K. Iida, K. Mizushima, Y. Takagi, T. Suguta: A New Method of Generating | Arti\ufb01cial Reverberant Sound, Proc. 99th AES Convention, Preprint No. 4109, | October 1995. | [Joh00] | M. Joho, G. S.",
+    "chars": 2333
+  },
+  {
+    "page": 236,
+    "head": "222 | Room Simulation | [Rei95] | A. J. Reijen, J. J. Sonke, D. de Vries: New Developments in Electro- | Acoustic Reverberation Technology, Proc. 98th AES Convention 1995, Preprint | No. 3978, February 1995. | [Roc95] | ",
+    "chars": 2310
+  },
+  {
+    "page": 237,
+    "head": "References | 223 | [Sta02] | G. B. Stan, J. J. Embrechts, D. Archambeau: Comparison of Different Impulse | Response Measurement Techniques, J. Audio Eng. Soc., Vol. 50, pp. 249\u2013262, | 2002. | [Sta82] | J. Stautner, M. Pu",
+    "chars": 672
+  },
+  {
+    "page": 238,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 239,
+    "head": "Chapter 7 | Dynamic Range Control | The dynamic range of a signal is de\ufb01ned as the logarithmic ratio of maximum to minimum | signal amplitude and is given in decibels. The dynamic range of an audio signal lies | between ",
+    "chars": 1979
+  },
+  {
+    "page": 240,
+    "head": "226 | Dynamic Range Control | x(n) | Y | (n)=G | dB | dB | dB | (n)+X | (n)",
+    "chars": 1890
+  },
+  {
+    "page": 241,
+    "head": "7.2 Static Curve | 227 | With the help of Fig. 7.3 the straight line equation YdB(n) = CT + R\u22121(XdB(n) \u2212CT) and | the compression factor | R = XdB(n) \u2212CT | YdB(n) \u2212CT = tan \u03b2C | (7.4) | are obtained, where the angle \u03b2 is",
+    "chars": 1270
+  },
+  {
+    "page": 242,
+    "head": "228 | Dynamic Range Control | With the help of tables and interpolation methods, it is possible to determine the control | factor without taking logarithms and antilogarithms. The implementation described as fol- | lows,",
+    "chars": 2063
+  },
+  {
+    "page": 243,
+    "head": "7.3 Dynamic Behavior | 229 | where the attack time ta and the release time tr are given in milliseconds (TS sampling | interval). With this switching between \ufb01lter structures one achieves fast attack responses | for incr",
+    "chars": 1129
+  },
+  {
+    "page": 244,
+    "head": "230 | Dynamic Range Control | 7.3.2 | Gain Factor Smoothing | Attack and release times can be implemented by the system shown in Fig. 7.6 [McN84]. | The attack coef\ufb01cient AT or release coef\ufb01cient RT is obtained by compar",
+    "chars": 1219
+  },
+  {
+    "page": 245,
+    "head": "7.4 Implementation | 231 | The relationship between attack time ta and the time constant \u03c4 of the step response is | obtained as follows: | 0.9/0.1 = e(t90\u2212t10)/\u03c4 | ln(0.9/0.1) = (t90 \u2212t10)/\u03c4 | ta = t90 \u2212t10 = 2.2\u03c4. | (7",
+    "chars": 1895
+  },
+  {
+    "page": 246,
+    "head": "232 | Dynamic Range Control | 0 | 20 | 40 | 60 | 80 | 100 | 120 | 140",
+    "chars": 822
+  },
+  {
+    "page": 247,
+    "head": "7.4 Implementation | 233 | \u0017# | \"7 | : | '7 | : | \u0018\u0006 | \u0006 | $+",
+    "chars": 600
+  },
+  {
+    "page": 248,
+    "head": "234 | Dynamic Range Control | values are measured simultaneously. If the linear threshold of the limiter is crossed, the | logarithm of the peak signal xPEAK(n) is taken and the upper path of the limiter is used | to cal",
+    "chars": 2537
+  },
+  {
+    "page": 249,
+    "head": "7.5 Realization Aspects | 235 | -1 | -0.5 | 0 | 0.5 | 1 | 1000 | 2000 | 3000",
+    "chars": 1012
+  },
+  {
+    "page": 250,
+    "head": "236 | Dynamic Range Control | \u0017# | '\u000e\u000e\u000e\u000e\u000e\u000e\u000e7 | : | \u0001 | &N | '\u000e\u000e\u000e\u000e\u000e\u000e7 | : | \u0013/\u0006",
+    "chars": 856
+  },
+  {
+    "page": 251,
+    "head": "7.6 Java Applet \u2013 Dynamic Range Control | 237 | PEAK/RMS value is taken as follows: | x = M \u00b7 2E, | (7.32) | ld(x) = ld(M) + E. | (7.33) | First, the mantissa is normalized and the exponent is determined. The function ld",
+    "chars": 1685
+  },
+  {
+    "page": 252,
+    "head": "238 | Dynamic Range Control | can adjust the characteristic curve with two control points. You can choose between two | prede\ufb01ned audio \ufb01les from our web server (audio1.wav or audio2.wav) or your own local | wav \ufb01le to b",
+    "chars": 1268
+  },
+  {
+    "page": 253,
+    "head": "References | 239 | 1. Sketch x(n), |x(n)| and x2(n) for different values of \u03d5. | 2. Determine the value of the envelope after perfect low-pass \ufb01ltering, i.e. averaging, | |x(n)|. Note: As the input signal is periodical, ",
+    "chars": 990
+  },
+  {
+    "page": 254,
+    "head": "",
+    "chars": 0
+  },
+  {
+    "page": 255,
+    "head": "Chapter 8 | Sampling Rate Conversion | Several different sampling rates are established for digital audio applications. For broad- | casting, professional and consumer audio, sampling rates of 32, 48 and 44.1 kHz are use",
+    "chars": 1318
+  },
+  {
+    "page": 256,
+    "head": "242 | Sampling Rate Conversion | by a factor L between consecutive samples L \u22121 zero samples will be included (see | Fig. 8.1). This leads to the upsampled signal | w(m) = | $ | x | \u0018m | L | \u0019",
+    "chars": 1397
+  },
+  {
+    "page": 257,
+    "head": "8.1 Basics | 243 | x(n) | y(m) | L | h(m) | w(m) | \u0003 | = T | fS=1/T",
+    "chars": 864
+  },
+  {
+    "page": 258,
+    "head": "244 | Sampling Rate Conversion | and for the Fourier transform of the output signal we can derive | Y(ej\u0004\u2032) = 1 | M X(ej\u0004\u2032/M) = 1 | M | 1 | T | \u221e | \u0006",
+    "chars": 1103
+  },
+  {
+    "page": 259,
+    "head": "8.2 Synchronous Conversion | 245 | algorithms that reduce complexity. In this respect two methods are in use: one is based on | a time-domain interpretation [Cro83] and the other [Hsi87] uses Z-domain fundamentals. | Owi",
+    "chars": 1905
+  },
+  {
+    "page": 260,
+    "head": "246 | Sampling Rate Conversion | M | H(z ) | M | M | H(z) | L | H(z ) | L",
+    "chars": 1379
+  },
+  {
+    "page": 261,
+    "head": "8.3 Asynchronous Conversion | 247 | x(n) | 3 | 2 | y(m) | H(z) | x(n) | 2 | y(m)",
+    "chars": 1161
+  },
+  {
+    "page": 262,
+    "head": "248 | Sampling Rate Conversion | x(n) | 2 | y(m) | 3 | E (z) | 0 | E (z) | 1",
+    "chars": 456
+  },
+  {
+    "page": 263,
+    "head": "8.3 Asynchronous Conversion | 249 | x(n) | Rect | f | sin( f/Lf ) | \u03c0 | S | Y(f) | y(k)",
+    "chars": 654
+  },
+  {
+    "page": 264,
+    "head": "250 | Sampling Rate Conversion | With this it is possible to reduce the necessary interpolation rate to | L1 \u22652w/2\u22121. | (8.36) | Figure 8.10 demonstrates this with a two-stage block diagram. First, interpolation up to a ",
+    "chars": 1578
+  },
+  {
+    "page": 265,
+    "head": "8.3 Asynchronous Conversion | 251 | '7 | : | '7 | \u0005\u0016: | '7 | \u0005\u0017: | '7 | 9\u0016:",
+    "chars": 1231
+  },
+  {
+    "page": 266,
+    "head": "252 | Sampling Rate Conversion | This time-scaling of the impulse response has the consequence that the number of coef\ufb01- | cients of the time-variant partial impulse responses is increased. The number of required | state",
+    "chars": 975
+  },
+  {
+    "page": 267,
+    "head": "8.3 Asynchronous Conversion | 253 | (Fig. 8.15d). In the third stage, the signal is upsampled by a factor of 32 and the image | spectra are suppressed (see Fig. 8.15d,e). In the fourth stage (Fig. 8.15e) the signal is | ",
+    "chars": 3789
+  },
+  {
+    "page": 268,
+    "head": "254 | Sampling Rate Conversion | y(k) | f | Y(f) | f | f | f | f | a)",
+    "chars": 866
+  },
+  {
+    "page": 269,
+    "head": "8.3 Asynchronous Conversion | 255 | CON | fSO | y(m) | fSI | x(n) | 32 | y(j) | 2",
+    "chars": 720
+  },
+  {
+    "page": 270,
+    "head": "256 | Sampling Rate Conversion | \u0016 | 3 | \u000f\u0005\u0016 | \u0017 | 2 | \u0007 | \u0007 | \u0007",
+    "chars": 665
+  },
+  {
+    "page": 271,
+    "head": "8.4 Interpolation Methods | 257 | \u2022 Example 2: w = 8 \u2192MZ = 28 | TSO | TSI | = 28MI + (z \u2212z0) | 2827 | (8.51) | With a precision of 15 bits, the averaging number is chosen as MO = 27 and the | number MI and the counter ou",
+    "chars": 1526
+  },
+  {
+    "page": 272,
+    "head": "258 | Sampling Rate Conversion | of Nth order representing exactly a function f (x) at N + 1 uniformly spaced xi, i.e. | pN(xi) = f (xi) = yi for i = 0, . . . , N. This can be written as a set of linear equations | \uf8ee | \uf8ef",
+    "chars": 1376
+  },
+  {
+    "page": 273,
+    "head": "8.4 Interpolation Methods | 259 | ' | '7 | \u0005\u0016: | '7 | : | '7 | 9\u0016: | \"7",
+    "chars": 816
+  },
+  {
+    "page": 274,
+    "head": "260 | Sampling Rate Conversion | Equation (8.62) with ai from (8.61) leads to | y(n + \u03b1) = | \u00041 | 2y(n + 1) \u2212y(n) + 1 | 2y(n \u22121) | \u0005 | (n + \u03b1)2 | +",
+    "chars": 1203
+  },
+  {
+    "page": 275,
+    "head": "8.4 Interpolation Methods | 261 | we get | x \u2212xj | xi \u2212xj | = (x0 + \u03b1h) \u2212(x0 + jh) | (x0 + ih) \u2212(x0 + jh) = \u03b1 \u2212j | i \u2212j | (8.72) | and hence",
+    "chars": 921
+  },
+  {
+    "page": 276,
+    "head": "262 | Sampling Rate Conversion | A B-spline MN | k (x) of Nth order using m + 1 samples is de\ufb01ned in the interval [xk, . . . , | xk+m] by | MN | k (x) = | k+m | \u0006 | i=k",
+    "chars": 1322
+  },
+  {
+    "page": 277,
+    "head": "8.4 Interpolation Methods | 263 | The homogeneous set of linear equations has non-trivial solutions for m > N. The mini- | mum requirement results in m = N + 1. For m = N + 1, the coef\ufb01cients [Boe93] can be | obtained as",
+    "chars": 1178
+  },
+  {
+    "page": 278,
+    "head": "264 | Sampling Rate Conversion | Example: For N = 3, m = 4, and \ufb01ve samples the coef\ufb01cients according to (8.83) are given | by | a0 = | 1 | (x0 \u2212x4)(x0 \u2212x3)(x0 \u2212x2)(x0 \u2212x1), | a1 = | 1 | (x1 \u2212x4)(x1 \u2212x3)(x1 \u2212x2)(x1 \u2212x0),",
+    "chars": 686
+  },
+  {
+    "page": 279,
+    "head": "8.4 Interpolation Methods | 265 | x0 | x1 | x7 | x-1 | x3 | x2 | x4 | x5",
+    "chars": 971
+  },
+  {
+    "page": 280,
+    "head": "266 | Sampling Rate Conversion | symmetry properties shown in Fig. 8.25, the B-splines can be written in the form | N2 | 2 (\u03b1) = N2 | 0 (\u03b1) = 3 | 3 | \u0006 | i=0 | ai(\u03b1 \u2212xi)2",
+    "chars": 1050
+  },
+  {
+    "page": 281,
+    "head": "8.4 Interpolation Methods | 267 | In the same way the time-variant coef\ufb01cients of a third-order B-spline are given by | N3 | 3 (\u03b1) = h(1) = 1 | 6\u03b13, | (8.95) | N3 | 2 (\u03b1) = h(2) = 1 | 6(1 + \u03b1)3 \u22122",
+    "chars": 1176
+  },
+  {
+    "page": 282,
+    "head": "268 | Sampling Rate Conversion | x0 | x7 | x8 | x3 | x2 | x4 | x6 | y(n+ )",
+    "chars": 1000
+  },
+  {
+    "page": 283,
+    "head": "8.5 Exercises | 269 | 8.5 | Exercises | 1. Basics | Consider a simple sampling rate conversion system with a conversion rate of 4 | 3. The system | consists of two upsampling blocks, each by 2, and one downsampling block",
+    "chars": 1635
+  },
+  {
+    "page": 284,
+    "head": "270 | Sampling Rate Conversion | 4. Asynchronous Conversion | 1. What is the basic concept of asynchronous sampling rate conversion? | 2. Sketch the block diagram and discuss the individual operations. | 3. What is the n",
+    "chars": 1922
+  },
+  {
+    "page": 285,
+    "head": "References | 271 | [Kat86] | Y. Katsumata, O. Hamada: An Audio Sampling Frequency Conversion Using | Digital Signal Processors, Proc. IEEE ICASSP-86, pp. 33\u201336, Tokyo, 1986. | [Lag81] | R. Lagadec, H. O. Kunz: A Universa",
+    "chars": 2419
+  },
+  {
+    "page": 286,
+    "head": "272 | Sampling Rate Conversion | [Vai93] | P. P. Vaidyanathan: Multirate Systems and Filter Banks, Prentice Hall, | Englewood Cliffs, NJ, 1993. | [Z\u00f6l94] | U. Z\u00f6lzer, T. Boltze: Interpolation Algorithms: Theory and Appli",
+    "chars": 292
+  },
+  {
+    "page": 287,
+    "head": "Chapter 9 | Audio Coding | For transmission and storage of audio signals, different methods for compressing data have | been investigated besides the pulse code modulation representation. The requirements of | different ",
+    "chars": 2410
+  },
+  {
+    "page": 288,
+    "head": "274 | Audio Coding | nearly white (see Fig. 9.2, lower right). The prediction can be represented as a \ufb01lter | operation with an analysis transfer function HA(z) = 1 \u2212P(z) on the coder side. | Coder | Decoder | x(n) | xc(",
+    "chars": 2319
+  },
+  {
+    "page": 289,
+    "head": "9.2 Lossy Audio Coding | 275 | 0 | 200 | 400 | 600 | 800 | 1000 | \u01661 | \u01660.5",
+    "chars": 1186
+  },
+  {
+    "page": 290,
+    "head": "276 | Audio Coding | 0 | 2 | 4 | 6 | 8 | 10 | 12 | 0",
+    "chars": 510
+  },
+  {
+    "page": 291,
+    "head": "9.3 Psychoacoustics | 277 | Coder | x(n) | x1 | SMR | xN | Decoder | xc | Quantization",
+    "chars": 1789
+  },
+  {
+    "page": 292,
+    "head": "278 | Audio Coding | Table 9.1 Critical bands as given by Zwicker [Zwi82]. | z/Bark | fl/Hz | fu/Hz | fB/Hz | fc/Hz | 0 | 0",
+    "chars": 1502
+  },
+  {
+    "page": 293,
+    "head": "9.3 Psychoacoustics | 279 | every critical band. This offset is responsible for choosing appropriate quantization steps | for each critical band. | 20 | 50 | 100 | 200 | 500 | 1k",
+    "chars": 1241
+  },
+  {
+    "page": 294,
+    "head": "280 | Audio Coding | with the help of an N-point FFT. The signal power in band i is calculated by the sum | Sp(i) = | \u0004ui | \u0006 | \u0004=\u0004li | Sp(k) | (9.6) | from the lower frequency up to the upper frequency of critical band ",
+    "chars": 2123
+  },
+  {
+    "page": 295,
+    "head": "9.3 Psychoacoustics | 281 | the masking threshold is given by | T (i) = 10[LS(i)\u2212O(i)]/10. | (9.12) | Masking across Critical Bands. Masking across critical bands can be carried out with the | help of the Bark scale. The",
+    "chars": 1868
+  },
+  {
+    "page": 296,
+    "head": "282 | Audio Coding | L/dB | LS | LS-32 dB | +27 dB | 5.5 dB | Quantization Noise | f | fli",
+    "chars": 1224
+  },
+  {
+    "page": 297,
+    "head": "9.3 Psychoacoustics | 283 | 20 | 50 | 100 | 200 | 500 | 1k | 2k | 5k",
+    "chars": 610
+  },
+  {
+    "page": 298,
+    "head": "284 | Audio Coding | With the help of the global masking threshold LTm,abs(i) we calculate the signal-to-mask | ratio | SMR(i) = LS(i) \u2212LTm,abs(i) | in dB | (9.19) | per Bark band. This signal-to-mask ratio de\ufb01nes the ne",
+    "chars": 1839
+  },
+  {
+    "page": 299,
+    "head": "9.4 ISO-MPEG-1 Audio Coding | 285 | 20 | 50 | 100 | 200 | 500 | 1k | 2k | 5k",
+    "chars": 1160
+  },
+  {
+    "page": 300,
+    "head": "286 | Audio Coding | x1 | xN | x(n) | xc | Synthesis | Filter | Bank | De-",
+    "chars": 2795
+  },
+  {
+    "page": 301,
+    "head": "9.4 ISO-MPEG-1 Audio Coding | 287 | FM-1(z) | x(n) | x0 | F1(z) | F0(z) | M | M | M",
+    "chars": 1492
+  },
+  {
+    "page": 302,
+    "head": "288 | Audio Coding | 0 | 50 | 100 | 150 | 200 | 250 | 300 | 350",
+    "chars": 666
+  },
+  {
+    "page": 303,
+    "head": "9.4 ISO-MPEG-1 Audio Coding | 289 | is calculated. Then the window h(n) is displaced by 384 (12 \u00b7 32) samples and the | next block is processed. | 2. Determine the sound pressure level in every subband. The sound pressur",
+    "chars": 2145
+  },
+  {
+    "page": 304,
+    "head": "290 | Audio Coding | The masking function vf [z(j), z(m)] with distance \bz = z(m) \u2212z(j) is given by | vf = | \uf8f1 | \uf8f4\uf8f4\uf8f4\uf8f4\uf8f2 | \uf8f4\uf8f4\uf8f4\uf8f4\uf8f3 | 17 \u00b7 (\bz + 1) \u2212(0.4 \u00b7 X[z(j)] + 6) | \u22123 \u2264\bz < \u22121 | (0.4 \u00b7 X[z(j)] + 6) \u00b7 \bz",
+    "chars": 1904
+  },
+  {
+    "page": 305,
+    "head": "9.5 MPEG-2 Audio Coding | 291 | this, quantization noise remains under the masking threshold. Masking across critical bands | is used for the implementation of the ISO-MPEG1 coding method. | For a given transmission rate",
+    "chars": 2610
+  },
+  {
+    "page": 306,
+    "head": "292 | Audio Coding | to existing MPEG-1 systems is achieved through the version MPEG-2 BC (Backward | Compatible) and the introduction toward lower sampling frequencies of 32, 22.05, 24 kHz | with version MPEG-2 LSF (Low",
+    "chars": 2235
+  },
+  {
+    "page": 307,
+    "head": "9.6 MPEG-2 Advanced Audio Coding | 293 | Bitstream | Generation | Filter | Bank | TNS | Psycho- | acoustic | Model",
+    "chars": 769
+  },
+  {
+    "page": 308,
+    "head": "294 | Audio Coding | X(m,k) | MDCT | N samples | IMDCT | x(n) | n | k | 0",
+    "chars": 1576
+  },
+  {
+    "page": 309,
+    "head": "9.6 MPEG-2 Advanced Audio Coding | 295 | 0 | 200 | 400 | 600 | \u01661 | 0 | 1 | Input signal",
+    "chars": 1800
+  },
+  {
+    "page": 310,
+    "head": "296 | Audio Coding | 0 | 200 | 400 | 600 | 800 | 1000 | 1200 | 1400",
+    "chars": 1834
+  },
+  {
+    "page": 311,
+    "head": "9.6 MPEG-2 Advanced Audio Coding | 297 | 0 | 200 | 400 | 600 | 800 | 1000 | 1200 | 1400",
+    "chars": 745
+  },
+  {
+    "page": 312,
+    "head": "298 | Audio Coding | 0 | 200 | 400 | 600 | 800 | 1000 | \u01661 | \u01660.5",
+    "chars": 563
+  },
+  {
+    "page": 313,
+    "head": "9.6 MPEG-2 Advanced Audio Coding | 299 | the spectral coef\ufb01cients of the DCT of this castanet attack are represented in Fig. 9.25b. | After quantization of these spectral coef\ufb01cients X(k) to 4 bits (Fig. 9.25d) and IDCT ",
+    "chars": 4042
+  },
+  {
+    "page": 314,
+    "head": "300 | Audio Coding | E(k) | Y(k)=X(k)+E(k)*H(k) | Coder | Decoder | Q | b) Forward prediction in frequency domain | Error signal e(n) after decoder is temporally weighted | with temporal envelope h(n)=IDFT[H(k)]",
+    "chars": 1108
+  },
+  {
+    "page": 315,
+    "head": "9.6 MPEG-2 Advanced Audio Coding | 301 | 0 | 200 | 400 | 600 | 800 | 1000 | \u01661 | \u01660.5",
+    "chars": 650
+  },
+  {
+    "page": 316,
+    "head": "302 | Audio Coding | Table 9.2 Forward prediction in time and frequency domain. | Prediction in time domain | Prediction in frequency domain | y(n) = x(n) + e(n) \u2217h(n) | Y(k) = X(k) + E(k) \u00b7 H(k) | y(n) = x(n) + e(n) \u00b7 h",
+    "chars": 1901
+  },
+  {
+    "page": 317,
+    "head": "9.6 MPEG-2 Advanced Audio Coding | 303 | X (k) | S | X (k) | M | _ | X (k) | R | X (k)",
+    "chars": 1989
+  },
+  {
+    "page": 318,
+    "head": "304 | Audio Coding | 9.7 | MPEG-4 Audio Coding | The MPEG-4 audio coding standard consists of a family of audio and speech coding | methods for different bit rates and a variety of multimedia applications [Bos02, Her02].",
+    "chars": 2614
+  },
+  {
+    "page": 319,
+    "head": "9.7 MPEG-4 Audio Coding | 305 | Model-based | Signal | Decomposition | Psycho- | acoustic | Model | Quant | Quant",
+    "chars": 1608
+  },
+  {
+    "page": 320,
+    "head": "306 | Audio Coding | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7",
+    "chars": 1604
+  },
+  {
+    "page": 321,
+    "head": "9.8 Spectral Band Replication | 307 | Spectrogram with D-FFT, NFFT = 2048, RA=512 | t in ms \u2192 | f in Hz \u2192 | 0 | 200 | 400 | 600 | 800",
+    "chars": 428
+  },
+  {
+    "page": 322,
+    "head": "308 | Audio Coding | HP | LP | L | Difference | Part | Audio | Coder | Coding",
+    "chars": 1846
+  },
+  {
+    "page": 323,
+    "head": "9.9 Java Applet \u2013 Psychoacoustics | 309 | 0 | 2 | 4 | 6 | 8 | 10 | 12 | 14",
+    "chars": 541
+  },
+  {
+    "page": 324,
+    "head": "310 | Audio Coding | Figure 9.40 Java applet \u2013 psychoacoustics. | 9.10 | Exercises | 1. Psychoacoustics | 1. Human hearing | (a) What is the frequency range of human sound perception? | (b) What is the frequency range of",
+    "chars": 1155
+  },
+  {
+    "page": 325,
+    "head": "References | 311 | 2. Audio coding | 1. Explain the lossless coder and decoder. | 2. What is the achievable compression factor for lossless coding? | 3. Explain the MPEG-1 Layer III coder and decoder. | 4. Explain the MP",
+    "chars": 1808
+  },
+  {
+    "page": 326,
+    "head": "312 | Audio Coding | [Cra97] | P. Craven, M. Law, J. Stuart: Lossless Compression Using IIR Prediction, Proc. | 102nd AES Convention, Preprint No. 4415, Munich, 1997. | [Die02] | M. Dietz, L. Liljeryd, K. Kj\u00f6rling, O. Ku",
+    "chars": 2423
+  },
+  {
+    "page": 327,
+    "head": "References | 313 | [Her96] | J. Herre, J. D. Johnston: Enhancing the Performance of Perceptual Audio | Coders by Using Temporal Noise Shaping (TNS), Proc. 101st AES Convention, | Preprint No. 4384, Los Angeles, 1996. | [",
+    "chars": 2188
+  },
+  {
+    "page": 328,
+    "head": "314 | Audio Coding | [Lag02] | M. Lagrange, S. Marchand, J.-B. Rault: Sinusoidal Parameter Extraction and | Component Selection in a Non Stationary Model, Proc. DAFX-02 Conference | on Digital Audio Effects, pp. 59\u201364, H",
+    "chars": 2435
+  },
+  {
+    "page": 329,
+    "head": "References | 315 | [Pur02a] | H. Purnhagen, N. Meine, B. Edler: Sinusoidal Coding Using Loudness-Based | Component Selection, Proc. ICASSP-2002, May 13\u201317, Orlando, FL, 2002. | [Pur02b] | H. Purnhagen: Parameter Estimati",
+    "chars": 2433
+  },
+  {
+    "page": 330,
+    "head": "316 | Audio Coding | [Sqa88] | EBU-SQAM: Sound Quality Assessment Material, Recordings for Subjective | Tests, CompactDisc, 1988. | [Ter79] | E. Terhardt: Calculating Virtual Pitch, Hearing Res., Vol. 1, pp. 155\u2013182, 197",
+    "chars": 1325
+  },
+  {
+    "page": 331,
+    "head": "Index | AD conversion, 63 | delta-sigma, 70 | oversampling, 66 | AD converter, 79 | characteristics, 79 | counter, 84 | delta-sigma, 85 | half-\ufb02ash, 83 | parallel, 82",
+    "chars": 1287
+  },
+  {
+    "page": 332,
+    "head": "318 | Index | second-order, 71 | signal-to-noise ratio, 73 | DFT, 158 | Differential nonlinearity, 80 | Digital ampli\ufb01er, 14 | Digital crossover, 16 | Digital Radio Mondiale (DRM), 8 | Digital Versatile Disc \u2013 Audio",
+    "chars": 1684
+  },
+  {
+    "page": 333,
+    "head": "Index | 319 | Latency time, 78, 178, 275 | Limit cycles, 157 | Limiter, 226, 231 | MADI interface, 1, 102 | Masking, 279, 281, 284 | index, 289 | threshold, 279, 281, 282, 284, 289 | global, 290",
+    "chars": 1701
+  },
+  {
+    "page": 334,
+    "head": "320 | Index | Signal-to-mask ratio, 284, 287, 290, | 291 | Signal-to-noise ratio, 23, 53, 55, 57 | Sinc distortion, 65 | Sound channel, 4 | Sound studio, 1 | SPDIF interface, 102 | Spectral Band Replication SBR, 8",
+    "chars": 661
+  }
+]

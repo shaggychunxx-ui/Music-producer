@@ -1,0 +1,8 @@
+[project]
+name = "dsp-kb"
+version = "1.0.0"
+description = "Zölzer Digital Audio Signal Processing 2e knowledge base"
+requires-python = ">=3.10"
+
+[project.scripts]
+dsp-kb = "dsp_kb.__main__:main"

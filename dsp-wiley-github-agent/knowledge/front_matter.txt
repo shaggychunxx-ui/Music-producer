@@ -1,0 +1,1935 @@
+
+=====
+
+=====
+Digital Audio Signal Processing
+
+=====
+
+=====
+Digital Audio Signal Processing
+Second Edition
+Udo Zölzer
+Helmut Schmidt University, Hamburg, Germany
+A John Wiley & Sons, Ltd, Publication
+
+=====
+This edition ﬁrst published 2008
+© 2008 John Wiley & Sons Ltd
+First edition published under the title Digitale Audiosignalverarbeitung © B. G. Teubner
+Verlag, Stuttgart, 1995. Digital Audio Signal Processing was then published in 1997 by
+John Wiley & Sons Ltd.
+Registered ofﬁce
+John Wiley & Sons Ltd, The Atrium, Southern Gate, Chichester, West Sussex, PO19 8SQ,
+United Kingdom
+For details of our global editorial ofﬁces, for customer services and for information about
+how to apply for permission to reuse the copyright material in this book please see our
+website at www.wiley.com.
+The right of the author to be identiﬁed as the author of this work has been asserted in
+accordance with the Copyright, Designs and Patents Act 1988.
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval
+system, or transmitted, in any form or by any means, electronic, mechanical,
+photocopying, recording or otherwise, except as permitted by the UK Copyright, Designs
+and Patents Act 1988, without the prior permission of the publisher.
+Wiley also publishes its books in a variety of electronic formats. Some content that
+appears in print may not be available in electronic books.
+Designations used by companies to distinguish their products are often claimed as
+trademarks. All brand names and product names used in this book are trade names, service
+marks, trademarks or registered trademarks of their respective owners. The publisher is
+not associated with any product or vendor mentioned in this book. This publication is
+designed to provide accurate and authoritative information in regard to the subject matter
+covered. It is sold on the understanding that the publisher is not engaged in rendering
+professional services. If professional advice or other expert assistance is required, the
+services of a competent professional should be sought.
+Library of Congress Cataloging-in-Publication Data
+Zölzer, Udo.
+Digital Audio Signal Processing / Udo Zölzer. 2nd ed.
+p. cm.
+Includes bibliographical reference and index.
+ISBN 978-0-470-99785-7 (cloth)
+1. Sound–Recording and reproducing–Digital techniques. 2. Signal processing–Digital
+techniques. I. Title.
+TK7881.4.Z65 2008
+621.382’2–dc22
+2008006095
+A catalogue record for this book is available from the British Library.
+ISBN 978-0-470-99785-7 (HB)
+Set in 10/12pt Times by Sunrise Setting Ltd, Torquay, England.
+Printed in Great Britain by Antony Rowe Ltd, Chippenham, England.
+
+=====
+Contents
+Preface to the Second Edition
+ix
+Preface to the First Edition
+xi
+1
+Introduction
+1
+1.1
+Studio Technology
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+1.2
+Digital Transmission Systems
+. . . . . . . . . . . . . . . . . . . . . . . .
+2
+1.3
+Storage Media . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.4
+Audio Components at Home . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+2
+Quantization
+21
+2.1
+Signal Quantization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+2.1.1
+Classical Quantization Model
+. . . . . . . . . . . . . . . . . . . .
+21
+2.1.2
+Quantization Theorem . . . . . . . . . . . . . . . . . . . . . . . .
+24
+2.1.3
+Statistics of Quantization Error . . . . . . . . . . . . . . . . . . . .
+30
+2.2
+Dither . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+36
+2.2.1
+Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+36
+2.2.2
+Implementation . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+2.2.3
+Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+39
+2.3
+Spectrum Shaping of Quantization – Noise Shaping . . . . . . . . . . . . .
+42
+2.4
+Number Representation . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+2.4.1
+Fixed-point Number Representation . . . . . . . . . . . . . . . . .
+47
+2.4.2
+Floating-point Number Representation . . . . . . . . . . . . . . . .
+53
+2.4.3
+Effects on Format Conversion and Algorithms . . . . . . . . . . . .
+56
+2.5
+Java Applet – Quantization, Dither, and Noise Shaping . . . . . . . . . . .
+58
+2.6
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+59
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+61
+3
+AD/DA Conversion
+63
+3.1
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+3.1.1
+Nyquist Sampling
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+63
+3.1.2
+Oversampling . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+65
+3.1.3
+Delta-sigma Modulation . . . . . . . . . . . . . . . . . . . . . . .
+66
+
+=====
+vi
+Contents
+3.2
+AD Converters
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+79
+3.2.1
+Speciﬁcations . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+79
+3.2.2
+Parallel Converter . . . . . . . . . . . . . . . . . . . . . . . . . . .
+82
+3.2.3
+Successive Approximation . . . . . . . . . . . . . . . . . . . . . .
+83
+3.2.4
+Counter Methods . . . . . . . . . . . . . . . . . . . . . . . . . . .
+84
+3.2.5
+Delta-sigma AD Converter . . . . . . . . . . . . . . . . . . . . . .
+85
+3.3
+DA Converters
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+86
+3.3.1
+Speciﬁcations . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+86
+3.3.2
+Switched Voltage and Current Sources . . . . . . . . . . . . . . . .
+89
+3.3.3
+Weighted Resistors and Capacitors . . . . . . . . . . . . . . . . . .
+89
+3.3.4
+R-2R Resistor Networks . . . . . . . . . . . . . . . . . . . . . . .
+92
+3.3.5
+Delta-sigma DA Converter . . . . . . . . . . . . . . . . . . . . . .
+92
+3.4
+Java Applet – Oversampling and Quantization . . . . . . . . . . . . . . . .
+92
+3.5
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+94
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+95
+4
+Audio Processing Systems
+97
+4.1
+Digital Signal Processors . . . . . . . . . . . . . . . . . . . . . . . . . . .
+98
+4.1.1
+Fixed-point DSPs . . . . . . . . . . . . . . . . . . . . . . . . . . .
+98
+4.1.2
+Floating-point DSPs
+. . . . . . . . . . . . . . . . . . . . . . . . . 100
+4.2
+Digital Audio Interfaces
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+4.2.1
+Two-channel AES/EBU Interface
+. . . . . . . . . . . . . . . . . . 101
+4.2.2
+MADI Interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+4.3
+Single-processor Systems . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+4.3.1
+Peripherals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+4.3.2
+Control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+4.4
+Multi-processor Systems . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+4.4.1
+Connection via Serial Links . . . . . . . . . . . . . . . . . . . . . 110
+4.4.2
+Connection via Parallel Links
+. . . . . . . . . . . . . . . . . . . . 111
+4.4.3
+Connection via Standard Bus Systems . . . . . . . . . . . . . . . . 112
+4.4.4
+Scalable Audio System . . . . . . . . . . . . . . . . . . . . . . . . 113
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+5
+Equalizers
+115
+5.1
+Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+5.2
+Recursive Audio Filters . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+5.2.1
+Design
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+5.2.2
+Parametric Filter Structures
+. . . . . . . . . . . . . . . . . . . . . 128
+5.2.3
+Quantization Effects . . . . . . . . . . . . . . . . . . . . . . . . . 138
+5.3
+Nonrecursive Audio Filters . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+5.3.1
+Basics of Fast Convolution . . . . . . . . . . . . . . . . . . . . . . 158
+5.3.2
+Fast Convolution of Long Sequences
+. . . . . . . . . . . . . . . . 161
+5.3.3
+Filter Design by Frequency Sampling . . . . . . . . . . . . . . . . 167
+5.4
+Multi-complementary Filter Bank
+. . . . . . . . . . . . . . . . . . . . . . 168
+5.4.1
+Principles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 168
+5.4.2
+Example: Eight-band Multi-complementary Filter Bank
+. . . . . . 175
+
+=====
+Contents
+vii
+5.5
+Java Applet – Audio Filters . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+5.6
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 181
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+6
+Room Simulation
+191
+6.1
+Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 191
+6.1.1
+Room Acoustics
+. . . . . . . . . . . . . . . . . . . . . . . . . . . 191
+6.1.2
+Model-based Room Impulse Responses . . . . . . . . . . . . . . . 192
+6.1.3
+Measurement of Room Impulse Responses
+. . . . . . . . . . . . . 193
+6.1.4
+Simulation of Room Impulse Responses . . . . . . . . . . . . . . . 194
+6.2
+Early Reﬂections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+6.2.1
+Ando’s Investigations . . . . . . . . . . . . . . . . . . . . . . . . . 195
+6.2.2
+Gerzon Algorithm
+. . . . . . . . . . . . . . . . . . . . . . . . . . 195
+6.3
+Subsequent Reverberation
+. . . . . . . . . . . . . . . . . . . . . . . . . . 200
+6.3.1
+Schroeder Algorithm . . . . . . . . . . . . . . . . . . . . . . . . . 200
+6.3.2
+General Feedback Systems . . . . . . . . . . . . . . . . . . . . . . 208
+6.3.3
+Feedback All-pass Systems . . . . . . . . . . . . . . . . . . . . . . 212
+6.4
+Approximation of Room Impulse Responses . . . . . . . . . . . . . . . . . 213
+6.5
+Java Applet – Fast Convolution . . . . . . . . . . . . . . . . . . . . . . . . 217
+6.6
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
+7
+Dynamic Range Control
+225
+7.1
+Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 225
+7.2
+Static Curve . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226
+7.3
+Dynamic Behavior
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 228
+7.3.1
+Level Measurement . . . . . . . . . . . . . . . . . . . . . . . . . . 228
+7.3.2
+Gain Factor Smoothing . . . . . . . . . . . . . . . . . . . . . . . . 230
+7.3.3
+Time Constants . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230
+7.4
+Implementation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
+7.4.1
+Limiter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 231
+7.4.2
+Compressor, Expander, Noise Gate
+. . . . . . . . . . . . . . . . . 231
+7.4.3
+Combination System . . . . . . . . . . . . . . . . . . . . . . . . . 233
+7.5
+Realization Aspects . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 234
+7.5.1
+Sampling Rate Reduction
+. . . . . . . . . . . . . . . . . . . . . . 234
+7.5.2
+Curve Approximation
+. . . . . . . . . . . . . . . . . . . . . . . . 236
+7.5.3
+Stereo Processing . . . . . . . . . . . . . . . . . . . . . . . . . . . 237
+7.6
+Java Applet – Dynamic Range Control . . . . . . . . . . . . . . . . . . . . 237
+7.7
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 238
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 239
+8
+Sampling Rate Conversion
+241
+8.1
+Basics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 241
+8.1.1
+Upsampling and Anti-imaging Filtering . . . . . . . . . . . . . . . 241
+8.1.2
+Downsampling and Anti-aliasing Filtering . . . . . . . . . . . . . . 242
+8.2
+Synchronous Conversion . . . . . . . . . . . . . . . . . . . . . . . . . . . 244
+
+=====
+viii
+Contents
+8.3
+Asynchronous Conversion
+. . . . . . . . . . . . . . . . . . . . . . . . . . 246
+8.3.1
+Single-stage Methods . . . . . . . . . . . . . . . . . . . . . . . . . 250
+8.3.2
+Multistage Methods
+. . . . . . . . . . . . . . . . . . . . . . . . . 252
+8.3.3
+Control of Interpolation Filters . . . . . . . . . . . . . . . . . . . . 253
+8.4
+Interpolation Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 257
+8.4.1
+Polynomial Interpolation . . . . . . . . . . . . . . . . . . . . . . . 257
+8.4.2
+Lagrange Interpolation . . . . . . . . . . . . . . . . . . . . . . . . 260
+8.4.3
+Spline Interpolation . . . . . . . . . . . . . . . . . . . . . . . . . . 261
+8.5
+Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 269
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 270
+9
+Audio Coding
+273
+9.1
+Lossless Audio Coding . . . . . . . . . . . . . . . . . . . . . . . . . . . . 273
+9.2
+Lossy Audio Coding
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . 275
+9.3
+Psychoacoustics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
+9.3.1
+Critical Bands and Absolute Threshold
+. . . . . . . . . . . . . . . 277
+9.3.2
+Masking
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 279
+9.4
+ISO-MPEG-1 Audio Coding . . . . . . . . . . . . . . . . . . . . . . . . . 284
+9.4.1
+Filter Banks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 285
+9.4.2
+Psychoacoustic Models . . . . . . . . . . . . . . . . . . . . . . . . 287
+9.4.3
+Dynamic Bit Allocation and Coding . . . . . . . . . . . . . . . . . 290
+9.5
+MPEG-2 Audio Coding . . . . . . . . . . . . . . . . . . . . . . . . . . . . 291
+9.6
+MPEG-2 Advanced Audio Coding . . . . . . . . . . . . . . . . . . . . . . 292
+9.7
+MPEG-4 Audio Coding . . . . . . . . . . . . . . . . . . . . . . . . . . . . 304
+9.8
+Spectral Band Replication
+. . . . . . . . . . . . . . . . . . . . . . . . . . 306
+9.9
+Java Applet – Psychoacoustics . . . . . . . . . . . . . . . . . . . . . . . . 308
+9.10 Exercises
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 310
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 311
+Index
+317
+
+=====
+Preface to the Second Edition
+This second edition represents a revised and extended version and offers an improved
+description besides new issues and extended references. The contents of this book are
+the basis of a lecture on Digital Audio Signal Processing at the Hamburg University of
+Technology (TU Hamburg-Harburg) and a lecture on Multimedia Signal Processing at the
+Helmut Schmidt University, Hamburg. For further studies you can ﬁnd interactive audio
+demonstrations, exercises and Matlab examples on the web site
+http://ant.hsu-hh.de/dasp/
+Besides the basics of digital audio signal processing introduced in this second edition,
+further advanced algorithms for digital audio effects can be found in the book DAFX –
+Digital Audio Effects (Ed. U. Zölzer) with the related web site
+http://www.dafx.de
+My thanks go to Professor Dieter Leckschat, Dr. Gerald Schuller, Udo Ahlvers,
+Mijail Guillemard, Christian Helmrich, Martin Holters, Dr. Florian Keiler, Stephan Möller,
+Francois-Xavier Nsabimana, Christian Ruwwe, Harald Schorr, Dr. Oomke Weikert,
+Catja Wilkens and Christian Zimmermann.
+Udo Zölzer
+Hamburg, June 2008
+
+=====
+
+=====
+Preface to the First Edition
+Digital audio signal processing is employed in recording and storing music and speech
+signals, for sound mixing and production of digital programs, in digital transmission to
+broadcast receivers as well as in consumer products like CDs, DATs and PCs. In the latter
+case, the audio signal is in a digital form all the way from the microphone right up to the
+loudspeakers, enabling real-time processing with fast digital signal processors.
+This book provides the basis of an advanced course in Digital Audio Signal Processing
+which I have been giving since 1992 at the Technical University Hamburg-Harburg.
+It is directed at students studying engineering, computer science and physics and also
+for professionals looking for solutions to problems in audio signal processing like in
+the ﬁelds of studio engineering, consumer electronics and multimedia. The mathematical
+and theoretical fundamentals of digital audio signal processing systems will be presented
+and typical applications with an emphasis on realization aspects will be discussed. Prior
+knowledge of systems theory, digital signal processing and multirate signal processing is
+taken as a prerequisite.
+The book is divided into two parts. The ﬁrst part (Chapters 1–4) presents a basis
+for hardware systems used in digital audio signal processing. The second part (Chapters
+5–9) discusses algorithms for processing digital audio signals. Chapter 1 describes the
+course taken by an audio signal from its recording in a studio up to its reproduction
+at home. Chapter 2 contains a representation of signal quantization, dither techniques
+and spectral shaping of quantization errors used for reducing the nonlinear effects of
+quantization. In the end, a comparison is made between the ﬁxed-point and ﬂoating-
+point number representations as well as their associated effects on format conversion and
+algorithms. Chapter 3 describes methods for AD/DA conversion of signals, starting with
+Nyquist sampling, methods for oversampling techniques and delta-sigma modulation. The
+chapter closes with a presentation of some circuit design of AD/DA converters. After an
+introduction to digital signal processors and digital audio interfaces, Chapter 4 describes
+simple hardware systems based on a single- and multiprocessor solutions. The algorithms
+introduced in the following Chapters 5–9 are, to a great extent, implemented in real-time
+on hardware platforms presented in Chapter 4. Chapter 5 describes digital audio equalizers.
+Apart from the implementation aspects of recursive audio ﬁlters, nonrecursive linear phase
+ﬁlters based on fast convolution and ﬁlter banks are introduced. Filter designs, parametric
+ﬁlter structures and precautions for reducing quantization errors in recursive ﬁlters are dealt
+with in detail. Chapter 6 deals with room simulation. Methods for simulation of artiﬁcial
+room impulse response and methods for approximation of measured impulse responses
+
+=====
+xii
+Preface to the First Edition
+are discussed. In Chapter 7 the dynamic range control of audio signals is described.
+These methods are applied at several positions in the audio chain from the microphone
+up to the loudspeakers in order to adapt to the dynamics of the recording, transmission
+and listening environment. Chapter 8 contains a presentation of methods for synchronous
+and asynchronous sampling rate conversion. Efﬁcient algorithms are described which are
+suitable for real-time processing as well as off-line processing. Both lossless and lossy
+audio coding are discussed in Chapter 9. Lossless audio coding is applied for storing of
+higher word-lengths. Lossy audio coding, on the other hand, plays a signiﬁcant role in
+communication systems.
+I would like to thank Prof. Fliege (University of Mannheim), Prof. Kammeyer
+(University of Bremen) and Prof. Heute (University of Kiel) for comments and support.
+I am also grateful to my colleagues at the TUHH and especially Dr. Alfred Mertins,
+Dr. Thomas Boltze, Dr. Bernd Redmer, Dr. Martin Schönle, Dr. Manfred Schusdziarra,
+Dr. Tanja Karp, Georg Dickmann, Werner Eckel, Thomas Scholz, Rüdiger Wolf, Jens
+Wohlers, Horst Zölzer, Bärbel Erdmann, Ursula Seifert and Dieter Gödecke. Apart from
+these, I would also like to say a word of gratitude to all those students who helped me in
+carrying out this work successfully.
+Special thanks go to Saeed Khawaja for his help during translation and to Dr. Anthony
+Macgrath for proof-reading the text. I also would like to thank Jenny Smith, Colin
+McKerracher, Ian Stoneham and Christian Rauscher (Wiley).
+My special thanks are directed to my wife Elke and my daughter Franziska.
+Udo Zölzer
+Hamburg, July 1997
+
+=====
+Chapter 1
+Introduction
+It is hardly possible to make a start in the ﬁeld of digital audio signal processing without
+having a ﬁrst insight into the variety of technical devices and systems of audio technology.
+In this introductory chapter, the ﬁelds of application for digital audio signal processing are
+presented. Starting from recording in a studio or in a concert hall, the whole chain of signal
+processing is shown, up to the reproduction at home or in a car (see Fig. 1.1). The ﬁelds of
+application can be divided into the following areas:
+• studio technology;
+• digital transmission systems;
+• storage media;
+• audio components for home entertainment.
+The basic principles of the above-mentioned ﬁelds of application will be presented as an
+overview in order to exhibit the uses of digital signal processing. Special technical devices
+and systems are outside the focus of this chapter. These devices and systems are strongly
+driven by the development of the computer technology with yearly changes and new
+devices based on new technologies. The goal of this introduction is a trend-independent
+presentation of the entire processing chain from the instrument or singer to the listener and
+consumer of music. The presentation of signal processing techniques and their algorithms
+will be discussed in the following chapters.
+1.1
+Studio Technology
+While recording speech or music in a studio or in a concert hall, the analog signal from a
+microphone is ﬁrst digitized, fed to a digital mixing console and then stored on a digital
+storage medium. A digital sound studio is shown in Fig. 1.2. Besides the analog sources
+(microphones), digital sources are fed to the digital mixing console over multichannel
+MADI interfaces [AES91]. Digital storage media like digital multitrack tape machines
+have been replaced by digital hard disc recording systems which are also connected via
+Digital Audio Signal Processing
+Second Edition
+Udo Zölzer
+© 2008 John Wiley & Sons, Ltd
+
+=====
+2
+Introduction
+Digital
+Transmission
+Digital Mixing Console
+Digital Storage Media
+Audio System
+(CD,DVD,
+Radio,PC)
+Concert hall
+Audio studio
+Living room
+Automobile
+PC
+Figure 1.1 Signal processing for recording, storage, transmission and reproduction.
+multichannel MADI interfaces to the mixing console. The ﬁnal stereo mix is stored via a
+two-channel AES/EBU interface [AES92] on a two-channel MASTER machine. External
+appliances for effects or room simulators are also connected to the mixing console via
+a two-channel AES/EBU interface. All systems are synchronized by a MASTER clock
+reference. In digital audio technology, the sampling rates1 fS = 48 kHz for professional
+studio technology, fS = 44.1 kHz for compact disc and fS = 32 kHz for broadcasting
+applications are established. In addition, multiples of these sampling frequencies such as
+88.2, 96, 176.4, and 192 kHz are used. The sound mixing console plays a central role
+in a digital sound studio. Figure 1.3 shows the functional units. The N input signals are
+processed individually. After level and panorama control, all signals are summed up to
+give a stereo mix. The summation is carried out several times so that other auxiliary stereo
+and/or mono signals are available for other purposes. In a sound channel (see Fig. 1.4), an
+equalizer unit (EQ), a dynamic unit (DYN), a delay unit (DEL), a gain element (GAIN)
+and a panorama element (PAN) are used. In addition to input and output signals in an audio
+channel, inserts as well as auxiliary or direct outputs are required.
+1.2
+Digital Transmission Systems
+In this section digital transmission will be brieﬂy explained. Besides the analog wireless
+broadcasting systems based on amplitude and frequency modulation, DAB2 (Digital Audio
+Broadcasting) has been introduced in several countries [Hoe01]. On the other hand, the
+internet has pushed audio/video distribution, internet radio and video via cable networks.
+Terrestrial Digital Broadcasting (DAB)
+With the introduction of terrestrial digital broadcasting, the quality standards of a compact
+disc will be achieved for mobile and stationary reception of radio signals [Ple91].
+Therefore, the data rate of a two-channel AES/EBU signal from a transmitting studio
+is reduced with the help of a source coder [Bra94] (see Fig. 1.5). Following the source
+coder (SC), additional information (AI) like the type of program (music/speech) and
+1Data rate 16 bit × 48 kHz = 768 kbit/s; data rate (AES/EBU signal) 2 × (24 + 8) bit × 48 kHz =
+3.072 Mbit/s; data rate (MADI signal) 56 × (24 + 8) bit × 48 kHz = 86.016 Mbit/s.
+2http://www.worlddab.org/.
+
+=====
+1.2 Digital Transmission Systems
+3
+MASTER
+SYNC
+GENERATOR
+MASTER
+SYNC
+GENERATOR
+ROOM SIMULATOR
+DIGITAL MULTITRACK
+HARD DISC RECORDER
+AES/EBU
+AES/EBU
+DIGITAL MIXING CONSOLE
+DIGITAL MIXING CONSOLE
+DIGITAL STEREO
+MASTER MACHINE
+MADI
+AES/EBU
+DIGITAL SIGNALS
+AES/EBU -> MADI
+CONVERSION
+MADI
+ANALOG SIGNALS
+ANALOG-to-DIGITAL
+CONVERSION
+MADI
+EFFECTS
+Figure 1.2 Digital sound studio.
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	 !
+
+"
+	!
+
+	"!
+
+
+
+
+#	
+$
+
+	
+$
+
+%$	
+
+
+$	
+
+
+O
+&'	
+Figure 1.3 N-channel sound mixing console.
+trafﬁc information is added. A multicarrier technique is applied for digital transmission
+to stationary and mobile receivers. At the transmitter, several broadcasting programs are
+combined in a multiplexer (MUX) to form a multiplex signal. The channel coding and
+
+=====
+4
+Introduction
+modulation is carried out by a multi-carrier transmission technique (Coded Orthogonal
+Frequency Division Multiplex, [Ala87, Kam92, Kam93, Tui93]).
+
+
+(
+(
+
+
+
+
+)
+*
+
+#&
+&
+	
+
+
+Figure 1.4 Sound channel.
+$
+	$
+
+
++	%%
+%	
+
+%	
+,	-	-
+.
+/!0
++	
+
+/(
+&1,!
+234/.1
+&
+(1/#
+	
+Figure 1.5 DAB transmitter.
+The DAB receiver (Fig. 1.6) consists of the demodulator (DMOD), the demultiplexer
+(DMUX) and the source decoder (SD). The SD provides a linearly quantized PCM signal
+(Pulse Code Modulation). The PCM signal is fed over a Digital-to-Analog Converter (DA
+Converter) to an ampliﬁer connected to loudspeakers.
+/(
+/!0
+
+&$
+&/
+&
+Figure 1.6 DAB receiver.
+For a more detailed description of the DAB transmission technique, an illustration
+based on ﬁlter banks is presented (see Fig. 1.7). The audio signal at a data rate of 768 kbit/s
+is decomposed into subbands with the help of an analysis ﬁlter bank (AFB). Quantization
+and coding based on psychoacoustic models are carried out within each subband. The data
+reduction leads to a data rate of 96–192 kbit/s. The quantized subband signals are provided
+with additional information (header) and combined together in a frame. This so-called ISO-
+MPEG1 frame [ISO92] is ﬁrst subjected to channel coding (CC). Time-interleaving (TIL)
+follows and will be described later on. The individual transmitting programs are combined
+in frequency multiplex (frequency-interleaving FIL) with a synthesis ﬁlter bank (SFB) into
+
+=====
+1.2 Digital Transmission Systems
+5
+one broad-band transmitting signal. The synthesis ﬁlter bank has several complex-valued
+input signals and one complex-valued output signal. The real-valued band-pass signal is
+obtained by modulating with ejωct and taking the real part. At the receiver, the complex-
+valued base-band signal is obtained by demodulation followed by low-pass ﬁltering.
+The complex-valued analysis ﬁlter bank provides the complex-valued band-pass signals
+from which the ISO-MPEG1 frame is formed after frequency and time deinterleaving
+and channel decoding. The PCM signal is combined using the synthesis ﬁlter bank after
+extracting the subband signals from the frame.
+ω
+ω
+ω
+ω
+ω
++ ω
+−ω
+ω
+ω
+Figure 1.7 Filter banks within DAB.
+DAB Transmission Technique. The special problems of mobile communications are dealt
+with using a combination of the OFDM transmission technique with DPSK modulation
+and time and frequency interleaving. Possible disturbances are minimized by consecutive
+channel coding. The schematic diagram in Fig. 1.8 shows the relevant subsystems.
+For example, the transmission of a program P1 which is delivered as an ISO-MPEG1
+stream is shown in Fig. 1.8. The channel coding doubles the data rate. The typical
+characteristics of a mobile communication channel like time and frequency selectivity are
+handled by using time and frequency interleaving with the help of a multicarrier technique.
+
+=====
+6
+Introduction
+Figure 1.8 DAB transmission technique.
+The burst disturbances of consecutive bits are reduced to single bit errors by spreading
+the bits over a longer period of time. The narrow-band disturbances affect only individual
+carriers by spreading the transmitter program P1 in the frequency domain, i.e. distribution
+of transmitter programs of carrier frequencies at a certain displacement. The remaining
+disturbances of the mobile channel are suppressed with the help of channel coding, i.e. by
+adding redundancy, and decoding with a Viterbi decoder. The implementation of an OFDM
+transmission is discussed in the following.
+
+=====
+1.2 Digital Transmission Systems
+7
+OFDM Transmission. The OFDM transmission technique is shown in Fig. 1.9. The
+technique stands out owing to its simple implementation in the digital domain. The data
+sequence ct(k) which is to be transmitted, is written blockwise into a register of length 2M.
+The complex numbers from d1(m) to dM(m) are formed from two consecutive bits (dibits).
+Here the ﬁrst bit corresponds to the real part and the second to the imaginary part. The
+signal space shows the four states for the so-called QPSK [Kam92a, Pro89]. The vector
+d(m) is transformed with an inverse FFT (Fast Fourier Transform) into a vector e(m)
+which describes the values of the transmitted symbol in the time domain. The transmitted
+symbol xt(n) with period Tsym is formed by the transmission of the M complex numbers
+ei(m) at sampling period TS. The real-valued band-pass signal is formed at high frequency
+after DA conversion of the quadrature signals, modulation by ejωct and by taking the real
+part. At the receiver, the transmitted symbol becomes a complex-valued sequence xr(n)
+by demodulation with e−jωct and AD conversion of the quadrature signal. M samples of
+the received sequence xr(n) are distributed over the M input values fi(m) and transformed
+into the frequency domain with the help of FFT. The resulting complex numbers gi(m) are
+again converted to dibits and provide the received sequence cr(k). Without the inﬂuence of
+the communication channel, the transmitted sequence can be reconstructed exactly.
+OFDM Transmission with a Guard Interval. In order to describe the OFDM trans-
+mission with a guard interval, the schematic diagram in Fig. 1.10 is considered. The
+transmission of a symbol of length M over a channel with impulse response h(n) of length
+L leads to a received signal y(n) of length M + L −1. This means that the received
+symbol is longer than the transmitted signal. The exact reconstruction of the transmitted
+symbol is disturbed because of the overlapping of received symbols. Reconstruction of
+the transmitted symbol is possible by cyclic continuation of the transmitted symbol. Here,
+the complex numbers from the vector e(m) are repeated so as to give a symbol period of
+Tsym = (M + L)TS. Each of the transmitted symbols is, therefore, extended to a length
+of M + L. After transmission over a channel with impulse response of length L, the
+response of the channel is periodic with length M. After the initial transient state of the
+channel, i.e. after the L samples of the guard interval, the following M samples are written
+into a register. Since a time delay occurs between the start of the transmitted symbol
+and the sampling shifted by L displacements, it is necessary to shift the sequence of
+length M cyclically by L displacements. The complex values gi(m) do not correspond
+to the exact transmitted values di(m) because of the transmission channel h(n). However,
+there is no inﬂuence of neighboring carrier frequencies. Every received value gi(m) is
+weighted with the corresponding magnitude and phase of the channel at the speciﬁc
+carrier frequency. The inﬂuence of the communication channel can be eliminated by
+differential coding of consecutive dibits. The decoding process can be done according to
+zi(m) = gi(m)g∗
+i (m −1). The dibit corresponds to the sign of the real and imaginary parts.
+The DAB transmission technique presented stands out owing to its simple implementation
+with the help of FFT algorithms. The extension of the transmitted symbol by a length L
+of the channel impulse response and the synchronization to collect the M samples out of
+the received symbol have still to be carried out. The length of the guard interval must be
+matched to the maximum echo delay of the multipath channel. Owing to differential coding
+of the transmitted sequence, an equalizer at the receiver is not necessary.
+
+=====
+8
+Introduction
+t
+Figure 1.9 OFDM transmission.
+Digital Radio Mondiale (DRM)
+In the interest of national and international broadcasting stations a more widespread
+program delivery across regional or worldwide regions is of speciﬁc importance. This
+is accomplished by analog radio transmission in the frequency range below 30 MHz.
+The limited audio quality of the amplitude modulation technique (channel bandwidth 9–
+10 kHz) with an audio bandwidth of 4.5 kHz leads to a low acceptance rate for such kind
+of audio broadcasting. The introduction of the digital transmission technique Digital Radio
+Mondiale3 will replace the existing analog transmission systems. The digital transmission
+is based on OFDM and the audio coding MPEG4-AAC in combination with SBR (Spectral
+Band Replication).
+3http://www.drm.org.
+
+=====
+1.2 Digital Transmission Systems
+9
+Figure 1.10 OFDM transmission with a guard interval.
+Internet Audio
+The growth of the internet offers new distribution possibilities for information, but
+especially for audio and video signals. The distribution of audio signals is mainly driven by
+the MP3 format (MPEG-1 Audio Layer III [Bra94]) or in proprietary formats of different
+companies. The compressed transmission is used because the data rate of home users is
+
+=====
+10
+Introduction
+still low compared to lossless audio and video formats. Since the transmission is based on
+ﬁle transfer of packets, the data rates strongly depend on the providing server, the actual
+internet trafﬁc and the access point of the home computer. A real-time transfer of high-
+quality music is still not possible. If the audio compression is high enough to achieve a just
+acceptable audio quality, a real-time transfer with a streaming technology is possible, since
+the ﬁle size is small and a transmission needs less time (see Fig. 1.11). For this a receiver
+needs a double memory ﬁlled with incoming packets of a coded audio ﬁle and a parallel
+running audio decoding. After decoding of a memory with a sufﬁciently long audio portion
+the memory is transferred to the sound card of the computer. During sound playback of
+the decoded audio signal further incoming packets are received and decoded. Packet loss
+can lead to interrupts in the audio signal. Several techniques for error concealment and
+protocols allow the transfer of coded audio.
+Audio
+Audio
+compression
+Internet
+Intranet
+WEB-
+Browser
+Media-Player
+WEB Server
+Figure 1.11 Audio streaming via the internet.
+1.3
+Storage Media
+Compact Disc
+The technological advances in the semiconductor industry have led to economical storage
+media for digitally encoded information. Independently of developments in the computer
+industry, the compact disc system was introduced by Philips and Sony in 1982. The storage
+of digital audio data is carried out on an optical storage medium. The compact disc operates
+at a sampling rate of fS = 44.1 kHz.4 The essential speciﬁcations are summarized in
+Table 1.1.
+R-DAT (Rotary-head Digital Audio on Tape)
+The R-DAT system makes use of the heliscan method for two-channel recording. The
+available devices enable the recording of 16-bit PCM signals with all three sampling rates
+(Table 1.2) on a tape. R-DAT recorders are used in studio recording as well as in consumer
+applications.
+MiniDisc and MP3 Format
+Advanced coding techniques are based on psychoacoustics for data reduction. A widespread
+storage system is the MiniDisc by Sony. The Mini Disc system operates with the ATRAC
+technique (Adaptive Transform Acoustic Coding, [Tsu92]) and has a data rate of about
+43 × 490 × 30 Hz (NTSC) = 3 × 588 × 25 Hz (CCIR) = 44.1 kHz.
+
+=====
+1.3 Storage Media
+11
+Table 1.1 Speciﬁcations of the CD system [Ben88].
+Type of recording
+Signal recognition
+Optical
+Storage density
+682 Mbit/in2
+Audio speciﬁcation
+Number of channels
+2
+Duration
+Approx. 60 min.
+Frequency range
+20–20 000 Hz
+Dynamic range
+>90 dB
+THD
+<0.01%
+Signal format
+Sampling rate
+44.1 kHz
+Quantization
+16-bit PCM (2’s complement)
+Pre-emphasis
+None or 50/15 µs
+Error Correction
+CIRC
+Data rate
+2.034 Mbit/s
+Modulation
+EFM
+Channel bit rate
+4.3218 Mbit/s
+Redundancy
+30%
+Mechanical speciﬁcation
+Diameter
+120 mm
+Thickness
+1.2 mm
+Diameter of the inner hole
+15 mm
+Program range
+50–116 mm
+Reading speed
+1.2–1.4 m/s
+500–200 r/min.
+2 · 140 kbit/s for a stereo channel. A magneto-optical storage medium is used for recording.
+The MP3 format was developed simultaneously, but the availability of recording and
+playback systems has taken a longer time. Simple MP3 recorders and playback systems
+are now available for the consumer market.
+Super Audio Compact Disc (SACD)
+The SACD was speciﬁed by Philips and Sony in 1999 as a further development of the
+compact disc with the objective of improved sound quality. The audio frequency range of
+20 kHz is perceived as a limiting audio quality factor by some human beings, and the anti-
+aliasing and reconstruction ﬁlters may lead to ringing resulting from linear phase ﬁlters.
+This effect follows from short audio pulses leading to audible transients of the ﬁlters.
+In order to overcome these problems the audio bandwidth is extended to 100 kHz and
+the sampling frequency is increased to 2.8224 MHz (64 × 44.1 kHz). With this the ﬁlter
+speciﬁcations can be met with simple ﬁrst-order ﬁlters. The quantization of the samples is
+based on a 1-bit quantizer within a delta-sigma converter structure which uses noise shaping
+
+=====
+12
+Introduction
+Table 1.2 Speciﬁcations of the R-DAT system [Ben88].
+Type of recording
+Signal recognition
+Magnetic
+Storage capacity
+2 GB
+Audio speciﬁcation
+Number of channels
+2
+Duration
+Max. 120 min.
+Frequency range
+20–20 000 Hz
+Dynamic range
+>90 dB
+THD
+<0.01%
+Signal format
+Sampling rate
+48, 44.1, 32 kHz
+Quantization
+16-bit PCM (2’s complement)
+Error correction
+CIRC
+Channel coding
+8/10 modulation
+Data rate
+2.46 Mbit/s
+Channel bit rate
+9.4 Mbit/s
+Mechanical speciﬁcation
+Tapewidth of magnet
+3.8 mm
+Thickness
+13 µm
+Diameter of head drum
+3 cm
+Revolutions per min.
+2000 r/min.
+Rel. track speed
+3.133 m/s
+500–200 r/min.
+(see Fig. 1.12). The 1-bit signal with 2.8224 MHz sampling frequency is denoted a DSD
+signal (Direct Stream Digital). The DA conversion of a DSD signal into an analog signal
+is accomplished with a simple analog ﬁrst-order low-pass. The storage of DSD signals is
+achieved by a special compact disc (Fig. 1.13) with a CD layer in PCM format and an HD
+layer (High Density) with a DVD 4.38 GByte layer. The HD layer stores a stereo signal
+in 1-bit DSD format and a 6-channel 1-bit signal with a lossless compression technique
+(Direct Stream Transfer DST) [Jan03]. The CD layer of the SACD can be replayed with
+a conventional CD player, whereas special SACD players can replay the HD layer. An
+extensive discussion of 1-bit delta-sigma techniques can be found in [Lip01a, Lip01b,
+Van01, Lip02, Van04].
+1-bit
+DSD
+Memory
+DSD-
+Analog
+x(t)
+Analog-
+DSD
+1-bit
+64.fS
+y(t)
+1-bit
+64.fS
+Figure 1.12 SACD system.
+
+=====
+1.4 Audio Components at Home
+13
+Protection layer
+CD Layer
+Plastic
+HD Layer
+Laser Scanner
+Plastic
+Figure 1.13 Layer of the SACD.
+Digital Versatile Disc – Audio (DVD-A)
+To increase the storage capacity of the CD the Digital Versatile Disc (DVD) was developed.
+The physical dimensions are identical to the CD. The DVD has two layers with one or
+two sides, and the storage capacity per side has been increased. For a one-sided version
+for audio applications the storage capacity is 4.7 GB. A comparison of speciﬁcations for
+different disc media is shown in Table 1.3. Besides stereo signals with different sampling
+rates and word-lengths a variety of multi-channel formats can be stored. For data reduction
+a lossless compression technique, MLP (Meridian Lossless Packing), is applied. The
+improved audio quality compared to the CD audio is based on the higher sampling rates
+and word-lengths and the multichannel features of the DVD-A.
+Table 1.3 Speciﬁcations of CD, SACD and DVD-A.
+Parameter
+CD
+SACD
+DVD-A
+Coding
+16-bit PCM
+1-bit DSD
+16-/20-/24-bit PCM
+Sampling rate
+44.1 kHz
+2.8224 MHz
+44.1/48/88.2/96/176.4/192 kHz
+Channels
+2
+2–6
+1–6
+Compression
+No
+Yes (DST)
+Yes (MLP)
+Recording time
+74 min.
+70–80 min.
+62–843 min.
+Frequency range
+20–20 000 Hz
+20–100 000 Hz
+20–96 000 Hz
+Dynamic range
+96 dB
+120 dB
+144 dB
+Copy protection
+No
+Yes
+Yes
+1.4
+Audio Components at Home
+Domestic digital storage media are already in use, like compact discs, personal computers
+and MP3 players, which have digital outputs, and can be connected to digital post-
+processing systems right up to the loudspeakers. The individual tone control consists of
+the following processing.
+
+=====
+14
+Introduction
+Equalizer
+Spectral modiﬁcation of the music signal in amplitude and phase and the automatic
+correction of the frequency response from loudspeaker to listening environment are desired.
+Room Simulation
+The simulation of room impulse responses and the processing of music signals with special
+room impulse response are used to give an impression of a room like a concert hall, a
+cathedral or a jazz club.
+Surround Systems
+Besides the reproduction of stereo signals from a CD over two frontal loudspeakers, more
+than two channels will be recorded in the prospective digital recording systems [Lin93].
+This is already illustrated in the sound production for cinema movies where, besides the
+stereo signal (L, R), a middle channel (M) and two additional room signals (LB, RB)
+are recorded. These surround systems are also used in the prospective digital television
+systems. The ambisonics technique [Ger85] is a recording technique that allows three-
+dimensional recording and reproduction of sound.
+Digital Ampliﬁer Concepts
+The basis of a digital ampliﬁer is pulse width modulation as shown in Fig. 1.14. With the
+help of a fast counter, a pulse width modulated signal is formed out of the w-bit linearly
+quantized signal. Single-sided and double-sided modulated conversion are used and they
+are represented by two and three states, respectively. Single-sided modulation (2 states, −1
+and +1) is performed by a counter which counts upward from zero with multiples of the
+sampling rate. The number range of the PCM signal from −1 to +1 is directly mapped
+onto the counter. The duration of the pulse width is controlled by a comparator. For pulse
+width modulation with three states (−1, 0, +1), the sign of the PCM signal determines the
+state. The pulse width is determined by a mapping of the number range from 0 to 1 onto
+a counter. For double-sided modulation, an upward/downward counter is needed which
+has to be clocked at twice the rate compared with single-sided modulation. The allocation
+of pulse widths is shown in Fig. 1.14. In order to reduce the clock rate for the counter,
+pulse width modulation is carried out after oversampling (Oversampling) and noise shaping
+(Noise Shaping) of the quantization error (see Fig. 1.15, [Gol90]). Thus the clock rate of
+the counter is reduced to 180.6 MHz. The input signal is ﬁrst upsampled by a factor of
+16 and then quantized to 8-bits with third-order noise shaping. The use of pulse shaping
+with delta-sigma modulation is shown in Fig. 1.16 [And92]. Here a direct conversion of the
+delta-sigma modulated 1-bit signal is performed. The pulse converter shapes the envelope
+of the serial data bits. The low-pass ﬁlter reconstructs the analog signal. In order to reduce
+nonlinear distortion, the output signal is fed back (see Fig. 1.17, [Klu92]). New methods
+for the generation of pulse width modulation try to reduce the clock rates and the high
+frequency components [Str99, Str01].
+
+=====
+1.4 Audio Components at Home
+15
+3
+3
+3
+3
+3
+3
+3
+3
+35
+3
+35
+
+35
+
+--6/7	898:
+
+35
+3
+35
+
+3
+;
+
+35
+3
+3
+;
+
+--6/72	89838:
+35
+3
+35
+
+35
+35
+3
+35
+
+35
+35
+3
+35
+
+35
+-.--6/7	898:
+
+35
+3
+35
+
+3
+;
+
+35
+3
+3
+;
+-.--6/72	89838:
++
++
++
++
++
++
++
++
+$
+
+;-.
+
+
+.
+;-.
+
+
+.
+$
+
+$
+
+;-.
+
+
+.
+;-.
+
+
+.
+$
+
+Figure 1.14 Pulse width modulation.
+&
+	
+;	
+(1
+'7
+:
+<<= 
+>-.
+435>= 
+?-.
+6/
+&%
+?3>/= 
+6/
+"7:
+Figure 1.15 Pulse width modulation with oversampling and noise shaping.
+
+=====
+16
+Introduction
+&
+	
+;	
+-.		
+
+
+3
+3
+
+3
+3
+=@$
+=@$
+=@$
+-.
+
+$
+A -.
+-.
+"7:
+"7:
+&
+	
+;	
+(1
+'7
+:
+<<= 
+"7:
+2/= 
+-.
+>-.
+-.&$
+Figure 1.16 Pulse shaping after delta-sigma modulation.
+%
+&
+	
+;	
+&%
+"7:
+=7 :
+&$
+'7
+:
+%
+Figure 1.17 Delta-sigma modulated ampliﬁer with feedback.
+Digital Crossover
+In order to perform digital crossovers for loudspeakers, a linear phase decomposition of the
+signal with a special ﬁlter bank [Zöl92] is done (Fig. 1.18). In a ﬁrst step, the input signal
+is decomposed into its high-pass and low-pass components and the high-pass signal is fed
+to a DAC over a delay unit. In the next step, the low-pass signal is further decomposed.
+The individual band-pass signals and the low-pass signal are then fed to the respective
+loudspeaker. Further developments for the control of loudspeakers can be found in [Kli94,
+Kli98a, Kli98b, Mül99].
+
+=====
+References
+17
+=	
+,	
+-	
+,	
+-	
+;	
++$
++$
++$2
+@
+@
+@2
+
+
+2
+%
+%
+%
++$
+
+@
+7
+ :
+
+'
+%
+%
+%2
+%<
+" 7
+
+:
+
+%2
+%
+" 7
+ :
+
+
+" 7
+ :
+2
+2
+" 7
+ :
+
+
+%
+%
+%
+%2
+Figure 1.18 Digital crossover (FSi frequency splitting, TCi transition bandwidth control, DELi
+delay).
+References
+[AES91]
+AES10-1991 (ANSI S4.43-1991): AES Recommended Practice for Digital
+Audio Engineering – Serial Multichannel Audio Digital Interface (MADI).
+[AES92]
+AES3-1992 (ANSI S4.40-1992): AES Recommended Practice for Digital
+Audio Engineering – Serial Transmission Format for Two-Channel Linearly
+Represented Digital Audio.
+[Ala87]
+M. Alard, R. Lasalle: Principles of Modulation and Channel Coding for Digital
+Broadcasting for Mobile Receivers, EBU Review, No. 224, pp. 168–190,
+August 1987.
+[And92]
+M. Andersen: New Principle for Digital Audio Power Ampliﬁers, Proc. 92nd
+AES Convention, Preprint No. 3226, Vienna, 1992.
+[Ben88]
+K. B. Benson: Audio Engineering Handbook, McGraw-Hill, New York, 1988.
+[Bra94]
+K. Brandenburg, G. Stoll: ISO/MPEG-1 Audio: A Generic Standard for Coding
+of High Quality Digital Audio, J. Audio Eng. Soc., Vol. 42, No. 10, pp. 780–
+792, October 1994.
+[Ger85]
+M. A. Gerzon: Ambisonics in Multichannel Broadcasting and Video, J. Audio
+Eng. Soc., Vol. 33, No. 11, pp. 859–871, November 1985.
+[Gol90]
+J. M. Goldberg, M. B. Sandler: New Results in PWM for Digital Power
+Ampliﬁcation, Proc. 89th AES Convention, Preprint No. 2959, Los Angeles,
+1990.
+[Hoe01]
+W. Hoeg, T. Lauterbach: Digital Audio Broadcasting, John Wiley & Sons Ltd,
+Chichester, 2001.
+
+=====
+18
+Introduction
+[ISO92]
+ISO/IEC 11172-3: Coding of Moving Pictures and Associated Audio for Digital
+Storage Media at up to 1.5 Mbits/s – Audio Part, International Standard, 1992.
+[Jan03]
+E. Janssen, D. Reefman: Super Audio CD: An Introduction, IEEE Signal
+Processing Magazine, pp. 83–90, July 2003.
+[Kam92]
+K. D. Kammeyer, U. Tuisel, H. Schulze, H. Bochmann: Digital Multicarrier-
+Transmission of Audio Signals over Mobile Radio Channels, Europ. Trans. on
+Telecommun. ETT, Vol. 3, pp. 243–254, May–June 1992.
+[Kam93]
+K. D. Kammeyer, U. Tuisel: Synchronisationsprobleme in digitalen Multi-
+trägersystemen, Frequenz, Vol. 47, pp. 159–166, May 1993.
+[Kli94]
+W. Klippel: Das nichtlineare Übertragungsverhalten elektroakustischer Wand-
+ler, Habilitationsschrift, Technische Universität Dresden, 1994.
+[Kli98a]
+W. Klippel: Direct Feedback Linearization of Nonlinear Loudspeaker Systems,
+J. Audio Eng. Soc., Vol. 46, No. 6, pp. 499–507, 1998.
+[Kli98b]
+W. Klippel: Adaptive Nonlinear Control of Loudspeaker Systems, J. Audio Eng.
+Soc., Vol. 46, No. 11, pp. 939–954, 1998.
+[Klu92]
+J. Klugbauer-Heilmeier: A Sigma Delta Modulated Switching Power Amp,
+Proc. 92nd AES Convention, Preprint No. 3227, Vienna, 1992.
+[Lec92]
+D. Leckschat: Verbesserung der Wiedergabequalität von Lautsprechern mit
+Hilfe von Digitalﬁltern, Dissertation, RWTH Aachen, 1992.
+[Lin93]
+B. Link, D. Mandell: A DSP Implementation of a Pro Logic Surround Decoder,
+Proc. 95th AES Convention, Preprint No. 3758, New York, 1993.
+[Lip01a]
+S. P. Lipshitz, J. Vanderkooy: Why 1-Bit Sigma-Delta Conversion is
+Unsuitable for High-Quality Applications, Proc. 110th Convention of the
+Audio Engineering Society, Preprint No. 5395, Amsterdam, 2001.
+[Lip01b]
+S. P. Lipshitz. J. Vanderkooy: Towards a Better Understanding of 1-Bit Sigma-
+Delta Modulators – Part 2, Proc. 111th Convention of the Audio Engineering
+Society, Preprint No. 5477, New York, 2001
+[Lip02]
+S. P. Lipshitz, J. Vanderkooy: Towards a Better Understanding of 1-Bit Sigma-
+Delta Modulators – Part 3, Proc. 112th Convention of the Audio Engineering
+Society, Preprint No. 5620, Munich, 2002.
+[Mül99]
+S. Müller: Digitale Signalverarbeitung für Lautsprecher, Dissertation, RWTH
+Aachen, 1999.
+[Ple91]
+G. Plenge: DAB – Ein neues Hörrundfunksystem – Stand der Entwicklung und
+Wege zu seiner Einführung, Rundfunktechnische Mitteilungen, Vol. 35, No. 2,
+pp. 46–66, 1991.
+
+=====
+References
+19
+[Str99]
+M. Streitenberger, H. Bresch, W. Mathis: A New Concept for High Performance
+Class-D Audio Ampliﬁcation, Proc. AES 106th Convention, Preprint No. 4941,
+Munich, 1999.
+[Str01]
+M. Streitenberger, F. Felgenhauer, H. Bresch, W. Mathis: Zero Position Coding
+(ZePoC) – A Generalised Concept of Pulse-Length Modulated Signals and its
+Application to Class-D Audio Power Ampliﬁers, Proc. AES 110th Convention,
+Preprint No. 5365, Amsterdam, 2001.
+[Tsu92]
+K. Tsutsui, H. Suzuki, O. Shimoyoshi, M. Sonohara, K. Akagiri, R. Heddle:
+ATRAC: Adaptive Transform Coding for MiniDisc, Proc. 91st AES Convention,
+Preprint No. 3216, New York, 1991.
+[Tui93]
+U. Tuisel: Multiträgerkonzepte für die digitale, terrestrische Hörrund-
+funkübertragung, Dissertation, TU Hamburg-Harburg, 1993.
+[Van01]
+J. Vanderkooy, S. P. Lipshitz: Towards a Better Understanding of 1-Bit Sigma-
+Delta Modulators – Part 1, Proc. 110th Convention of the Audio Engineering
+Society, Preprint No. 5398, Amsterdam, 2001.
+[Van04]
+J. Vanderkooy, S. P. Lipshitz: Towards a Better Understanding of 1-Bit Sigma-
+Delta Modulators – Part 4, Proc. 116th Convention of the Audio Engineering
+Society, Preprint No. 6093, Berlin, 2004.
+[Zöl92]
+U. Zölzer, N. Fliege: Logarithmic Spaced Analysis Filter Bank for Multiple
+Loudspeaker Channels, Proc. 93rd AES Convention, Preprint No. 3453, San
+Francisco, 1992.
+
+=====
+
+=====
+Chapter 2
+Quantization
+Basic operations for AD conversion of a continuous-time signal x(t) are the sampling
+and quantization of x(n) yielding the quantized sequence xQ(n) (see Fig. 2.1). Before
+discussing AD/DA conversion techniques and the choice of the sampling frequency fS =
+1/TS in Chapter 3 we will introduce the quantization of the samples x(n) with ﬁnite
+number of bits. The digitization of a sampled signal with continuous amplitude is called
+quantization. The effects of quantization starting with the classical quantization model are
+discussed in Section 2.1. In Section 2.2 dither techniques are presented which, for low-level
+signals, linearize the process of quantization. In Section 2.3 spectral shaping of quantization
+errors is described. Section 2.4 deals with number representation for digital audio signals
+and their effects on algorithms.
+x(n)
+Quantizer
+x(t)
+x (n)
+Q
+Analog
+Low-pass
+fS
+Sampling
+Figure 2.1 AD conversion and quantization.
+2.1
+Signal Quantization
+2.1.1
+Classical Quantization Model
+Quantization is described by Widrow’s quantization theorem [Wid61]. This says that a
+quantizer can be modeled (see Fig. 2.2) as the addition of a uniform distributed random
+signal e(n) to the original signal x(n) (see Fig. 2.2, [Wid61]). This additive model,
+xQ(n) = x(n) + e(n),
+(2.1)
+is based on the difference between quantized output and input according to the error signal
+e(n) = xQ(n) −x(n).
+(2.2)
+Digital Audio Signal Processing
+Second Edition
+Udo Zölzer
+© 2008 John Wiley & Sons, Ltd
+
+=====
+22
+Quantization
+Q
+x(n)
+x (n)=x(n)+e(n)
+Q
+e(n)
+Q
+_
+x (n)
+Q
+x (n)
+Q
+x(n)
+x(n)
+e(n)
+Figure 2.2 Quantization.
+This linear model of the output xQ(n) is only then valid when the input amplitude has a
+wide dynamic range and the quantization error e(n) is not correlated with the signal x(n).
+Owing to the statistical independence of consecutive quantization errors the autocorrelation
+of the error signal is given by rEE(m) = σ 2
+E · δ(m), yielding a power density spectrum
+SEE(ej) = σ 2
+E.
+The nonlinear process of quantization is described by a nonlinear characteristic curve as
+shown in Fig. 2.3a, where Q denotes the quantization step. The difference between output
+and input of the quantizer provides the quantization error e(n) = xQ(n) −x(n), which is
+shown in Fig. 2.3b. The uniform probability density function (PDF) of the quantization
+error is given (see Fig. 2.3b) by
+pE(e) = 1
+Qrect
+ e
+Q
+
+.
+(2.3)
+
+)
+)
+'
+
+'
+)
+)
+)
+)
+)
+7:
+
+
+)
+
+
+
+
+)
+'
+	:
+.:
+)
+Figure 2.3 (a) Nonlinear characteristic curve of a quantizer. (b) Quantization error e and its
+probability density function (PDF) pE(e).
+The mth moment of a random variable E with a PDF pE(e) is deﬁned as the expected
+value of Em:
+E{Em} =
+ ∞
+−∞
+empE(e) de.
+(2.4)
+
+=====
+2.1 Signal Quantization
+23
+For a uniform distributed random process, as in (2.3), the ﬁrst two moments are given by
+mE = E{E} = 0
+mean value
+(2.5)
+σ 2
+E = E{E2} = Q2
+12
+variance.
+(2.6)
+The signal-to-noise ratio
+SNR = 10 log10
+σ 2
+X
+σ 2
+E
+
+dB
+(2.7)
+is deﬁned as the ratio of signal power σ 2
+X to error power σ 2
+E.
+For a quantizer with input range ±xmax and word-length w, the quantization step size
+can be expressed as
+Q = 2xmax/2w.
+(2.8)
+By deﬁning a peak factor,
+PF = xmax
+σX
+= 2w−1Q
+σX
+,
+(2.9)
+the variances of the input and the quantization error can be written as
+σ 2
+X = x2
+max
+P 2
+F
+,
+(2.10)
+σ 2
+E = Q2
+12 = 1
+12
+x2
+max
+22w 22 = 1
+3x2
+max2−2w.
+(2.11)
+The signal-to-noise ratio is then given by
+SNR = 10 log10
+ x2
+max/P 2
+F
+1
+3x2max2−2w
+
+= 10 log10
+
+22w 3
+P 2
+F
+
+= 6.02w −10 log10(P 2
+F /3) dB.
+(2.12)
+A sinusoidal signal (PDF as in Fig. 2.4) with PF =
+√
+2 gives
+SNR = 6.02w + 1.76 dB.
+(2.13)
+For a signal with uniform PDF (see Fig. 2.4) and PF =
+√
+3 we can write
+SNR = 6.02w dB,
+(2.14)
+and for a Gaussian distributed signal (probability of overload <10−5 leads to PF = 4.61,
+see Fig. 2.5), it follows that
+SNR = 6.02w −8.5 dB.
+(2.15)
+It is obvious that the signal-to-noise ratio depends on the PDF of the input. For digital
+audio signals that exhibit nearly Gaussian distribution, the maximum signal-to-noise ratio
+for given word-length w is 8.5 dB lower than the rule-of-thumb formula (2.14) for the
+signal-to-noise ratio.
+
+=====
+24
+Quantization
+0
+0.5
+1
+1.5
+2
+2.5
+-1
+-0.5
+0
+0.5
+1
+sX=xmax/µ2
+x/xmax ç
+pX(x) ç
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+-1
+-0.5
+0
+0.5
+1
+sX=xmax/µ3
+x/xmax ç
+pX(x) ç
+Figure 2.4 Probability density function (sinusoidal signal and signal with uniform PDF).
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5
+-1
+-0.5
+0
+0.5
+1
+sX=xmax/4.61
+x/xmax ç
+pX(x) ç
+Figure 2.5 Probability density function (signal with Gaussian PDF).
+2.1.2
+Quantization Theorem
+The statement of the quantization theorem for amplitude sampling (digitizing the ampli-
+tude) of signals was given by Widrow [Wid61]. The analogy for digitizing the time axis is
+the sampling theorem due to Shannon [Sha48]. Figure 2.6 shows the amplitude quantization
+and the time quantization. First of all, the PDF of the output signal of a quantizer is
+determined in terms of the PDF of the input signal. Both probability density functions
+are shown in Fig. 2.7. The respective characteristic functions (Fourier transform of a PDF)
+of the input and output signals form the basis for Widrow’s quantization theorem.
+
+=====
+2.1 Signal Quantization
+25
+0
+1
+2
+3
+4
+5
+n
+t
+x(t)
+x(8)
+-1
++1
+1
+0
+-1
+32767
+32766
+-32767
+-32768
+x(n)
+6
+7
+8
+9
+10 11
+Discrete
+amplitude
+Discrete
+time
+Amplitude quantization
+Time quantization
+Figure 2.6 Amplitude and time quantization.
+t
+x(t)
+x(8)
+-1
++1
+x(n)
+p (x)
+X
+p
+(x)
+XQ
+x
+x
+Q
+Figure 2.7 Probability density function of signal x(n) and quantized signal xQ(n).
+First-order Statistics of the Quantizer Output
+Quantization of a continuous-amplitude signal x with PDF pX(x) leads to a discrete-
+amplitude signal y with PDF pY (y) (see Fig. 2.8). The continuous PDF of the input is
+sampled by integrating over all quantization intervals (zone sampling). This leads to a
+discrete PDF of the output.
+In the quantization intervals, the discrete PDF of the output is determined by the
+probability
+W[kQ] = W
+
+−Q
+2 + kQ ≤x < Q
+2 + kQ
+
+=
+ Q/2+kQ
+−Q/2+kQ
+pX(x) dx.
+(2.16)
+
+=====
+26
+Quantization
+'"
+)
+)
+2)
+<)
+5)
+)
+)
+2)
+<)
+5)
+3
+3
+
+
+0
+7':
+*
+7":
+)
+'
+"
+7":
+*
+0
+7':
+Figure 2.8 Zone sampling of the PDF.
+For the intervals k = 0, 1, 2, it follows that
+pY (y) = δ(0)
+ Q/2
+−Q/2
+pX(x) dx,
+−Q
+2 ≤y < Q
+2 ,
+= δ(y −Q)
+ Q/2+Q
+−Q/2+Q
+pX(x) dx,
+−Q
+2 + Q ≤y < Q
+2 + Q,
+= δ(y −2Q)
+ Q/2+2Q
+−Q/2+2Q
+pX(x) dx,
+−Q
+2 + 2Q ≤y < Q
+2 + 2Q.
+The summation over all intervals gives the PDF of the output
+pY (y) =
+∞
+
+k=−∞
+δ(y −kQ)W(kQ)
+(2.17)
+=
+∞
+
+k=−∞
+δ(y −kQ)W(y),
+(2.18)
+where
+W(kQ) =
+ Q/2+kQ
+−Q/2+kQ
+pX(x) dx,
+(2.19)
+W(y) =
+ ∞
+−∞
+rect
+y −x
+Q
+
+pX(x) dx
+(2.20)
+= rect
+ y
+Q
+
+∗pX(y).
+(2.21)
+Using
+δQ(y) =
+∞
+
+k=−∞
+δ(y −kQ),
+(2.22)
+the PDF of the output is given by
+pY (y) = δQ(y)
+
+rect
+ y
+Q
+
+⋆pX(y)
+
+.
+(2.23)
