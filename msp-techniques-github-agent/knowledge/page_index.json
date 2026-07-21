@@ -1,0 +1,1687 @@
+[
+  {
+    "page": 1,
+    "head": "The Theory and Technique of Electronic | Music | DRAFT: December 30, 2006 | Miller Puckette",
+    "chars": 86
+  },
+  {
+    "page": 2,
+    "head": "Copyright c\u20dd2007 by World Scienti\ufb01c Publishing Co. Pte. Ltd. | All rights reserved.",
+    "chars": 82
+  },
+  {
+    "page": 3,
+    "head": "Contents | Foreword | ix | Preface | xi | 1 | Sinusoids, amplitude and frequency | 1 | 1.1 | Measures of Amplitude . . . . . . . . . . . . . . . . . . . . . . . .",
+    "chars": 2138
+  },
+  {
+    "page": 4,
+    "head": "iv | CONTENTS | Looping samplers . . . . . . . . . . . . . . . . . . . . . . . . . . . | 52 | Overlapping sample looper . . . . . . . . . . . . . . . . . . . . . . | 54 | Automatic read point precession | . . . . . . . .",
+    "chars": 2890
+  },
+  {
+    "page": 5,
+    "head": "CONTENTS | v | 5 | Modulation | 119 | 5.1 | Taxonomy of spectra . . . . . . . . . . . . . . . . . . . . . . . . . 119 | 5.2 | Multiplying audio signals | . . . . . . . . . . . . . . . . . . . . . . 122",
+    "chars": 3175
+  },
+  {
+    "page": 6,
+    "head": "vi | CONTENTS | Variable delay line . . . . . . . . . . . . . . . . . . . . . . . . . . 209 | Order of execution and lower limits on delay times . . . . . . . . 211 | Order of execution in non-recirculating delay lines |",
+    "chars": 3198
+  },
+  {
+    "page": 7,
+    "head": "CONTENTS | vii | 9 | Fourier analysis and resynthesis | 263 | 9.1 | Fourier analysis of periodic signals . . . . . . . . . . . . . . . . . 263 | 9.1.1 | Periodicity of the Fourier transform | . . . . . . . . . . . . 264",
+    "chars": 2793
+  },
+  {
+    "page": 8,
+    "head": "viii | CONTENTS",
+    "chars": 14
+  },
+  {
+    "page": 9,
+    "head": "Foreword | The Theory and Technique of Electronic Music is a uniquely complete source of | information for the computer synthesis of rich and interesting musical timbres. | The theory is clearly presented in a completely",
+    "chars": 2448
+  },
+  {
+    "page": 10,
+    "head": "x | CONTENTS | I expect Puckette\u2019s book to become THE essential book in any electronic | musician\u2019s library. | Max Mathews",
+    "chars": 115
+  },
+  {
+    "page": 11,
+    "head": "Preface | This is a book about using electronic techniques to record, synthesize, process, | and analyze musical sounds, a practice which came into its modern form in the | years 1948-1952, but whose technological means ",
+    "chars": 2512
+  },
+  {
+    "page": 12,
+    "head": "xii | CONTENTS | of any student of algebra or geometry. In the service of computer music, for | instance, we\u2019ll run into Bessel functions, Chebychev polynomials, the Central | Limit Theorem, and, of course, Fourier analy",
+    "chars": 1614
+  },
+  {
+    "page": 13,
+    "head": "Chapter 1 | Sinusoids, amplitude and | frequency | Electronic music is usually made using a computer, by synthesizing or processing | digital audio signals. These are sequences of numbers, | ..., x[n \u22121], x[n], x[n + 1],",
+    "chars": 1743
+  },
+  {
+    "page": 14,
+    "head": "2 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | 1 | -1 | n | 0 | x[n] | 1 | -1 | 50",
+    "chars": 350
+  },
+  {
+    "page": 15,
+    "head": "1.1. MEASURES OF AMPLITUDE | 3 | the sample number n by Rt = n, or t = n/R. A sinusoidal signal with angular | frequency \u03c9 has a real-time frequency equal to | f = \u03c9R | 2\u03c0 | in Hertz (i.e., cycles per second), because a ",
+    "chars": 2158
+  },
+  {
+    "page": 16,
+    "head": "4 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | (a) | (b) | peak | RMS | peak | RMS | Figure 1.2: Root mean square (RMS) and peak amplitudes of signals compared. | For a sinusoid (part a), the peak amplitude is highe",
+    "chars": 1420
+  },
+  {
+    "page": 17,
+    "head": "1.2. UNITS OF AMPLITUDE | 5 | 0 | decibels | 1 | ampli- | tude | -20 | -10 | 0",
+    "chars": 1662
+  },
+  {
+    "page": 18,
+    "head": "6 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | pitch | 440 | frequency | 45 | 57 | 69 | 110 | 220",
+    "chars": 1789
+  },
+  {
+    "page": 19,
+    "head": "1.4. FREQUENCY | 7 | (which we assume doesn\u2019t change much over the N samples in the window). | In the more general case where both x[n] and y[n] are allowed to take negative | and positive values and/or to change quickly",
+    "chars": 2562
+  },
+  {
+    "page": 20,
+    "head": "8 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | (a) | OUT | FREQUENCY | OUT | (b) | y[n] | FREQUENCY | Figure 1.5: Block diagrams for (a) a sinusoidal oscillator; (b) controlling the",
+    "chars": 1980
+  },
+  {
+    "page": 21,
+    "head": "1.5. SYNTHESIZING A SINUSOID | 9 | (a) | (b) | (c) | (d) | n | -1 | 1 | -1",
+    "chars": 254
+  },
+  {
+    "page": 22,
+    "head": "10 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | won\u2019t sound like an amplitude-varying sinusoid, but instead like a sinusoid in- | terrupted by an audible \u201cpop\u201d after which it continues more quietly. In general, | fo",
+    "chars": 3032
+  },
+  {
+    "page": 23,
+    "head": "1.6. SUPERPOSING SIGNALS | 11 | OUT | FREQUENCY | Figure 1.7: Using an envelope generator to control amplitude. | ARMS{x[n]} + ARMS{y[n]} \u2265ARMS{x[n] + y[n]} | If we \ufb01x a window from M to N + M \u22121 as usual, we can write o",
+    "chars": 1532
+  },
+  {
+    "page": 24,
+    "head": "12 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | 1.7 | Periodic Signals | A signal x[n] is said to repeat at a period \u03c4 if | x[n + \u03c4] = x[n] | for all n. Such a signal would also repeat at periods 2\u03c4 and so on; the s",
+    "chars": 2884
+  },
+  {
+    "page": 25,
+    "head": "1.7. PERIODIC SIGNALS | 13 | + | + | = | Figure 1.8: A Fourier series, showing three sinusoids and their sum. The three | component sinusoids have frequencies in the ratio 1:2:3.",
+    "chars": 173
+  },
+  {
+    "page": 26,
+    "head": "14 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | OUT | FREQUENCY | (more) | 2 | 3 | Figure 1.9: Using many oscillators to synthesize a waveform with desired har- | monic amplitudes.",
+    "chars": 178
+  },
+  {
+    "page": 27,
+    "head": "1.8. ABOUT THE SOFTWARE EXAMPLES | 15 | This is an example of additive synthesis; more generally the term can be | applied to networks in which the frequencies of the oscillators are independently | controllable. The ear",
+    "chars": 2637
+  },
+  {
+    "page": 28,
+    "head": "16 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | 34 | + 13 | 21 | (a) | dac~ | osc~ | 440 | (b)",
+    "chars": 2004
+  },
+  {
+    "page": 29,
+    "head": "1.9. EXAMPLES | 17 | here; the thin ones are for carrying sporadic messages, and the thicker ones | (connecting the oscillator, the multiplier, and the output dac~ object) carry | digital audio signals. Since Pd is a rea",
+    "chars": 2591
+  },
+  {
+    "page": 30,
+    "head": "18 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | are also comments, and two message boxes to turn Pd\u2019s \u201cDSP\u201d (audio) process- | ing on and o\ufb00.) The three object boxes are: | osc \u223c: sinusoidal oscillator. The left han",
+    "chars": 3126
+  },
+  {
+    "page": 31,
+    "head": "1.9. EXAMPLES | 19 | osc~ 440 | dac~ | 440 Hz. sine wave at full blast | *~ 0.05 | MAKING A SINE WAVE | Audio computation can be turned on and off by sending | messages to the global \"pd\" object as follows: | ;",
+    "chars": 1135
+  },
+  {
+    "page": 32,
+    "head": "20 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | osc~ 440 | dac~ | *~ 0 | 0 | dbtorms | 0 | (a) | osc~ 440",
+    "chars": 491
+  },
+  {
+    "page": 33,
+    "head": "1.9. EXAMPLES | 21 | dbtorms : Decibels to linear amplitude conversion. The \u201cRMS\u201d is a misnomer; | it should have been named \u201cdbtoamp\u201d, since it really converts from decibels to | any linear amplitude unit, be it RMS, pe",
+    "chars": 2981
+  },
+  {
+    "page": 34,
+    "head": "22 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | in time that no DSP computation takes place between the two; in this case, the | earlier message has no e\ufb00ect, since line~ won\u2019t have changed its output yet | to follo",
+    "chars": 2968
+  },
+  {
+    "page": 35,
+    "head": "1.9. EXAMPLES | 23 | 0 | set $1 | 0 | r frequency | set $1 | s frequency | r pitch | s pitch",
+    "chars": 2205
+  },
+  {
+    "page": 36,
+    "head": "24 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY | 0 | mtof | <-- choose a pitch | osc~ | * 2 | osc~ | osc~ | * 3",
+    "chars": 1774
+  },
+  {
+    "page": 37,
+    "head": "1.9. EXAMPLES | 25 | +~ | +~ | +~ | osc~ 440 | osc~ 330 | osc~ 330.2 | osc~ 440.33 | +~",
+    "chars": 1101
+  },
+  {
+    "page": 38,
+    "head": "26 | CHAPTER 1. SINUSOIDS, AMPLITUDE AND FREQUENCY",
+    "chars": 49
+  },
+  {
+    "page": 39,
+    "head": "Chapter 2 | Wavetables and samplers | In Chapter 1 we treated audio signals as if they always \ufb02owed by in a continuous | stream at some sample rate. The sample rate isn\u2019t really a quality of the audio | signal, but rathe",
+    "chars": 2217
+  },
+  {
+    "page": 40,
+    "head": "28 | CHAPTER 2. WAVETABLES AND SAMPLERS | IN | OUT | Figure 2.1: Diagram for wavetable lookup. The input is in samples, ranging | approximately from 0 to the wavetable\u2019s size N, depending on the interpolation | scheme. |",
+    "chars": 2047
+  },
+  {
+    "page": 41,
+    "head": "2.1. THE WAVETABLE OSCILLATOR | 29 | makes two and a half cycles. Its period is twenty samples, or in other words the | frequency (in cycles per second) is R/20. | Part (c) of Figure 2.2 shows the result of applying wave",
+    "chars": 3144
+  },
+  {
+    "page": 42,
+    "head": "30 | CHAPTER 2. WAVETABLES AND SAMPLERS | 1 | \u22121 | n | 0 | x[n] | 40 | 50 | 0",
+    "chars": 265
+  },
+  {
+    "page": 43,
+    "head": "2.1. THE WAVETABLE OSCILLATOR | 31 | N | 0 | -1 | 1 | OUT | N | 0 | -1",
+    "chars": 1296
+  },
+  {
+    "page": 44,
+    "head": "32 | CHAPTER 2. WAVETABLES AND SAMPLERS | N | 0 | -1 | 1 | OUT | frequency | Figure 2.4: Block diagram for cross-fading between two wavetables. | 2.2",
+    "chars": 1637
+  },
+  {
+    "page": 45,
+    "head": "2.2. SAMPLING | 33 | N/M, equal to Nf/R if f is the frequency in Hertz of the sawtooth. If we denote | the transposition factor by t (so that, for instance, t = 3/2 means transposing | upward a perfect \ufb01fth), and if we d",
+    "chars": 2068
+  },
+  {
+    "page": 46,
+    "head": "34 | CHAPTER 2. WAVETABLES AND SAMPLERS | are also transposed, and this is is heard as a timbre change. In language that | will be made more precise in Section 5.1, we say that the spectral envelope is | transposed along",
+    "chars": 3252
+  },
+  {
+    "page": 47,
+    "head": "2.2. SAMPLING | 35 | 0 | -1 | 1 | OUT | frequency | 1 | 1/2 | optional - for",
+    "chars": 433
+  },
+  {
+    "page": 48,
+    "head": "36 | CHAPTER 2. WAVETABLES AND SAMPLERS | between the beginning and the end of segments of the wavetable; we\u2019ll take this | up in the next section. | A further detail is that, if the segment size and location are changin",
+    "chars": 3112
+  },
+  {
+    "page": 49,
+    "head": "2.4. TIMBRE STRETCHING | 37 | (a) | (b) | new periods | Figure 2.6: Di\ufb00ering envelope requirements for oscillators and samplers: (a) in | an oscillator, the envelope can be chosen to conform to any desired timescale; | (",
+    "chars": 1672
+  },
+  {
+    "page": 50,
+    "head": "38 | CHAPTER 2. WAVETABLES AND SAMPLERS | 0 | -1 | 1 | OUT | frequency | 1 | size | location",
+    "chars": 198
+  },
+  {
+    "page": 51,
+    "head": "2.4. TIMBRE STRETCHING | 39 | 0 | OUT | frequency | 1 | a | WRAP | 1 | 0.3",
+    "chars": 357
+  },
+  {
+    "page": 52,
+    "head": "40 | CHAPTER 2. WAVETABLES AND SAMPLERS | (c) | (a) | (b) | 0 | 20 | 40 | 60 | 15",
+    "chars": 1798
+  },
+  {
+    "page": 53,
+    "head": "2.4. TIMBRE STRETCHING | 41 | (Section 1.7) equal to: | x100[n] = a0 + a1 cos (\u03c9n + \u03c61) + a2 cos (2\u03c9n + \u03c62) + \u00b7 \u00b7 \u00b7 | where \u03c9 is the angular frequency (equal to \u03c0/10 in our example since the period | is 20.) To simplify ",
+    "chars": 2066
+  },
+  {
+    "page": 54,
+    "head": "42 | CHAPTER 2. WAVETABLES AND SAMPLERS | 200% | 100% | 50% | partial number | ampli- | tude | 1 | 2",
+    "chars": 1861
+  },
+  {
+    "page": 55,
+    "head": "2.5. INTERPOLATION | 43 | one. In the limit, as the duty cycle gets arbitrarily small, the spectrum is \ufb01lled | in more and more densely; and the limit is the \u201ctrue\u201d spectrum of the waveform. | This \u201ctrue\u201d spectrum is onl",
+    "chars": 3138
+  },
+  {
+    "page": 56,
+    "head": "44 | CHAPTER 2. WAVETABLES AND SAMPLERS | as rounding, linear interpolation, and cubic interpolation. These schemes amount | to evaluating polynomials (of degree zero, one, and three, respectively) in the | interstices b",
+    "chars": 2492
+  },
+  {
+    "page": 57,
+    "head": "2.5. INTERPOLATION | 45 | original | interpolated | best fit | error | Figure 2.11: Linear interpolation of a sinusoid: (upper graph) the original sinu- | soid, the interpolated sinusoid, and the best sinusoidal \ufb01t back ",
+    "chars": 283
+  },
+  {
+    "page": 58,
+    "head": "46 | CHAPTER 2. WAVETABLES AND SAMPLERS | period | interpolation points | 1 | 2 | 4 | 2 | -1.2 | -17.1",
+    "chars": 2370
+  },
+  {
+    "page": 59,
+    "head": "2.6. EXAMPLES | 47 | 0 | mtof | 0 | tabosc4~ table10 | (OUT) | | | table10 | Figure 2.12: A wavetable oscillator: B01.wavetables.pd.",
+    "chars": 1676
+  },
+  {
+    "page": 60,
+    "head": "48 | CHAPTER 2. WAVETABLES AND SAMPLERS | speci\ufb01ed as a creation argument to the tabosc4~ object. (You can also switch | between wavetables dynamically by sending appropriate messages to the object.) | Wavetables used by",
+    "chars": 2981
+  },
+  {
+    "page": 61,
+    "head": "2.6. EXAMPLES | 49 | phasor~ | tabread4~ waveform12 | +~ 1 | 162 | 206 | pack 0 50 | line~ | *~",
+    "chars": 286
+  },
+  {
+    "page": 62,
+    "head": "50 | CHAPTER 2. WAVETABLES AND SAMPLERS | pack : compose a list of two or more elements. The creation arguments es- | tablish the number of arguments, their types (usually numbers) and their initial | values. The inlets ",
+    "chars": 3121
+  },
+  {
+    "page": 63,
+    "head": "2.6. EXAMPLES | 51 | hip~ 5 | high pass filter to cut DC | sample-table | tabread4~ sample-table | line~ | * 441 | 0 | pack 0 100",
+    "chars": 255
+  },
+  {
+    "page": 64,
+    "head": "52 | CHAPTER 2. WAVETABLES AND SAMPLERS | all. | If the index into the wavetable lookup simply changed every time the | mouse moved a pixel (say, twenty to \ufb01fty times a second) the overwhelming | majority of samples woul",
+    "chars": 3119
+  },
+  {
+    "page": 65,
+    "head": "2.6. EXAMPLES | 53 | hip~ 5 | 0 | 0 | * 441 | +~ 1 | -~ 0.5 | cos~ | *~",
+    "chars": 515
+  },
+  {
+    "page": 66,
+    "head": "54 | CHAPTER 2. WAVETABLES AND SAMPLERS | sition Formula (Page 33) predicts that, as long as the chunk size and read | point aren\u2019t changing in time, the transposition is just the frequency times the | chunk size (as alw",
+    "chars": 3025
+  },
+  {
+    "page": 67,
+    "head": "2.6. EXAMPLES | 55 | hip~ 5 | +~ 1 | *~ | +~ | samphold~ | samphold~ | *~ | r~ phase",
+    "chars": 1004
+  },
+  {
+    "page": 68,
+    "head": "56 | CHAPTER 2. WAVETABLES AND SAMPLERS | receive~ objects of the same name. Unlike send and receive, you may not | have more than one send~ object with the same name (in that connection, see | the throw~ and catch~ obje",
+    "chars": 3208
+  },
+  {
+    "page": 69,
+    "head": "2.6. EXAMPLES | 57 | quency of the read point are both 0.9, so that the slope, equal to amplitude | over frequency, is one). The output of this is named \u201cread-pt\u201d as before, and is | used by both copies of the wavetable ",
+    "chars": 2108
+  },
+  {
+    "page": 70,
+    "head": "58 | CHAPTER 2. WAVETABLES AND SAMPLERS",
+    "chars": 38
+  },
+  {
+    "page": 71,
+    "head": "Chapter 3 | Audio and control | computations | 3.1 | The sampling theorem | So far we have discussed digital audio signals as if they were capable of describing | any function of time, in the sense that knowing the value",
+    "chars": 1916
+  },
+  {
+    "page": 72,
+    "head": "60 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | 0 | 7 | Figure 3.1: Two real sinusoids, with angular frequencies \u03c0/2 and 3\u03c0/2, showing | that they coincide at integers. A digital audio signal can\u2019t distinguish between |",
+    "chars": 2113
+  },
+  {
+    "page": 73,
+    "head": "3.2. CONTROL | 61 | the partials above \u03c0 will be audibly present\u2014and, because of foldover, they | will be heard at incorrect frequencies. (This does not mean that one shouldn\u2019t | use sawtooth waves as phase generators\u2014th",
+    "chars": 2954
+  },
+  {
+    "page": 74,
+    "head": "62 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | 0 | 1 | 0 | 1 | 2  2 | 3 | 1 | 2",
+    "chars": 2214
+  },
+  {
+    "page": 75,
+    "head": "3.3. CONTROL STREAMS | 63 | time | Figure 3.3: Graphical representation of a control stream as a sequence of points | in time. | generators and Max/MSP and Pd\u2019s tilde objects). Each unit generator or tilde | object incur",
+    "chars": 2101
+  },
+  {
+    "page": 76,
+    "head": "64 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | A numeric control stream is one that contains one number per time point, | so that it appears as a sequence of ordered pairs: | . . . , (t[0], x[0]), (t[1], x[1]), . . . |",
+    "chars": 2945
+  },
+  {
+    "page": 77,
+    "head": "3.3. CONTROL STREAMS | 65 | 0 | 0  1  2  3 | . . . | a | 4 | 8 | 4 | 12",
+    "chars": 461
+  },
+  {
+    "page": 78,
+    "head": "66 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | Part (c) shows sporadic-to-audio conversion, again at the nearest sample, | but now also using two-point interpolation to further increase the time accuracy. | Conceptuall",
+    "chars": 2912
+  },
+  {
+    "page": 79,
+    "head": "3.4. CONVERTING FROM AUDIO SIGNALS TO NUMERIC CONTROL STREAMS67 | . . . | 9 | 0 | 8 | 12 | 4 | a | b | 3",
+    "chars": 2026
+  },
+  {
+    "page": 80,
+    "head": "68 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | signal | snapshot | (a) | (b) | trigger | Figure 3.6: Conversion between control and audio: (a) control to signal; (b) | signal to control by snapshots. | Suppose as befor",
+    "chars": 2114
+  },
+  {
+    "page": 81,
+    "head": "3.6. EVENT DETECTION | 69 | examples the choice of conversion operator will determine this. | The snapshot block converts from audio signals back to numeric control | streams. In addition to the audio signal, a separate,",
+    "chars": 3046
+  },
+  {
+    "page": 82,
+    "head": "70 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | time | threshold | onsets | turnoffs | (a) | high threshold | low threshold | (b)",
+    "chars": 263
+  },
+  {
+    "page": 83,
+    "head": "3.7. AUDIO SIGNALS AS CONTROL | 71 | example could be to set o\ufb00a sequence of pre-planned processes, each one to be | set o\ufb00by an onset of sound after a speci\ufb01ed period of relative silence, such as | you would see if a mu",
+    "chars": 3218
+  },
+  {
+    "page": 84,
+    "head": "72 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | 0 | OUT | frequency | 1 | WRAP | 4 | * | 1",
+    "chars": 177
+  },
+  {
+    "page": 85,
+    "head": "3.7. AUDIO SIGNALS AS CONTROL | 73 | OUT | S/H | trigger | IN | Figure 3.9: Sample and hold (\u201cS/H\u201d), using falling edges of the trigger signal.",
+    "chars": 133
+  },
+  {
+    "page": 86,
+    "head": "74 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | In digital audio it is often useful to sample a new value on falling edges of the | trigger signal, i.e., whenever the current value of the trigger signal is smaller than ",
+    "chars": 3199
+  },
+  {
+    "page": 87,
+    "head": "3.8. OPERATIONS ON CONTROL STREAMS | 75 | time | (b) | (c) | (a) | delay | in | out | delay time",
+    "chars": 243
+  },
+  {
+    "page": 88,
+    "head": "76 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | (a) | merge | prune | resync | sync | data | (b) | (c)",
+    "chars": 261
+  },
+  {
+    "page": 89,
+    "head": "3.9. CONTROL OPERATIONS IN PD | 77 | (a) | (b) | (c) | (d) | delay | 0 | 0 | float",
+    "chars": 1758
+  },
+  {
+    "page": 90,
+    "head": "78 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | output after the speci\ufb01ed delay, which is set by the \ufb01rst creation argument. If | there are more creation arguments, they specify one or more inlets for numeric | or symbo",
+    "chars": 2888
+  },
+  {
+    "page": 91,
+    "head": "3.10. EXAMPLES | 79 | line~ | 500, 1423 4000 | tabosc4~ table24 | (OUT) | (a) | *~ | *~ | line",
+    "chars": 394
+  },
+  {
+    "page": 92,
+    "head": "80 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | sound is sometimes described as \u201ccrunchy\u201d or \u201csplattering\u201d, depending on the | recording, the transposition, and the interpolation algorithm. | Converting controls to sign",
+    "chars": 2874
+  },
+  {
+    "page": 93,
+    "head": "3.10. EXAMPLES | 81 | adc~ 1 | hip~ 5 | *~ | r cutoff | r phase | bang | delay 5 | <-- play the sample",
+    "chars": 1615
+  },
+  {
+    "page": 94,
+    "head": "82 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | object, in order to prevent discontinuities in the output in case a new event is | started while the previous event is still playing. The \u201ccuto\ufb00\u201d vline~ object | ramps the",
+    "chars": 2997
+  },
+  {
+    "page": 95,
+    "head": "3.10. EXAMPLES | 83 | argument allows you to select the number of samples used in the RMS compu- | tation; smaller numbers give faster (and possibly less stable) output. | Analog-style sequencer | Example C08.analog.sequ",
+    "chars": 2670
+  },
+  {
+    "page": 96,
+    "head": "84 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | *~ | envelope | sample | wrap~ | *~ 100 | +~ 1 | phasor~ | -~ 0.5",
+    "chars": 517
+  },
+  {
+    "page": 97,
+    "head": "3.10. EXAMPLES | 85 | mtof | stripnote | select | float | t b f | float | f - store pitch below | velocity stored here",
+    "chars": 505
+  },
+  {
+    "page": 98,
+    "head": "86 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS | by the maximum MIDI velocity of 127 and packed into a message for line~ with | a time of 100 msec. | However, when a note-o\ufb00is received, it is only appropriate to stop the",
+    "chars": 2497
+  },
+  {
+    "page": 99,
+    "head": "3.10. EXAMPLES | 87 | 9. Using the techniques of Section 3.7, draw a block diagram for generating | two phase-locked sinusoids at 500 and 700 Hertz. | 10. Draw a block diagram showing how to use thresholding to detect wh",
+    "chars": 353
+  },
+  {
+    "page": 100,
+    "head": "88 | CHAPTER 3. AUDIO AND CONTROL COMPUTATIONS",
+    "chars": 45
+  },
+  {
+    "page": 101,
+    "head": "Chapter 4 | Automation and voice | management | It is often desirable to control musical objects or events as aggregates rather than | individually. Aggregates might take the form of a series of events spaced in time, | ",
+    "chars": 1908
+  },
+  {
+    "page": 102,
+    "head": "90 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | trigger | Figure 4.1: ADSR envelope as a block diagram, showing the trigger input (a | control stream) and the audio output. | parameter sets the output value at the end ",
+    "chars": 2161
+  },
+  {
+    "page": 103,
+    "head": "4.1. ENVELOPE GENERATORS | 91 | time | (a) | attack | decay | sustain | release | (b) | (c)",
+    "chars": 255
+  },
+  {
+    "page": 104,
+    "head": "92 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | 4.2 | Linear and Curved Amplitude Shapes | Suppose you wish to fade a signal in over a period of ten seconds\u2014that is, you | wish to multiply it by an amplitude-controllin",
+    "chars": 2563
+  },
+  {
+    "page": 105,
+    "head": "4.2. LINEAR AND CURVED AMPLITUDE SHAPES | 93 | linear | decibels | quartic | units | ampli- | 0 | 1 | 0",
+    "chars": 241
+  },
+  {
+    "page": 106,
+    "head": "94 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | OUT | FREQUENCY | f() | -1 | 1 | Figure 4.4: Using a transfer function to alter the shape of amplitude curves. | A block diagram for this is shown in Figure 4.4. Here we ",
+    "chars": 1929
+  },
+  {
+    "page": 107,
+    "head": "4.3. CONTINUOUS AND DISCONTINUOUS CONTROL CHANGES | 95 | time | (a) | (b) | Figure 4.5: Muting technique for hiding discontinuous changes: (a) the enve- | lope (upper graph) is set discontinuously to zero and the muting ",
+    "chars": 1499
+  },
+  {
+    "page": 108,
+    "head": "96 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | a di\ufb00erent operation from triggering it; the result is to make it jump to a new | value, after which we may either simply leave it there or trigger it anew. Figure | 4.5 ",
+    "chars": 3223
+  },
+  {
+    "page": 109,
+    "head": "4.3. CONTINUOUS AND DISCONTINUOUS CONTROL CHANGES | 97 | time | Figure 4.6: | The switch-and-ramp technique for canceling out discontinuous | changes. | A discontinuity (upper graph) is measured and canceled out with | a",
+    "chars": 398
+  },
+  {
+    "page": 110,
+    "head": "98 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | To do this we measure the level the ADSR generator must now jump to. | This is its own current level (which might not be zero) minus the discontinuity | (or equivalently,",
+    "chars": 2788
+  },
+  {
+    "page": 111,
+    "head": "4.6. VOICE TAGS | 99 | OUT | + | voice 1 | voice 2 | voice 3 | control | Figure 4.8: A voice bank for polyphonic synthesis. | other hand, musical writing for ensembles frequently speci\ufb01es explicitly which",
+    "chars": 1553
+  },
+  {
+    "page": 112,
+    "head": "100 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | OUT | + | voice 1 | voice 2 | voice 3 | allocation | voice | \"notes\"",
+    "chars": 289
+  },
+  {
+    "page": 113,
+    "head": "4.6. VOICE TAGS | 101 | This question doesn\u2019t come up if the control source is a clavier keyboard | because it\u2019s impossible to play more than one simultaneous note on a single | key. But it could easily arise algorithmic",
+    "chars": 2137
+  },
+  {
+    "page": 114,
+    "head": "102 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | directions for example), the MIDI channel may be used (in addition to the note) | as a tag. | In real-time music software it is often necessary to pass back and forth | ",
+    "chars": 2934
+  },
+  {
+    "page": 115,
+    "head": "4.8. EXAMPLES | 103 | inlet | outlet | outlet | + $1 | \u2212 $1 | 8 | 13 | plusminus 5",
+    "chars": 1742
+  },
+  {
+    "page": 116,
+    "head": "104 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | attack | release | line~ | 0 500 | *~ | 1 2500 | 10 200 | del 200",
+    "chars": 1312
+  },
+  {
+    "page": 117,
+    "head": "4.8. EXAMPLES | 105 | inlet | inlet | trigger | sel 0 | t b | f $1 | pack 0 $2 | inlet",
+    "chars": 470
+  },
+  {
+    "page": 118,
+    "head": "106 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | osc~ | *~ | line~ | line~ | osc~ | *~ | line~ | line~",
+    "chars": 1660
+  },
+  {
+    "page": 119,
+    "head": "4.8. EXAMPLES | 107 | least when compared to an oscillator or a ramp generator), Example D03.envelope.dB.pd | uses table lookup to implement the necessary transfer function. This has the | advantage of e\ufb03ciency, but the ",
+    "chars": 2983
+  },
+  {
+    "page": 120,
+    "head": "108 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | catch~ sum | s frequency | s duration | 0 | * 100 | mtof | 0 | of a second",
+    "chars": 596
+  },
+  {
+    "page": 121,
+    "head": "4.8. EXAMPLES | 109 | sqrt | trigger | *~ | line~ | *~ | *~ | 0 $1 | sqrt",
+    "chars": 508
+  },
+  {
+    "page": 122,
+    "head": "110 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | below can refer to it. You may have as many summing busses (and hence catch~ | objects) as you like but they must all have di\ufb00erent names. | throw~ : add to a summing bu",
+    "chars": 2689
+  },
+  {
+    "page": 123,
+    "head": "4.8. EXAMPLES | 111 | s pitch | 50 | 0 | s whammybar | spectrum-partial 1 | loadbang | metro 30 | s poll-table",
+    "chars": 1513
+  },
+  {
+    "page": 124,
+    "head": "112 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | osc~ | r poll\u2212table | + 50 | dbtorms | 0 | pack 0 30 | line~ | throw~ sum\u2212bus",
+    "chars": 629
+  },
+  {
+    "page": 125,
+    "head": "4.8. EXAMPLES | 113 | are shown in Example D10.sampler.notes.pd (not shown) which in turn is de- | rived from the original one-shot sampler from the previous chapter (C05.sampler.oneshot.pd, | shown in Figure 3.14). | Th",
+    "chars": 2954
+  },
+  {
+    "page": 126,
+    "head": "114 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | sampvoice | r note | unpack 0 0 0 0 0 0 0 | t b f | f  + 1 | mod 1e+06 | makenote 64 | poly 8 1",
+    "chars": 585
+  },
+  {
+    "page": 127,
+    "head": "4.8. EXAMPLES | 115 | *~ | outlet~ | makefilename sample%d | set $1 | tabread4~ sample1 | dbtorms | unpack | sqrt",
+    "chars": 646
+  },
+  {
+    "page": 128,
+    "head": "116 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT | tag makenote receives, two pairs of numbers are output, one to start the note, | and another, after a delay equal to the note duration, to stop it. | Having treated poly",
+    "chars": 3227
+  },
+  {
+    "page": 129,
+    "head": "4.8. EXAMPLES | 117 | the output of the current voice is added in, and the result is sent on to the next | voice via the outlet~ object. | Exercises | 1. What input to a fourth-power transfer function gives an output of ",
+    "chars": 1299
+  },
+  {
+    "page": 130,
+    "head": "118 | CHAPTER 4. AUTOMATION AND VOICE MANAGEMENT",
+    "chars": 47
+  },
+  {
+    "page": 131,
+    "head": "Chapter 5 | Modulation | Having taken a two-chapter detour into aspects of control and organization in | electronic music, we return to describing audio synthesis and processing tech- | niques. So far we have seen additi",
+    "chars": 1924
+  },
+  {
+    "page": 132,
+    "head": "120 | CHAPTER 5. MODULATION | frequency | amplitude | spectral | envelope | (a) harmonic | (b) inharmonic | (c.) continuous | Figure 5.1: A taxonomy of timbres. The spectral envelope describes the shape",
+    "chars": 321
+  },
+  {
+    "page": 133,
+    "head": "5.1. TAXONOMY OF SPECTRA | 121 | frequencies to be present; some harmonics may have zero amplitude.) For a | harmonic signal, the graph of the spectrum shows the amplitudes of the partials | of the signals. | Knowing the",
+    "chars": 3227
+  },
+  {
+    "page": 134,
+    "head": "122 | CHAPTER 5. MODULATION | This way of viewing sounds is greatly oversimpli\ufb01ed. The true behavior of | audible pitch and timbre has many aspects which can\u2019t be explained in terms of | this model. For instance, the tim",
+    "chars": 2555
+  },
+  {
+    "page": 135,
+    "head": "5.2. MULTIPLYING AUDIO SIGNALS | 123 | OUT | -1 | 1 | IN | Figure 5.2: Block diagram for ring modulating an input signal with a sinusoid. | (carrier) sinusoid of angular frequency \u03b2 and peak amplitude 1: | [2a cos(\u03b1n)] \u00b7",
+    "chars": 1779
+  },
+  {
+    "page": 136,
+    "head": "124 | CHAPTER 5. MODULATION | frequency | amplitude | a | a/2 | a/2 | a | a/2 | (a)",
+    "chars": 452
+  },
+  {
+    "page": 137,
+    "head": "5.2. MULTIPLYING AUDIO SIGNALS | 125 | frequency | amplitude | (a) | (b) | (c) | Figure 5.4: Result of ring modulation of a complex signal by a pure sinusoid: | (a) the original signal\u2019s spectrum and spectral envelope; (",
+    "chars": 1098
+  },
+  {
+    "page": 138,
+    "head": "126 | CHAPTER 5. MODULATION | to the right by the carrier frequency. Finally, if any components of the shifted | spectrum are still left of the vertical axis, they are re\ufb02ected about it to make | positive frequencies aga",
+    "chars": 2971
+  },
+  {
+    "page": 139,
+    "head": "5.3. WAVESHAPING | 127 | OUT | f() | IN | Figure 5.5: Block diagram for waveshaping an input signal using a nonlinear | function f(). An amplitude adjustment step precedes the function lookup, to | take advantage of the ",
+    "chars": 1609
+  },
+  {
+    "page": 140,
+    "head": "128 | CHAPTER 5. MODULATION | (a) | (b) | (c) | 0.3 | -0.3 | 1 | -1 | 0.3",
+    "chars": 258
+  },
+  {
+    "page": 141,
+    "head": "5.3. WAVESHAPING | 129 | (a) | (b) | (c) | 1 | -1 | 1 | 1 | -1",
+    "chars": 912
+  },
+  {
+    "page": 142,
+    "head": "130 | CHAPTER 5. MODULATION | which comes from the middle, cross term in the expansion, | f(x + y) = x2 + 2xy + y2 | This e\ufb00ect, called intermodulation, becomes more and more dominant as the | number of terms in the inpu",
+    "chars": 2153
+  },
+  {
+    "page": 143,
+    "head": "5.3. WAVESHAPING | 131 | If the input signal x[n] is a unit-amplitude sinusoid, cos(\u03c9n), we can consider | the action of the above terms separately: | f(a \u00b7 x[n]) = f0 + af1 cos(\u03c9n) + a2f2cos2(\u03c9n) + a3f3cos3(\u03c9n) + \u00b7 \u00b7 \u00b7 ",
+    "chars": 2350
+  },
+  {
+    "page": 144,
+    "head": "132 | CHAPTER 5. MODULATION | you will get only even harmonics and if f is an odd function, | f(\u2212x) = \u2212f(x) | you will get odd harmonics. | Many mathematical tricks have been proposed to use waveshaping to gener- | ate s",
+    "chars": 2742
+  },
+  {
+    "page": 145,
+    "head": "5.4. FREQUENCY AND PHASE MODULATION | 133 | N | 0 | OUT | frequency | -1 | 1 | modulation | frequency",
+    "chars": 1035
+  },
+  {
+    "page": 146,
+    "head": "134 | CHAPTER 5. MODULATION | The two harmonic spectra, of the waveshaping outputs | cos(a cos(\u03c9mn)) | and | sin(a cos(\u03c9mn)) | have, respectively, harmonics tuned to | 0, 2\u03c9m, 4\u03c9m, . . . | and | \u03c9m, 3\u03c9m, 5\u03c9m, . . .",
+    "chars": 1975
+  },
+  {
+    "page": 147,
+    "head": "5.5. EXAMPLES | 135 | The harmonics may be turned on and o\ufb00separately using toggle switches. When | they are all on, the spectral envelope peaks at DC (because the constant signal | counts twice as strongly as the other ",
+    "chars": 3147
+  },
+  {
+    "page": 148,
+    "head": "136 | CHAPTER 5. MODULATION | r fundamental | osc~ | *~ | osc~ | *~ | osc~ | *~ | * 2",
+    "chars": 368
+  },
+  {
+    "page": 149,
+    "head": "5.5. EXAMPLES | 137 | fiddle~ 2048 | unpack | osc~ | moses 1 | *~ | mtof | * | 0.5",
+    "chars": 338
+  },
+  {
+    "page": 150,
+    "head": "138 | CHAPTER 5. MODULATION | +~ | / 100 | 50 | clip~ -1 1 | 225 | *~ | loadbang | 50",
+    "chars": 1911
+  },
+  {
+    "page": 151,
+    "head": "5.5. EXAMPLES | 139 | / 100 | 0 | *~ | osc~ 220 | pack 0 50 | line~ | *~ 128 | tabread4~ E05-tab",
+    "chars": 1054
+  },
+  {
+    "page": 152,
+    "head": "140 | CHAPTER 5. MODULATION | So for our waveshaping function we choose | f(x) = 16x5 \u221220x3 + 5x | This procedure allows us to isolate any desired harmonic; the resulting functions | f are known as Chebychev polynomials ",
+    "chars": 2331
+  },
+  {
+    "page": 153,
+    "head": "5.5. EXAMPLES | 141 | where e \u22482.7 is Euler\u2019s constant. | Before plugging in ex as a transfer function it\u2019s wise to plan how we will deal | with signal amplitude, since ex grows quickly as x increases. If we\u2019re going to ",
+    "chars": 2034
+  },
+  {
+    "page": 154,
+    "head": "142 | CHAPTER 5. MODULATION | 0 | 1 | 0 | 0.25 | 1 | 2 | 3 | 4",
+    "chars": 287
+  },
+  {
+    "page": 155,
+    "head": "5.5. EXAMPLES | 143 | *~ | cos~ | +~ 0.1 | 0 | 0.1 | 0.25 | osc~ | symmetry",
+    "chars": 650
+  },
+  {
+    "page": 156,
+    "head": "144 | CHAPTER 5. MODULATION | where \u03c9c is the carrier frequency, \u03c9m is the modulation frequency, and a is the | index of modulation\u2014all in angular units. | We can predict the spectrum by expanding the outer cosine: | x[t",
+    "chars": 2383
+  },
+  {
+    "page": 157,
+    "head": "5.5. EXAMPLES | 145 | 2 | 4 | 0 | \u2212\u2212 partial number \u2212\u2212 | 0 | 0.5 | 6 | 8  10",
+    "chars": 299
+  },
+  {
+    "page": 158,
+    "head": "146 | CHAPTER 5. MODULATION | Exercises | 1. A sound has fundamental 440. How could it be ring modulated to give a | tone at 110 Hertz with only odd partials? How could you then \ufb01ll in the | even ones if you wanted to? |",
+    "chars": 1128
+  },
+  {
+    "page": 159,
+    "head": "Chapter 6 | Designer spectra | As suggested at the beginning of the previous chapter, a powerful way to synthe- | size musical sounds is to specify\u2014and then realize\u2014speci\ufb01c trajectories of pitch | (or more generally, fre",
+    "chars": 2325
+  },
+  {
+    "page": 160,
+    "head": "148 | CHAPTER 6. DESIGNER SPECTRA | frequency | 1 | 1 | b | 2 | b | (f | 1",
+    "chars": 1692
+  },
+  {
+    "page": 161,
+    "head": "6.1. CARRIER/MODULATOR MODEL | 149 | -1 | 1 | modulation | frequency | frequency | carrier | -1 | 1",
+    "chars": 1425
+  },
+  {
+    "page": 162,
+    "head": "150 | CHAPTER 6. DESIGNER SPECTRA | -1 | 1 | OUT | frequency | 1 | 1 | 0 | N",
+    "chars": 178
+  },
+  {
+    "page": 163,
+    "head": "6.2. PULSE TRAINS | 151 | sis) can be considered as particular cases of a more general approach which is | to compute functions of the form, | x[n] = c(\u03c9n)ma(\u03c9n) | where c is a periodic function describing the carrier si",
+    "chars": 2188
+  },
+  {
+    "page": 164,
+    "head": "152 | CHAPTER 6. DESIGNER SPECTRA | where b2 = 2a so that b is proportional to the bandwidth. This can be rewritten | as | ma[n] = g(b sin \u03c9 | 2 n) | with | g(x) = e\u2212x2 | Except for a missing normalization factor, this i",
+    "chars": 2050
+  },
+  {
+    "page": 165,
+    "head": "6.2. PULSE TRAINS | 153 | (a) | (b) | (c) | Figure 6.4: Pulse width modulation using the von Hann window function: (a) | the function W(\u03c6) = (1 + cos(\u03c6))/2; (b) the function as a waveform, repeated | at a duty cycle of 1",
+    "chars": 282
+  },
+  {
+    "page": 166,
+    "head": "154 | CHAPTER 6. DESIGNER SPECTRA | (a) | (b) | Figure 6.5: Audio signals resulting from multiplying a cosine (partial number | 6) by pulse trains: (a) windowing function from the wavetable formulation; (b) | waveshaping",
+    "chars": 1855
+  },
+  {
+    "page": 167,
+    "head": "6.2. PULSE TRAINS | 155 | 0  2  4  6  ... | (dB) | partial number | amplitude | Gaussian | 20 | 40 | 60",
+    "chars": 421
+  },
+  {
+    "page": 168,
+    "head": "156 | CHAPTER 6. DESIGNER SPECTRA | The \ufb01rst, strongest sidelobes on either side are about 32 dB lower in ampli- | tude than the main peak. Further sidelobes drop o\ufb00slowly when expressed in | decibels; the amplitudes dec",
+    "chars": 3121
+  },
+  {
+    "page": 169,
+    "head": "6.3. MOVABLE RING MODULATION | 157 | Figure 6.7: Waveform for a wavetable-based carrier signal tuned to 1.5 times | the fundamental. Two periods are shown. | the left hand side would hold a sinusoid (placed symmetrically",
+    "chars": 2299
+  },
+  {
+    "page": 170,
+    "head": "158 | CHAPTER 6. DESIGNER SPECTRA | so that the spectral center of mass of the two cosines is placed at \u03c9c. (Note | that we make the amplitudes of the two cosines add to one instead of setting | the total power to one; w",
+    "chars": 2650
+  },
+  {
+    "page": 171,
+    "head": "6.4. PHASE-ALIGNED FORMANT (PAF) GENERATOR | 159 | S/H | trigger | phase | fundamental | frequency | 1 | 0 | 0",
+    "chars": 245
+  },
+  {
+    "page": 172,
+    "head": "160 | CHAPTER 6. DESIGNER SPECTRA | signals in the PAF call for an incoming sinusoid at half the fundamental fre- | quency, i.e., sin( \u03c9 | 2 ), and this nominally would require us to use a phasor tuned | to half the fund",
+    "chars": 3290
+  },
+  {
+    "page": 173,
+    "head": "6.4. PHASE-ALIGNED FORMANT (PAF) GENERATOR | 161 | frequency | WRAP | center | S/H | trigger | phase | bandwidth | frequency",
+    "chars": 1967
+  },
+  {
+    "page": 174,
+    "head": "162 | CHAPTER 6. DESIGNER SPECTRA | frequency | OUT | fundamental | phase | generation | modulator 1 | carrier 1 | p1, q1",
+    "chars": 241
+  },
+  {
+    "page": 175,
+    "head": "6.5. EXAMPLES | 163 | partial number | 0  2  4  6  ... | (dB) | ampli- | tude | . | 20 | 40",
+    "chars": 1724
+  },
+  {
+    "page": 176,
+    "head": "164 | CHAPTER 6. DESIGNER SPECTRA | partial number | 0  2  4  6  ... | (dB) | ampli- | tude | . | 20 | 40",
+    "chars": 1971
+  },
+  {
+    "page": 177,
+    "head": "6.5. EXAMPLES | 165 | line~ | 0 | cos~ | pack 0 50 | 0 | -~ 0.5 | *~ | / 10",
+    "chars": 443
+  },
+  {
+    "page": 178,
+    "head": "166 | CHAPTER 6. DESIGNER SPECTRA | output | phase | clipped | 0.5 | -0.5 | 1 | 0.5 | -0.5",
+    "chars": 273
+  },
+  {
+    "page": 179,
+    "head": "6.5. EXAMPLES | 167 | 0 | pd pulse-train | <-- bandwidth | *~ | <-- carrier frequency as | multiple of fundamental | carrier oscillator | RING MODULATED PULSE TRAINS",
+    "chars": 1905
+  },
+  {
+    "page": 180,
+    "head": "168 | CHAPTER 6. DESIGNER SPECTRA | cos~ | -~ 0.5 | *~ | clip~ -0.5 0.5 | bandwidth | +~ 1 | cos~ | *~",
+    "chars": 756
+  },
+  {
+    "page": 181,
+    "head": "6.5. EXAMPLES | 169 | object after the line~ object controlling center frequency, you can avoid dis- | continuities in the output signal even if the desired center frequency changes | discontinuously. In the example the ",
+    "chars": 3046
+  },
+  {
+    "page": 182,
+    "head": "170 | CHAPTER 6. DESIGNER SPECTRA | cos~ | *~ | cos~ | wrap~ | -~ | +~ | -~ | *~",
+    "chars": 465
+  },
+  {
+    "page": 183,
+    "head": "6.5. EXAMPLES | 171 | t b b | f | + 1 | 0 | until | t f f | tabwrite bell-curve | expr exp(-$f1*$f1)",
+    "chars": 2158
+  },
+  {
+    "page": 184,
+    "head": "172 | CHAPTER 6. DESIGNER SPECTRA | phasor~ input without the inclusion of an explicit delay (see the next chapter) | and there is no simple way to modify the patch to solve this problem. | Assuming that we did somehow c",
+    "chars": 2762
+  },
+  {
+    "page": 185,
+    "head": "6.5. EXAMPLES | 173 | 3. How would you modify the block diagram of Figure 6.8 to produce only | odd harmonics?",
+    "chars": 105
+  },
+  {
+    "page": 186,
+    "head": "174 | CHAPTER 6. DESIGNER SPECTRA",
+    "chars": 32
+  },
+  {
+    "page": 187,
+    "head": "Chapter 7 | Time shifts and delays | At 5:00 some afternoon, put on your favorite recording of the Ramones string | quarter number 5. | The next Saturday, play the same recording at 5:00:01, | one second later in the day",
+    "chars": 1868
+  },
+  {
+    "page": 188,
+    "head": "176 | CHAPTER 7. TIME SHIFTS AND DELAYS | Z=a+bi | a | b | |Z| | arg(Z) | Figure 7.1: A number, Z, in the complex plane. The axes are for the real part | a and the imaginary part b. | The sound of a given arrangement of ",
+    "chars": 1482
+  },
+  {
+    "page": 189,
+    "head": "7.1. COMPLEX NUMBERS | 177 | If Z is a complex number, its magnitude (or absolute value), written as |Z|, | is just the distance in the plane from the origin to the point (a, b): | |Z| = | p | (a2 + b2) | and its argumen",
+    "chars": 2073
+  },
+  {
+    "page": 190,
+    "head": "178 | CHAPTER 7. TIME SHIFTS AND DELAYS | Z | Z | 2 | 1 | Z | \u22121 | 2 | A",
+    "chars": 1212
+  },
+  {
+    "page": 191,
+    "head": "7.2. TIME SHIFTS AND PHASE CHANGES | 179 | and taking the real part of each term we get a real sinusoid with initial phase | zero and amplitude one: | . . . , cos(0), cos(\u03c9), cos(2\u03c9), . . . | Furthermore, suppose we mult",
+    "chars": 1967
+  },
+  {
+    "page": 192,
+    "head": "180 | CHAPTER 7. TIME SHIFTS AND DELAYS | so that the dth sample of Y is the 0th sample of X and so on. If the integer d is | positive, then Y is a delayed copy of X. If d is negative, then Y anticipates X; | this can be",
+    "chars": 2879
+  },
+  {
+    "page": 193,
+    "head": "7.3. DELAY NETWORKS | 181 | IN | OUT | d | Figure 7.3: A delay network. Here we add the incoming signal to a delayed copy | of itself. | We\u2019ll now look at the delay network of Figure 7.3 in each of the two ways in | turn",
+    "chars": 1454
+  },
+  {
+    "page": 194,
+    "head": "182 | CHAPTER 7. TIME SHIFTS AND DELAYS | input | output | n | d | Figure 7.4: The time domain view of the delay network of Figure 7.3. The | output is the sum of the input and its time shifted copy. | and \ufb01nd by inspect",
+    "chars": 1739
+  },
+  {
+    "page": 195,
+    "head": "7.3. DELAY NETWORKS | 183 | Z | Z | 1 | Z | -d/2 | d/2 | H | HZ",
+    "chars": 1733
+  },
+  {
+    "page": 196,
+    "head": "184 | CHAPTER 7. TIME SHIFTS AND DELAYS | 2 | d | gain | d | 4 | 2 | Figure 7.6: Gain of the delay network of Figure 7.3, shown as a function of | angular frequency \u03c9.",
+    "chars": 2203
+  },
+  {
+    "page": 197,
+    "head": "7.4. RECIRCULATING DELAY NETWORKS | 185 | IN | d | g | OUT | Figure 7.7: Block diagram for a recirculating comb \ufb01lter. Here d is the delay | time in samples and g is the feedback coe\ufb03cient. | The simplest example of a re",
+    "chars": 1867
+  },
+  {
+    "page": 198,
+    "head": "186 | CHAPTER 7. TIME SHIFTS AND DELAYS | input | d | output | n | Figure 7.8: Time-domain analysis of the recirculating comb \ufb01lter, using an | impulse as input. | Here the terms in the sum come from the series of discre",
+    "chars": 969
+  },
+  {
+    "page": 199,
+    "head": "7.4. RECIRCULATING DELAY NETWORKS | 187 | and dividing by X[n] and using H = Y [n]/X[n] gives: | H = 1 + HgZ\u2212d | This is equivalent to the earlier equation for H. | Now we would like to make a graph of the frequency resp",
+    "chars": 2237
+  },
+  {
+    "page": 200,
+    "head": "188 | CHAPTER 7. TIME SHIFTS AND DELAYS | \u2212d | \u2212d | 1 | \u2212d | 1\u2212g | real | imaginary | gW",
+    "chars": 543
+  },
+  {
+    "page": 201,
+    "head": "7.5. POWER CONSERVATION AND COMPLEX DELAY NETWORKS 189 | So the region of each peak reaching within 3 decibels of the maximum value is | about | (1 \u2212g)/d | (in radians) to either side of the peak. The bandwidth narrows (",
+    "chars": 2646
+  },
+  {
+    "page": 202,
+    "head": "190 | CHAPTER 7. TIME SHIFTS AND DELAYS | OUT | d | 1 | IN | d  d  d | 2  3  4 | Figure 7.11: First fundamental building block for unitary delay networks: delay | lines in parallel.",
+    "chars": 1636
+  },
+  {
+    "page": 203,
+    "head": "7.5. POWER CONSERVATION AND COMPLEX DELAY NETWORKS 191 | IN | c | c | IN | OUT | (a) | (b) | c | c",
+    "chars": 1506
+  },
+  {
+    "page": 204,
+    "head": "192 | CHAPTER 7. TIME SHIFTS AND DELAYS | IN | IN | OUT | (a) | (b) | a  a | OUT | R",
+    "chars": 1915
+  },
+  {
+    "page": 205,
+    "head": "7.6. ARTIFICIAL REVERBERATION | 193 | R | c | c | d | (a) | (b) | d | 1",
+    "chars": 1878
+  },
+  {
+    "page": 206,
+    "head": "194 | CHAPTER 7. TIME SHIFTS AND DELAYS | unstably; this never happens in real rooms (conservation of energy prevents it), | but it can happen in an arti\ufb01cial reverberator if it is not designed correctly. | To make an ar",
+    "chars": 2943
+  },
+  {
+    "page": 207,
+    "head": "7.6. ARTIFICIAL REVERBERATION | 195 | d | 1 | d | IN | R | d | 2 | d",
+    "chars": 221
+  },
+  {
+    "page": 208,
+    "head": "196 | CHAPTER 7. TIME SHIFTS AND DELAYS | If g is one, this formula gives \u221e, since the logarithm of one is zero. | The framework shown above is the basis for many modern reverberator de- | signs. Many extensions of this ",
+    "chars": 2914
+  },
+  {
+    "page": 209,
+    "head": "7.7. VARIABLE AND FRACTIONAL SHIFTS | 197 | reverb | feedback | IN | OUT | (a) | (b) | time | input",
+    "chars": 358
+  },
+  {
+    "page": 210,
+    "head": "198 | CHAPTER 7. TIME SHIFTS AND DELAYS | time. The gain parameters (such as g in the recirculating comb \ufb01lter) may be | controlled by envelope generators, varying them while avoiding clicks or other | artifacts. The del",
+    "chars": 3361
+  },
+  {
+    "page": 211,
+    "head": "7.7. VARIABLE AND FRACTIONAL SHIFTS | 199 | input | time | output time | D | Figure 7.17: A variable length delay line, whose output is the input from some | previous time. The output samples can\u2019t be newer than the inpu",
+    "chars": 354
+  },
+  {
+    "page": 212,
+    "head": "200 | CHAPTER 7. TIME SHIFTS AND DELAYS | Figure 7.17 shows the relationship between input and output time in a vari- | able delay line. The delay line is assumed to have a \ufb01xed maximum length D. | At each sample of outp",
+    "chars": 2531
+  },
+  {
+    "page": 213,
+    "head": "7.8. FIDELITY OF INTERPOLATING DELAY LINES | 201 | an interval of time before going back to the original pitch (when the slope returns | to one). The delay time can be manipulated to give any desired transposition, | but",
+    "chars": 2891
+  },
+  {
+    "page": 214,
+    "head": "202 | CHAPTER 7. TIME SHIFTS AND DELAYS | 2 | gain | 1 | Figure 7.18: Gain of a four-point interpolating delay line with a delay halfway | between two integers. The DC gain is one. | \u03c9, whose phase is zero at 1.5: | x[n]",
+    "chars": 1632
+  },
+  {
+    "page": 215,
+    "head": "7.9. PITCH SHIFTING | 203 | input | time | output time | Figure 7.19: Vibrato using a variable delay line. Since the pitch shift alternates | between upward and downward, it is possible to maintain it without drifting | ",
+    "chars": 245
+  },
+  {
+    "page": 216,
+    "head": "204 | CHAPTER 7. TIME SHIFTS AND DELAYS | input | time | output time | Figure 7.20: Piecewise linear delay functions to maintain a constant transpo- | sition (except at the points of discontinuity). | The outputs are env",
+    "chars": 1334
+  },
+  {
+    "page": 217,
+    "head": "7.9. PITCH SHIFTING | 205 | 0 | OUT | 1 | N | 1 | 0 | 0 | N",
+    "chars": 386
+  },
+  {
+    "page": 218,
+    "head": "206 | CHAPTER 7. TIME SHIFTS AND DELAYS | and d0 +s, and this adjusted sawtooth controls the delay time, in samples. The | initial delay d0 should be at least enough to make the variable delay feasible; for | four-point ",
+    "chars": 2542
+  },
+  {
+    "page": 219,
+    "head": "7.9. PITCH SHIFTING | 207 | input | time | output time | Figure 7.22: The pitch shifter\u2019s delay reading pattern using two delay lines, so | that one is at maximum amplitude exactly when the other is switching.",
+    "chars": 198
+  },
+  {
+    "page": 220,
+    "head": "208 | CHAPTER 7. TIME SHIFTS AND DELAYS | 0 | <-- delay time | delread~ delay1 | tabplay~ G01-tab | metro 1000 | loadbang | write to delay line | +~",
+    "chars": 1640
+  },
+  {
+    "page": 221,
+    "head": "7.10. EXAMPLES | 209 | The second creation argument is the length of the delay line in milliseconds. | The inlet takes an audio signal and writes it continuously into the delay line. | delread~ : read from (or \u201ctap\u201d) a d",
+    "chars": 2833
+  },
+  {
+    "page": 222,
+    "head": "210 | CHAPTER 7. TIME SHIFTS AND DELAYS | 0 | 0 | <-- pitch | <-- delay time | write to delay line | read from delay line | add the original and the delayed signal | mtof",
+    "chars": 750
+  },
+  {
+    "page": 223,
+    "head": "7.10. EXAMPLES | 211 | and the waveshaping output varies between a near sinusoid and a bright, buzzy | sound. The output is added to the output of the vd~ object. The sum is then | high pass \ufb01ltered (the hip~ object at l",
+    "chars": 3240
+  },
+  {
+    "page": 224,
+    "head": "212 | CHAPTER 7. TIME SHIFTS AND DELAYS | a~ | b~ | c~ | d~ | a~ | b~ | (a) | (b)",
+    "chars": 1990
+  },
+  {
+    "page": 225,
+    "head": "7.10. EXAMPLES | 213 | pd delay-writer | expr 1000/$f1 | mtof | 1 | 0 | metro 500 | random 60 | loadbang",
+    "chars": 1858
+  },
+  {
+    "page": 226,
+    "head": "214 | CHAPTER 7. TIME SHIFTS AND DELAYS | 45 | +~ | delay in | pd delay\u2212writer | pd delay\u2212reader | / 44.1 | (BAD) | pack 0 30",
+    "chars": 2203
+  },
+  {
+    "page": 227,
+    "head": "7.10. EXAMPLES | 215 | fiddle~ 2048 | unpack | moses 1 | mtof | pd looper | samplerate~ | t f b | delwrite~ G06-del 100",
+    "chars": 1661
+  },
+  {
+    "page": 228,
+    "head": "216 | CHAPTER 7. TIME SHIFTS AND DELAYS | this was hidden in another subpatch, we can now show this explicitly. The delay | in milliseconds is estimated as equal to the 2048-sample analysis window used | by the fiddle~ o",
+    "chars": 3212
+  },
+  {
+    "page": 229,
+    "head": "7.10. EXAMPLES | 217 | +~ | delwrite~ G07-del 30 | line~ | *~ | line~ | *~ | line~ | *~",
+    "chars": 388
+  },
+  {
+    "page": 230,
+    "head": "218 | CHAPTER 7. TIME SHIFTS AND DELAYS | a counter is incremented (the f, + 1, and mod 4 objects). This controls which | of the amplitudes will be changed. The amplitude itself is computed by making | a random number an",
+    "chars": 2877
+  },
+  {
+    "page": 231,
+    "head": "7.10. EXAMPLES | 219 | inlet~ | reverb-echo echo-del1 5.43216 | +~ | +~ | outlet~ outlet~ | +~ | +~ | -~",
+    "chars": 915
+  },
+  {
+    "page": 232,
+    "head": "220 | CHAPTER 7. TIME SHIFTS AND DELAYS | inlet~ | inlet~ | outlet~ | outlet~ | +~ | -~ | delwrite~ $1 $2 | delread~ $1 $2",
+    "chars": 599
+  },
+  {
+    "page": 233,
+    "head": "7.10. EXAMPLES | 221 | factor | t = 2h/12 = elog(2)/12\u00b7h \u2248e0.05776h | (called \u201cspeed change\u201d in the patch). | The computation labeled \u201ctape head | rotation speed\u201d is the same as the formula for f given on Page 206. Here ",
+    "chars": 2162
+  },
+  {
+    "page": 234,
+    "head": "222 | CHAPTER 7. TIME SHIFTS AND DELAYS",
+    "chars": 38
+  },
+  {
+    "page": 235,
+    "head": "Chapter 8 | Filters | In the previous chapter we saw that a delay network can have a non-uniform | frequency response\u2014a gain that varies as a function of frequency. Delay net- | works also typically change the phase of i",
+    "chars": 2072
+  },
+  {
+    "page": 236,
+    "head": "224 | CHAPTER 8. FILTERS | (a) | (b) | gain | Figure 8.1: Representations of a \ufb01lter: (a) in a block diagram; (b) a graph of | its frequency response. | 8.1 | Taxonomy of \ufb01lters | Over the history of electronic music the",
+    "chars": 1884
+  },
+  {
+    "page": 237,
+    "head": "8.1. TAXONOMY OF FILTERS | 225 | ripple | passband | stopband | transition | band | stopband | attenuation | Figure 8.2: Terminology for describing the frequency response of low-pass and",
+    "chars": 347
+  },
+  {
+    "page": 238,
+    "head": "226 | CHAPTER 8. FILTERS | ripple | passband | stopband | transition | stopband | attenuation | stopband | bands",
+    "chars": 1459
+  },
+  {
+    "page": 239,
+    "head": "8.1. TAXONOMY OF FILTERS | 227 | bandwidth | center frequency | Figure 8.4: A simpli\ufb01ed view of a band-pass \ufb01lter, showing bandwidth and | center frequency. | In practice, a simpler language is often used for describing ",
+    "chars": 1792
+  },
+  {
+    "page": 240,
+    "head": "228 | CHAPTER 8. FILTERS | high | frequency | gain | low frequency gain | crossover frequency | Figure 8.5: A shelving \ufb01lter, showing low and high frequency gain, and crossover | frequency. | gain",
+    "chars": 342
+  },
+  {
+    "page": 241,
+    "head": "8.2. ELEMENTARY FILTERS | 229 | IN | OUT | d=1 | Q | Figure 8.7: A delay network with a single-sample delay and a complex gain Q. | This is the non-recirculating elementary \ufb01lter, \ufb01rst form. Compare the non- | recirculat",
+    "chars": 1862
+  },
+  {
+    "page": 242,
+    "head": "230 | CHAPTER 8. FILTERS | 1 | real | imaginary | 1-QZ-1 | QZ -1 | Z-Q | Q | Z",
+    "chars": 1065
+  },
+  {
+    "page": 243,
+    "head": "8.2. ELEMENTARY FILTERS | 231 | 0 | 0.5 | frequency | 0 | gain | 2 | |Q|=1 | Figure 8.9: Frequency response of the elementary non-recirculating \ufb01lter Figure",
+    "chars": 1432
+  },
+  {
+    "page": 244,
+    "head": "232 | CHAPTER 8. FILTERS | IN | OUT | Q | d=1 | Figure 8.10: The elementary non-recirculating \ufb01lter, second form. | 8.2.3 | Elementary recirculating \ufb01lter | The elementary recirculating \ufb01lter is the recirculating comb \ufb01l",
+    "chars": 1569
+  },
+  {
+    "page": 245,
+    "head": "8.2. ELEMENTARY FILTERS | 233 | frequency | 0 | 2 | (a) | (b) | 0.5 | 0 | IN",
+    "chars": 1243
+  },
+  {
+    "page": 246,
+    "head": "234 | CHAPTER 8. FILTERS | which, by inspection, is another real sinusoid. Here we\u2019re using two properties | of complex conjugates. First, you can add and multiply them at will: | A + B = A + B | AB = A \u00b7 B | and second,",
+    "chars": 1704
+  },
+  {
+    "page": 247,
+    "head": "8.3. DESIGNING FILTERS | 235 | A similar calculation shows that taking the imaginary part (considered as a real | signal) is equivalent to \ufb01ltering the input with the transfer function: | Him(Z) = | im(P)Z\u22121 | (1 \u2212PZ\u22121)(",
+    "chars": 2677
+  },
+  {
+    "page": 248,
+    "head": "236 | CHAPTER 8. FILTERS | p | point | half-power | 0 | 2 | (a) | (b) | Figure 8.12: One-pole low-pass \ufb01lter: (a) pole-zero diagram; (b) frequency re-",
+    "chars": 1715
+  },
+  {
+    "page": 249,
+    "head": "8.3. DESIGNING FILTERS | 237 | p | 0 | (a) | (b) | Figure 8.13: One-pole, one-zero high-pass \ufb01lter: (a) pole-zero diagram; (b) | frequency response (from zero to Nyquist frequency). | 8.3.2 | One-pole, one-zero high-pass",
+    "chars": 1588
+  },
+  {
+    "page": 250,
+    "head": "238 | CHAPTER 8. FILTERS | (a) | real | imaginary | p | q | 0 | (b) | 1",
+    "chars": 1524
+  },
+  {
+    "page": 251,
+    "head": "8.3. DESIGNING FILTERS | 239 | P | 0 | (a) | (b) | 1 | P | 2 | Figure 8.15: Two-pole band-pass \ufb01lter: (a) pole-zero diagram; (b) frequency",
+    "chars": 1310
+  },
+  {
+    "page": 252,
+    "head": "240 | CHAPTER 8. FILTERS | 0 | (a) | (b) | Figure 8.16: A peaking \ufb01lter: (a) pole-zero diagram; (b) frequency response. | Here the \ufb01lter is set to attenuate by 6 decibels at the center frequency. | near unity; this is do",
+    "chars": 1380
+  },
+  {
+    "page": 253,
+    "head": "8.3. DESIGNING FILTERS | 241 | blunt; in other words, the transition regions are wide. It is often desirable to get | a sharper \ufb01lter, either shelving, low- or high-pass, whose two bands are \ufb02atter | and separated by a n",
+    "chars": 2162
+  },
+  {
+    "page": 254,
+    "head": "242 | CHAPTER 8. FILTERS | r=0.5 | = 3 | /8 | /8 | = | /8 | = - | /8",
+    "chars": 931
+  },
+  {
+    "page": 255,
+    "head": "8.3. DESIGNING FILTERS | 243 | 8.3.7 | Stretching the unit circle with rational functions | In Section 8.3.4 we saw a simple way to turn a low-pass \ufb01lter into a band-pass | one. It is tempting to apply the same method to",
+    "chars": 2264
+  },
+  {
+    "page": 256,
+    "head": "244 | CHAPTER 8. FILTERS | (a) | (b) | Figure 8.19: One-pole, one-zero low-pass \ufb01lter: (a) pole-zero plot; (b) plot for | the resulting \ufb01lter after the transformation R(Z) = \u2212Z2. The result is a band- | pass \ufb01lter with c",
+    "chars": 1232
+  },
+  {
+    "page": 257,
+    "head": "8.3. DESIGNING FILTERS | 245 | where a and b are real numbers and not both are zero. This is a particular case | of the general form given above for unit-circle-preserving rational functions. We | have S(1) = 1 and S(\u22121)",
+    "chars": 2317
+  },
+  {
+    "page": 258,
+    "head": "246 | CHAPTER 8. FILTERS | 0 | (a) | (b) | 3 | 3 | Figure 8.20: Butterworth band-pass \ufb01lter: (a) pole-zero diagram; (b) frequency | response. The center frequency is \u03c0/4. The bandwidth depends both on center | frequency ",
+    "chars": 2001
+  },
+  {
+    "page": 259,
+    "head": "8.3. DESIGNING FILTERS | 247 | IN | OUT | OUT | (a - right) | (b - wrong) | 1-|P| | P | d=1",
+    "chars": 1721
+  },
+  {
+    "page": 260,
+    "head": "248 | CHAPTER 8. FILTERS | 1/5 | 1/(5e) | 1/10 | 1/(10e) | n | (a) | (b) | (c)",
+    "chars": 347
+  },
+  {
+    "page": 261,
+    "head": "8.4. APPLICATIONS | 249 | thus: | n | 2\u03c0/\u03c9 = 1 | 2\u03c0 | \u03c9 | b = q | 2\u03c0 | where q is the quality of the \ufb01lter, de\ufb01ned as the center frequency divided by",
+    "chars": 2526
+  },
+  {
+    "page": 262,
+    "head": "250 | CHAPTER 8. FILTERS | 0 | 2 | 0 | 2 | -0.8 | 0 | 0.4 | p=0.8",
+    "chars": 1715
+  },
+  {
+    "page": 263,
+    "head": "8.4. APPLICATIONS | 251 | amplitude | frequency | (a) | (b) | (c) | Figure 8.24: Subtractive synthesis: (a) spectrum of input sound; (b) \ufb01lter fre- | quency response; (c) spectrum of output sound.",
+    "chars": 181
+  },
+  {
+    "page": 264,
+    "head": "252 | CHAPTER 8. FILTERS | OUT | frequency | center | frequency | Figure 8.25: ADSR-controlled subtractive synthesis. | 8.4.2 | Envelope following | It is frequently desirable to use the time-varying power of an incoming",
+    "chars": 1498
+  },
+  {
+    "page": 265,
+    "head": "8.4. APPLICATIONS | 253 | OUT | IN | Figure 8.26: Envelope follower. The output is the average power of the input | signal. | For more insight into the design of a suitable low-pass \ufb01lter for an envelope | follower, we a",
+    "chars": 1428
+  },
+  {
+    "page": 266,
+    "head": "254 | CHAPTER 8. FILTERS | frequency | amplitude | a/2 | 0 | b/2 | a +b | 2  2 | 2",
+    "chars": 1474
+  },
+  {
+    "page": 267,
+    "head": "8.5. EXAMPLES | 255 | (with a spectral peak of amplitude a/2 and frequency \u03c9) we would like a way | of computing the complex sinusoid: | X[n] = a (cos(\u03c9n) + i sin(\u03c9n)) | so that | x[n] = re(X[n]) | We would like a linear",
+    "chars": 2052
+  },
+  {
+    "page": 268,
+    "head": "256 | CHAPTER 8. FILTERS | lop~ | noise~ | 0 | low-pass filter | <-- cutoff | white noise, | test signal | |",
+    "chars": 1815
+  },
+  {
+    "page": 269,
+    "head": "8.5. EXAMPLES | 257 | 0 | phasor~ | +~ | 0 | 0 | 0 | 0 | vcf~",
+    "chars": 1730
+  },
+  {
+    "page": 270,
+    "head": "258 | CHAPTER 8. FILTERS | 0 | bp~ | bp~ | 0 | 0 | env~ 4096 | +~ 1 | r $0-loopf",
+    "chars": 1735
+  },
+  {
+    "page": 271,
+    "head": "8.5. EXAMPLES | 259 | cos~ cos~ | *~ | *~ | -~ | 0 | sample loop for | test signal | pair of allpass",
+    "chars": 1889
+  },
+  {
+    "page": 272,
+    "head": "260 | CHAPTER 8. FILTERS | 0 | / 100 | 0 | / 100 | 0 | / 100 | 0 | / 100",
+    "chars": 2034
+  },
+  {
+    "page": 273,
+    "head": "8.5. EXAMPLES | 261 | 0 | rpole~ | / 100 | rzero_rev~ | pole (%) | pd chord | rpole~ | rzero_rev~",
+    "chars": 1099
+  },
+  {
+    "page": 274,
+    "head": "262 | CHAPTER 8. FILTERS | Exercises | 1. A recirculating elementary \ufb01lter has a pole at i/2. At what angular fre- | quency is its gain greatest, and what is the gain there? At what angular | frequency is the gain least,",
+    "chars": 1209
+  },
+  {
+    "page": 275,
+    "head": "Chapter 9 | Fourier analysis and | resynthesis | Among the applications of \ufb01lters discussed in Chapter 8, we saw how to use | heterodyning, combined with a low-pass \ufb01lter, to \ufb01nd the amplitude and phase | of a sinusoidal",
+    "chars": 1915
+  },
+  {
+    "page": 276,
+    "head": "264 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | frequency zero. Then we pass the signal through a low-pass \ufb01lter with such a | low cuto\ufb00frequency that nothing but the zero-frequency partial remains. We | can do this ",
+    "chars": 2011
+  },
+  {
+    "page": 277,
+    "head": "9.2. PROPERTIES OF FOURIER TRANSFORMS | 265 | for all real values of k. | This follows immediately from the de\ufb01nition of the | Fourier transform, since the factor | V = cos(\u2212k\u03c9) + i sin(\u2212k\u03c9) | is unchanged when we add N ",
+    "chars": 2035
+  },
+  {
+    "page": 278,
+    "head": "266 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | 9.2.1 | Fourier transform of DC | Let X[n] = 1 for all n (this repeats with any desired integer period N > 1). | From the preceding discussion, we expect to \ufb01nd that | ",
+    "chars": 1470
+  },
+  {
+    "page": 279,
+    "head": "9.2. PROPERTIES OF FOURIER TRANSFORMS | 267 | real | 0 | -5 | 5 | k | imagi- | nary | Figure 9.1: The Fourier transform of a signal consisting of all ones. Here N=100,",
+    "chars": 1593
+  },
+  {
+    "page": 280,
+    "head": "268 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | frequency (bins) | 0 | -5 | 5 | Figure 9.2: The Dirichlet kernel, for N = 100. | that repeats every N samples, let Y [n] be X[n] delayed d samples: | Y [n] = X[n \u2212d] | ",
+    "chars": 1161
+  },
+  {
+    "page": 281,
+    "head": "9.3. FOURIER ANALYSIS OF NON-PERIODIC SIGNALS | 269 | = V 0X[0] + V 1ZX[1] + \u00b7 \u00b7 \u00b7 + V N\u22121ZN\u22121X[N \u22121] | = (V Z)0X[0] + (V Z)1X[1] + \u00b7 \u00b7 \u00b7 + (V Z)N\u22121X[N \u22121] | = FT {X[n]} (k \u2212\u03b1 | \u03c9 ) | We therefore get the Phase Shift For",
+    "chars": 2098
+  },
+  {
+    "page": 282,
+    "head": "270 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | 0 | -5 | 5 | k-> | 0 | -5 | 5 | amplitude",
+    "chars": 431
+  },
+  {
+    "page": 283,
+    "head": "9.3. FOURIER ANALYSIS OF NON-PERIODIC SIGNALS | 271 | However, it would be better to get a result in which the response to a pure | sinusoid were better localized around the corresponding value of k. | We can | accomplis",
+    "chars": 1727
+  },
+  {
+    "page": 284,
+    "head": "272 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | 0 | k-> | amplitude | 1 | 2 | -1 | M(k) | D (k)",
+    "chars": 1519
+  },
+  {
+    "page": 285,
+    "head": "9.3. FOURIER ANALYSIS OF NON-PERIODIC SIGNALS | 273 | real | 0 | 5 | k | 10 | imagi- | nary | Figure 9.6: The Hann-windowed Fourier transform of a signal with two sinu-",
+    "chars": 1632
+  },
+  {
+    "page": 286,
+    "head": "274 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | 9.4 | Fourier analysis and reconstruction of audio | signals | Fourier analysis can sometimes be used to resolve the component sinusoids in | an audio signal. Even when",
+    "chars": 2768
+  },
+  {
+    "page": 287,
+    "head": "9.4. FOURIER ANALYSIS AND RECONSTRUCTION OF AUDIO SIGNALS275 | ... | extract | windows | windows | shape | INPUT | Fourier | analysis | FT",
+    "chars": 440
+  },
+  {
+    "page": 288,
+    "head": "276 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | to zero at its two ends, we apply the Hann windowing function a second time. | Doing this to each successive window of the input, we then add the outputs, | using the s",
+    "chars": 3033
+  },
+  {
+    "page": 289,
+    "head": "9.4. FOURIER ANALYSIS AND RECONSTRUCTION OF AUDIO SIGNALS277 | FT | iFT | extract and | shape windows | IN | |Z| | NOISE | FLOOR | overlap",
+    "chars": 229
+  },
+  {
+    "page": 290,
+    "head": "278 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | FT | iFT | |Z| | overlap | and add | function | OUT | limiting",
+    "chars": 1364
+  },
+  {
+    "page": 291,
+    "head": "9.5. PHASE | 279 | accurately, after the original Bell Laboratories vocal analysis/synthesis device. | The technique described here is more accurately called timbre stamping. Two | input signals are used, one to be \ufb01lter",
+    "chars": 2663
+  },
+  {
+    "page": 292,
+    "head": "280 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | ... | FT | incoming sinusoid | real | imaginary | windowed | FT | windowed",
+    "chars": 377
+  },
+  {
+    "page": 293,
+    "head": "9.5. PHASE | 281 | This gives an excellent way of estimating the frequency \u03b1: pick any channel | whose amplitude is dominated by the sinusoid and subtract two successive phase | to get H\u03b1: | H\u03b1 =\u0338 | S[1, 3] \u2212\u0338 | S[0, 3] ",
+    "chars": 2464
+  },
+  {
+    "page": 294,
+    "head": "282 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | ... | OUTPUT | phase diff | phase accum | phase accum | phase diff | T[k] | T'[k]",
+    "chars": 339
+  },
+  {
+    "page": 295,
+    "head": "9.5. PHASE | 283 | real | imaginary | T[k] | T'[k] | S[m-1, k] | S[m, k] | Figure 9.12: Phases of one channel of the analysis windows and two successive | resynthesis windows.",
+    "chars": 1497
+  },
+  {
+    "page": 296,
+    "head": "284 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | The desired output phase relation, at the frame m \u22121, is:\u0338 | T[k + 1] \u2212\u0338 | T[k] =\u0338 | S[m \u22121, k + 1] \u2212\u0338 | S[m \u22121, k] | or, rearranging:\u0338 | \u00bdS[m \u22121, k + 1] | T[k + 1]",
+    "chars": 1893
+  },
+  {
+    "page": 297,
+    "head": "9.6. PHASE BASHING | 285 | INPUT | FT | MAGNITUDE | (-1) k | iFT | ... | ... | PHASE-BASHED INPUT",
+    "chars": 213
+  },
+  {
+    "page": 298,
+    "head": "286 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | fft~ | tabwrite~ $0-real | tabwrite~ $0-imaginary | osc~ | (a) | *~ | inlet~ | rfft~",
+    "chars": 1842
+  },
+  {
+    "page": 299,
+    "head": "9.7. EXAMPLES | 287 | The Fast Fourier transform [SI03] reduces the computational cost of Fourier | analysis in Pd to only that of between 5 and 15 osc~ objects in typical con\ufb01gu- | rations. The FFT algorithm in its simp",
+    "chars": 3155
+  },
+  {
+    "page": 300,
+    "head": "288 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | *~ | inlet~ | rfft~ | tabreceive~ $0-hann | *~ | *~ | block~ 512 4 | tabreceive~ $0-gain",
+    "chars": 853
+  },
+  {
+    "page": 301,
+    "head": "9.7. EXAMPLES | 289 | *~ | *~ | *~ | rfft~ | rifft~ | *~ | +~ | /~",
+    "chars": 1677
+  },
+  {
+    "page": 302,
+    "head": "290 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | Narrow-band companding: noise suppression | Example I04.noisegate.pd (Figure 9.16) shows an example of narrow-band com- | panding using Fourier analysis/resynthesis. (T",
+    "chars": 2911
+  },
+  {
+    "page": 303,
+    "head": "9.7. EXAMPLES | 291 | *~ | *~ | *~ | *~ | +~ | *~ | inlet~ | rfft~",
+    "chars": 1368
+  },
+  {
+    "page": 304,
+    "head": "292 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | is controlled by the \u201csquelch\u201d parameter, which is squared and divided by 100 | to map values from 0 to 100 to a useful range. | Another possible scheme is to limit the",
+    "chars": 3067
+  },
+  {
+    "page": 305,
+    "head": "9.7. EXAMPLES | 293 | *~ | *~ | -~ | *~ | *~ | +~ | *~ | *~",
+    "chars": 1534
+  },
+  {
+    "page": 306,
+    "head": "294 | CHAPTER 9. FOURIER ANALYSIS AND RESYNTHESIS | that individual channels are replaced by the input when it is more powerful | than what is already recirculating. | The result is a more coherent-sounding | reverberati",
+    "chars": 2184
+  },
+  {
+    "page": 307,
+    "head": "Chapter 10 | Classical waveforms | Up until now we have primarily taken three approaches to synthesizing repetitive | waveforms: additive synthesis (Chapter 1), wavetable synthesis (Chapter 2), and | waveshaping (Chapter",
+    "chars": 2184
+  },
+  {
+    "page": 308,
+    "head": "296 | CHAPTER 10. CLASSICAL WAVEFORMS | (a) | (b) | (c) | Figure 10.1: Classical waveforms: (a) the sawtooth, (b) the triangle, and (c) | the rectangle wave, shown as functions of a continuous variable (not sampled).",
+    "chars": 205
+  },
+  {
+    "page": 309,
+    "head": "10.1. SYMMETRIES AND FOURIER SERIES | 297 | 10.1 | Symmetries and Fourier series | Before making a quantitative analysis of the Fourier series of the classical wave- | forms, we pause to make two useful observations abou",
+    "chars": 2105
+  },
+  {
+    "page": 310,
+    "head": "298 | CHAPTER 10. CLASSICAL WAVEFORMS | X\u2032[n] = X[n] and X\u2032\u2032[n] = 0. This implies that, in this case, X[n] has only | even numbered harmonics. Indeed, this should be no surprise, since in this case | X[n] would have to r",
+    "chars": 2715
+  },
+  {
+    "page": 311,
+    "head": "10.1. SYMMETRIES AND FOURIER SERIES | 299 | (b) | (c) | (d) | (a) | Figure 10.2: Using a symmetry relation to extract even and odd harmonics from | a sawtooth wave: (a) the original sawtooth wave; (b) shifted by 1/2 cycl",
+    "chars": 308
+  },
+  {
+    "page": 312,
+    "head": "300 | CHAPTER 10. CLASSICAL WAVEFORMS | (a) | (b) | (c) | L | N | 1 | L | 2",
+    "chars": 1581
+  },
+  {
+    "page": 313,
+    "head": "10.2. DISSECTING CLASSICAL WAVEFORMS | 301 | N | 1/12 | (N/2, -1/24) | Figure 10.4: The parabolic wave. | The sawtooth wave with a jump of one unit at the point zero is given by | s[n] = n/N \u22121/2 | over the period 0 \u2264n \u2264",
+    "chars": 1901
+  },
+  {
+    "page": 314,
+    "head": "302 | CHAPTER 10. CLASSICAL WAVEFORMS | (a) | (b) | (c) | Figure 10.5: Decomposing a triangle wave (part a) into two parabolic waves (b | and c). | 10.3 | Fourier series of the elementary waveforms | In general, given a ",
+    "chars": 1382
+  },
+  {
+    "page": 315,
+    "head": "10.3. FOURIER SERIES OF THE ELEMENTARY WAVEFORMS | 303 | which are good to within a small error, on the order of (k/N)2. Now we plug | this result in to evaluate: | FT {x[n] \u2212x[n \u22121]} \u2248i\u03c9kFT {x[n]} | 10.3.1 | Sawtooth wa",
+    "chars": 1420
+  },
+  {
+    "page": 316,
+    "head": "304 | CHAPTER 10. CLASSICAL WAVEFORMS | (0,1) | (N/2, -1) | N | Figure 10.6: Symmetric triangle wave, obtained by superposing parabolic waves | with (M, c) pairs equal to (0, 8) and (N/2, \u22128). | 10.3.2 | Parabolic wave |",
+    "chars": 854
+  },
+  {
+    "page": 317,
+    "head": "10.3. FOURIER SERIES OF THE ELEMENTARY WAVEFORMS | 305 | (M, 1) | (N-M, -1) | Figure 10.7: Non-symmetric triangle wave, with vertices at (M, 1) and (N \u2212 | M, \u22121). | equal to 1/2 for the \ufb01rst half cycle (0 <= n < N/2) and",
+    "chars": 1180
+  },
+  {
+    "page": 318,
+    "head": "306 | CHAPTER 10. CLASSICAL WAVEFORMS | The most general way of dealing with linear combinations of elementary | (parabolic and/or sawtooth) waves is to go back to the complex Fourier series, | as we did in \ufb01nding the se",
+    "chars": 1956
+  },
+  {
+    "page": 319,
+    "head": "10.4. PREDICTING AND CONTROLLING FOLDOVER | 307 | is at least twice the length of the short segment, and at that scale the waveform | is nearly indistinguishable from a sawtooth wave. For partials numbering in | excess o",
+    "chars": 3035
+  },
+  {
+    "page": 320,
+    "head": "308 | CHAPTER 10. CLASSICAL WAVEFORMS | 1 | 2 | 4 | 8 | 16 | 32 | 0 | -10",
+    "chars": 276
+  },
+  {
+    "page": 321,
+    "head": "10.4. PREDICTING AND CONTROLLING FOLDOVER | 309 | really wish to get 60 decibels of foldover rejection\u2014all the way up to a 10 kHz. | fundamental\u2014we will have to over-sample by a factor of 256, to a sample rate | of about",
+    "chars": 2999
+  },
+  {
+    "page": 322,
+    "head": "310 | CHAPTER 10. CLASSICAL WAVEFORMS | Figure 10.9: A square wave, band-limited to partials 1, 3, 5, 7, 9, and 11. | This can be regarded approximately as a series of band-limited step functions | arranged end to end. |",
+    "chars": 2595
+  },
+  {
+    "page": 323,
+    "head": "10.4. PREDICTING AND CONTROLLING FOLDOVER | 311 | (a) | (b) | (c) | Figure 10.10: Stretching a band-limited square wave: (a) the original waveform; | (b) after splicing in horizontal segments; (c) using the same step tra",
+    "chars": 237
+  },
+  {
+    "page": 324,
+    "head": "312 | CHAPTER 10. CLASSICAL WAVEFORMS | OUT | 0.5 | -0.5 | -0.5 | 0.5 | f | b/f | 0.5",
+    "chars": 159
+  },
+  {
+    "page": 325,
+    "head": "10.5. EXAMPLES | 313 | wrap~ | -~ 0.5 | -~ 0.5 | remove DC bias | +~ | -~ | phasor~ | out of",
+    "chars": 1414
+  },
+  {
+    "page": 326,
+    "head": "314 | CHAPTER 10. CLASSICAL WAVEFORMS | wrap~ | -~ 0.5 | -~ | / 100 | 0 | / 100 | 0 | *~",
+    "chars": 1284
+  },
+  {
+    "page": 327,
+    "head": "10.5. EXAMPLES | 315 | / 100 | 0 | / 100 | 0 | phasor~ | 0 | frequency | *~",
+    "chars": 680
+  },
+  {
+    "page": 328,
+    "head": "316 | CHAPTER 10. CLASSICAL WAVEFORMS | speci\ufb01ed. A phasor supplies the rising shape (its amplitude being the slope), and | the same phasor, subtracted from one, gives the decaying shape. The minimum | of the two linear ",
+    "chars": 2945
+  },
+  {
+    "page": 329,
+    "head": "10.5. EXAMPLES | 317 | 4. A rectangle wave is 1 for 1/4 cycle, zero for 3/4 cycles. What are the | strengths of its harmonics at 0, 1, 2, 3, and 4 times the fundamental? | 5. How much is 1 + 1/9 + 1/25 + 1/49 + 1/81 + \u00b7 ",
+    "chars": 217
+  },
+  {
+    "page": 330,
+    "head": "318 | CHAPTER 10. CLASSICAL WAVEFORMS",
+    "chars": 36
+  },
+  {
+    "page": 331,
+    "head": "Index | \u2217\u223c, 18 | bang \u223c, 290 | block \u223c, 213 | bp \u223c, 256 | catch \u223c, 107 | clip \u223c, 138 | cos \u223c, 52 | cpole \u223c, 260 | czero rev \u223c, 260",
+    "chars": 742
+  },
+  {
+    "page": 332,
+    "head": "320 | INDEX | tabread4 \u223c, 48 | tabreceive \u223c, 287 | tabsend \u223c, 290 | tabwrite \u223c, 48 | throw \u223c, 110 | trigger , t , 83 | unpack , 107 | until , 171",
+    "chars": 1461
+  },
+  {
+    "page": 333,
+    "head": "INDEX | 321 | recirculating, 232 | encapsulation, 102 | envelope follower, 69, 252 | envelope generator, 10, 89 | ADSR, 89 | resetting, 95 | equalization, 227 | event, 63",
+    "chars": 1510
+  },
+  {
+    "page": 334,
+    "head": "322 | INDEX | parent, 102 | partials, 121 | passband, 224 | patch, 8, 15 | peaking \ufb01lter, 227 | period, 12 | phase locking, 283 | phase-aligned formant (PAF), 158",
+    "chars": 1535
+  },
+  {
+    "page": 335,
+    "head": "Bibliography | [Bal03] | Mark Ballora. Essentials of Music Technology. Prentice Hall, Upper | Saddle River, New Jersey, 2003. | [Ble01] | Barry Blesser. An interdisciplinary synthesis of reverberation view- | points. Jou",
+    "chars": 1622
+  },
+  {
+    "page": 336,
+    "head": "324 | BIBLIOGRAPHY | [Leb77] | Marc Lebrun. A derivation of the spectrum of FM with a complex | modulating wave. Computer Music Journal, 1(4):51\u201352, 1977. | [Leb79] | Marc Lebrun. Digital waveshaping synthesis. Journal o",
+    "chars": 1967
+  },
+  {
+    "page": 337,
+    "head": "BIBLIOGRAPHY | 325 | [SI03] | Julius Orion Smith III. Mathematics of the Discrete Fourier Trans- | form (DFT), with Music and Audio Applications. W3K Publishing, | Menlo Park, California, 2003. | [Ste96] | Kenneth Steigl",
+    "chars": 515
+  }
+]

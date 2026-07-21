@@ -1,0 +1,8 @@
+[project]
+name = "msp-kb"
+version = "1.0.0"
+description = "Puckette Theory and Technique of Electronic Music knowledge base"
+requires-python = ">=3.10"
+
+[project.scripts]
+msp-kb = "msp_kb.__main__:main"
