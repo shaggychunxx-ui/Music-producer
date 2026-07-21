@@ -1,0 +1,238 @@
+[
+  {
+    "page": 1,
+    "head": "E 2 | Table of contents | Introduction...........................................2 | monologue Key Features...............................2 | Block Diagram............................................."
+  },
+  {
+    "page": 2,
+    "head": "2 | Introduction | monologue Key Features | \u2022 The monologue is a monophonic synthesizer, which features an analog syn- | thesizer circuit based on the design of the popular minilogue. | \u2022 The VCF has "
+  },
+  {
+    "page": 3,
+    "head": "3 | Block Diagram | VCO 1 | SAW | AUDIO IN | SQR | PITCH | PITCH"
+  },
+  {
+    "page": 4,
+    "head": "4 | Controls and Connections | Front Panel Controls | This diagram shows the layout of the front panel knobs, switches, and buttons. | 1 | 2 | 3 | 4"
+  },
+  {
+    "page": 5,
+    "head": "5 | Rear Panel Connections | The illustration below shows a typical example of connections for the mono- | logue. Connect your equipment according to the needs of your own system. | Be sure that the p"
+  },
+  {
+    "page": 6,
+    "head": "6 | Connecting to a computer or MIDI devices | \u2022 To exchange MIDI messages with your computer, connect your computer to | the USB B connector on the monologue. | \u2022 To exchange MIDI messages with an ex"
+  },
+  {
+    "page": 7,
+    "head": "7 | TIP\t The monologue can also be used with the separately sold AC adapter | connected to the DC 9V jack. | 4.\t Make sure that any external output devices such as powered monitor | speakers are turne"
+  },
+  {
+    "page": 8,
+    "head": "8 | Auto Power Off Feature | The monologue features an Auto Power Off feature that can automatically turn | the monologue off after 4 hours have elapsed with no operation of the knobs, | switches, but"
+  },
+  {
+    "page": 9,
+    "head": "9 | Playing Programs and Sequences | Selecting and Playing a Program | The monologue comes equipped with 100 Programs. Of those, 80 are ready-to- | play preset Programs and 20 locations are available "
+  },
+  {
+    "page": 10,
+    "head": "10 | 3.\t Adjusting the OCTAVE range and the DRIVE knob, and the using the | Slider. | As you play, you can use the five-way OCTAVE Switch to | transpose the playing area of the keyboard by \u00b1 2 octaves"
+  },
+  {
+    "page": 11,
+    "head": "11 | TIP\t The Sequencer tempo is set for each Program in the SEQ EDIT mode | and saved as part of the Program, but you can adjust the tempo from | 56.0 to 240.0 BPM (Beats Per Minute) by turning the T"
+  },
+  {
+    "page": 12,
+    "head": "12 | Programs | Program Architecture | Each monologue Program includes settings for the Oscillators, Mixer, Filter, | EGs and LFO, as well as a 16-Step Sequencer plus Effects. | Try editing each relat"
+  },
+  {
+    "page": 13,
+    "head": "13 | Creating Sounds | Editing a program means changing the Program\u2019s parameters to alter its | sound. | There are two way to create sounds on the monologue. | \u2022 Select an existing Program that\u2019s clos"
+  },
+  {
+    "page": 14,
+    "head": "14 | Saving a Program | We recommend that you save your Program on the monologue after editing | the sound. | Any edits that you make to the current program will be lost if you | turn off the power or"
+  },
+  {
+    "page": 15,
+    "head": "15 | Basic Parameter Editing | In this section, we\u2019ll explain the basic parameters that make up a program. | The basic parameters are assigned to the knobs and switches on the front panel. | VCO 1, VC"
+  },
+  {
+    "page": 16,
+    "head": "16 | SHAPE knob | [0...1023] | This knob will determine the final shape, complexity, or duty-cycle (Square) of | the selected waveform. | VCO 2 | OCTAVE switch | [16\u2019, 8\u2019, 4\u2019, 2\u2019]"
+  },
+  {
+    "page": 17,
+    "head": "17 | RING/SYNC switch | [OFF, ON] | This switch turns the Oscillator sync and ring modulator on or off. When the | switch is in the center position, both the oscillator sync and the ring modulator | w"
+  },
+  {
+    "page": 18,
+    "head": "18 | MIXER | The mixer is used to set the relative levels of Oscillators 1 and 2. | VCO 1 knob | [0...1023] | VCO 2 knob | [0...1023] | These knobs control the output levels of Oscillators 1 and 2."
+  },
+  {
+    "page": 19,
+    "head": "19 | EG | EG: Envelope Generator | You can make time-based changes to | the VCA, pitch or cutoff by using the | EG. | TYPE switch | ["
+  },
+  {
+    "page": 20,
+    "head": "20 | INT knob | [\u2212511...0...+511] | Specifies the intensity of the EG. | Turning the knob to the right will increase the intensity. | TIP\t When turning the INT knob while holding down the SHIFT button"
+  },
+  {
+    "page": 21,
+    "head": "21 | RATE knob | [0...1023  /  1/8, 1/16, 1/32...1/1024, 1/2048  /  4, 2, 1, 0, 3/4...1/64] | The rate knob adjusts the speed of the LFO. | Turning the knob to the right will increase the LFO speed. |"
+  },
+  {
+    "page": 22,
+    "head": "22 | Sequencer | In this section, we\u2019ll explore real-time recording, step recording, and motion se- | quence recording, as well as how to edit the recorded sequences (step edit). | Real-Time Recording"
+  },
+  {
+    "page": 23,
+    "head": "23 | Step Recording | 1.\t Press the REC button in the SEQUENCER section while the sequencer is | stopped. | \u201cSTEP REC\u201d and \u201cSTEP 1\u201d will be indicated in the display. | If the sequence has already been"
+  },
+  {
+    "page": 24,
+    "head": "24 | Mortion Sequence | Recording a Motion Sequence | Motion Sequencing allows you to record the flipping of switches and the turn- | ing of knobs as part of the sequence, and recreate those motions a"
+  },
+  {
+    "page": 25,
+    "head": "25 | Deleting a Motion Sequence | If you try to record a fifth Motion Sequence, the message \u201cMotion Full\u201d will be | indicated in the display. When this happens, the display will enter MOTION | CLEAR i"
+  },
+  {
+    "page": 26,
+    "head": "26 | Editing sequence data (step edit) | With step edit, you can change and adjust notes, slides and motion sequences | in the sequence data you record. | 1.\t Select the program that includes the sequ"
+  },
+  {
+    "page": 27,
+    "head": "27 | When a knob is turned while one button is held down, motion will be re- | corded for that step. When a knob is turned while multiple buttons are held | down, a motion will be recorded for those s"
+  },
+  {
+    "page": 28,
+    "head": "28 | Edit Mode | Although nearly all of the monologue\u2019s main parameters can be edited using | the knobs and switches on the panel, other detailed parameters are accessed | using the Edit mode. | There"
+  },
+  {
+    "page": 29,
+    "head": "29 | 3.\t Press one of buttons 1\u201316 that are lit up. | The monologue will enter the respective Edit page, and the parameter | names will be indicated on the display. | Switch to a different page by pre"
+  },
+  {
+    "page": 30,
+    "head": "30 | Edit Mode Parameter List | 16 | 15 | ALL DUMP | (p.46) | All Dump (USB) | All Dump (MIDI)"
+  },
+  {
+    "page": 31,
+    "head": "31 | PROGRAM EDIT mode | Button 5 (PORTAMENTO) | Portamento Time | [Off, 0...127] | Portamento produces a continuous glide in pitch between notes; this parameter | controls the portamento time. | Off:"
+  },
+  {
+    "page": 32,
+    "head": "32 | LFO RATE | LFO INT | PORTAMENTO | Slider Range | [\u2013100%...0%...+100%] | Adjusts how much the parameters change when the slider is moved. | Bend Range +"
+  },
+  {
+    "page": 33,
+    "head": "33 | DC 001...003: These are an original scale created by Dorian Concept, set for the | entire note range. | USER SCALE 1...6: These are user\u2010programmed scales with different settings | for all MIDI n"
+  },
+  {
+    "page": 34,
+    "head": "34 | Cutoff Velocity | [0%...100%] | Specifies how the velocity (keyboard playing dynamics) will affect the cutoff | frequency, allowing louder notes to appear brighter, etc. | 0%: Velocity will not a"
+  },
+  {
+    "page": 35,
+    "head": "35 | Button 12 (DUMP) | This button initiates a Program dump. | Turn the PROGRAM/VALUE knob until \u201cPress WRITE\u201d is indicated in the dis- | play. The WRITE button will blink. | Press the WRITE button t"
+  },
+  {
+    "page": 36,
+    "head": "36 | Button 7 (SEQ CLEAR) | This function provides a convenient way to erase all data within a specific se- | quence. | All Clear | When using All Clear, all notes and Motion Sequences contained withi"
+  },
+  {
+    "page": 37,
+    "head": "37 | Button 11 (MOTION ENABLE) | MOTION ENABLE | [OFF, ON] | By setting this function to OFF, you can disable a particular motion without de- | leting the data. | Press button 11 to select the Motion "
+  },
+  {
+    "page": 38,
+    "head": "38 | GLOBAL EDIT mode | GLOBAL EDIT functions apply to the entire monologue universally. | Button 3 (GLOBAL 1) | Common to both Oscillators, these functions control the tuning and transposi- | tion of"
+  },
+  {
+    "page": 39,
+    "head": "39 | If the parameter value does not change | In some cases, the parameter value may not change or Motion Sequence | recording may not start, even when you turn the knob. This means that the | knob mo"
+  },
+  {
+    "page": 40,
+    "head": "40 | Velocity Curve | [Type 1...8, Const 127] | Changing the Velocity Curve allows you to match the dynamic response of the | monologue keyboard to your own playing style and technique. | Type 1 | Thi"
+  },
+  {
+    "page": 41,
+    "head": "41 | Button 5 (GLOBAL 3) | These parameters relate to the SYNC IN/SYNC OUT jack settings. | Sync In Unit | [16th Note, 8th Note] | The Sync In Units determine how much the Sequencer will advance with "
+  },
+  {
+    "page": 42,
+    "head": "42 | Button 6 (GLOBAL 4) | These parameters relate to the monologue\u2019s MIDI capabilities. | MIDI Ch | [1...16] | In order to communicate, the monologue and your other MIDI devices must be | set to the "
+  },
+  {
+    "page": 43,
+    "head": "43 | Button 7 (GLOBAL 5) | MIDI Rx Prog Chg | [Off, On] | Selects whether MIDI program change messages will be received. | MIDI Rx CC | [Off, On] | Selects whether MIDI control change messages will be"
+  },
+  {
+    "page": 44,
+    "head": "44 | Auto Power Off | [Off, On] | Using the Auto Power Off feature, the monologue can be set to automatically | turn off after approximately four hours have elapsed without any operation of | the knob"
+  },
+  {
+    "page": 45,
+    "head": "45 | Button 10 (USER SCALE) | USER SCALE 1...6 | This allows you to set up to six original user scales. The pitches of all of the | notes can be changed to create scales with irregular pitches. | Pitc"
+  },
+  {
+    "page": 46,
+    "head": "46 | Button 13 (SCALE DUMP) | USER SCALE 1...6 | This transmits the microtuning that was edited using USER SCALE 1\u20136 as a | general SysEx message. | Press button 13 to select the microtuning to transm"
+  },
+  {
+    "page": 47,
+    "head": "47 | Other functions | Tuning | As with all analog instruments, the monologue\u2019s circuitry can drift over time | during performance due to changes in environment and temperature. The | monologue provid"
+  },
+  {
+    "page": 48,
+    "head": "48 | Let\u2019s now edit USER SCALE 3. | 1.\t Enter GLOBAL EDIT mode by pressing the EDIT MODE button. | 2.\t Press button 10 three times. | USER SCALE 3 will be indicated on the display. | 3.\t Play the note"
+  },
+  {
+    "page": 49,
+    "head": "49 | Restoring the Factory settings | You can restore the monologue\u2019s preset Programs and global settings to their | original factory-set state at any time. | 1.\t Begin with the monologue turned Off. "
+  },
+  {
+    "page": 50,
+    "head": "50 | Shortcuts using the SHIFT button | By holding down the SHIFT button as you press other select buttons, you can | access a number of convenient features quickly and easily. | Function | SHIFT butt"
+  },
+  {
+    "page": 51,
+    "head": "51 | Understanding MIDI | MIDI stands for Musical Instrument Digital Interface, and is a worldwide stan- | dard for exchanging various types of musical data between electronic musical | instruments an"
+  },
+  {
+    "page": 52,
+    "head": "52 | Controlling the monologue from an external MIDI device | If you want to play or control the monologue from another MIDI keyboard, | sequencer, or other device, connect the MIDI OUT connector of t"
+  },
+  {
+    "page": 53,
+    "head": "53 | Connecting the monologue to a computer via USB | In order to use a USB connection, you\u2019ll need to install the Korg USB-MIDI | driver on your computer. Download the \u201cKorg USB-MIDI driver\u201d from the"
+  },
+  {
+    "page": 54,
+    "head": "54 | MIDI filter settings | Use these settings to configure whether program changes, control changes and | pitch bend messages will be transmitted and received. | Use \u201cButton 7 (GLOBAL 5)\u201d (p.43) to m"
+  },
+  {
+    "page": 55,
+    "head": "55 | Program List | No. Program Name Category | Slider Assign | Author | 1 | <afx acid3> | Bass"
+  },
+  {
+    "page": 56,
+    "head": "56 | Specifications | Keyboard: | 25 keys (slim keyboard, velocity sensitive) | Sound Generation: | Analog synthesis | Number of programs: | 100 (80 preset programs, 20 user programs)"
+  },
+  {
+    "page": 57,
+    "head": "57 | Power supply: | AA alkaline battery x 6 or AA nickel-metal hydride | battery x 6 | Or AC adapter (DC 9V | ) (optional) | Battery life: | Approximately 6 hours (using alkaline batteries)"
+  },
+  {
+    "page": 58,
+    "head": "58 | MIDI Implementation Chart | MIDI Implementation Chart | Function... | Transmitted | Received | Remarks | Default"
+  },
+  {
+    "page": 59,
+    "head": "www.korg.com | Published 6/2019 | \u00a9 2016 KORG INC."
+  }
+]

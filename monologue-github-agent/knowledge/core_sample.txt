@@ -1,0 +1,1640 @@
+===== PAGE 1 =====
+E 2
+Table of contents
+Introduction...........................................2
+monologue Key Features...............................2
+Block Diagram....................................................3
+Controls and Connections.....................4
+Front Panel Controls.........................................4
+Rear Panel Connections..................................5
+Turning the monologue On and Off...........6
+Playing Programs and Sequences........9
+Selecting and Playing a Program.................9
+Playing the Sequencer...................................10
+Programs............................................. 12
+Program Architecture....................................12
+Creating Sounds..............................................13
+Saving a Program............................................14
+Basic Parameter Editing................................15
+Sequencer..........................................................22
+Mortion Sequence...........................................24
+Edit Mode............................................. 28
+How to enter the Edit mode........................28
+Edit Mode Parameter List.............................30
+PROGRAM EDIT mode....................................31
+SEQ EDIT mode.................................................35
+GLOBAL EDIT mode........................................38
+Other functions................................... 47
+Tuning.................................................................47
+Restoring the Factory settings....................49
+Shortcuts using the SHIFT button.............50
+Understanding MIDI........................... 51
+Connecting Devices via MIDI and USB....51
+MIDI-Related Settings....................................53
+Program List........................................ 55
+Specifications...................................... 56
+MIDI Implementation Chart............... 58
+
+
+===== PAGE 2 =====
+2
+Introduction
+monologue Key Features
+• The monologue is a monophonic synthesizer, which features an analog syn-
+thesizer circuit based on the design of the popular minilogue.
+• The VCF has been tuned for use in mono synths. Also, a drive circuit allows 
+you to produce more aggressive sounds.
+• The monologue is compact and lightweight, and can be powered by batteries, 
+letting you enjoy making sound wherever you go.
+• Instant recall of 80 factory presets plus 20 additional user programs.
+• Real-time oscilloscope provides visual feedback of parameter changes.
+• 16-step monophonic sequencer can automate up to 4 synth parameters.
+• Sync In and Sync Out jacks allow you to expand your session setup.
+
+
+===== PAGE 3 =====
+3
+Block Diagram
+VCO 1
+SAW
+AUDIO IN
+SQR
+PITCH
+PITCH
+LFO
+EG
+LFO
+VCO 2
+WAVE SHAPE
+OSC
+SYNC
+SAW
+keytrack
+TRI
+TRI
+LFO
+WAVE SHAPE
+RING
+MOD
+NOISE
+GEN
+VCA
+VCF
+EG
+int
+velocity
+VCO 1 level
+VCO 2 level
+gate
+0%
+100%
+wave shape amount
+OUTPUT
+NOISE
+EG
+int
+DRIVE
+
+
+===== PAGE 4 =====
+4
+Controls and Connections
+Front Panel Controls
+This diagram shows the layout of the front panel knobs, switches, and buttons.
+1
+2
+3
+4
+5
+6
+8
+9
+10
+11
+12
+13
+7
+1. MASTER knob
+2. DRIVE knob
+3. OCTAVE switch
+4. Slider
+5. VCO 1
+WAVE switch
+SHAPE knob
+6. VCO 2
+OCTAVE switch
+PITCH knob
+WAVE switch
+SYNC/RING switch
+SHAPE knob
+7. MIXER
+VCO 1 knob
+VCO 2 knob
+8. FILTER
+CUTOFF knob
+RESONANCE knob
+9. EG
+TYPE switch
+ATTACK knob
+DECAY knob
+INT knob
+TARGET knob
+10. LFO
+WAVE switch
+MODE switch
+RATE knob
+INT knob
+TARGET switch
+11. SEQUENCER
+TEMPO knob
+KEY TRG/HOLD button
+MOTION/SLIDE/
+NOTE switch
+EDIT
+ EDIT MODE button
+ WRITE button
+ EXIT button
+SEQUENCER
+ PLAY button
+ REC button
+ REST button
+ SHIFT button
+Buttons 1–8
+12. PROGRAM/VALUE knob
+13. Display
+
+
+===== PAGE 5 =====
+5
+Rear Panel Connections
+The illustration below shows a typical example of connections for the mono-
+logue. Connect your equipment according to the needs of your own system.
+ Be sure that the power on all of your devices is turned off before you 
+make connections. Leaving the power on when you make connections 
+may cause malfunctions, or damage your speaker system and other 
+components.
+Connecting to audio devices
+• Connect your powered monitor speaker, mixer or other components to the 
+OUTPUT jack (monaural output) of the monologue. Adjust the volume level 
+using the MASTER knob.
+• Connect your headphones to the headphones jack. This jack outputs the same 
+signal as that of the OUTPUT jack.
+• Connect external sound sources, such as another synthesizer, to the AUDIO 
+IN jack (monaural input).
+USB B connector
+Power switch
+MIDI IN, OUT connectors
+SYNC IN, OUT jacks
+AUDIO IN jack
+OUTPUT jack
+Headphones 
+jack
+DC 9V jack
+Computer
+Mixer
+Sound module, rhythm machine, etc.
+MIDI keyboard, rhythm machine, etc.
+Groove machine
+Microphone
+Monitor speakers
+(with internal amp)
+Headphones
+USB cable
+MIDI OUT
+MIDI IN
+SYNC IN
+USB port
+INPUT
+OUTPUT
+AC adapter
+(sold separately)
+MIDI cable
+SYNC cable
+
+
+===== PAGE 6 =====
+6
+Connecting to a computer or MIDI devices
+• To exchange MIDI messages with your computer, connect your computer to 
+the USB B connector on the monologue.
+• To exchange MIDI messages with an external MIDI device, connect the de-
+vice to the MIDI IN/OUT connectors on the monologue.
+TIP For details, refer to “Understanding MIDI” (p. 51)
+Connecting the SYNC IN and OUT jacks
+• Use the SYNC IN and OUT jacks of the monologue when you want to syn-
+chronize to the output pulses and steps from the audio output jacks of sourc-
+es such as the Korg volca series or a DAW. Connect using a Sync cable.
+• The SYNC OUT jack sends a 5 V pulse of 15 ms at the beginning of each step.
+TIP Refer to “Button 5 (GLOBAL 3)” (p. 41) of GLOBAL EDIT mode for 
+the settings to turn on the monologue.
+Turning the monologue On and Off
+Before you turn the monologue On:
+Installing batteries
+Make sure that the monologue’s power is turned off.
+1. Open the battery cover on the monologue’s bottom panel.
+While pressing the latch, pull upward and remove.
+2. Insert six AA batteries, taking care to observe the cor-
+rect polarity (+/− orientation). 
+Use alkaline or nickel-metal hydride batteries.
+3. Reattach the battery cover.
+ In order for the remaining battery amount to be detected and shown 
+correctly, you must use the parameter in GLOBAL EDIT mode to 
+specify the type of batteries that you’re using. By default, this setting 
+is set to “Alkaline.” For details, refer to “Battery Type” (p. 43).
+When the batteries become depleted, “Battery Low” will appear on the dis-
+play. When this occurs, it’s time to replace the batteries.
+ Remove old batteries immediately. Otherwise, battery leakage may oc-
+cur, resulting in a malfunction. If you don’t think that you’ll be using 
+the unit for a long period of time, you should remove the batteries.
+1
+
+
+===== PAGE 7 =====
+7
+TIP The monologue can also be used with the separately sold AC adapter 
+connected to the DC 9V jack.
+4. Make sure that any external output devices such as powered monitor 
+speakers are turned off before connecting them to the monologue.
+TIP If you want to connect a MIDI device or computer to the monologue’s 
+MIDI connectors or USB B connector in order to use the monologue’s 
+keyboard and controllers to control an external MIDI tone generator, 
+or if you want to use another MIDI keyboard or a sequencer to play 
+the monologue’s sound generator, you will need to configure the set-
+tings. For details, refer to “Understanding MIDI” (p. 51).
+Turning the monologue On
+1. Make sure that both the monologue and any external output devices such 
+as powered monitor speakers are turned off, and turn the volume of all 
+devices all the way down.
+2. Hold down the Power switch on the rear panel of the monologue; once 
+the “monologue” logo appears in the display, take your finger off the 
+Power switch.
+3. Turn on any external output devices such as powered monitor speakers.
+4. Adjust the volume of your external output equipment, and adjust the 
+monologue’s volume using the MASTER knob.
+Turning the monologue Off
+Any Program data in the monologue that has not been saved will be lost when 
+the power is turned off. Be sure to save any Program and other important data 
+that you have edited (“Saving a Program”, p. 14).
+1. Turn the MASTER knob of the monologue to the left to turn the volume 
+all the way down.
+Also, turn the volume all the way down on any external output devices 
+that might be connected, such as powered monitor speakers.
+2. Hold down the Power switch on the rear panel of the monologue; to turn off 
+the power after the display goes blank, take your finger off the power switch.
+ Once you have turned the monologue off, wait about 10 seconds be-
+fore turning the monologue on again.
+
+
+===== PAGE 8 =====
+8
+Auto Power Off Feature
+The monologue features an Auto Power Off feature that can automatically turn 
+the monologue off after 4 hours have elapsed with no operation of the knobs, 
+switches, buttons, or keyboard of the monologue. By default, the factory setting 
+for the Auto Power Off is enabled. The Auto Power Off can be disabled using 
+the steps below.
+1. Press the EDIT MODE button.
+The monologue will enter the Edit Mode, and the display will look like the 
+illustration shown below.
+2. Turn the PROGRAM/VALUE knob, and select GLOBAL EDIT.
+TIP GLOBAL EDIT can also be selected by pressing the EDIT MODE button.
+3. Press button 8 twice.
+“Auto Power Off” will be displayed.
+4. Turn the PROGRAM/VALUE knob, and select “Off”.
+5. Press the EXIT button.
+The monologue will enter the Play mode, and the display will indicate the 
+current Program.
+TIP Settings in GLOBAL EDIT are saved automatically.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+5
+ 3
+1
+2, 4
+
+
+===== PAGE 9 =====
+9
+Playing Programs and Sequences
+Selecting and Playing a Program
+The monologue comes equipped with 100 Programs. Of those, 80 are ready-to-
+play preset Programs and 20 locations are available to save your own sounds 
+and custom edits.
+Each Program includes settings for the sound, as well as sequence data settings.
+1. Enter the Play mode.
+When the monologue is turned on, it will automatically enter the Play 
+mode. 
+In the Play mode, verify that the EDIT MODE button on the front panel are 
+unlit.
+TIP If the EDIT MODE button is lit, press the EXIT button. The PLAY or 
+REC buttons will light to indicate when the sequence data saved in a 
+Program is being played back or is recording. You can still select other 
+Programs in this state, but press the PLAY button if you wish to stop 
+the Sequencer.
+2. Turn the PROGRAM/VALUE knob to select a Program.
+The display will indicate the Program name and number.
+The monologue comes with 80 preset Programs (001–080) as part of the fac-
+tory preload data. These preset Programs are instantly accessible and ready 
+for you to enjoy. For details, refer to “Program List” (p. 55).
+TIP Hold down the SHIFT button while turning the PROGRAM/VALUE 
+knob to skip through the Program List in increments of 10.
+TIP In addition to showing Program name and number, the display can 
+also be used as an oscilloscope, to show the electrical signals created 
+by the waveform of the sound. When SLIDE or NOTE is selected us-
+ing the MOTION/SLIDE/NOTE switch, the waveform will be dis-
+played.
+1
+Make sure EDIT MODE button is unlit.
+2
+
+
+===== PAGE 10 =====
+10
+3. Adjusting the OCTAVE range and the DRIVE knob, and the using the 
+Slider.
+As you play, you can use the five-way OCTAVE Switch to 
+transpose the playing area of the keyboard by ± 2 octaves.
+Turn the DRIVE knob to adjust the drive effect, which adds 
+harmonics and distortion to the sound.
+In addition, you can move the Slider from left to right to add 
+real-time performance control.
+TIP The parameter assigned to the slider will vary depending 
+on the Program. Rrefer to “Program List” (p. 55) to see 
+which parameter is assigned to the slider in each Program.
+TIP The Slider Assign function in PROGRAM EDIT mode is used to as-
+sign parameters to the slider (“Slider Assign”, p. 31).
+Playing the Sequencer
+Each Program in the monologue includes sequence data. In this section, we’ll 
+play the sequence data saved as part of the preset Programs.
+1. Turn the PROGRAM/VALUE knob to select a Program.
+The display will indicate the Program name and number.
+2. Press the PLAY button in the SEQUENCER section.
+The sequence data that is recorded in the current Program will begin playing.
+The 1–16 buttons will light up in steps while the sequencer is playing.
+TIP If you press the KEY TRG/HOLD button (the button will stay lit) in-
+stead of the PLAY button and then play the keyboard, the sequence 
+data will play back while a key is being pressed. If you hold down 
+the KEY TRG/HOLD button (the button will begin to blink) and then 
+play the keyboard, the sequence data will keep playing back, even af-
+ter you take your hand off the keyboard. Press a different key on the 
+keyboard while holding down the KEY TRG/HOLD button as it lights 
+or flashes, to play back the sequence data transposed.
+1
+2, 3
+1
+
+
+===== PAGE 11 =====
+11
+TIP The Sequencer tempo is set for each Program in the SEQ EDIT mode 
+and saved as part of the Program, but you can adjust the tempo from 
+56.0 to 240.0 BPM (Beats Per Minute) by turning the TEMPO knob.
+3. Press the PLAY button once more to end the Sequencer playback.
+
+
+===== PAGE 12 =====
+12
+Programs
+Program Architecture
+Each monologue Program includes settings for the Oscillators, Mixer, Filter, 
+EGs and LFO, as well as a 16-Step Sequencer plus Effects.
+Try editing each related parameter, and enjoy changing the sounds of the 
+monologue.
+NOTE [STEP 1–16]
+GATE TIME [STEP 1–16]
+NOTE ON/OFF [STEP1-16]
+SLIDE ON/OFF [STEP1-16]
+MOTION ON/OFF [STEP1-16]
+ACTIVE STEP ON/OFF [STEP1-16]
+BPM
+Step Length
+Step Resolution
+Swing
+Default Gate Time
+Motion Enable (1–4)
+Motion Smooth (1–4)
+MASTER
+DRIVE
+VCO 1
+WAVE
+SHAPE
+VCO 2
+OCTAVE
+WAVE
+SYNC/RING
+SHAPE
+MIXER
+VCO1
+VCO2
+FILTER
+CUTOFF
+RESONANCE
+EG
+TYPE
+ATTACK
+DECAY
+INT
+TARGET
+LFO
+WAVE
+MODE
+RATE
+INT
+TARGET
+LSEQ
+TEMPO
+KEY TRG/HOLD
+Portamento Time
+Portamento Mode
+Slide Time
+Slider Assign
+Slider Range
+Bend Range +
+Bend Range −
+Microtuning
+Scale Key
+Program Tuning
+LFO BPM Sync
+Cutoﬀ Key Track
+Cutoﬀ Velocity
+Amp Velocity
+Program Level
+Program Name
+Basic Parametres
+Sequence Data
+Sequence Parameters
+Detail Parametres
+
+
+===== PAGE 13 =====
+13
+Creating Sounds
+Editing a program means changing the Program’s parameters to alter its 
+sound.
+There are two way to create sounds on the monologue.
+• Select an existing Program that’s close to the sound you want, and edit that 
+Program’s parameters to achieve your own custom sound.
+• You can also initialize all the Program parameters or use the Panel Load func-
+tion to create your own sound from scratch.
+Editing an Existing Program
+1. In Program mode, select the Program that you want to use as a starting 
+point.
+2. Use the knobs and switches on the front panel.
+Take a moment to consider the differences between the current Program 
+and the sound you have in mind, and use the front panel controls to edit 
+the necessary parameters.
+TIP For details on how the pitch, sound, and volume change when using 
+the knobs and switches, refer to “Basic Parameter Editing” (p. 15).
+ We recommend that you save the Program on the monologue after 
+editing the sound. Any edits that you make will be lost if you turn off 
+the power or recall a different Program. For details, refer to “Saving a 
+Program” (p. 14).
+Creating a Program from Scratch
+To create a sound from scratch, we recommend that you use the Panel Load 
+function. This will load the current settings of each front panel control and 
+provide a simple starting point for your iconic creations.
+As you explore the front panel controls, you can see how each parameter will 
+affect the sound, making it easier to understand how each section of the mono-
+logue functions and how the parameters interact.
+Panel Load function
+When the PLAY button is pressed while holding down the SHIFT button, the 
+panel load function will be enabled. The sound will change to reflect the panel 
+settings, and "Load Panel" will be indicated on the display.
+
+
+===== PAGE 16 =====
+16
+SHAPE knob 
+[0...1023]
+This knob will determine the final shape, complexity, or duty-cycle (Square) of 
+the selected waveform.
+VCO 2
+OCTAVE switch 
+[16’, 8’, 4’, 2’]
+The pitch of Oscillator 2 can be set in octave steps.
+PITCH knob 
+[−1200...+1200]
+The pitch, or tuning, of the Oscillator 2 can be set using one-
+cent steps.
+TIP Turning the PITCH knob while holding the SHIFT 
+button will change the tuning by semitones (100 cents).
+WAVE switch 
+[
+, 
+, 
+]
+This sets the waveforms for Oscillator 2.
+Sawtooth wave: This waveform is used to create sounds typical of analog syn-
+thesizers, such as synth basses and brass.
+Triangle wave: This waveform has a rounder feel than the sawtooth or square 
+wave.
+Noise wave: This waveform can be used on its own, or mixed with the Oscilla-
+tor to create percussion instrument sounds, or sound effects such as surf.
+0
+1023
+
+
+===== PAGE 19 =====
+19
+EG
+EG: Envelope Generator
+You can make time-based changes to 
+the VCA, pitch or cutoff by using the 
+EG.
+TYPE switch 
+[
+, 
+, 
+]
+The settings made here will change the VCA and TARGET parameters over 
+time, as shown below.
+When using GATE, time-based changes cannot be made to the VCA.
+ATTACK knob 
+[0...1023]
+The ATTACK specifies the time required for the EG to reach its maximum level 
+once a new note is played.
+DECAY knob 
+[0...1023]
+When the TYPE switch is set to “A/D” or “GATE”, this sets the amount of time 
+until the level becomes 0 after the maximum level is reached.
+When the TYPE switch is set to “A/G/D”, this sets the time from note-off (when 
+the key is released) until the level reaches 0.
+TYPE
+VCA
+（Amp EG）
+Attack
+Decay
+0
+Attack
+Decay
+0
+0
+TARGET settings
+Int
+Attack
+Decay
+0
+Int
+Attack
+Decay
+0
+Int
+Attack
+Decay
+0
+PITCH, PITCH 2 (Pitch EG), 
+CUTOFF (Filter EG)
+(GATE)
+(A/D: Attack/Decay)
+(A/G/D: Attack/Gate/Decay)
+
+
+===== PAGE 22 =====
+22
+Sequencer
+In this section, we’ll explore real-time recording, step recording, and motion se-
+quence recording, as well as how to edit the recorded sequences (step edit).
+Real-Time Recording
+Recording a performance
+This feature allows you to record your performance on the monologue key-
+board in real time.
+1. Press the PLAY button in the SEQUENCER section to play the sequencer.
+The PLAY button will light.
+2. Press the REC button.
+Real-time recording will begin, and the REC button will light.
+3. Play the keyboard.
+The notes that you play on the keyboard will be overdubbed (added to the 
+recording of the sequence data).
+4. Press the REC button once more to stop the recording.
+The REC button will go dark.
+TIP Press the REC button once more to start recording again.
+5. Press the PLAY button to finish real-time recording.
+The PLAY button will go dark.
+Deleting the sequencer data
+Press the REST button to erase or delete existing notes in the sequence during 
+real-time recording.
+2, 4
+1, 5
+
+
+===== PAGE 25 =====
+25
+Deleting a Motion Sequence
+If you try to record a fifth Motion Sequence, the message “Motion Full” will be 
+indicated in the display. When this happens, the display will enter MOTION 
+CLEAR in the SEQ EDIT mode, and you will be able to delete one of the previ-
+ously recorded Motion Sequences.
+1. Check that the monologue is on the MOTION CLEAR function, in the 
+SEQ EDIT mode.
+“MOTION CLEAR” will be indicated in the display. You can delete Motion 
+Sequences one at a time here.
+TIP Press the EXIT button to cancel deleting the Motion Sequence.
+2. Press button 10, and select the motion to delete.
+3. Turn the PROGRAM/VALUE knob to select the message “CLEAR...?”.
+4. Press the WRITE button.
+The selected Motion Sequence will be deleted.
+5. Press the EXIT button.
+6. To continue recording a Motion Sequence, press the REC button, and 
+press the PLAY button to stop.
+TIP To delete all Motion Sequences at once, use the “Motion Clear” func-
+tion assigned to button 7 in the SEQ EDIT mode. For details, refer to 
+“Motion Clear” (p. 36).
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+5
+ 2
+4
+3
+
+
+===== PAGE 28 =====
+28
+Edit Mode
+Although nearly all of the monologue’s main parameters can be edited using 
+the knobs and switches on the panel, other detailed parameters are accessed 
+using the Edit mode.
+There are three sub-modes within the Edit mode: PROGRAM EDIT mode, 
+SEQ EDIT mode, and GLOBAL EDIT mode.
+How to enter the Edit mode
+1. Press the EDIT MODE button.
+Each Edit mode is shown in the display, and the buttons light.
+2. Press the EDIT MODE button repeatedly—or use the PROGRAM/VAL-
+UE knob—to advance to the PROGRAM EDIT mode, SEQ EDIT mode, or 
+GLOBAL EDIT mode.
+PROGRAM EDIT mode: This mode is used to change the Program name 
+and assign a parameter to the slider, as well as to initialize Programs and 
+perform other Program editing functions.
+SEQ EDIT mode: This mode is used to set the BPM and configure other 
+Step Sequencer settings, to delete sequence data, and so on.
+GLOBAL EDIT mode: This mode is used to set the tuning and to specify 
+how the knobs and switches should function, as well as settings that affect 
+the entire synthesizer—such as MIDI.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+1, 2
+2, 5
+ 3
+4, 6
+
+
+===== PAGE 31 =====
+31
+PROGRAM EDIT mode
+Button 5 (PORTAMENTO)
+Portamento Time 
+[Off, 0...127]
+Portamento produces a continuous glide in pitch between notes; this parameter 
+controls the portamento time.
+Off: No portamento effect is applied.
+The larger the value, the longer the portamento time.
+Portamento Mode 
+[Auto, On]
+Auto: When playing in a legato style (playing a new note before any previously 
+played note is released), portamento will be applied.
+On: Portamento will be applied, even when fully releasing a key and then 
+playing the next note.
+Slide Time 
+[0%...100%]
+This sets the length of the slide.
+The larger the value, the longer the slide time.
+Button 6 (SLIDER FUNC)
+The Slider offers real-time control over a specific parameter of your choosing. 
+In addition, the slider can be used as a pitch bend controller.
+Slider Assign 
+[PITCH BEND...PORTAMENTO]
+You can assign any one these performance parameters to the slider:
+PITCH BEND
+GATE TIME
+VCO 1 PITCH
+VCO 1 SHAPE
+VCO 2 PITCH
+VCO 2 SHAPE
+VCO 1 LEVEL
+VCO 2 LEVEL
+CUTOFF
+RESONANCE
+EG INT
+ATTACK
+DECAY
+
+
+===== PAGE 34 =====
+34
+Cutoff Velocity 
+[0%...100%]
+Specifies how the velocity (keyboard playing dynamics) will affect the cutoff 
+frequency, allowing louder notes to appear brighter, etc.
+0%: Velocity will not affect the cutoff frequency.
+50%: Velocity will affect the cutoff frequency, but at only half the amount pro-
+duced at 100%.
+100%: Playing the keys harder will increase the cutoff frequency, while playing 
+the keys softer will decrease the cutoff frequency.
+Amp Velocity 
+[0...127]
+Amp Velocity is used to specify how much the volume will change according 
+to the keyboard velocity.
+0: The velocity will not affect the volume.
+The larger the value, the more effect that keyboard velocity will have on volume. 
+Program Level 
+[−25...+25]
+Program Level allows you to adjust the volume of a Program relative to other 
+Programs.
+Increasing this value will make the volume louder.
+Button 9 (PROGRAM NAME)
+You can create a Program Name up to 12 characters in length.
+Rotate the PROGRAM/VALUE knob to select the desired character, then press 
+button 1 to move the cursor to the next position.
+Button 11 (INITIALIZE)
+This button initializes the current Program.
+Turn the PROGRAM/VALUE knob until “Press WRITE” is indicated in the dis-
+play. The WRITE button will blink.
+Press the WRITE button to initialize the Program. The display will indicate the 
+message “Initialized”.
+
+
+===== PAGE 37 =====
+37
+Button 11 (MOTION ENABLE)
+MOTION ENABLE 
+[OFF, ON]
+By setting this function to OFF, you can disable a particular motion without de-
+leting the data.
+Press button 11 to select the Motion Sequence to configure.
+Turn the PROGRAM/VALUE knob, and select either “OFF” or “ON”.
+OFF: The Motion Sequence will be disabled, and the parameters will not 
+change (the recorded Motion Sequence will not be deleted).
+TIP While the SHIFT button is pressed, the MOTION VIEW sscreen will 
+be displayed, where you can see the waveforms for the Motion Se-
+quences you have recorded.
+Button 12 (MOTION SMOOTH)
+MOTION SMOOTH 
+[OFF, ON]
+The motion of a Motion Sequence can step from one value to the next, or it can 
+transition smoothly from one value to the next by applying Motion Smooth.
+Press button 12 to select the Motion Sequence to configure, and turn the PRO-
+GRAM/VALUE knob to select either “OFF” or “ON”.
+OFF: The Motion Sequence will make changes to the sound in steps.
+ON: The Motion Sequence will change smoothly, and make smooth changes to 
+the sound.
+TIP While the SHIFT button is pressed, the MOTION VIEW sscreen will 
+be displayed, where you can see the waveforms for the Motion Se-
+quences you have recorded.
+
+
+===== PAGE 40 =====
+40
+Velocity Curve 
+[Type 1...8, Const 127]
+Changing the Velocity Curve allows you to match the dynamic response of the 
+monologue keyboard to your own playing style and technique.
+Type 1
+This curve requires you to play strongly in order to produce an 
+effect.
+Type 2, 3
+...
+Type 4
+This is a typical curve.
+Type 5
+...
+Type 6
+This curve produces an effect without requiring you to play very 
+strongly.
+Type 7
+This curve produces a fairly steady effect with little change for 
+medium-strength playing.
+Type 8
+This curve produces a fairly steady effect with little change for 
+medium-strength playing (a flatter curve than 7).
+Const 127
+All notes will sound at maximum velocity.
+Curve types 7 and 8 produce little change for medium-strength playing, and 
+are suitable when keyboard velocity is not required, or when you want to play 
+each note at the same velocity. However, these curves will produce a great deal 
+of change with softly played notes, so the sound may be more difficult to con-
+trol. Choose the curve that is most appropriate for your playing dynamics or 
+for the effect you want to obtain.
+127
+64
+6
+5
+4
+3
+2
+1
+1
+8
+7
+Soft
+Keyboard
+Strong
+
+
+===== PAGE 43 =====
+43
+Button 7 (GLOBAL 5)
+MIDI Rx Prog Chg 
+[Off, On]
+Selects whether MIDI program change messages will be received.
+MIDI Rx CC 
+[Off, On]
+Selects whether MIDI control change messages will be received.
+TIP CC#120 onward cannot be controlled using this setting.
+MIDI Rx Pitch Bend 
+[Off, On]
+Selects whether MIDI pitch bend messages will be received.
+MIDI Tx Prog Chg 
+[Off, On]
+Selects whether MIDI program change messages will be transmitted.
+MIDI Tx CC 
+[Off, On]
+Selects whether MIDI control change messages will be transmitted.
+MIDI Tx Pitch Bend 
+[Off, On]
+Selects whether MIDI pitch bend messages will be transmitted.
+Button 8 (GLOBAL 6)
+Configures the type of batteries to be used on the monologue, as well as the 
+display and power settings.
+Battery Type 
+[Alkaline, Ni-MH]
+In order to accurately detect the remaining battery power, select the type of 
+battery being used.
+Alkaline: Use this setting for alkaline batteries.
+Ni-MH: Use this setting for nickel-metal hydride batteries.
+ The remaining battery level will not be indicated correctly while an 
+AC adapter (sold separately) is connected.
+
+
+===== PAGE 46 =====
+46
+Button 13 (SCALE DUMP)
+USER SCALE 1...6
+This transmits the microtuning that was edited using USER SCALE 1–6 as a 
+general SysEx message.
+Press button 13 to select the microtuning to transmit via SysEx. Turn the PRO-
+GRAM/VALUE knob until "Press WRITE" is indicated on the display, and then 
+press the WRITE button.
+USER OCTAVE 1...6
+This transmits the microtuning that was edited using USER OCTAVE 1–6 as a 
+general SysEx message.
+Press button 13 to select the microtuning to transmit via SysEx. Turn the PRO-
+GRAM/VALUE knob until "Press WRITE" is indicated on the display, and then 
+press the WRITE button.
+Button 15 (ALL DUMP)
+These parameters allow you to perform a dump of all the internal data, either 
+via MIDI or via USB.
+All Dump (USB)
+Turn the PROGRAM/VALUE knob until “Press WRITE” is indicated in the dis-
+play. The WRITE button will blink.
+Press the WRITE button to transmit the MIDI data dump via the USB B connec-
+tor. The display will indicate the message “Transmitting”. The data will take 
+about 10 seconds to transmit.
+ If the USB cable is not connected, or if the MIDI IN port on the PC is 
+not open, the data will not be transmitted.
+All Dump (MIDI)
+Turn the PROGRAM/VALUE knob until “Press WRITE” is indicated in the dis-
+play. The WRITE button will blink.
+Press the WRITE button to transmit the MIDI data dump via the MIDI OUT 
+connector. The display will indicate the message “Transmitting”. The data will 
+take about 30 seconds to transmit.
+
+
+===== PAGE 49 =====
+49
+Restoring the Factory settings
+You can restore the monologue’s preset Programs and global settings to their 
+original factory-set state at any time.
+1. Begin with the monologue turned Off.
+2. While holding down the WRITE button and the EXIT button, turn the 
+monologue On.
+“FACTORY RESET” will be indicated in the display.
+3. Turn the PROGRAM/VALUE knob to select the items you wish to reset 
+to the factory default settings.
+PRESET: Restores the preset Programs (Programs 1–80) to their factory-set 
+default settings.
+ This will replace the existing preset Programs with the factory-set 
+default Programs. If you want to keep the existing preset Programs 
+beforehand, press the WRITE button to save the presets to the user 
+Programs (Programs 81–100).
+GLOBAL: Restores the GLOBAL settings to their factory default settings. 
+This also includes any favorite Programs that you have registered.
+ALL: Restores the preset Programs (Programs 1–80), Programs 81–100, and 
+GLOBAL settings to their factory-set default settings.
+ Use caution, as this will replace all data with the factory-set default 
+settings (which will erase your user Programs).
+4. Press the WRITE button.
+The display will indicate the message “Are you sure?”.
+5. Turn the PROGRAM/VALUE knob to select “Yes”, and press the WRITE 
+button.
+The factory-set default data will be reloaded, and the monologue will be 
+restored to its factory default state.
+TIP Press the EXIT button, or select “No” using the PROGRAM/VALUE 
+knob and press the WRITE button to cancel the operation.
+ Never turn off the monologue while data is being loaded.
+
+
+===== PAGE 52 =====
+52
+Controlling the monologue from an external MIDI device
+If you want to play or control the monologue from another MIDI keyboard, 
+sequencer, or other device, connect the MIDI OUT connector of the external 
+MIDI device to the monologue’s MIDI IN connector with a MIDI cable.
+Connecting the monologue to a computer via MIDI
+You might want to play the monologue’s keyboard and record your perfor-
+mance on an external MIDI sequencer or computer (connected using the MIDI 
+interface), and then play the monologue while monitoring or playing back 
+what you recorded. You also might want to use the monologue as both an in-
+put device for playing notes and as a MIDI tone generator. In either case, you’ll 
+need to connect the MIDI OUT connector to the MIDI IN connector on both the 
+monologue and the external MIDI sequencer or computer.
+ Some MIDI interface devices may be unable to transmit or receive 
+MIDI SysEx messages to or from the monologue.
+TIP It’s convenient to use the USB connector when connecting the mono-
+logue to a personal computer.
+MIDI IN
+MIDI OUT
+MIDI keyboard
+monologue
+MIDI IN
+MIDI OUT
+MIDI OUT
+MIDI IN
+Computer
+MIDI interface
+monologue
+
+
+===== PAGE 55 =====
+55
+Program List
+No. Program Name Category
+Slider Assign
+Author
+1
+<afx acid3>
+Bass
+PITCH BEND
+Aphex Twin
+2
+Injection
+Bass
+PITCH BEND
+KORG Inc.
+3
+Anfem
+Hit
+CUTOFF
+Sharooz
+4
+<wavetable>
+Bass
+GATE TIME
+Aphex Twin
+5
+Lu-Fuki
+Bass
+PITCH BEND
+Yebisu303
+6
+Fake3OSC
+Hit
+PITCH BEND
+Yebisu303
+7
+Arc Lead
+Lead
+PITCH BEND
+KORG Inc.
+8
+<Flute>
+Arp
+PITCH BEND
+Aphex Twin
+9
+Scoooping
+SFX
+PITCH BEND
+Yebisu303
+10
+Robot Empire
+Drum
+DECAY
+Yebisu303
+11
+TeeVeeSaw
+Bass
+PITCH BEND
+Yebisu303
+12
+<AFX> bAss
+Bass
+PITCH BEND
+Aphex Twin
+13
+<model 800>
+Bass
+PITCH BEND
+Aphex Twin
+14
+<epic acid>
+Bass
+PITCH BEND
+Aphex Twin
+15
+Herd Of Crab
+Bass
+PITCH BEND
+Yebisu303
+16
+Stonecold
+Bass
+CUTOFF
+Sharooz
+17
+Dirty Sub
+Bass
+PITCH BEND
+Yebisu303
+18
+Jungle Sub
+Bass
+LFO INT
+Yebisu303
+19
+<deep bass>
+Bass
+CUTOFF
+Aphex Twin
+20
+Hoodie Bass
+Bass
+PITCH BEND
+KORG Inc.
+21
+StabbyBass
+Bass
+PITCH BEND
+KORG Inc.
+22
+DistortedSqr
+Bass
+EG INT
+Yebisu303
+23
+Werq
+Bass
+EG INT
+Sharooz
+24
+<Ratewobble
+Bass
+LFO RATE
+Aphex Twin
+25
+StomachWave Bass
+CUTOFF
+KORG Inc.
+26
+Dr.Juice
+Bass
+PITCH BEND
+KORG Inc.
+27
+Rubber Duck
+Bass
+PITCH BEND
+Yebisu303
+28
+<HarmonBa>
+Bass
+LFO INT
+Aphex Twin
+29
+Dark Perc
+Bass
+PITCH BEND
+KORG Inc.
+30
+Jackathon
+Bass
+CUTOFF
+Sharooz
+31
+Bosshog
+Bass
+VCO1 PITCH
+Sharooz
+32
+<Ardkore92>
+Bass
+PITCH BEND
+Aphex Twin
+33
+<aliasBass>
+Bass
+PITCH BEND
+Aphex Twin
+34
+<PWM envBA> Bass
+PITCH BEND
+Aphex Twin
+35
+Disemvowel
+Bass
+EG INT
+Sharooz
+36
+Kickin'B
+Bass
+CUTOFF
+KORG Inc.
+37
+OIOI
+Bass
+PITCH BEND
+Yebisu303
+38
+<akunk b>
+Bass
+PITCH BEND
+Aphex Twin
+39
+Dual Saw
+Lead
+PITCH BEND
+KORG Inc.
+40
+BitterLead
+Lead
+PITCH BEND
+KORG Inc.
+No. Program Name Category
+Slider Assign
+Author
+41
+Syncwave
+Lead
+LFO INT
+Sharooz
+42
+<Duophony>
+Lead
+PITCH BEND
+Aphex Twin
+43
+Mono Brass
+Lead
+PITCH BEND
+KORG Inc.
+44
+<5th brASs>
+Lead
+PITCH BEND
+Aphex Twin
+45
+Bouncy Balls
+Lead
+PITCH BEND
+Yebisu303
+46
+Ghost Town
+Lead
+PITCH BEND
+Yebisu303
+47
+Childhood
+Lead
+RESONANCE
+KORG Inc.
+48
+On the Moon
+Lead
+PITCH BEND
+KORG Inc.
+49
+<phaseClks>
+Lead
+PITCH BEND
+Aphex Twin
+50
+<SyncMtion>
+Lead
+VCO1 PITCH
+Aphex Twin
+51
+<SyncLAM>
+Lead
+PITCH BEND
+Aphex Twin
+52
+Arpme Lead
+Arp
+PITCH BEND
+KORG Inc.
+53
+Squelf
+Arp
+VCO1 PITCH
+Sharooz
+54
+Milky Way
+Arp
+PITCH BEND
+Yebisu303
+55
+BrokenArcade
+Arp
+PITCH BEND
+Yebisu303
+56
+<MT-digArp>
+Arp
+PITCH BEND
+Aphex Twin
+57
+Chopchoon
+Arp
+LFO INT
+Sharooz
+58
+FMod Seq
+Arp
+PITCH BEND
+KORG Inc.
+59
+Tronlines
+Arp
+EG INT
+Sharooz
+60
+Tech Stab
+Hit
+PITCH BEND
+Yebisu303
+61
+Pumpdriver
+Hit
+LFO RATE
+KORG Inc.
+62
+Lfoiled
+Hit
+VCO2 PITCH
+Sharooz
+63
+< Digisnd >
+Hit
+PITCH BEND
+Aphex Twin
+64
+<ascension>
+SFX
+LFO RATE
+Aphex Twin
+65
+<centipede>
+SFX
+PITCH BEND
+Aphex Twin
+66
+Robotspeak
+SFX
+VCO1 PITCH
+Sharooz
+67
+Cpu Cycles
+SFX
+LFO INT
+Sharooz
+68
+Loud Siren
+SFX
+PITCH BEND
+Yebisu303
+69
+Portrythm
+SFX
+PITCH BEND
+KORG Inc.
+70
+Dambuster
+SFX
+CUTOFF
+Sharooz
+71
+<xoc PLAY>
+SFX
+LFO RATE
+Aphex Twin
+72
+LittleGlitch
+SFX
+LFO RATE
+Yebisu303
+73
+Hard Run
+Drum
+ATTACK
+Yebisu303
+74
+<beat&bass>
+Drum
+GATE TIME
+Aphex Twin
+75
+<bnsbeats1>
+Drum
+GATE TIME
+Aphex Twin
+76
+<bnsbeats2>
+Drum
+DECAY
+Aphex Twin
+77
+<bnsbeats3>
+Drum
+DECAY
+Aphex Twin
+78
+<bnsbeats4>
+Drum
+GATE TIME
+Aphex Twin
+79
+<bnsbeats5>
+Drum
+GATE TIME
+Aphex Twin
+80
+<afx beat>
+Drum
+GATE TIME
+Aphex Twin
+81
+Init Program
+...
+100
+All Programs were made by Aphex Twin, Sharooz, Yebisu303 and KORG Inc.
+For more information about the authors please visit: 
+ - Sharooz
+http://www.soundcloud.com/sharooz
+ - Yebisu303
+https://www.youtube.com/user/yebisu303/
+https://soundcloud.com/yebisu303
+
+
+===== PAGE 58 =====
+58
+MIDI Implementation Chart
+MIDI Implementation Chart
+Function...
+Transmitted
+Received
+Remarks
+Default
+Change
+Mode
+Default
+Messages
+Altered
+Note 
+Number
+True Voice
+Velocity
+Note On
+Note Off
+After 
+Touch
+Key’s
+Channel
+Pitch Bend
+Control 
+Change
+Program 
+Change
+True Number
+System Exclusive 
+System 
+Common
+Song Position
+Song Select
+Tune Request
+System 
+Real Time
+Clock
+Commands
+Aux 
+Meassages
+Local On/Off
+All Notes Off
+Active Sense
+System Reset
+Notes
+Mode 1: Omni On, Poly
+Mode 3: Omni Off, Poly 
+Mode 2: Omni On, Mono
+Mode 4: Omni Off, Mono
+O: Yes
+X: No
+Consult your local Korg distributor for more information on MIDI implementation.
+Basic 
+Channel
+[MONOPHONIC ANALOGUE SYNTHESIZER]
+Model: monologue
+O 0–99
+*************
+O 0–99
+0–99
+35
+36, 37
+39, 40
+43
+44
+16, 17, 25
+24, 26
+49
+50, 51
+60
+28
+61, 62
+56, 58, 59
+120, 121
+PITCH (VCO2) 
+*2 
+SHAPE (VCO1, 2) 
+*2
+LEVEL (VCO1, 2) 
+*2
+CUTOFF 
+*2
+RESONANCE 
+*2
+EG (ATTACK, DECAY, INT) 
+*2
+LFO (RATE, DEPTH) 
+*2
+OCTAVE (VCO2) 
+*2
+WAVE (VCO 1, 2) 
+*2
+SYNC/RING 
+*2
+DRIVE 
+*2
+EG (TYPE, TARGET) 
+*2
+LFO (TARGET, WAVE, MODE) 
+*2
+All sound off, Reset all Controllers *2
+ 
+*3
+ 
+ 
+1–16
+1–16
+1–16
+1–16
+0–127
+0–127
+O 9n, V=1–127
+X 8n, V=64
+O 9n, V=1–127
+X
+0–127
+*************
+3
+X
+Date: 2019.06.06
+Version: 1.10
+X
+X
+*************
+X
+X
+X
+X
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+X
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+O
+X
+X
+X
+X
+X
+O
+X
+O
+X
+X
+O
+O
+O
+O
+O
+O 123–127
+O
+X
+ 
+*4
+ 
+ Memorized 
+ 
+ 
+*1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+*5
+ 
+*6
+ 
+ 
+ 
+ 
+ 
+*1: When the Global setting is “MIDI Rx Pitch Bend=On”, the monologue will receive signals; and when the Global setting is “MIDI Tx Pitch 
+Bend=On”, the monologue will transmit signals.
+*2: When the Global setting is "MIDI Rx CC=On”, the monologue will receive signals; and the when Global setting is “MIDI Tx CC=On", the monologue will transmit signals.
+*3: When the Global setting is “MIDI Rx Prog Chg=On”, the monologue will receive signals; and when the Global setting is “MIDI Tx Prog Chg=On”, 
+the monologue will transmit signals.
+*4: In addition to Korg exclusive messages, Inquiry is supported.
+*5: When the Global setting is “Clock Source=Internal”, the monologue will not receive signals. The monologue will receive signals when set to “Auto (MIDI)” or “Auto (USB)”.
+*6: When the Global setting is “En Rx Transport=On”, the monologue will transmit signals.
