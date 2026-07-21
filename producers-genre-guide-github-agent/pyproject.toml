@@ -1,0 +1,8 @@
+[project]
+name = "producers-kb"
+version = "1.0.0"
+description = "Music Producer's Complete Genre Guide knowledge base"
+requires-python = ">=3.10"
+
+[project.scripts]
+producers-kb = "producers_kb.__main__:main"

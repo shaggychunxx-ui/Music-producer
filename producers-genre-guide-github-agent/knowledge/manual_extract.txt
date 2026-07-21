@@ -1,0 +1,1312 @@
+---PAGE 1---
+THE MUSIC PRODUCER'S
+COMPLETE GENRE GUIDE
+How to Create Music Across Genres — From First Sound to Finished Track
+Extreme Detail • Production Blueprints • Mixing Notes • Arrangement Maps
+Written for producers, beatmakers, songwriters, and engineers
+who want practical, genre-accurate workflows
+Covers Hip-Hop, Trap, Drill, Boom Bap • House, Techno, Trance, DnB,
+Dubstep
+Pop, R&B, Soul • Rock, Metal, Punk • Jazz, Funk, Disco • Latin, Afrobeats,
+Reggae
+Ambient, Lo-fi, Synthwave, Hyperpop, Country, Gospel, Classical Crossover &
+more
+
+
+---PAGE 2---
+Music Producer's Complete Genre Guide
+Page 2
+Desktop Reference Edition • Comprehensive Handbook
+
+
+---PAGE 3---
+Music Producer's Complete Genre Guide
+Page 3
+Table of Contents
+Part I — Foundations Every Producer Needs
+1. The Producer Mindset & Workflow
+2. Core Music Theory for Production
+3. Sound Design Basics (Synths, Samples, FX)
+4. Drums, Groove & Rhythm Foundations
+5. Arrangement Architecture
+6. Mixing & Mastering Essentials by Genre Context
+Part II — Urban & Black American Traditions
+7. Boom Bap & Classic Hip-Hop
+8. Trap & Modern Hip-Hop
+9. Drill (UK & US)
+10. R&B / Contemporary R&B
+11. Soul, Neo-Soul & Gospel
+12. Funk & Disco
+Part III — Electronic Dance Music
+13. House (Deep, Tech, Progressive, Future)
+14. Techno
+15. Trance & Progressive Trance
+16. Drum & Bass / Jungle
+17. Dubstep & Riddim
+18. UK Garage, 2-Step & Grime
+19. Hardstyle / Hard Dance
+20. Ambient, Downtempo & IDM
+Part IV — Pop & Mainstream
+21. Contemporary Pop
+22. K-Pop Production Language
+23. Hyperpop & PC Music Influences
+24. Synthwave / Retrowave / Outrun
+Part V — Rock, Alternative & Metal
+25. Rock & Indie Rock
+26. Punk & Post-Punk
+27. Metal (Modern & Substyles Overview)
+Part VI — Global, Roots & Acoustic Traditions
+28. Jazz (for Producers)
+29. Country & Americana
+
+
+---PAGE 4---
+Music Producer's Complete Genre Guide
+Page 4
+30. Reggae, Dancehall & Dub
+31. Latin: Reggaeton, Salsa, Bachata, Latin Trap
+32. Afrobeats, Amapiano & African Pop
+33. Classical / Cinematic / Orchestral Hybrid
+Part VII — Niche, Hybrid & Internet-Era Genres
+34. Lo-fi Hip-Hop
+35. Phonk & Drift Phonk
+36. Cloud Rap & Emo Rap Textures
+37. Experimental / Genre-Bending Strategy
+Part VIII — Reference Systems
+38. BPM / Key / Drum Map Quick Reference
+39. Plugin & Stock-Tool Cookbook
+40. Finishing Checklist (Any Genre)
+Glossary & Closing Notes
+
+
+---PAGE 5---
+Music Producer's Complete Genre Guide
+Page 5
+PART I — Foundations Every Producer Needs
+1. The Producer Mindset & Workflow
+A music producer is not only someone who “makes beats.” In professional terms, the producer is responsible for the
+overall sonic identity, arrangement decisions, performance direction, and the emotional arc of a record. In bedroom
+and DAW-native workflows, you often wear producer, songwriter, engineer, and mixer hats at once. Genre literacy is
+what lets you choose the right decisions under pressure — not rigid rules, but recognizable contracts with the
+listener’s ear.
+Every genre answers a different set of questions for the audience: How hard should the low end hit? How much
+space should drums leave for vocals? Is the groove behind, on, or ahead of the beat? Is harmony dense or sparse?
+Is the mix polished and competitive, or intentionally raw? When you understand those contracts, you can either fulfill
+them cleanly or break them deliberately (which is how new micro-genres form).
+A reliable start-to-finish workflow
+• Reference first: Import 2–4 commercial tracks in the target genre. Match rough loudness, study drum density,
+vocal placement, and sidechain behavior.
+• Tempo & grid: Set BPM and decide swing/groove template before writing. Wrong grid = wrong feel forever.
+• Core loop: Build a 4–8 bar idea that already feels like the genre (drums + bass + one harmonic/melodic hook).
+• Expand arrangement: Map intro / verse / pre / chorus / bridge / outro (or dance form: intro–build–drop–break).
+• Sound design pass: Replace placeholders with final-quality samples/synths. Layer intentionally.
+• Vocal / lead focus: If there is a vocal, everything else serves it. Carve mix space early.
+• Mix in context: Balance, EQ, compression, spatial effects, automation while arrangement is still flexible.
+• Print & rest: Export, walk away, then revise with fresh ears against references.
+Producer tip: Finish more tracks than you perfect. Genre fluency comes from completing 20 average songs in a style,
+not one endlessly tweaked loop.
+2. Core Music Theory for Production
+You do not need conservatory training to produce commercially, but you do need practical theory: keys, scales,
+intervals, chords, voice leading, and how rhythm interacts with harmony. Theory is a map of options — it speeds up
+decisions and helps you communicate with musicians.
+Keys, modes, and genre tendencies
+Minor keys dominate modern hip-hop, trap, drill, metal, and much electronic music because they read as serious,
+dark, or emotional. Major keys still own large parts of pop, country, gospel, and uplifting dance. Modes matter: Dorian
+(minor with raised 6th) feels groovy/soulful; Phrygian (flat 2) feels Spanish/metal/dark electronic; Mixolydian (major
+with flat 7) feels bluesy/rock; Lydian (raised 4) feels dreamy/cinematic. Aeolian (natural minor) is the default
+“sad/modern” palette. Harmonic minor (raised 7th) creates tension used in metal, classical, and some EDM.
+Chord vocabulary that actually gets used
+• Triads: major, minor, diminished, augmented — foundation of almost everything.
+• 7ths: maj7, m7, dominant 7 — essential for R&B, jazz, neo-soul, lo-fi, gospel.
+• Extensions: 9, 11, 13 — add color without changing function; stack carefully to avoid mud.
+• Sus2 / sus4: open, modern, pop/ambient friendly.
+• Power chords (root + 5th): rock/metal guitars; leave third out for distortion clarity.
+• Parallel minor/major moves: common emotional “lift” or “drop” in pop choruses.
+
+
+---PAGE 6---
+Music Producer's Complete Genre Guide
+Page 6
+• Modal interchange: borrow bVI, bVII, iv from parallel minor into major progressions (very pop/rock).
+Voice leading & bass motion
+Listeners hear bass motion and top-line melody more clearly than inner chord notes. Strong bass lines often move by
+step or by fifths. Keep common tones when changing chords; move other voices the shortest distance. In electronic
+genres, the “bass” may be a mono synth following root notes with slides (portamento) rather than walking jazz lines
+— both are valid, genre-dependent choices.
+Rhythm theory producers actually use
+Meter is usually 4/4 in commercial music; 3/4 and 6/8 appear in ballads, waltzes, and some folk/country; odd meters
+(5/4, 7/8) appear in progressive and experimental work. Subdivision (8ths, 16ths, triplets) defines genre feel as much
+as tempo. Swing ratios (straight vs swung 16ths) separate house from boom bap from jazz. Syncopation — accents
+off the strong beats — is the soul of funk, Latin, Afrobeats, and modern R&B.
+3. Sound Design Basics (Synths, Samples, FX)
+Sound design is choosing and shaping timbre so that the arrangement reads as a coherent world. Genres have
+timbral signatures: 808s and dark pads for trap; supersaws for trance; Rhodes and vinyl crackle for lo-fi; tight acoustic
+kits for jazz; distorted guitars for metal. Learn subtractive synthesis first (oscillators → filter → amp envelopes →
+modulation), then FM, wavetable, granular, and sampling.
+The signal chain mental model
+• Source: oscillator, sample, recording, noise generator.
+• Tone shape: filter (LP/HP/BP/notch), waveshaping, distortion, bitcrush.
+• Dynamics shape: ADSR envelopes on amp and filter; compression later in mix.
+• Motion: LFOs, step sequencers, macros, automation.
+• Space: delay, reverb, chorus, phaser, stereo width tools.
+• Glue: bus compression, saturation, clipping for loudness and character.
+Sampling ethics & technique
+Classic hip-hop and many electronic styles are sample-based. Legally, commercial releases usually require
+clearance or use royalty-free / original material. Creatively: chop to transient, pitch to key, time-stretch with algorithms
+that preserve (or intentionally destroy) transients, layer with one-shots, and process heavily so the sample becomes a
+new instrument. Resampling your own synths is a pro habit — print audio, then treat it as a sample for further
+mangling.
+4. Drums, Groove & Rhythm Foundations
+If harmony is the body of a track, drums are the heartbeat. Genre is often recognized in the first bar by kick pattern,
+snare/clap placement, hi-hat density, and percussion vocabulary.
+The four drum pillars
+• Kick: weight, length, click (beater/transient), mono low end. Tune kick to key when possible.
+• Snare/clap: backbeat identity. Layer body + snap + room/verb tail. Ghost notes add human feel.
+• Hats/cymbals: timekeeper and energy. Open hat on offbeats is classic house; 1/32 rolls are trap.
+• Percussion: shakers, congas, rims, snaps, foley — they create culture-specific identity.
+Humanization without chaos
+Quantize to a groove template rather than hard 100% grid for swing genres. Vary velocities (especially hats). Nudge
+selected hits 5–15 ms early/late for push/pull. Use slightly different samples on repeats (round-robin).
+
+
+---PAGE 7---
+Music Producer's Complete Genre Guide
+Page 7
+Over-humanizing electronic genres can destroy the hypnotic machine feel — know when tightness is the aesthetic.
+5. Arrangement Architecture
+Arrangement is storytelling with energy. Song-based genres (pop, rock, R&B, country) usually follow
+verse–pre–chorus–chorus structures with a bridge. Dance genres use DJ-friendly structures with long intros for
+mixing, tension builds, and drops. Hip-hop often loops with section changes marked by vocal density, ad-libs, and
+instrumental drops rather than huge harmonic shifts.
+Energy tools (any genre)
+• Add/remove layers (filter open = energy up; filter closed = energy down).
+• Change drum density (half-time vs double-time feels).
+• Rise/fall FX, reverse cymbals, white noise sweeps, impact hits.
+• Silence / dropouts (1 bar of near-silence before a drop is classic).
+• Vocal chops as transitions; risers into choruses.
+• Key lift (modulation up a semitone/whole tone) for final chorus — use sparingly.
+• Breakdown: strip to pads/vocals, then rebuild.
+6. Mixing & Mastering Essentials by Genre Context
+Mixing goals change by genre. Pop/R&B wants vocal intelligibility and polish. Techno wants club translation and
+mono-compatible low end. Metal wants guitar clarity and drum impact without fizz. Lo-fi may intentionally limit
+bandwidth and add noise. Always mix on multiple systems (monitors, headphones, phone, car) and check mono.
+Universal mix order of operations
+• Gain staging: peaks healthy, headroom for processing (−6 to −12 dBFS peaks early).
+• High-pass non-bass elements carefully; leave room for kick/bass relationship.
+• Balance faders first — if it doesn’t work at static balance, plugins won’t save it.
+• EQ subtractively to fix; additively for character.
+• Compression for control and groove (bus glue vs peak control vs parallel punch).
+• Spatial effects last in creative chain; filter delays/verbs so they don’t muddy lows.
+• Automation is mix magic: rides on vocals, filter moves, send levels by section.
+• Mastering: gentle EQ, multiband control if needed, limiter for competitive loudness. Leave true peak headroom
+(~−1 dBTP streaming).
+Producer tip: The kick–bass relationship is the #1 genre-defining mix problem. Solve it with complementary EQ,
+sidechain, or frequency splitting (kick owns sub on hits; bass fills between) before adding more low-end layers.
+
+
+---PAGE 8---
+Music Producer's Complete Genre Guide
+Page 8
+PART II — Urban & Black American Traditions
+These genres share deep rhythmic innovation, sampling culture, vocal-forward storytelling, and low-end emphasis.
+They dominate global charts and streaming, and their production vocabulary (808s, half-time feel, ad-libs, melodic
+loops) has infected nearly every other popular style.
+
+
+---PAGE 9---
+Music Producer's Complete Genre Guide
+Page 9
+7. Boom Bap & Classic Hip-Hop
+The head-nod foundation of golden-era hip-hop production
+Typical BPM
+85–98 (sweet spot ~90–94)
+Feel
+Swung or lightly swung 16ths; hard kick/snare “boom–bap”
+Keys
+Minor common; samples often dictate key/mode
+Core elements
+Sampled drums or SP-style kits, chopped loops, bass, scratches, raw vocals
+Mix vibe
+Mid-forward, punchy drums, not ultra-loud modern streaming smash
+Historical DNA
+Boom bap (named for kick “boom” and snare “bap”) crystallized in late-80s/90s New York — Think DJ Premier, Pete
+Rock, Large Professor, RZA, Q-Tip as producers who defined the vocabulary. The aesthetic values crate-digging,
+imperfect loops, dusty texture, and drums that feel like they hit your chest without modern 808 sub dominance.
+Drum programming
+Kick & snare
+• Kick on 1 and often the “and” of 2 or other syncopations; not always four-on-the-floor.
+• Snare on 2 and 4 with authority — this is the “bap.” Layer a tight snare + roomy snare for body.
+• Ghost snares and rimshots between hits create pocket (especially Premier-style).
+Hats & percussion
+• Closed hats in 8ths or swung 16ths; occasional open hat.
+• Perc: bongos, shakers, vinyl noise, chopped break fragments.
+Classic approach
+• Start from breakbeats (Amen, Funky Drummer–style vocabulary historically) or recreate with one-shots.
+• Use MPC-style timing: slight swing, velocity variation, sometimes non-quantized chops.
+Sampling & harmony
+Chop soul, jazz, funk records into 1–4 bar loops or micro-chops rearranged into new progressions. Pitch samples to a
+key; filter mud; add saturation. Common harmony: minor 7 loops, ii–V suggestions, modal vamps. Bass can be
+sampled electric bass or a simple sine/triangle following roots. Leave space for vocals — boom bap mixes are often
+less dense than modern trap.
+Arrangement
+• Intro: filtered loop or scratch phrase.
+• Verse: full drums + loop; occasional dropouts for punchlines.
+• Hook: add chorus vocals, counter-melody, or horn stab; sometimes switch chop.
+• Bridge/breakdown: drums drop or switch to different sample.
+• Outro: scratches, fade, or beat stop.
+Producer tip: Print your sample through tape/console emulation, then re-chop. Character compounds.
+
+
+---PAGE 10---
+Music Producer's Complete Genre Guide
+Page 10
+Mixing notes
+• Drums slightly louder than modern pop relative to music bed.
+• High-pass samples around 100–200 Hz if bass is separate; or let sample carry lows carefully.
+• Parallel compression on drums for punch.
+• Vocal: presence 2–5 kHz, de-ess, short plate or room; keep intelligible over dusty beds.
+• Avoid over-limiting; preserve transient snap of the snare.
+
+
+---PAGE 11---
+Music Producer's Complete Genre Guide
+Page 11
+8. Trap & Modern Hip-Hop
+808s, hi-hat sewing machines, dark melodies, streaming-era low end
+Typical BPM
+130–160 with half-time feel (feels like 65–80) OR 70–90 straight
+Feel
+Half-time snare on 3; rapid hat rolls; sliding 808s
+Keys
+Minor (natural, harmonic, Phrygian); dark modes
+Core elements
+808 bass, crisp snare/clap, hi-hat rolls, dark bells/pads/leads, ad-libs
+Mix vibe
+Loud, sub-heavy, vocal-forward, wide tops, mono lows
+What “trap” means for producers
+Trap evolved from Southern hip-hop (Atlanta lineage especially) into a global production language. Even non-rap
+genres now borrow trap drums. The signature is the relationship between a long, tuned 808 bass drum and intricate
+hi-hat programming, usually with a snare/clap emphasizing beat 3 in a half-time grid at higher BPMs.
+Drum blueprint
+Grid & snare
+• Set 140 BPM as a common starting point. Place snare/clap on beat 3 of each bar (half-time).
+• Layer clap + snare + maybe a transient click. Short reverb (0.6–1.2s) with high-pass on the verb.
+Hi-hats
+• 1/8 and 1/16 patterns as base; add 1/32 and 1/64 rolls into downbeats.
+• Pitch automation on rolls (rising or falling) is a genre cliché that still works when musical.
+• Velocity: not flat — humanize lightly or program accents.
+• Open hats and rides for section lift.
+Kick vs 808
+• Often the 808 IS the kick (long sine with punch). Sometimes a short kick layers on top of 808 hits.
+• Program 808 pattern as a bassline: roots, fifths, chromatic slides, dead notes (short muted hits).
+• Portamento/glide on monophonic 808 is essential for modern trap melodies in the bass.
+Melody & sound design
+• Dark plucks, bells, Rhodes, distorted pianos, flute/voice-like leads, minor key arps.
+• Keep motifs simple and loopable; hip-hop thrives on hypnotic repetition with variation.
+• Scale choices: natural minor, harmonic minor for Middle-Eastern spice, Phrygian for menace.
+• Counter-melodies enter in hooks; verses may be sparser.
+• Atmos: reverse FX, distant choirs, risers, vinyl optional (less than lo-fi).
+Arrangement map (typical song)
+• 0:00 Intro (melodic motif + FX, drums enter partially)
+• 0:15 Verse 1 (full drums, vocal main)
+• 0:45 Pre/Hook setup (hat energy up, riser)
+
+
+---PAGE 12---
+Music Producer's Complete Genre Guide
+Page 12
+• 1:00 Chorus/Hook (fullest layers, ad-libs)
+• 1:30 Verse 2 (variation: new 808 line or melody layer)
+• 2:00 Hook 2
+• 2:30 Bridge/breakdown or beat switch
+• 3:00 Final hook + outro
+Producer tip: Program the 808 and vocal melody to leave pocket for each other — if both fight mid-low, cut 200–400
+Hz on one.
+Mixing trap specifically
+• 808: mono below ~120 Hz; saturation for small-speaker audibility; multiband or dynamic EQ vs kick click.
+• Sidechain hats/pads lightly to 808 if needed; classic is ducking pads/music to kick/808.
+• Vocal chain: tuning (subtle or hard), de-ess, compression (serial), presence EQ, delay throws, short verb,
+autopan ad-libs.
+• Stereo: keep sub mono; widen bells/pads/FX; check phase.
+• Loudness: competitive but leave headroom for streaming codecs; true peak limit.
+
+
+---PAGE 13---
+Music Producer's Complete Genre Guide
+Page 13
+9. Drill (UK & US)
+Sliding 808s, menacing patterns, street narrative energy
+Typical BPM
+UK: ~138–146 | US Chicago-rooted: ~60–70 half-time feel / ~130–145
+Feel
+Stuttering hats, sharp snares, sliding 808 basslines, dark minor melodies
+Keys
+Minor, often very dark; sparse harmony
+Core elements
+808 slides, cold piano/lead, aggressive vocal delivery, drill snare patterns
+Mix vibe
+Hard-hitting, cold, vocal center, ominous space
+UK vs US distinctions
+Chicago drill (Chief Keef era influence) emphasized bleak melodies and a distinctive drum bounce. UK drill evolved
+with different rhythmic cadences, more complex 808 slides, and a colder sonic palette that influenced global drill (NY
+drill, etc.). As a producer, study regional drum patterns and vocal flows separately — the 808 writing is a major
+differentiator.
+Production focus
+• 808s with long glides between notes; chromatic approach notes; silence as part of the pattern.
+• Snares often sharper and more syncopated than generic trap.
+• Melodies: minor piano loops, tense strings, desaturated bells — avoid happy major progressions.
+• Leave rhythmic space for aggressive vocal syncopation.
+• Sound selection is colder: less “musical theater,” more “street night air.”
+Producer tip: Write the 808 after a rough vocal rhythm sketch when possible — drill 808s converse with flow.
+
+
+---PAGE 14---
+Music Producer's Complete Genre Guide
+Page 14
+10. R&B / Contemporary R&B
+Groove, harmony color, vocal intimacy, sensual low end
+Typical BPM
+60–90 ballad/groove | 90–115 midtempo | some uptempo 115–130
+Feel
+Swung or deeply pocketed; ghost notes; syncopated bass
+Keys
+Rich harmony: 7ths, 9ths, 11ths; major & minor; modal interchange
+Core elements
+Electric bass or 808 hybrid, keys (Rhodes/piano), guitars, airy drums, stacked vocals
+Mix vibe
+Vocal throne, warm mids, smooth top, controlled sub
+Harmonic language
+Contemporary R&B lives in extended chords. Learn progressions using maj7, m9, dom9, half-diminished, and slash
+chords. Voice lead smoothly. Neo-soul (D’Angelo, Erykah Badu lineage) pushes jazz harmony further; mainstream
+R&B may simplify for hooks but still colors verses. Borrow chords from parallel modes freely. Use secondary
+dominants to approach the iv or V with tension.
+Drum & groove
+• Kick patterns syncopate around the vocal; not always simple 1-and-3.
+• Snare/clap can be layered softly; rimshots and snaps for verses.
+• Hats: swung 16ths, shakers layered, sparse opens.
+• Program ghost kicks and ghost snares for pocket.
+• Live-feeling kits or crisp modern one-shots both work depending on substyle (throwback vs dark R&B).
+Bass
+Electric bass (DI + amp sim) with slides, dead notes, and syncopation is classic. Modern R&B often blends 808 sub
+under melodic bass. Sidechain gently to kick. Follow chord tones: roots, fifths, approach chromatics, occasional thirds
+for sweetness.
+Vocals & arrangement
+• Lead intimate and dry-ish in verses; wetter wider choruses.
+• Stacks: thirds/fifths harmonies, octaves, whispered doubles, ad-lib answers.
+• Pre-chorus lifts via rising chords, drum fills, or filter opens.
+• Breakdowns with pads and voice are emotional peaks.
+Producer tip: Automate a “closer mic” feel in verses (less reverb, more proximity/bass on vocal) and open the space in
+choruses.
+Sound palette
+Rhodes, Wurlitzer, soft acoustic piano, clean/chorus guitars, atmospheric pads, vinyl optional, subtle tape wow. Avoid
+harsh supersaws unless doing hybrid pop-R&B. Distortion is satin, not metal.
+
+
+---PAGE 15---
+Music Producer's Complete Genre Guide
+Page 15
+11. Soul, Neo-Soul & Gospel
+Human feel, choir power, organ/piano truth, emotional dynamics
+Typical BPM
+70–100 soul/gospel ballads to midgroove; uptempo gospel can push higher
+Feel
+Behind-the-beat pocket; swing; dynamic human performance
+Keys
+Gospel: rich progressions, secondary dominants, “shout” sections; soul: classic I–IV–V variants + soul
+cadences
+Core elements
+Piano/organ, choir or stacked BGVs, live drums or realistic kits, bass guitar, tambourine
+Mix vibe
+Warm, wide vocals, natural rooms, dynamic (not over-squashed)
+Gospel production essentials
+• Hammond organ (B3) with Leslie simulation is iconic; piano comps with rhythmic stabs.
+• Chord vocabulary includes walk-ups, passing diminished chords, and big dominant chains.
+• Choir arrangement: SATB thinking even with stacked solo singers — write parts that harmonize the melody.
+• Tambourine on offbeats/upbeats in celebratory sections.
+• Dynamic form: quiet testimony → building → full praise peak.
+Neo-soul notes
+Imperfect timing as aesthetic, Rhodes-centered harmony, muffled drums, intimate vocals, jazz-informed chords, and
+arrangements that feel like a band in a small room. Resist over-quantizing. Saturation and gentle compression glue
+the band bus.
+
+
+---PAGE 16---
+Music Producer's Complete Genre Guide
+Page 16
+12. Funk & Disco
+The almighty pocket: syncopation, four-on-the-floor variants, bass as lead
+Typical BPM
+Funk: 90–115 | Disco: 110–130 (classic ~118–124)
+Feel
+16th-note syncopation; guitar chicken scratch; interlocking parts
+Keys
+Dominant 7, Mixolydian vamps, minor funk vamps, disco major joy
+Core elements
+Bass guitar heroics, tight drums, rhythm guitar, horns, strings (disco), percussion
+Mix vibe
+Punchy, danceable, clear midrange rhythm, strong mono kick/bass
+Funk drum & bass
+Funk drums emphasize the “one” (James Brown doctrine) while snare and hats create conversation. Ghost notes are
+mandatory. Bass is melodic and rhythmic — ghost notes, slides, 16th syncopations. Guitar plays muted 16ths (wah
+optional). Horns hit stabs on offbeats. Arrange as interlocking puzzle pieces; each part leaves space for others
+(negative space is funk).
+Disco blueprint
+• Four-on-the-floor kick with open hat on offbeats (classic).
+• Octave bass lines (root–octave patterns) very common.
+• Lush strings, rhythm guitars, piano four-to-the-floor comps or offbeat comps.
+• Build for the dancefloor: long intros, percussion breaks, filter fun.
+• Modern nu-disco adds sidechain pumping and cleaner digital polish.
+Producer tip: Record or program guitar and bass with slight timing push/pull — perfect quantize kills disco sweat.
+
+
+---PAGE 17---
+Music Producer's Complete Genre Guide
+Page 17
+PART III — Electronic Dance Music
+EDM umbrella genres prioritize the club/festival body response: kick energy, hypnotic repetition, DJ-friendly
+arrangement, and sound design as the “lead singer.” Subgenres differ wildly in tempo, drum patterns, bass design,
+and harmonic density. Always test on a system with real sub if you produce for clubs.
+
+
+---PAGE 18---
+Music Producer's Complete Genre Guide
+Page 18
+13. House (Deep, Tech, Progressive, Future)
+Four-on-the-floor soul of the dancefloor
+Typical BPM
+118–130 (classic house ~120–125; tech house often 124–128)
+Feel
+Four-on-the-floor kick; offbeat open hats; groovy basslines
+Keys
+Minor house common; deep house jazzier; future house brighter pop harmony
+Core elements
+Kick, clap/snare on 2/4, hats, bass, chords/stabs, vocal chops or full vocals
+Mix vibe
+Club-ready low end, wide percussion, clear mid hooks
+Universal house drum grid
+• Kick on every quarter note (1, 2, 3, 4).
+• Clap/snare on 2 and 4.
+• Closed hats 8th or 16th; open hat on offbeats (the “and” of each beat) is classic.
+• Percussion layers (shakers, congas, bongos, rim) create swing and identity.
+• Groove templates: slight swing on 16ths for classic house feel.
+Substyle cheat sheet
+• Deep house: warmer chords (7/9), Rhodes/pads, soulful vocals, smoother bass, lush but not harsh.
+• Tech house: minimal melodic content, hypnotic percussion, stripped bass, DJ tool structures.
+• Progressive house: longer builds, emotional breakdowns, bigger chord stacks, festival-friendly.
+• Future house: heavy sidechain, rubbery bass, bright plucks, pop structures, modern sheen.
+• Afro house: organic percussion, log drums, tribal rhythms, spiritual/atmospheric pads.
+Bass & sound design
+Bass often plays syncopated patterns against the kick. Sidechain compression (or volume ducking) to the kick is
+nearly mandatory in modern house. Chords: short stabs or long filtered pads. Vocal chops as instruments are a
+house staple — pitch them musically, rhythmically gate them, reverb/delay for width.
+Arrangement for DJs
+• 16–32 bar intro (percussion + kick) for mixing in.
+• Groove establish → add bass → add hook → breakdown → build → drop (full elements).
+• Mid-song break with filter automation.
+• 16–32 bar outro for mixing out.
+Producer tip: Mark phrase lengths in 8/16/32 bars. DJs and dancers feel these blocks unconsciously.
+
+
+---PAGE 19---
+Music Producer's Complete Genre Guide
+Page 19
+14. Techno
+Hypnosis, functional design, industrial beauty, relentless pulse
+Typical BPM
+125–140 (peak-time often 130–135; slower deep techno exists)
+Feel
+Four-on-the-floor; machine precision; evolving textures over long forms
+Keys
+Often minor/modal; sometimes atonal/textural rather than chord-driven
+Core elements
+Powerful kick, hi-hats, metallic percussion, drones, acid lines, sparse motifs
+Mix vibe
+Mono-compatible kick, controlled mids, club translation over earbuds alone
+Philosophy
+Techno (Detroit roots; Berlin evolution) is less about hooks-per-minute and more about altered state through
+repetition and gradual change. Production quality of the kick and the interest of the evolving layers matter more than
+chord complexity.
+How to build a techno track
+• Design a kick that can carry 6+ minutes (layer sub + punch + click carefully).
+• Add a complementary bass pulse or offbeat bass.
+• Introduce metallic hats/rides; automate filters slowly.
+• Use one memorable motif (stab, acid 303-style line, vocal fragment) sparingly.
+• Arrangement: long arcs, subtractive changes, DJ-friendly structure.
+• Sound design: industrial samples, FM metallic tones, noise beds, modular-style modulation.
+Producer tip: Automate one parameter per long section (filter cutoff, reverb send, delay feedback) — techno is the art
+of patient change.
+
+
+---PAGE 20---
+Music Producer's Complete Genre Guide
+Page 20
+15. Trance & Progressive Trance
+Emotional supersaws, tension/release, uplifting journeys
+Typical BPM
+130–145 (uplifting often ~138; progressive can be lower)
+Feel
+Four-on-the-floor; rolling bass; big builds and euphoric releases
+Keys
+Minor for emotion; major lifts; dramatic chord progressions
+Core elements
+Supersaw leads, arps, pads, gated/chopped chords, snare rolls, uplifting leads
+Mix vibe
+Wide stereo leads, clean sub, shiny highs without ear fatigue
+Sound design staples
+• Supersaw: multiple detuned saws, unison, slight stereo spread, filter envelope for pluck/lead shapes.
+• Arpeggiators locked to tempo; rhythmic gates on pads/chords.
+• Snare rolls: increasing density into downbeat; sometimes pitch risers with them.
+• Breakdown: strip drums, emotional melody/chords, then full rebuild into drop.
+• Bass: rolling offbeat or on-beat patterns supporting kick; sidechain heavily for pumping if style fits.
+Writing emotional progressions
+Use longer chord durations in breakdowns, suspend resolutions, and introduce the main lead only when earned.
+Counter-melodies in fifths/thirds stack for “big” feeling. Avoid overcrowding the lead’s midrange.
+
+
+---PAGE 21---
+Music Producer's Complete Genre Guide
+Page 21
+16. Drum & Bass / Jungle
+Amen history, 170 BPM energy, sub bass science, break science
+Typical BPM
+170–178 (liquid can sit ~170; neurofunk similar range)
+Feel
+Fast breakbeats or programmed breaks; half-time bass feel often
+Keys
+Minor common; liquid more harmonic; neuro more sound-design lead
+Core elements
+Breaks/reprogrammed drums, sub bass, reese bass, pads (liquid), sound design (neuro)
+Mix vibe
+Sub clarity, mid bass aggression (neuro), airy tops, DJ-friendly drops
+Breakbeat craft
+Historically, jungle/DnB sliced funk breaks (Amen break famously). Modern production: use high-quality break
+samples or synthesize with one-shots. Slice by transient, rearrange, layer with acoustic kick/snare for weight.
+Ghosting and edits create the “rolling” feel. Parallel compression for glue and aggression.
+Bass categories
+• Sub bass: clean sine/triangle mono fundamental — the club floor mover.
+• Reese: detuned saws with movement (LFOs, phasing) — mid-bass body.
+• Neuro bass: complex FM/wavetable/modulation chains, multiband distortion, automation as performance.
+• Relationship: sub carries weight; mid bass carries character. Split bands and process separately.
+Substyles
+• Liquid: musical chords, vocals, smoother drums, emotional pads.
+• Jump-up: bouncy bass phrases, energetic, simpler hooks.
+• Neurofunk: dark, technical sound design, precise drums, sci-fi atmospheres.
+• Jungle revival: more break-centric, ragga samples, chaotic energy.
+Producer tip: At 174 BPM, a 1-bar loop flies by — arrange in 8/16 bar phrases and use automation to avoid monotony.
+
+
+---PAGE 22---
+Music Producer's Complete Genre Guide
+Page 22
+17. Dubstep & Riddim
+Wobbles, drops, half-time weight, sound design as the star
+Typical BPM
+138–150 with half-time feel (snare on 3)
+Feel
+Half-time groove; silence and space as weapons; massive drop contrast
+Keys
+Minor/dark; often riff-based rather than lush progressions
+Core elements
+Heavy kick/snare, growls/wobbles, reese, vocal chops, FX
+Mix vibe
+Huge perceived loudness on drop; clean sub; midrange aggression controlled
+Drop writing
+Dubstep is about contrast: sparse or atmospheric intros/verses explode into bass-weight drops. Design 2–4 unique
+bass patches and sequence them as call-and-response. LFO rates on filters/wavetable positions synced to tempo
+create wobbles (1/4, 1/8, 1/16 rates). Riddim emphasizes repetitive hypnotic bass motifs and hard-hitting minimal
+drums.
+Practical sound design tips
+• Layer: sub (sine) + mid growl (distorted) + top click/noise for definition.
+• Multiband distortion: distort mids hard, keep sub clean.
+• Resample bass phrases to audio for further chopping and glitching.
+• Transitions: silence, reverse bass, snare builds, vocal “hey” risers.
+Producer tip: If the drop feels weak, the problem is often arrangement contrast or mid-bass clarity — not “needing
+more plugins.”
+
+
+---PAGE 23---
+Music Producer's Complete Genre Guide
+Page 23
+18. UK Garage, 2-Step & Grime
+Shuffled drums, skippy swing, MC space, UK street futurism
+Typical BPM
+UKG/2-step: ~128–138 | Grime: ~135–140
+Feel
+Skipped kicks, syncopated snares/claps, swung hats — not plain four-on-floor
+Keys
+Minor common; garage can be soulful major/minor; grime colder
+Core elements
+Shuffling drums, deep bass, pitched vocals (garage), sparse cold instrumentals (grime)
+Mix vibe
+Bouncy, clear mid bass, vocal/MC intelligibility
+2-step garage drums
+Remove some kicks from a four-on-the-floor pattern so the kick “skips.” Syncopate snares/claps. Swing 16ths. Add
+shakers and organic percussion. Bass is deep and melodic; chord stabs and pitched vocal chops (time-stretched
+R&B samples historically) define classic UKG. Modern revival garage blends pop vocals with classic shuffle.
+Grime instrumentals
+Grime instrumentals (“riddims”) leave huge space for MCs. Cold synths, simple dark loops, square/pulse leads,
+sparse drums with distinctive bounce, and bold silence. Don’t overfill — the vocal is the lead instrument. Influence
+from jungle/garage DNA remains in the energy.
+
+
+---PAGE 24---
+Music Producer's Complete Genre Guide
+Page 24
+19. Hardstyle / Hard Dance
+Reverse bass, screeches, hard kicks, euphoric or raw extremes
+Typical BPM
+150–160 (raw harder can push higher)
+Feel
+Driving kicks, energetic half-time or full-on patterns depending on era/substyle
+Keys
+Minor anthems; dramatic leads
+Core elements
+Distorted kick, reverse bass, lead screeches, climax structure, vocal chants
+Mix vibe
+Kick is king; mid lead clarity; extreme energy without pure harshness
+Kick & reverse bass
+Hardstyle kicks are designed, not merely sampled: long kick bodies, distortion, pitch envelopes, and careful clipping.
+Reverse bass plays offbeat or patterned notes ducking around the kick. Leads can be euphoric (melodic hardstyle) or
+raw/aggressive (screech-heavy). Arrangement builds to multiple climaxes common in festival hard dance.
+
+
+---PAGE 25---
+Music Producer's Complete Genre Guide
+Page 25
+20. Ambient, Downtempo & IDM
+Space, texture, anti-drop aesthetics, listening music
+Typical BPM
+Ambient: free/none or 60–100 | Downtempo: 70–100 | IDM: variable
+Feel
+Non-dance or abstract pulse; atmosphere over club function
+Keys
+Modal, sparse, experimental harmony; drones
+Core elements
+Pads, field recordings, granular textures, gentle or glitchy percussion
+Mix vibe
+Dynamic range preserved; wide stereo; detail in quiet
+Techniques
+• Long reverb tails and convolution spaces (halls, churches, found spaces).
+• Granular synthesis on vocals/instruments for clouds.
+• Field recordings as beds (rain, rooms, cities) — EQ and place carefully.
+• IDM: complex non-repeating drum programming, glitch edits, odd structures.
+• Avoid over-limiting; silence and quiet are part of the composition.
+Producer tip: Ambient arrangement is sculpting attention over time — introduce one new element every 30–60
+seconds.
+
+
+---PAGE 26---
+Music Producer's Complete Genre Guide
+Page 26
+PART IV — Pop & Mainstream
+Pop production is the art of clarity: memorable toplines, efficient arrangements, and mixes that translate everywhere.
+Pop absorbs other genres continuously — trap drums under pop choruses, house drops in radio edits, guitar bands
+with electronic programming. The constant is the song.
+
+
+---PAGE 27---
+Music Producer's Complete Genre Guide
+Page 27
+21. Contemporary Pop
+Hooks, contrast, vocal production, cross-genre borrowing
+Typical BPM
+90–130 depending on era trend; ballads slower; dance-pop higher
+Feel
+Clean quantized or lightly human; strong downbeats; chorus lift
+Keys
+Accessible progressions (I–V–vi–IV family and variants); key changes rare but effective
+Core elements
+Lead vocal, stacked BGVs, tight drums, bass, hook motif (synth/guitar)
+Mix vibe
+Vocal #1, competitive loudness, wide chorus, mono-compatible core
+The pop arrangement contract
+• Intro: short (4–8 bars) — get to vocal/hook fast for streaming.
+• Verse: lower energy, storytelling, fewer layers.
+• Pre-chorus: tension — rising melody, snare roll, filter open, chord lift.
+• Chorus: highest energy, fullest stack, simplest/most memorable lyric-melody.
+• Verse 2: slight variation (new counter-melody or drum fill pattern).
+• Bridge: contrast (half-time, new chords, stripped or climactic).
+• Final chorus: extra layer (harmony, ad-libs, key lift optional).
+Vocal production (the real pop instrument)
+• Comping: select best syllables from multiple takes.
+• Tuning: transparent for most pop; stylistic hard tune when intentional.
+• Timing: align doubles; keep lead human enough.
+• Stacks: doubles, triples on chorus; octaves; harmonies on key words.
+• FX: slap delay, 1/4 or 1/8 delay throws, short plates, creative transitions (reverse vocal).
+• De-ess and control sibilance before brightening.
+Writing with production in mind
+Leave space in the beat for the chorus lyric rhythm. Use call-and-response between synth hook and vocal. Mute
+instruments under important words. Automate interest so verse 2 never feels identical to verse 1.
+Producer tip: If the chorus doesn’t feel bigger, remove verse elements rather than only adding chorus elements —
+contrast is relative.
+
+
+---PAGE 28---
+Music Producer's Complete Genre Guide
+Page 28
+22. K-Pop Production Language
+Maximal arrangement, section variety, hybrid genre medleys inside one song
+Typical BPM
+Wide range; songs often change feel mid-track
+Feel
+Highly produced, tight timing, dramatic switches
+Keys
+Pop-accessible with unexpected modulations and EDM lifts
+Core elements
+Multiple hooks, rap sections, dance breaks, orchestral/EDM/band hybrids
+Mix vibe
+Ultra polished, wide, vocal group clarity, bright competitive top
+What to study
+K-pop tracks frequently contain verse styles that differ from pre-chorus and drop into EDM or hip-hop for dance
+breaks. Produce “sections as mini-genres” under one master aesthetic (shared vocal chain, consistent drum sample
+family or deliberate switches). Group vocals and choreography-ready drops matter. Sound design is glossy;
+transitions are cinematic.
+
+
+---PAGE 29---
+Music Producer's Complete Genre Guide
+Page 29
+23. Hyperpop & PC Music Influences
+Maximal brightness, exaggerated tuning, internet maximalism
+Typical BPM
+High energy often 140+; or nightcore-like sped feels; also glitchy midtempos
+Feel
+Over-quantized or chaotically edited; cartoon dynamics
+Keys
+Bright major or emotional minor with extreme sound design
+Core elements
+Hard-tuned vocals, metallic/synth leads, compressed everything, glitch edits, ironic clichés
+Mix vibe
+Loud, bright, saturated, intentionally “too much”
+Techniques
+• Extreme autotune/formant shifts as aesthetic.
+• Sidechain everything; pump as a style.
+• Bitcrush, sample-rate reduction, aggressive clipping.
+• Pop structure with sudden genre cuts and meme-like sound references.
+• Embrace digital artifacts instead of hiding them.
+
+
+---PAGE 30---
+Music Producer's Complete Genre Guide
+Page 30
+24. Synthwave / Retrowave / Outrun
+1980s fantasy: analog aesthetics, neon nostalgia, driving arps
+Typical BPM
+80–120 midtempo common; outrun driving tracks often ~100–118
+Feel
+Steady electronic groove; gated snares; nostalgic space
+Keys
+Minor for night-drive mood; major for uplifting retro pop
+Core elements
+Analog-style bass, saw leads, FM bells, gated reverb snare, arpeggios, chrome pads
+Mix vibe
+Warm yet shiny; tape/chorus character; cinematic width
+Palette & drums
+Emulate 80s drum machines (LINN, DMX, 808/909 aesthetic) with gated reverb on snares. Analog bass
+(Juno/Jupiter-style) playing eighths or driving patterns. Brass patches, digital FM bells (DX7 lore), and large halls.
+Melodies are memorable and slightly heroic. Darksynth leans more aggressive/distorted; outrun emphasizes driving
+motion and night aesthetics.
+Producer tip: Reference film scores of the 80s and modern synthwave leaders; the genre is as visual as it is musical.
+
+
+---PAGE 31---
+Music Producer's Complete Genre Guide
+Page 31
+PART V — Rock, Alternative & Metal
+
+
+---PAGE 32---
+Music Producer's Complete Genre Guide
+Page 32
+25. Rock & Indie Rock
+Guitars as narrative, band dynamics, human performance
+Typical BPM
+100–160 depending on substyle; indie often midtempo
+Feel
+Live push/pull; backbeat snare; riff or chord-driven
+Keys
+Power chord rock; indie more diatonic/alternative harmony
+Core elements
+Electric guitars, bass guitar, acoustic/live drums, vocals
+Mix vibe
+Guitar/vocal balance war; natural drums or modern punch; mono-compatible kick/snare/bass
+Tracking mindset
+Even in the DAW, rock benefits from performance. Layer rhythm guitars L/R (double tracking). DI + amp sim or real
+amp. Bass DI + amp blend. Drums: either live multi-mic or high-quality hybrid programmed kits with humanization.
+Focus on the riff and the chorus lift (guitar energy + vocal hooks).
+Indie specifics
+Texture over virtuosity: chorus/vibed guitars, lo-fi room sounds, intimate vocals, less perfect tuning. Arrangement may
+be deliberately sparse. Reverb choices define era (spring, plate, hall).
+
+
+---PAGE 33---
+Music Producer's Complete Genre Guide
+Page 33
+26. Punk & Post-Punk
+Speed, attitude, minimalism, angular grooves
+Typical BPM
+Punk: 160–220 energy | Post-punk: often midtempo, danceable darkness
+Feel
+Driving eighths; urgency; post-punk bass-led grooves
+Keys
+Simple progressions; modal post-punk vamps
+Core elements
+Distorted guitars, prominent bass, raw drums, urgent vocals
+Mix vibe
+Rawer than pop; midrange aggression; don’t over-polish unless pop-punk
+Production notes
+Punk: capture energy — faster songs, power chords, gang vocals, minimal overdubs. Pop-punk polishes this with
+tighter tuning and bigger choruses. Post-punk: melodic basslines as lead, cleaner/angular guitars, chorus/delay,
+danceable drum patterns, darker atmospheres. Leave imperfections that signal live urgency.
+
+
+---PAGE 34---
+Music Producer's Complete Genre Guide
+Page 34
+27. Metal (Modern & Substyles Overview)
+Precision, weight, guitar tone science, extreme dynamics
+Typical BPM
+Wide: 60 doom to 220+ extreme; modern metalcore often dual feels
+Feel
+Palm-muted chugs, double kick, breakdown half-time, blast beats (extreme)
+Keys
+Minor, Phrygian, harmonic minor; djent often low-tuned riff modality
+Core elements
+High-gain guitars, tight DI bass, triggered/hybrid drums, aggressive vocals
+Mix vibe
+Guitar clarity with heavy low end; kick/guitar carve; vocal intelligibility in chaos
+Guitar production
+• Tuning: drop tunings and 7/8-string extended range common in modern styles.
+• DI recording + amp sims (or reamp) for editability.
+• Tight editing of chugs to grid for modern metal; more human for classic/thrash feels.
+• Quad-track rhythms (double L/R) carefully phase-aligned.
+• Lead tones: higher gain mid-focused, delay/verb for solos.
+Drums & low end
+Kick and guitar fight for 100–200 Hz — carve with EQ. Sample reinforcement on kick/snare is standard in modern
+metal. Bass often follows guitar rhythm with high-mids for click on small speakers plus sub weight. Breakdowns:
+half-time, open space, maximum impact hits.
+Substyle pointers
+• Thrash: speed, palm mutes, aggressive picks, less low-tuned than djent.
+• Death/black: extreme vocals, blasts, darker production philosophies differ (raw vs modern polish).
+• Metalcore/djent: polyrhythms, low chugs, electronic textures sometimes, huge choruses in metalcore.
+• Doom: slow, massive sustained weight, darker spaces.
+
+
+---PAGE 35---
+Music Producer's Complete Genre Guide
+Page 35
+PART VI — Global, Roots & Acoustic Traditions
+
+
+---PAGE 36---
+Music Producer's Complete Genre Guide
+Page 36
+28. Jazz (for Producers)
+Improvisation space, swing, acoustic truth, sophisticated harmony
+Typical BPM
+Ballad 60–80 | medium swing 100–140 | uptempo higher
+Feel
+Swing eighths; ride cymbal language; interactive dynamics
+Keys
+ii–V–I world; extended/altered dominants; modal jazz vamps
+Core elements
+Ride/hats, acoustic bass, piano/comping, horns/solos, brushes possible
+Mix vibe
+Natural dynamics, realistic space, avoid over-compression
+Producer approach
+If sampling jazz for hip-hop, respect timing/feel of original. If producing jazz artists: capture great performances with
+good rooms/mics; light editing; preserve dynamics. Comping instruments leave space for soloists. Walking bass
+outlines harmony. Drummer’s ride pattern defines swing. For jazz-influenced beatmaking (lo-fi/neo-soul), use 7th/9th
+chords, brush kits, and imperfect loops.
+
+
+---PAGE 37---
+Music Producer's Complete Genre Guide
+Page 37
+29. Country & Americana
+Story-first songwriting, twang vocabulary, modern pop hybrids
+Typical BPM
+70–140; ballads to train-beat uptempos
+Feel
+Straight or gentle swing; train beats; two-step feels
+Keys
+Major common; accessible progressions; modal folk flavors
+Core elements
+Acoustic guitar, electric twang, pedal steel, fiddle, tight vocals, organic drums
+Mix vibe
+Vocal story clarity; polished modern country can be pop-loud
+Instruments that signal country
+• Acoustic guitar strums as bed.
+• Telecaster-style twang leads and chicken pickin’.
+• Pedal steel or lap steel slides for emotion.
+• Fiddle hooks and fills.
+• Harmonies in thirds; gang/stack vocals on choruses.
+• Modern country: 808s and trap hats sometimes appear under banjo/acoustic — hybrid carefully.
+Song form
+Story verses, memorable choruses, optional bridge, instrumental breaks for solos. Lyrics matter more than sound
+design fireworks. Production serves the narrative and the singer’s character.
+
+
+---PAGE 38---
+Music Producer's Complete Genre Guide
+Page 38
+30. Reggae, Dancehall & Dub
+Offbeat skank, heavy bass culture, space as rhythm
+Typical BPM
+Reggae: ~70–90 (or double-time feel) | Dancehall: ~90–110+ | Dub remix culture
+Feel
+One-drop/rockers/steppers drum variants; guitar/keyboard offbeats
+Keys
+Major & minor; modal vamps common
+Core elements
+Bass as lead, skank guitar/keys, rimshots, deep space FX (dub)
+Mix vibe
+Bass-forward, spacious, hypnotic
+Core patterns
+• Skank: guitar/keys on offbeats (the “and” of each beat).
+• One-drop: emphasis where kick/snare land together on beat 3 feel (classic reggae variants).
+• Basslines are melodic, deep, and repetitive — the song’s spine.
+• Dancehall: digital rhythms, dembow-related patterns in some eras, vocal toasting/rigging energy.
+• Dub: remix philosophy — drop vocals, slam delays/reverbs, filter sweeps, drum/bass focus, FX as performance.
+Producer tip: In dub, automate sends live-style; print performances of the mixer as part of composition.
+
+
+---PAGE 39---
+Music Producer's Complete Genre Guide
+Page 39
+31. Latin: Reggaeton, Salsa, Bachata, Latin Trap
+Dembow engine, clave awareness, romantic and club fire
+Typical BPM
+Reggaeton: ~85–100 | Salsa: ~180–240 pulse feels | Bachata: ~120–140 | Latin trap: trap BPMs
+Feel
+Dembow for reggaeton; clave for Afro-Cuban; guitar-led bachata romance
+Keys
+Minor common in reggaeton/trap; salsa rich harmony; bachata romantic major/minor
+Core elements
+Dembow drums, dembow-aligned bass, dembow vocal flow; or live Latin percussion sections
+Mix vibe
+Vocal + rhythm clarity; club sub for urban Latin
+Reggaeton production
+The dembow rhythm is the heartbeat — a specific kick/snare relationship derived from dancehall/reggae lineage and
+popularized globally. Program authentic dembow first, then melody. Modern reggaeton blends with pop and EDM:
+bright synths, guitars, dembow variations, and hooky choruses. 808s common. Vocal is rhythmic and central;
+autotune aesthetic varies by artist.
+Salsa & Afro-Cuban awareness
+Clave (son or rumba) organizes the ensemble. Piano montunos, tumbao bass, congas/timbales/bongos, brass
+sections. If producing authentic salsa, study clave alignment — parts that “cross” the clave feel wrong to trained
+dancers/musicians. Hybrid Latin pop may simplify but still references these rhythms.
+Bachata
+Guitar guira patterns, romantic vocals, syncopated guitar arpeggios, simple drums/bongo, bass outlining harmony.
+Modern bachata can be denser and more pop-electronic.
+Latin trap
+Trap drum language + Spanish-language flows + reggaeton/Latin melodic flavor. Darker 808s, hi-hat rolls, and urban
+atmospheres with Latin percussion ornaments.
+
+
+---PAGE 40---
+Music Producer's Complete Genre Guide
+Page 40
+32. Afrobeats, Amapiano & African Pop
+Log drums, joyful groove, percussion abundance, global fusion
+Typical BPM
+Afrobeats: ~95–115 | Amapiano: ~110–115 common
+Feel
+Syncopated, dancing, percussion-forward; amapiano midtempo bounce
+Keys
+Major & minor; catchy loop harmony; soulful progressions
+Core elements
+Percussion layers, log drum (amapiano), bass, guitars, vocal hooks, shakers
+Mix vibe
+Groove clarity, warm lows, bright percussion without harshness
+Afrobeats
+Blend of West African pop sensibilities with Caribbean/Western influences. Drums are syncopated and layered: kicks
+not always four-on-floor, snare/clap patterns bounce, and percussion (shakers, congas, sticks) creates continuous
+motion. Guitars and synths play catchy ostinatos. Vocals are melodic and central. Global afrobeats collaborations
+often fuse with dancehall, R&B, and pop.
+Amapiano
+South African genre known for log drum bass melodies, wide lush chords/pads, midtempo groove, shakers, and
+atmospheric jazz/soul influence. The log drum acts as both bass and melodic percussion — program it musically with
+space. Soft but present kick; spacious mixes; hypnotic repetition with evolving percussion.
+Producer tip: Don’t overcrowd the log drum’s mid-low range with competing 808s — pick a low-end hero.
+
+
+---PAGE 41---
+Music Producer's Complete Genre Guide
+Page 41
+33. Classical / Cinematic / Orchestral Hybrid
+Orchestration, themes, hybrid trailer music, DAW mockups
+Typical BPM
+Flexible; dictated by scene/emotion; trailers often half-time epic pulses
+Feel
+Rubato possible; or rigid epic pulses in modern trailer music
+Keys
+Functional harmony, modes, clusters, extended contemporary techniques
+Core elements
+Strings, brass, woodwinds, percussion, choir, hybrid synths/drums
+Mix vibe
+Wide stage, depth layers (close/far), dynamic range (except trailers which are loud)
+Mockup production
+Use quality orchestral libraries; articulate (legato, staccato, spiccato, pizz). Write with real ranges and breathing in
+mind. Layer synths under orchestra for modern hybrid scores. Percussion: taikos, hybrid impacts, ticks for tension.
+Theme development: introduce motif, vary instrumentation/harmony/rhythm. For pure classical production (recording
+musicians): conductor/producer collaboration, room choice, mic trees.
+Trailer music formula (simplified)
+• Tick/clock percussion build
+• Low brass/braam hits
+• Choir swells
+• Melody on strings/brass
+• Biggest hit near end (the “trailer moment”)
+• Silence and impacts as punctuation
+
+
+---PAGE 42---
+Music Producer's Complete Genre Guide
+Page 42
+PART VII — Niche, Hybrid & Internet-Era Genres
+
+
+---PAGE 43---
+Music Producer's Complete Genre Guide
+Page 43
+34. Lo-fi Hip-Hop
+Study beats, dusty comfort, imperfect beauty
+Typical BPM
+70–95
+Feel
+Swung, lazy pocket, vinyl texture
+Keys
+Jazz/soul 7th chords; minor and major seventh loops
+Core elements
+Chopped jazz samples or original keys, soft drums, vinyl crackle, soft bass
+Mix vibe
+Band-limited, warm, not loudness-war; gentle compression
+Recipe
+• Chord loop with maj7/m7/9 colors; rhodes/piano.
+• Drums with soft kick, snappy but gentle snare, swung hats; sidechain lightly to kick optional.
+• Pitch drums slightly uniquely; add wow/flutter.
+• Vinyl noise bed low in mix.
+• Filter highs for “radio/memory” aesthetic; saturation.
+• Arrangement: long loopable forms for streaming/playlists; subtle variations every 8–16 bars.
+Producer tip: The best lo-fi still has good composition — don’t use “lo-fi” as an excuse for unmusical loops only.
+
+
+---PAGE 44---
+Music Producer's Complete Genre Guide
+Page 44
+35. Phonk & Drift Phonk
+Cowbells, Memphis DNA, distorted 808s, car culture energy
+Typical BPM
+Phonk often ~130–160 half-time feels; drift phonk energetic mid-high
+Feel
+Aggressive bounce; cowbell ostinatos; distorted low end
+Keys
+Dark minor; sampled vocal phrases from Memphis rap aesthetics (cleared/royalty-free)
+Core elements
+Cowbell, hard 808, distorted samples, drift-ready energy
+Mix vibe
+Loud, distorted, bass-heavy, intentionally gritty
+Production notes
+Phonk draws from 90s Memphis rap aesthetics filtered through modern internet culture. Drift phonk emphasizes
+cowbell melodies, distorted 808s, and high-energy edits suited to car/drift video culture. Use strong repetitive motifs,
+heavy saturation, and confident simplicity. Respect sample legality.
+
+
+---PAGE 45---
+Music Producer's Complete Genre Guide
+Page 45
+36. Cloud Rap & Emo Rap Textures
+Airy atmospheres, emotional vocals, ethereal traps
+Typical BPM
+Trap-adjacent ranges; often spacious half-time
+Feel
+Floaty, less hard-quantized aggression; dreamy
+Keys
+Emotional minor; ambient harmony
+Core elements
+Airy pads, reverb-drenched melodies, soft or hazy drums, intimate/emo vocals
+Mix vibe
+Wide, wet, vocal emotional clarity, soft transients possible
+How to get the texture
+Long reverb on melodic elements, high-cut drums for haze, pitched vocal chops as pads, less dense hat
+programming than hard trap, and lyrics/melody-forward emotion. Emo rap hybrids may add guitars and live-feeling
+rock energy under trap drums.
+
+
+---PAGE 46---
+Music Producer's Complete Genre Guide
+Page 46
+37. Experimental / Genre-Bending Strategy
+How to invent fusions without random mess
+Typical BPM
+Whatever serves the idea
+Feel
+Defined by your hybrid contract
+Keys
+Free
+Core elements
+One clear “center of gravity” + borrowed ornaments
+Mix vibe
+Consistency of space and vocal/lead treatment glues hybrids
+A method that works
+1. Choose a primary genre contract (e.g., “this is a house track”).
+2. Borrow ONE foreign element (e.g., trap hats, metal guitar, salsa piano).
+3. Keep drums or bass in the primary genre so the body still recognizes the home style.
+4. Unify with consistent mix bus processing and a recurring motif.
+5. Name the experiment after the feeling, not after every influence.
+Producer tip: Hybrids fail when every element is from a different genre at once. Hierarchy beats collage.
+
+
+---PAGE 47---
+Music Producer's Complete Genre Guide
+Page 47
+PART VIII — Reference Systems
+38. BPM / Key / Drum Map Quick Reference
+Use this as a starting grid, not a prison. Many hits sit outside these ranges. When in doubt, match the reference
+track’s tempo map and drum density first.
+Genre
+BPM
+Drum identity
+Bass identity
+Boom bap
+85–98
+Swing, snare 2&4
+Sampled/electric simple
+Trap
+130–150 HT
+Snare on 3, hat rolls
+Sliding 808
+Drill
+138–146
+Stutter hats, sharp snare
+Slide 808 phrases
+R&B
+60–115
+Pocket, ghosts
+Melodic electric/808
+House
+120–128
+4x4 kick, offbeat OH
+Syncopated + sidechain
+Techno
+130–135
+4x4 machine
+Pulse/offbeat
+Trance
+132–140
+4x4 + snare builds
+Rolling bass
+DnB
+170–178
+Breaks / fast edits
+Sub + reese/neuro
+Dubstep
+140 HT
+Half-time knock
+Wobble/growl+sub
+Pop
+90–130
+Clean, chorus lift
+Supportive, clear
+Reggaeton
+85–100
+Dembow
+Dembow-aligned
+Afrobeats
+95–115
+Syncopated layers
+Groovy mid/sub
+Amapiano
+110–115
+Soft kick + shakers
+Log drum melody
+Reggae
+70–90
+One-drop variants
+Deep melodic bass
+Metal
+wide
+Double kick / chug sync
+Follow guitars
+Synthwave
+100–118
+Gated snare, 80s kit
+Analog eighths
+Lo-fi
+70–95
+Soft swung kit
+Warm simple sub
+Disco
+118–124
+4x4 + offbeat hats
+Octave basslines
+HT = half-time feel. For keys: minor dominates darker urban/electronic styles; major still powers country, gospel lifts,
+disco joy, and many pop choruses. Always confirm with a reference track in your exact substyle.
+39. Plugin & Stock-Tool Cookbook
+Universal stock-tool strategies (any DAW)
+• EQ: high-pass junk; cut mud 200–400 Hz; presence 2–5 kHz for vocals; air 10–12 kHz sparingly.
+• Compressor: 2:1–4:1 for vocals; faster for control, slower for transparency; parallel for punch.
+• Saturator/clipper: harmonics for small speakers; clip drum bus carefully.
+• Sidechain: kick triggers bus duck on bass/pads (house/EDM/pop).
+• Stereo imager: widen only above ~150–200 Hz; keep sub mono.
+• Delay: tempo sync 1/8, 1/4, dotted; high-pass/low-pass the wet signal.
+• Reverb: short rooms for drums; longer halls for pads; pre-delay to keep vocals clear.
+Genre-oriented tool choices (examples, not endorsements)
+• Trap/hip-hop: good 808 (or Serum/Phase Plant/3xOSC design), tuner, vocal chain, drum sampler.
+• EDM: wavetable synth, strong limiter, transient shaper, stereo tools, LFO modulators.
+
+
+---PAGE 48---
+Music Producer's Complete Genre Guide
+Page 48
+• Rock/metal: amp sims, IR cabs, drum sample replacer/reinforcement, tight editing tools.
+• Orchestral: large libraries + expression/mod wheel automation + reverb halls.
+• Jazz/soul: good piano/Rhodes, tape, gentle buses, realistic drum libraries.
+Producer tip: Your ears and arrangement beat your plugin count. One well-chosen synth and excellent samples
+outperform fifty unused presets.
+40. Finishing Checklist (Any Genre)
+I Does the track announce its genre (or hybrid intent) within 15 seconds?
+I Is there a clear focal point in every section (vocal, bass riff, lead, or drums)?
+I Kick–bass relationship clean on club system / car / phone?
+I Hooks memorable without the rest of the arrangement?
+I Arrangement contrast: verse vs chorus OR break vs drop actually different?
+I Automation rides: energy moves, not static loops for 3 minutes?
+I Transitions designed (not abrupt accidental cuts unless aesthetic)?
+I Vocal intelligibility (if present) on small speakers?
+I Mono compatibility checked?
+I Referenced against 2 commercial tracks at matched loudness?
+I Exported with correct sample rate/bit depth; true peak headroom for streaming?
+I Metadata, version notes, and dry/wet vocal stems archived for future edits?
+Glossary (Selected)
+808: Originally TR-808 drum machine; now usually means long tuned bass/kick sine used in hip-hop/trap.
+Sidechain: Using one signal (often kick) to control compression/volume of another (often bass).
+Reese: Detuned, moving bass sound common in DnB.
+Supersaw: Many detuned saw oscillators stacked for huge trance/EDM leads.
+Dembow: Foundational rhythmic pattern in reggaeton.
+One-drop: Reggae drum feel emphasizing particular beats / de-emphasizing the one in classic forms.
+Clave: Guiding rhythmic key pattern in Afro-Cuban music.
+Half-time: Snare placement that makes a fast BPM feel half as fast (common in trap/dubstep).
+Ghost note: Soft drum hit that creates groove between main accents.
+Parallel compression: Blend heavily compressed signal under dry for punch without killing dynamics.
+Headroom: Space before 0 dBFS; needed for processing and mastering.
+Topline: Main vocal melody/lyric line in pop writing sessions.
+Break / breakbeat: Drum loop isolated from older funk records; foundational to jungle/hip-hop history.
+Sound selection: Choosing the right sample/preset before processing — often 80% of the result.
+Closing Notes
+
+
+---PAGE 49---
+Music Producer's Complete Genre Guide
+Page 49
+Genre is a shared language between maker and listener. Learn the language fluently enough that you can speak it
+without an accent — then develop your own dialect. The producers who stand out are not those who ignore genre,
+nor those who only copy surface presets, but those who understand the deep contracts (groove, space, bass
+behavior, vocal role, arrangement energy) and then make one bold personal choice inside that frame.
+Practice plan: pick one genre per week. Finish two short tracks (60–90 seconds is fine) using only that genre’s drum
+identity and bass identity. Reference constantly. On week four, hybrid two of them using the hierarchy method in
+Chapter 37. In three months you will hear music differently — as systems of decisions rather than magic you either
+have or don’t.
+This handbook is intentionally practical and broad. Each genre contains decades of history and regional micro-styles
+that reward deeper study: listen widely, credit sources, clear samples when releasing commercially, and collaborate
+with musicians who live inside traditions you are still learning.
+End of Guide — Now open your DAW and make the first ugly loop. Finish it. Then make another.
+Music Producer's Complete Genre Guide • Desktop Reference Edition
