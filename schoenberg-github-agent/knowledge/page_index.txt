@@ -1,0 +1,125 @@
+P001: FUNDAMENTALS | OF MUSICAL | COMPOSITION | ARNOLD | SCHOENBERG | EDITED BY GERALD STRANG AND LEONARD STEIN
+P002: 
+P003: Also by Arnold Schoenberg | ARNOLD SCHOENBERG | FUNDAMENTALS OF | MUSICAL | COMPOSITION | EDITED BY
+P004: First published in 1967 | by Faber and Faber Limited | 3 Queen Square London wcin 3AU | First published in this edition 1970 | Printed in England by Clays Ltd, 
+P005: CONTENTS | CONTENTS | VI. CONSTRUCTION OF SIMPLE THEMES | (2) | 2. ANTECEDENT OF THE PERIOD | Analysis of Periods from Beethoven’s Piano Sonatas
+P006: CONTENTS | Sketching the Variations | page | 173 | Comment on Examples 126 | 173
+P007: INTRODUCTION | This present book represents the last of the three large textbooks on music theory | and practice planned by Arnold Schoenberg largely as the res
+P008: EDITOR’S PREFACE | The Fundamentals of Musical Composition grew out of Schoenberg’s work with stu- | dents of analysis and composition at the University of Sout
+P009: EDITOR’S PREFACE | techniques are integrated by applying them to the traditional instrumental forms, in | approximate order of complexity. | Schoenberg was conv
+P010: GLOSSARY | Original usage | whole note | half note | quarter note | eighth note
+P011: PART | I | CONSTRUCTION OF THEMES | I | THE CONCEPT OF FORM | The: term form is used in several different senses. When used in connexion with binary,
+P012: CONSTRUCTION OF THEMES | proceeds, | like Michelangelo who chiselled his Moses out of the marble without | sketches, complete in every detail, thus directlyform
+P013: CONSTRUCTION OF THEMES | may be considered the average; in simple metres a length of four measures is normal. | But in very slow tempos the phrase may be reduce
+P014: 
+P015: THE MOTIVE | III | THE MOTIVE | Even the writing ofsimple phrases involves the invention and use of motives, though | perhaps unconsciously. Consciously used, t
+P016: CONSTRUCTION OF THEMES | The rhythm is changed | 1. By modifying the length of the notes (Ex. | 17). | 2. By note repetitions (Exs. 11h, | i, k,
+P017: CONSTRUCTION OF THEMES | THE MOTIVE
+P018: 
+P019: IV | CONNECTING MOTIVE-FORMS | Artistically, the connexion of motive-forms depends on factors which can only | be discussed at a later stage. However, the mecha
+P020: CONNECTING MOTIVE-FORMS | Ex. 34 | Rhythmic shifts, added upbeats, reduction, omission of features
+P021: CONSTRUCTION OF SIMPLE THEMES (1) | V | CONSTRUCTION OF SIMPLE THEMES | 1. BEGINNING THE SENTENCE | I n the first chapter, ‘The Concept of Form’, | it was state
+P022: 22 | CONSTRUCTION OF THEMES | Tonic form | Dominant form | V | I-V-I
+P023: VI | CONSTRUCTION OF SIMPLE THEMES | 2. ANTECEDENT OF THE PERIOD | Only a small percentage of all classical themes can be classified as periods. Romantic | comp
+P024: CONSTRUCTION OF THEMES | CONSTRUCTION OF SIMPLE THEMES (2) | 27 | with a full cadence. The upbeat, which is twice varied, and the feminine ending | 1 in | m. 2,
+P025: 28 | CONSTRUCTION OF THEMES | When the coherence between the basic motive-forms and the more remote deri- | vatives in m. 3-4 is not quite obvious, a connective
+P026: 30 | CONSTRUCTION OF THEMES | CONSTRUCTION OF SIMPLE THEMES (3) | 6-7; Op. 2/2-IV, m. 7; Op. 22, Menuetto, m. 7; Ex. 46g, m. 7-8. Sec also Exs. 446, | m. 7 ; 44
+P027: CONSTRUCTION OF SIMPLE THEMES (3)
+P028: 
+P029: 
+P030: 
+P031: 
+P032: 
+P033: 
+P034: 
+P035: 
+P036: 
+P037: 
+P038: 54 | CONSTRUCTION OF THEMES | f) Album fur die Jugend, SicilianiscA | Schalkhaft | } | CONSTRUCTION OF SIMPLE THEMES (3)
+P039: * | CONSTRUCTION OF SIMPLE THEMES (3)
+P040: VIII | CONSTRUCTION OF SIMPLE THEMES | 4. COMPLETION OF THE SENTENCE | A piece of music resembles in some respects a photograph album, displaying under | changi
+P041: 60 | CONSTRUCTION OF THEMES | CONSTRUCTION OF SIMPLE THEMES f4) | The patterns' reveal various ways of combining and transforming preceding motive- | forms. Onl
+P042: 62 | CONSTRUCTION OF THEMES | meaning of the harmony must not be obscured, as | it might be by misplaced 6/4 | chords.) | Ex. 616 has
+P043: 
+P044: 
+P045: 
+P046: 
+P047: 
+P048: 
+P049: 
+P050: 
+P051: 
+P052: IX | THE ACCOMPANIMENT | The accompaniment should not be a mere addition. | It should be as functional as | possible, and at best should act as a complement to 
+P053: 84 | CONSTRUCTION OF THEMES | The method of repeating full chords (Op. 53-1; Exs. 59a. d) is related to the repeti- | tion of harmonies in broken-chord style. I
+P054: 86 | CONSTRUCTION OF THEMES | Both semi- and quasi-counterpoint are illustrated in Op. 10/1—I. In m. 48-55 both | upper voices are so well organized that it is 
+P055: THE ACCOMPANIMENT | 89 | Ex. 63 | a) 0p.7-in, Minora | W | 3
+P056: THE ACCOMPANIMENT | 91 | Ex. 65
+P057: 92 | CONSTRUCTION OF THEMES | Ex. 67 | a) Beethoven, Siring Quartet, Op. 59/2 -m | J. | h
+P058: CONSTRUCTION OF THEMES | ¥ | CHARACTER AND MOOD | 95 | 94 | principal means of distinguishing a mazurka, for example, from a gavotte or a polka.
+P059: 
+P060: MELODY AND THEME | XI | MELODY AND THEME | The concentration of the main idea in a single melodic line requires a special kind | of balance and organization, on
+P061: 100 | CONSTRUCTION OF THEMES | but especially the passionate expression, makes the impression of an instrumental, | rather than a vocal, melody. | Such treatmen
+P062: 102 | CONSTRUCTION OF THEMES | among the Beethoven piano sonatas are the leading subjects of Op. 53-1, Op. 57-1, | Op. 27/2-1 1 1 and Op. 111-1. | The clarifica
+P063: 104 | CONSTRUCTION OF THEMES | greater today, partly because the ability of the singers has not developed as much as | the technique of instrumentalists. Worse,
+P064: 
+P065: 
+P066: 
+P067: 
+P068: MELODY
+P069: ADVICE FOR SELF-CRITICISM | XII | ADVICE FOR SELF-CRITICISM | The preceding discussion of melody and theme is chiefly aesthetic, rather than tech- | nical. Tech
+P070: 118 | CONSTRUCTION OF THEMES | ‘infallibility’, and who knows that he has not yet reached technical maturity, will | consider everything he writes as tentative.
+P071: PART | II | SMALL FORMS | XIII | THE SMALL TERNARY FORM | (A-B-A1
+P072: 120 | SMALL FORMS | THE SMALL TERNARY FORM | 121 | THE CONTRASTING MIDDLE SECTION | The most effective factor in a contrasting section
+P073: 122 | SMALL FORMS | THE SMALL TERNARY FORM | 123 | measure unit of chain-like construction. The repetition of the last two measures of | it (m. 15-16) emphasize
+P074: 124 | SMALL FORMS | THE SMALL TERNARY FORM | 125 | of the melody should not be entirely changed, except at points where essential struc- | tural changes occur. 
+P075: 
+P076: 
+P077: 
+P078: 
+P079: 
+P080: XIV | UNEVEN, IRREGULAR AND | ASYMMETRICAL CONSTRUCTION | Many of the previous illustrations from the literature demonstrate that a sentence | or period may con
+P081: 138 | SMALL FORMS | to Ex. 108a, from Beethoven’s Harp Quartet, Op. 74 (si ha s'imaginar la baltuta di 6/8), | and to Ex. 109 from the Scherzo of his Ninth Symp
+P082: XV | THE MINUET | Minuet, scherzo, Ihcme and variation, | etc., appear as independent pieces, or as | middle movements in cyclic forms such as the suite, sympho
+P083: 142 | SMALL FORMS | The recapitulation | is seldom shortened, and seldom reveals far-reaching changes | of the melodic contour. | It is usually linked with the 
+P084: 
+P085: 
+P086: 
+P087: THE SCHERZO | XVI | THE SCHERZO | Scherzo, according to Webster, means a ‘playful, humorous movement, commonly | in 3/4 measure, which, since Beethoven, usually
+P088: 152 | SMALL FORMS | returning to the tonic. It is also advisable to provide for repetitions of clearly delimited | segments, reasonable in length. | Harmonicall
+P089: SMALL FORMS | THE SCHERZO | 155 | Symphony No. | 1 | III, Menuctto. Although this movement is called a minuet, the
+P090: SMALL FORMS | THE SCHERZO | 157 | tion are again repeated (m. 64-68) and then liquidated into scale lines (m. 70-78). | A codetta, repeated and liquidated, conc
+P091: 
+P092: 
+P093: 
+P094: 
+P095: XVII | THEME AND VARIATIONS | Musical terminology is often ambiguous. This is due primarily to the origin of most | of the terms : they are borrowed from other 
+P096: SMALL FORMS | phrasing. One usually finds binary or ternary forms. The 12 Variations in A, the 24 | Variations in D, and Op. | 1 | 1 1—II, for example, are bina
+P097: 170 | SMALL FORMS | THEME AND VARIATIONS | 171 | cases in relation to the skeleton of Ex. 124a. Observe the rhythmic displacement of | the principal tones.
+P098: 172 | SMALL FORMS | THEME AND VARIATIONS | 173 | BUT NO MATTER HOW FAR-REACHING THE MODIFICATIONS WITHIN A VARIATION, THE | PIANO STYLE REMAINS CONSISTENT.
+P099: 174 | SMALL FORMS | ORGANIZATION OF THE SET | A distinction | is often made between formal variations and character variations. | But there is no reason to supp
+P100: 
+P101: THE PARTS OF LARGER FORMS | 179 | PART | III | LARGE FORMS | XVIII
+P102: LARGE FORMS | explained by the fact that an ending on V would not have been a good introduction | for the following VI, an artificial dominant. | Op. 13-111. Th
+P103: 182 | LARGE FORMS | * | THE PARTS OF LARGER FORMS | material from the closing theme. The Dwchfuhrung proper comes to a close on a V | of the submediant which is
+P104: LARGE FORMS | Op. 10/3-IV. The insignificance of the content | (it | is | little more than a chromatic | scale line up and down) emphasizes the subordinateness 
+P105: LARGE FORMS | codas grow out of a final repetition of the main theme, which becomes, in effect, a | part of the coda. | Illustrationsfrom the literature | Beeth
+P106: LARGE FORMS | * | 1 | THE PARTS OF LARGER FORMS | opening segment of the coda re-establishes the tonic region and liquidates its own | motival obligations befor
+P107: THE RONDO FORMS | 191 | XIX | THE RONDO FORMS | The rondo forms are characterized by the repetition of one or more themes, separated | by intervening contrasts.
+P108: 192 | LARGE FORMS | Beethoven, Seventh Symphony-II. (abab.) This movement is extremely long, even | though the basic structure | is simple, because of the many 
+P109: 194 | LARGE FORMS | THE RONDO FORMS | 195 | of the motive from m. 2. and the substitution of passage work for sustained chords | in the last half, there is litt
+P110: 196 | LARGE FORMS | 18/4-IV). Usually, however, the c-section | is longer and more elaborate, resembling | the trio of a scherzo or the elaboration of a sonata-
+P111: 198 | LARGE FORMS | motive-forms from the main theme. It closes with a pedal point on V (m. 129) which | prepares for the recapitulation. The modulatory scheme 
+P112: 200 | LARGE FORMS | This form, like the earlier ones, is essentially a ternary structure. Its main divisions | are the exposition, elaboration1 and recapitulati
+P113: 202 | LARGE FORMS | tonalities. A transition connects them in all but the simplest cases. A distinct contrast | of character helps to distinguish the various th
+P114: w | 204 | LARGE FORMS | THE SUBORDINATE GROUP | The construction of this group was discussed in considerable detail in Chapter | XVIII. The most important singl
+P115: 206 | LARGE FORMS | division | normally | found. | Beyond
+P116: 208 | LARGE FORMS | ceptively to the surprisingly remote region of A\>. An etude-like passage leads to a firm | close (m. 160) in C (bill). A sharply contrasted
+P117: 210 | LARGE FORMS | functional changes due to their placement in the form, nearly always require modi- | fication. | Illustrations from the literature | Op. 2/2
+P118: f | 212 | LARGE FORMS | transition (m. 84) hardly a phrase reappears in its original form. Changes of melodic | line, harmony, rhythm and even structure occur e
+P119: APPENDIX | 215 | APPENDIX | (Editor's note. The following description of Fundamentals of Musical Composition represents | Schoenberg’s first formulation of the 
+P120: INDEX | a-b-a1 form, see Ternary forms | abab, | ababa, abaca, abacaba forms, | see Rondo | of minuet, 141
+P121: 218 | INDEX | Contrast (contrasts) (coni.): | in transition, 178 | of trio and minuet, 143 | in variations, 167, 170
+P122: INDEX | 220 | Melody (melodic) (com.) : | relation to harmony, 3, 10, 16, 28; Exs. 2, 3, 28, 29 | Schubert’s, 27; Ex. 47 | in sentence, 21
+P123: 222 | INDEX | Scherzo, 150 ff.; Exs. 120-3 | A-seclion, 151 | coda, 157 | codettas, episodes, extensions, 155 f.
+P124: 224 | INDEX | Variation (variations) (coni.) | in periods, 26 f., 29 f. ; Exs. 42. 44, 46d. 47 | in recapitulation, 123 f., | 143, 154 f.,
+P125: faberandfabet | FUNDAMENTALS | OF MUSICAL | COMPOSITION | ARNOLD | SCHOENBERG

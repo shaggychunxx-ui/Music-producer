@@ -1,0 +1,13 @@
+[project]
+name = "schoenberg-kb"
+version = "1.0.0"
+description = "Schoenberg Fundamentals of Musical Composition knowledge base for GitHub agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+schoenberg-kb = "schoenberg_kb.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["schoenberg_kb*"]

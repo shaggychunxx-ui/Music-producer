@@ -1,0 +1,682 @@
+﻿\n######## PAGE 10 ########
+GLOSSARY
+Original usage
+whole note
+half note
+quarter note
+eighth note
+tone
+tonality
+degree (as V or vii)
+measure (m.)
+voice-leading (or part-leading)
+authentic cadence
+deceptive cadence (or progression)
+Equivalent English usage
+semibreve
+minim
+crotchet
+quaver
+note
+key
+chord built on a degree of the scale
+bar
+part-writing
+perfect cadence
+interrupted cadence
+
+\n######## PAGE 11 ########
+PART
+I
+CONSTRUCTION OF THEMES
+I
+THE CONCEPT OF FORM
+The: term form is used in several different senses. When used in connexion with binary,
+ternary or rondoform, it refers chiefly to the number of parts.
+1 The phrase sonataform
+suggests, instead, the size of the parts and the complexity of their interrelationships.
+In speaking of minuet, scherzo and other dance forms, one has in mind the metre,
+tempo and rhythmic characteristics which identify the dance.
+Used in the aesthetic sense, form means that a piece is organized; i.e. that it consists
+of elements functioning like those of a living organism.
+Without organization music would be an amorphous mass, as unintelligible as an
+essay without punctuation, or as disconnected as a conversation which leaps purpose-
+lessly from one subject to another.
+The chief requirements for the creation of a comprehensible form are logic and
+coherence. The presentation, development and interconnexion of ideas must be based
+on
+relationship.
+Ideas must be
+differentiated according to
+their importance and
+function.
+Moreover, one can comprehend only what one 
+\n######## PAGE 12 ########
+CONSTRUCTION OF THEMES
+proceeds,
+like Michelangelo who chiselled his Moses out of the marble without
+sketches, complete in every detail, thus directlyforming his material.
+No beginner is capable of envisaging a composition in its entirety; hence he must
+proceed gradually, from the simpler to the more complex. Simplified practice forms,
+which do not always correspond to art forms, help a student to acquire the sense of
+form and a knowledge of the essentials of construction. It will be useful
+to start by
+building musical blocks and connecting them intelligently.
+These musical blocks (phrases, motives, etc.) will provide the material for building
+larger units of various kinds, according to the requirements of the structure. Thus the
+demands of logic, coherence and comprehensibility can be fulfilled, in relation to the
+need for contrast, variety and fluency of presentation.
+II
+THE PHRASE
+The smallest structural unit is the phrase, a kind of musical molecule consisting of a
+number of integrated musical events, possessing a certain completeness, and well
+adapted to combination with other s
+\n######## PAGE 13 ########
+CONSTRUCTION OF THEMES
+may be considered the average; in simple metres a length of four measures is normal.
+But in very slow tempos the phrase may be reduced to half a measure; and in very
+rapid tempos eight measures or more may constitute a single phrase.
+The phrase is seldom an exact multiple of the measure length ;
+it usually varies by
+a beat or more. And nearly always the phrase crosses the metrical subdivisions, rather
+than filling the measures completely.
+There is no intrinsic reason for a phrase to be restricted to an even number. But the
+consequences of irregularity are so far reaching that discussion of such cases will be
+reserved for Chapter XIV.
+COMMENT ON EXAMPLES1
+In the early stages a composer's invention seldom flows freely. The control of
+melodic, rhythmic and harmonic factors impedes the spontaneous conception of
+musical ideas. It is possible to stimulate the inventive faculties and acquire technical
+facility by making a great many sketches of phrases based on a predetermined har-
+mony. At
+first, such attempts may be
+stiff and awkward, but, with patience, the
+co-ordi
+\n######## PAGE 15 ########
+THE MOTIVE
+III
+THE MOTIVE
+Even the writing ofsimple phrases involves the invention and use of motives, though
+perhaps unconsciously. Consciously used, the motive should produce unity, relation-
+ship, coherence, logic, comprehensibility and fluency.
+The motive generally appears in a characteristic and impressive manner at the
+beginning of a piece. The features of a motive are intervals and rhythms, combined to
+produce a memorable shape or contour which usually implies an inherent harmony.
+Inasmuch as almost every figure within a piece reveals some relationship to
+it, the
+basic motive is often considered the ΓÇÿgermΓÇÖ of the idea. Since it includes elements, at
+least, of every subsequent musical figure, one could consider it the ΓÇÿsmallest common
+multiple'. And since it is included in every subsequent figure,
+it could be considered
+the ΓÇÿgreatest common factorΓÇÖ.
+However, everything depends on its use. Whether a motive be simple or complex,
+whether
+it consists of few or many features, the final impression of the piece
+is not
+determined by its primary form. Everything depends on its treatment
+\n######## PAGE 16 ########
+CONSTRUCTION OF THEMES
+The rhythm is changed
+1. By modifying the length of the notes (Ex.
+17).
+2. By note repetitions (Exs. 11h,
+i, k,
+I, ┬½).
+3. By repetition of certain rhythms (Exs.
+17/, m,
+18c).
+4. By shifting rhythms to different beats (Ex. 23;
+in particular, compare 23d with
+23c,/, g).
+5. By addition of upbeats (Ex. 22).
+6. By changing the metreΓÇöa device seldom usable within a piece (Ex. 24).
+The intervals are changed:
+1. By changing the original order or direction of the notes (Ex.
+19).
+2. By addition or omission of intervals (Ex. 21).
+3. By filling up intervals with ancillary1 notes (Exs. 18, 20 ff.).
+4. By reduction through omission or condensation (Ex. 21).
+5. By repetition of features (Exs. 20h, 22a, b, d).
+6. By shifting features to other beats (Ex. 23).
+The harmony is changed
+1 . By the use of inversions (Exs. 25a, b).
+2. By additions at the end (Exs. 25 c-i).
+3. By insertions in the middle (Ex. 26).
+4. By substituting a different chord (Exs. 27a, b, c) or succession (Exs. 27d-i).
+The melody is adapted to these changes:
+1 . By transposition (Ex. 28).
+2. By addition of pas
+\n######## PAGE 19 ########
+IV
+CONNECTING MOTIVE-FORMS
+Artistically, the connexion of motive-forms depends on factors which can only
+be discussed at a later stage. However, the mechanics ofcombination can be described
+and demonstrated,
+while
+temporarily
+disregarding the
+stiffness of some of the
+resulting phrases.
+Common content, rhythmic similarities and coherent harmony contribute to logic.
+Common content
+is provided by using motive-forms derived from the same basic
+motive. Rhythmic similarities act as unifying elements. Coherent harmony1 reinforces
+relationship.
+1 n a general way every piece of music resembles a cadence, of which each phrase will
+be a more or less elaborate part. In simple cases a mere interchange of I-V-I, if not
+contradicted by controversial harmonies, can express a tonality. As used in traditional
+music, such an interchange
+is generally concluded with a more elaborate cadence.*
+Ordinarily the harmony moves more slowly than the melody; in other words, a
+number of melodic notes usually refers to a single harmony (Exs. 43,44, 45, 58, etc.).*
+The contrary occasionally occurs when the harmony m
+\n######## PAGE 21 ########
+CONSTRUCTION OF SIMPLE THEMES (1)
+V
+CONSTRUCTION OF SIMPLE THEMES
+1. BEGINNING THE SENTENCE
+I n the first chapter, ΓÇÿThe Concept of FormΓÇÖ,
+it was stated that a piece of music con-
+sists of a number of parts. They differ more or less in content, character and mood
+;
+in tonality, size and structure. These differences permit presentation of an idea from
+various viewpoints, producing those contrasts on which variety is based.
+Variety must never endanger comprehensibility or logic. Comprehensibility requires
+limitation of variety, especially if notes, harmonies, motive-forms or contrasts follow
+each other in rapid succession. Rapidity obstructs oneΓÇÖs grasp of an idea. Thus pieces
+in rapid tempo exhibit a lesser degree of variety.
+There are means by which the tendency toward too rapid development, which
+is
+often the consequence of disproportionate variety, can be controlled. Delimitation,
+subdivision and simple repetition arc the most useful.
+Intelligibility in music seems to be impossible without repetition. While repetition
+without variation can easily produce monotony, juxtaposition of d
+\n######## PAGE 22 ########
+22
+CONSTRUCTION OF THEMES
+Tonic form
+Dominant form
+V
+I-V-I
+V-I-V
+I-IV
+v-[
+I-1I
+V-I
+In the last two cases, simple reversal of the harmonies
+is not impossible; but the
+V- 1 progression is preferable because it expresses the tonality more clearly. The ending
+on
+1 preceded by V is so useful that it is often applied when, for example, tonic form is
+HI,
+1 -VI or even I-III.
+Illustrations from the literature
+In Exs. 35a, b and
+536,
+the
+first phrase employs only
+I and the second phrase
+only V.
+The scheme
+I -V (tonic form), V-I (dominant form) can be observed in Exs. 52b
+and c. Compare also, among Beethoven's works, the Piano Sonata, Op. 31/2ΓÇö III (four-
+measure phrases); and the String Quartets, Op. 59/2-1 II and Op. 13 I-IV. The melody
+is modified only enough to conform with the harmony.
+The tonic form of Ex. 36 is based on l-V-I
+; the dominant form on V-I-V. In Ex. 37
+the dominant form includes some passing harmonies. In contrast, the passing har-
+monics in the tonic form of Ex. 38 are not mechanically preserved in the dominant
+form. But in Ex. 39, where the tonic form consists of I-IV, th
+\n######## PAGE 23 ########
+VI
+CONSTRUCTION OF SIMPLE THEMES
+2. ANTECEDENT OF THE PERIOD
+Only a small percentage of all classical themes can be classified as periods. Romantic
+composers make still less use of them. However, the practise of writing periods is a
+convenient way to become acquainted with many technical problems.
+The construction of the beginning determines the construction of the continuation.
+The period
+differs from the sentence
+in postponement of the repetition. The
+first
+phrase
+is
+not
+repeated
+immediately,
+but
+united
+with more remote
+(contrasting)
+motive-forms, to constitute the first half of the period, the antecedent. After this con-
+trast repetition cannot be longer postponed without endangering comprehensibility. 1
+1'hus the second half, the consequent,
+is constructed as a kind of repetition of the
+antecedent.
+In composing periods a practice form will be useful. It should consist of eight mea-
+sures, divided into an antecedent and consequent of four measures each by a caesura
+in the fourth measure. This caesura, a type of musical punctuation comparable to a
+comma or semicolon, is carried out
+\n######## PAGE 40 ########
+VIII
+CONSTRUCTION OF SIMPLE THEMES
+4. COMPLETION OF THE SENTENCE
+A piece of music resembles in some respects a photograph album, displaying under
+changing circumstances the life of its basic ideaΓÇöits basic motive.
+The circumstances which produce these various aspects of the basic motiveΓÇöits
+variations and developmentsΓÇöderive from considerations of variety, structure, ex-
+pressiveness, etc.
+In contrast to the chronological succession in a photograph album, the order of
+motive-forms is conditioned by the requirements of comprehensibility and musical
+logic. Thus, repetition, control of variation, delimitation and subdivision regulate
+the organization of a piece in its entirety, as well as in its smaller units.
+The sentence is a higher form of construction than the period.
+It not only makes
+a statement of an idea, but at once starts a kind of development. Since development
+is the driving force of musical construction, to begin it at once indicates forethought.
+The sentence form is much used in leading themes of sonatas, symphonies, etc; but
+it
+is applicable also to smaller forms.
+The beg
+\n######## PAGE 52 ########
+IX
+THE ACCOMPANIMENT
+The accompaniment should not be a mere addition.
+It should be as functional as
+possible, and at best should act as a complement to the essentials of its subject
+: the
+tonality, rhythm, phrasing, contour, character and mood. It should reveal the inherent
+harmony of the theme, and establishes a unifying motus. It should satisfy the necessi-
+ties and exploits the resources of the instrument (or group of instruments).
+Accompaniment becomes imperative
+if the harmony or rhythm
+is complicated.
+In descriptive music, the accompaniment contributes much to the expressive sonority.
+OMISSIBILIT Y OF THE ACCOMPANIMENT
+Of course, unaccompanied music exists, in folk music, ancient church
+music,
+solo sonatas for various instruments, etc. Unaccompanied segments often appear in
+otherwise accompanied music. But even
+in simple folk music, where the melody
+requires no harmonic support, an accompaniment (not structurally
+required)
+is
+often added.
+Any harmonically
+self-sufficient melodic segment may remain unaccompanied,
+supplying contrast and transparency which may contribute to the ch
+\n######## PAGE 59 ########
+
+\n######## PAGE 60 ########
+MELODY AND THEME
+XI
+MELODY AND THEME
+The concentration of the main idea in a single melodic line requires a special kind
+of balance and organization, only partly explicable in terms oftechnique. Instinctively,
+every music lover knows what a melody is. Instinctively, also, one who has talent may
+be able to write a melody without technical advice. But such melodies seldom possess
+the perfection of higher art. Therefore some guidance, based on musical literature, as
+well as on historical, aesthetic and technical considerations, will be provided.
+Instrumental melodies admit much more freedom in every respect than vocal. But
+freedom prospers best when under control. Accordingly, the restrictions of vocal
+melody offer a sounder starting-point.
+VOCAL MELODY
+A melody could hardly include unmclodious elements; the concept of the melodious
+is intimately related to the concept of singableness. The nature and technique of the
+primordial musical instrument, the voice, determines what is singable. The concept of
+the melodious in instrumental melody has developed as a free adaptation from the
+vocal
+\n######## PAGE 69 ########
+ADVICE FOR SELF-CRITICISM
+XII
+ADVICE FOR SELF-CRITICISM
+The preceding discussion of melody and theme is chiefly aesthetic, rather than tech-
+nical. Technical advice can be formulated more easily
+in the negative than in the
+positive. The sense of melody enables one who has it to do the right thing at once
+without the intervention of self-criticism, but even a master may stray on to the wrong
+track. When such a deviation occurs, one has to discover where and why one erred,
+and which is the right track. And therefore, self-criticism
+is necessary to a composer,
+gifted or not.
+The best tool of a musician is his ear. Therefore:
+1. LISTEN1
+Play or read harmony and melody separately several times. This sometimes pre-
+vents self-deception. Perhaps only one of these factors is poor, its shortcomings hidden
+behind
+the
+virtues of the
+other.
+If the harmonic progression
+is
+satisfactory
+the
+beginner may easily overlook shortcomings in his melody. A good melody should be
+smooth, fluent and balanced when
+it
+is played without accompaniment.
+2. ANALYSE
+Be conscious of the significant features of the ba
+\n######## PAGE 71 ########
+PART
+II
+SMALL FORMS
+XIII
+THE SMALL TERNARY FORM
+(A-B-A1
+)
+An overwhelming proportion of musical forms
+is structurally composed of three
+parts. The third part is sometimes a true repetition (recapitulation) of the
+first, but
+oftener
+it
+is a more or less modified repetition. The second part
+is organized as a
+contrast.
+This form may derive from the early ΓÇÿRondeauΓÇÖ, in which interludes were inserted
+between repetitions of a refrain. Repetition satisfies the desire to hear again what was
+pleasing at
+first hearing, and simultaneously aids comprehension. A contrast, how-
+ever, is useful to avoid the possibility of monotony.
+Sections producing contrasts of various types and degrees are to be found in a great
+many forms:
+e.g. Small Ternary Form (formerly called Three-Part Song Form);
+larger ternary forms, such as Minuet or Scherzo; and Sonata or Symphony.
+Contrast presupposes coherence. Incoherent contrast, though tolerated in ΓÇÿdescrip-
+tiveΓÇÖ music, is intolerable in a well organized form. Contrasting sections, therefore,
+must
+utilize the same processed by which motive-forms are connected
+in 
+\n######## PAGE 72 ########
+120
+SMALL FORMS
+THE SMALL TERNARY FORM
+121
+THE CONTRASTING MIDDLE SECTION
+The most effective factor in a contrasting section
+is the harmony. The A-section
+establishes a tonic; the B-section contraposes another region (one of the more closely
+related). This provides both contrast and coherence.
+Further coherence is furnished by the metre, and by using forms of the basic motive
+which are not too remote from those of the A-section.
+Further contrast can be achieved through the use of new variations of the basic
+motive, or change in the order of previous motive-forms.
+Illustrations from the literature: Beethoven , piano sonatas
+The opening of the Adagio of Beethoven's Op. 2/1, m.
+1-16, reveals a structure
+from which a practice form can be abstracted. Its A-section, a period with a caesura
+on V in m. 4, comprises eight measures. The A
+J -section is condensed to four measures
+(m.
+13-16). The B-section
+is the simplest possible model of an effective contrast.
+It
+comprises four measures, built from a two-measure phrase and a varied repetition of
+it. This construction, two units, the second a m
+\n######## PAGE 80 ########
+XIV
+UNEVEN, IRREGULAR AND
+ASYMMETRICAL CONSTRUCTION
+Many of the previous illustrations from the literature demonstrate that a sentence
+or period may consist of an uneven number of measures. Their construction, accor-
+dingly, may be asymmetrical or irregular. The uneven number of measures may be
+caused by the length of basic units (motives or phrases), the number of such units,
+or the combination of units of differing lengths.
+There are asymmetrical periods which are divided in unequal parts, for instance
+4+6 (Exs. 45a, 47a, 59b,
+c,
+/;). There are also symmetrical periods whose smaller
+segments are not divisible by four, e.g. 3+3 (Ex. 51c); 5+5 (Ex. 44a;
+1 14); or 6+6
+(Ex. 102c). Ex. 46c (5 + 7) is an asymmetrical period made up of uneven segments, but
+like all the preceding illustrations comprises an even number of measures.
+Sentences are more frequently composed of elements of differing lengths than
+periods, even if the total number of measures is even. Ex. 57 is 4+5; Ex. 61c is also
+4 (2+2)+5 (1 + 1 + 1+2). Ex. 61c/ is 5+4. Ex. 59/ is made up of five units totalling
+seven measures 
+\n######## PAGE 82 ########
+XV
+THE MINUET
+Minuet, scherzo, Ihcme and variation,
+etc., appear as independent pieces, or as
+middle movements in cyclic forms such as the suite, symphony or sonata.
+The only specific rhythmic feature of a minuet
+is the metre, 3/4 (or, rarely,
+3/8).
+Striking rhythms, like those in scherzos or more modern dances, are seldom found.
+Beethoven marks the Minuet of the First Symphony,
+ΓÇö
+108, and that of the Eighth
+Symphony, J ΓÇö
+126. Both tempi are extreme, even for Beethoven. Most of his other
+minuets, and those of Mozart and Haydn, average about J.
+60-70, though some
+are as slow as
+J. =
+40-50. Accordingly, more small note values (eighths and six-
+teenths) appear in the minuet, and the harmony changes more frequently than in the
+scherzo. In other dance forms, the harmony often remains unchanged fora number of
+measures; in the minuet the harmony seldom lasts longer than one or two measures,
+and often there are two or more harmonies within a measure.
+The character of a minuet may range from
+the
+unpretentiously singable
+(e.g.
+Beethoven, Op. 31/3ΓÇöIII) to the stubbornly insistent (Mozart, Symph
+\n######## PAGE 87 ########
+THE SCHERZO
+XVI
+THE SCHERZO
+Scherzo, according to Webster, means a ΓÇÿplayful, humorous movement, commonly
+in 3/4 measure, which, since Beethoven, usually takes the place of the old minuet
+in
+a sonata or symphonyΓÇÖ. This is only partly correct. For instance, BeethovenΓÇÖs Septet,
+Op. 20, symphonic in
+its first and
+last movements, contains both a Minuet and a
+Scherzo.
+Any attempt to define the structure of the scherzo strictly will meet similar prob-
+lems. Beethoven seldom uses the
+title. Scherzo,
+if the movement,
+like that of the
+String Trio, Op. 9/3,
+is in minor. To this degree
+it
+is true that his scherzos may be
+called playful, humorous, gay. But among eight scherzos from Brahms's chamber
+music,
+five are
+in minor. Beethoven calls ΓÇÿScherzoΓÇÖ only two of the rapid middle
+movements of his symphonies. Many such movements in his sonatas and string quar-
+tets are only labelled Allegro, Vivace, Presto, etc., probably because of deviations in
+character, form, mode, rhythm, tempo or metre, from the strict concept that he had
+in mind. Among these movements can be found some in minor and some in me
+\n######## PAGE 95 ########
+XVII
+THEME AND VARIATIONS
+Musical terminology is often ambiguous. This is due primarily to the origin of most
+of the terms : they are borrowed from other fields, such as poetry, architecture, paint-
+ing and aesthetics. Terms like metre, symmetry, colour and balance are typical. But
+even worse
+is the use of single terms,
+like ΓÇÿinversionΓÇÖ, for several different
+things.
+One speaks of the first or second ΓÇÿinversionΓÇÖ of a triad; the ΓÇÿinversionΓÇÖ ofan interval;
+mirror-like ΓÇÿinversionΓÇÖ, vertical and horizontal; contrapuntal ΓÇÿinversionΓÇÖ, as in mul-
+tiple counterpoint.
+Similarly, the term ΓÇÿvariationΓÇÖ has a number of meanings. Variation creates the
+motive-forms for the construction of themes.
+It produces contrast in middle sections,
+and variety in repetitions. But in ΓÇÿTheme and VariationsΓÇÖ it is the structural principle
+for a whole piece.
+Production of an entire piece merely through the application of variation
+is an
+approach to the logic of larger compositions.
+As the name indicates, the piece consists of a theme and several variations upon it.
+The number of variations is determined by whether
+\n######## PAGE 96 ########
+SMALL FORMS
+phrasing. One usually finds binary or ternary forms. The 12 Variations in A, the 24
+Variations in D, and Op.
+1
+1 1ΓÇöII, for example, are binary. 1 Op. 14/2ΓÇöII and Op. 26-1
+are ternary. An exceptional case
+is the passacaglia-like theme, a sentence of eight
+measures, of the 32 Variations in c.
+The harmony should be simple, and should not change too frequently or too irregu-
+larly. See, for example, Beethoven's 15 Variations in E\>, Op. 35; Diabelli Variations ,
+Op. 120; 12 Variations in A
+; 24 Variations in D ; 6 Variations in G ; 6 Easy Variations
+in G. Except for the cadential segment, none of these themes contains more than two
+harmonies to a measure. In Op. 35 there is one harmony per measure ; in the A Varia-
+tions there are two; and in the D and G Variations there are three harmonies to two
+measures. But in the first eight measures of the Diabelli Waltz, the harmony changes
+only once. The use of mere interchange of
+I and V contributes to the simplicity of
+many of these themes.
+The harmony of the 6 Variations in G, though simple, is characteristic, especially
+because of
+\n######## PAGE 101 ########
+THE PARTS OF LARGER FORMS
+179
+PART
+III
+LARGE FORMS
+XVIII
+THE PARTS OF LARGER FORMS
+(SUBSIDIARY FORMULATIONS)
+Larger forms may consist of larger parts, or more parts, or both.
+Smaller parts may be expanded by means of internal repetitions, sequences, exten-
+sions,
+liquidations and broadening of connectives. The number of parts may be
+increased by supplying codettas, episodes, etc. In such situations, derivatives of the
+basic motive are formulated into new thematic units. Their structural function, how-
+ever, is co-ordinate rather than contrasting.
+Large forms develop through the generating power of contrasts. There are innu-
+merable kinds of contrast; the larger the piece, the more types of contrast should be
+present to illuminate the main idea.
+In the simpler forms the chief contrast
+is furnished by the harmony, organized to
+express appropriate related regions. In the scherzo the modulatory
+is presented in
+opposition to the stable. In larger forms a modulatory passage may be organized into
+an independent section, the transition, which connects the main theme with another
+stable contr
+\n######## PAGE 107 ########
+THE RONDO FORMS
+191
+XIX
+THE RONDO FORMS
+The rondo forms are characterized by the repetition of one or more themes, separated
+by intervening contrasts.
+The ternary form, minuet -trio-minuet, and scherzo-trio-scherzo are prototypes of
+this kind of organization. These are aba forms, in which the parts themselves may be
+aba forms. A similarity to the larger rondos can be seen in Beethoven's Fourth and
+Seventh Symphonies, where a double repetition of the scherzo produces an ababa
+form. Schumann, by adding a second trio (in, for instance, the Scherzos of the First
+and Second Symphonies, the String Quartet in a, and the Piano Quintet), produces
+the form abaca.
+Illustrations of the following types of organization can be found in the literature:
+The Andante forms (aba and abab).
+1
+The smaller Rondo forms (ababa and abaca).
+The large Rondo form (aba-c-aba), which includes a Trio (C).
+The Sonata Rondo2 (aba-c'-aba), with Durchfuhrung (C
+1
+).
+The Great Sonata Rondo (aba-CC
+1 aba), containing both Trio and Durchfuhrung.
+The structural elements of these forms can be simple and short, or compound a
+\n######## PAGE 112 ########
+200
+LARGE FORMS
+This form, like the earlier ones, is essentially a ternary structure. Its main divisions
+are the exposition, elaboration1 and recapitulation. It differs from other complex
+ternary forms in that the contrasting middle section (Elaboration) is devoted almost
+Relation of MovementsΓÇöBeethoven Sonatas and String Quartets
+Op. 10/1
+Allegro mollo
+cΓÇö3/4
+Op. 14/2
+Allegro
+GΓÇö2/4
+Op. Ill
+Maestoso-Allegro
+cΓÇö4/4
+STRING QUARTETS
+Op. 59/1
+Allegro
+FΓÇö4/4
+Op. 132
+Assai sostenuto-
+Adagio
+Allegro
+/ΓÇö2/4
+FΓÇö2/4
+Molto adagio
+Alla marcia,
+(Lydian Mode)
+assai vivace
+Op. 130
+Adagio, ma non
+troppoΓÇöAllegro
+BoΓÇö 3/4
+Allegro mollo
+Allegro
+Presto
+vivace
+moderalo
+DΓÇö6/8
+Trans.ΓÇö
+EΓÇö2/2
+exclusively to the working out of the rich variety of thematic material ΓÇÿexposedΓÇÖ in
+the first division. Its greatest merit, which enabled it to hold a commanding position
+over a period of 150 years, is its extraordinary flexibility in accommodating the widest
+variety of musical ideas, long or short, many or few, active or passive, in almost any
+combination. The internal details may be subjected to almost any mutation without
+\n######## PAGE 113 ########
+202
+LARGE FORMS
+tonalities. A transition connects them in all but the simplest cases. A distinct contrast
+of character helps to distinguish the various themes, though analysis will demonstrate
+their inter-connexion through common use of basic motive-features.
+It differs from the rondos in that the principal theme is not repeated prior to the
+elaboration, and there is no return to the principal key. Instead, a closing section, still
+in a contrasting region, completes the exposition.
+Often
+this
+is a mere group of
+codettas. Occasionally, a formulation derived from the principal theme provides the
+material (String Quartet, Op. 18/1-1, m. 72; Op. 18/6-1, m. 80; Mozart, Symphony
+in g, K.V. 550-1, m. 66). But generally a special theme, adapted to cadential harmonies,
+is introduced, which may be reminiscent of any of the preceding themes, or quite
+distinct.
+THE PRINCIPAL THEME (OR GROUP)
+The structure may vary widelyΓÇöfrom a straightforward period or sentence, through
+something resembling a ternary form, to a group of distinct themes joined in the most
+subtle fashion. Often a return to the A-
+\n######## PAGE 119 ########
+APPENDIX
+215
+APPENDIX
+(Editor's note. The following description of Fundamentals of Musical Composition represents
+SchoenbergΓÇÖs first formulation of the aims, contents and methods of this book. It was included
+in a letter that he sent to Professor Douglas Moore of Columbia University on
+16 April
+1938.)
+FUNDAMENTALS OF MUSICAL COMPOSITION
+The principal aim of this textbook is:
+(1) in first order, to provide for the average student of the universities, who has no special
+talent for composing or for music at all;
+(2) to widen the horizon of the teachers (of this and other continents);
+(3) to ofTer, at the same time, everything to the talented musician, and even to him who
+later might become a composer.
+This will be made possible by the circumstance that every technical matter is discussed in
+a very fundamental way, so that, at the same time,
+it is both simple and thorough.
+I have not decided definitely whether this will be done by printing the advice and the
+examples in much smaller size or by adding a ΓÇÿsecond partΓÇÖ which gives
+further adviceΓÇÖ to
+both the average student and the talented
