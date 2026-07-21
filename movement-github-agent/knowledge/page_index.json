@@ -1,0 +1,70 @@
+[
+  {
+    "page": 1,
+    "head": "Owner\u2019s Manual"
+  },
+  {
+    "page": 2,
+    "head": "Owner\u2019s Manual | Table of Contents | 1. Overview & Getting Started | 2. Engines | 3. FX Modules | 4. Rhythms | 5. Flux | 6. X-Y Pad & Macros | 7. Presets | 8. Additional Info"
+  },
+  {
+    "page": 3,
+    "head": "Owner\u2019s Manual | 1 | Overview | MOVEMENT is an effects processor designed to add rhythmic, textural motion to | audio. MOVEMENT can modulate up to 38 parameters at once from four independent | sources, which we simply re"
+  },
+  {
+    "page": 4,
+    "head": "Owner\u2019s Manual | 2 | Getting Started | Once you\u2019ve purchased MOVEMENT, you\u2019ll receive an email with a serial code. | Download the latest version of the Connect download utility to download the MOVMENT | Installer. Once y"
+  },
+  {
+    "page": 5,
+    "head": "Owner\u2019s Manual | 3 | Engines Overview | When audio enters MOVEMENT it\u2019s sent to two separate rhythm/FX units for pro- | cessing, which we call \u2018engines.\u2019 Each engine has four FX slots, two rhythm (modulation) | sources, "
+  },
+  {
+    "page": 6,
+    "head": "Owner\u2019s Manual | 4 | FX Overview | Each engine contains four FX slots. To add an effect, simply click on the \u2018+\u2019 icon. You\u2019ll | then see a selection of six FX types: delay, filter, reverb, eq, distortion, and compression"
+  },
+  {
+    "page": 7,
+    "head": "Owner\u2019s Manual | 5 | FX Overview | A two band EQ with switchable parametric and shelving modes. Similar to | the filter,  settings of the EQ can be dialed in by dragging the graphical interface . | Dragging left to right"
+  },
+  {
+    "page": 8,
+    "head": "Owner\u2019s Manual | 6 | Rhythms Overview | MOVEMENT creates rhythms in three ways: step sequencers, LFOs, and an external | Sidechain input signal converted into an envelope follower. Each engine has two dedicated | rhythm "
+  },
+  {
+    "page": 9,
+    "head": "Owner\u2019s Manual | 7 | Rhythms Overview | LFO cont\u2019d | Set the rate (speed) of the LFO by choosing a musical division of your host\u2019s tempo. | Step Sequencer | MOVEMENT\u2019s step sequencer spans from 1 to 32 steps. Set the tim"
+  },
+  {
+    "page": 10,
+    "head": "Owner\u2019s Manual | 8 | Step Sequencer cont\u2019d | MOVEMENT\u2019s step sequencer features four different step shapes which provide dif- | ferent envelope characteristics. Think of each step having it\u2019s own Attack and Release en- |"
+  },
+  {
+    "page": 11,
+    "head": "Owner\u2019s Manual | 9 | Sidechain | Sidechain creates a modulation curve by following an external signal coming from | your DAW. MOVEMENT listens to the sidechain audio input and creates a corresponding at- | tack/release e"
+  },
+  {
+    "page": 12,
+    "head": "Owner\u2019s Manual | 10 | Flux | Flux is the method of modulating the rate of one rhythm with the rate of the other | rhythm on the same engine. To activate, simply click the \u2018on\u2019 status of the Flux button locat- | ed on the"
+  },
+  {
+    "page": 13,
+    "head": "Owner\u2019s Manual | 11 | XY Pad | Assigning a Macro | MOVEMENT\u2019s XY Pad is a powerful macro controller and performance tool that can | be used to quickly and creatively dial in and modify your sound. First set the effect kn"
+  },
+  {
+    "page": 14,
+    "head": "Owner\u2019s Manual | 12 | You\u2019ll then be presented with the following macro edit menu. | Adjustments to the vertical \u2018knob range\u2019 slider will determine the range and direction | that the knob \u2018turns\u2019 with advancements of the"
+  },
+  {
+    "page": 15,
+    "head": "Owner\u2019s Manual | 13 | Presets | MOVEMENT\u2019s User presets are saved as XML files in the following directories: | Mac: /Users/Shared/Output/Movement/Presets | PC:  OS (C:)/Users/Public/Documents/Output/Movement/Presets | No"
+  },
+  {
+    "page": 16,
+    "head": "Owner\u2019s Manual | 14 | Low CPU Mode | Click the low CPU mode button to bypass MOVEMENT\u2019s motion graphics and cut down | on CPU usage. Though the animation in MOVEMENT\u2019s GUI will freeze, there is no change hap- | pening to"
+  },
+  {
+    "page": 17,
+    "head": "Owner\u2019s Manual | 15 | Owner\u2019s Manual | www.output.com"
+  }
+]

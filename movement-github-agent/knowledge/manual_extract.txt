@@ -1,0 +1,427 @@
+---PAGE 1---
+ Owner’s Manual
+
+
+---PAGE 2---
+ Owner’s Manual
+Table of Contents
+1. Overview & Getting Started
+2. Engines 
+3. FX Modules
+4. Rhythms 
+5. Flux
+6. X-Y Pad & Macros
+7. Presets
+8. Additional Info
+
+
+---PAGE 3---
+ Owner’s Manual
+1
+Overview 
+	
+MOVEMENT is an effects processor designed to add rhythmic, textural motion to 
+audio. MOVEMENT can modulate up to 38 parameters at once from four independent 
+sources, which we simply refer to as ‘rhythms.’ A rhythm could either be an LFO, step 
+sequence, or external signal fed to MOVEMENT’s sidechain input. MOVEMENT duplicates 
+the input signal and routes these signals to two identical effects engines. Here, audio 
+passes through a chain of FX, and is then summed back together with the signal from the 
+other engine. This summed signal is then sent to MOVEMENT’s stereo output. 
+To add rhythm to MOVEMENT, simply click on the round numbered icon and drag it to any 
+knob that will fit the circle. 
+To edit the rhythm, click anywhere in the darkened circular area pictured above to open 
+the rhythm menu.
+
+
+---PAGE 4---
+ Owner’s Manual
+2
+Getting Started 
+	
+  	
+Once you’ve purchased MOVEMENT, you’ll receive an email with a serial code. 
+Download the latest version of the Connect download utility to download the MOVMENT 
+Installer. Once you’ve downloaded and installed Connect, open the application and paste 
+your serial code into Connect. Click ‘Download,’ and when prompted choose your Desktop 
+as the installation location. Open the installer package and follow the instructions in the 
+installer. 
+	
+	
+The final step is to activate your copy of MOVEMENT. Open your DAW and load 
+MOVEMENT onto an audio or software instrument track. MOVEMENT will prompt you for 
+your serial code/product key. Paste your serial code in the given field and click ‘Activate.’ 
+After doing so, you’ll be all set!
+
+
+---PAGE 5---
+ Owner’s Manual
+3
+Engines Overview
+	
+When audio enters MOVEMENT it’s sent to two separate rhythm/FX units for pro-
+cessing, which we call ‘engines.’ Each engine has four FX slots, two rhythm (modulation) 
+sources, volume/pan control, a mute button, and dedicated VU meter. 
+	
+The rhythms on each engine can be applied to the engine’s volume, pan, or any of 
+the parameters in the FX chain. Rhythms 1 and 2 are tied exclusively to engine ‘A’ while 
+rhythms 3 and 4 are tied to engine ‘B.’ Rhythms from one engine cannot modulate effects 
+on the other engine’s chain. For example, an LFO on Rhythm 1 cannot modulate a filter on 
+engine B.  
+	
+	
+Notice the on/off button above the engine’s VU meter. By default, both engines are 
+on - so if there are no effects loaded on engine A, but engine B has a lowpass filter, the 
+dry volume of engine A could mask the affected signal on engine B. For this reason, it’s 
+helpful to mute the alternate layer when dialing in a chain of FX by clicking the mute on/
+off button above the VU meter.  
+	
+	
+To assign a rhythm, simply click, drag and drop the rhythm’s circular number icon 
+over the desired parameter’s knob. Then set the desired amount of rhythmic modulation 
+by dragging the rhythm slider beneath the given knob.  
+
+
+---PAGE 6---
+ Owner’s Manual
+4
+FX Overview
+ 	
+Each engine contains four FX slots. To add an effect, simply click on the ‘+’ icon. You’ll 
+then see a selection of six FX types: delay, filter, reverb, eq, distortion, and compression. 
+Click to automatically add the effect to the selected slot in the chain. Note: all FX module 
+output gain knobs are unipolar, they will not modulate past the current knob setting.
+ 
+	
+	
+	
+MOVEMENT’s delay times can be set to straight, dotted, or triplet values from 1/256 
+of a bar up to one bar in length. 
+	
+	
+Type: choose between the delay feedback rhythm characteristics. 
+	
+Time: set the delay time in bar divisions from 1/256 to a full bar. 
+	
+Feedback: set the percentage of delay feedback.
+	
+HP/LP: set the cutoff frequency of a highpass and lowpass filter on the output. 
+	
+Wet/Dry: sets the ratio of affected/unaffected output signal.
+	
+Output: adjusts the percentage of output gain of the affected signal. 
+	
+	
+	
+A fully modulatable filter with a drag-able graphical interface. Dragging left or right 
+will move the cutoff frequency, up or down increases or decreases the resonance.
+	
+Type: choose between 2 or 4 pole high, low, or bandpass filters.
+	
+Cutoff: set the cutoff frequency of the filter. 
+	
+Resonance: set the resonance level at the cutoff frequency. 
+	
+Wet/Dry: sets the ratio of affected/unaffected output signal.
+	
+Output:  adjusts the percentage of output gain of the affected signal.
+	
+	
+	
+A room modeled reverb. 
+	
+Predelay: set the delay time in ms before the reverb effect takes place. 
+	
+Size: set the perceived size of the reverberant space.
+	
+HP/LP: set the cutoff frequency of a highpass and lowpass filter on the output. 	
+	
+Wet/Dry: sets the ratio of affected/unaffected output signal.
+	
+Output:  adjusts the percentage of output gain of the affected signal. 
+
+
+---PAGE 7---
+ Owner’s Manual
+5
+FX Overview
+	
+	
+	
+A two band EQ with switchable parametric and shelving modes. Similar to 	
+	
+the filter,  settings of the EQ can be dialed in by dragging the graphical interface . 	
+	
+Dragging left to right increases the center frequency band, dragging up and down 	
+	
+boosts or cuts the level of a selected frequency band. 
+	
+	
+Width: sets the with of the boost or dip in parametric mode. 
+	
+Frequency: sets the center frequency of a given band.
+	
+Level: sets the gain boost or attenuation of a given band. 
+	
+Wet/Dry: sets the ratio of affected/unaffected output signal.
+	
+Output:  adjusts the percentage of output gain of the affected signal. 
+	
+	
+	
+	
+A compressor with adjustable ‘Warmth’ control. 
+	
+	
+Warmth: sets amount of tube distortion emulation on the compressor’s input signal. 
+	
+Threshold: sets the volume (in dB) at which compression begins.
+	
+Ratio: sets the ratio of input/output level. 
+	
+Attack/Release: sets the time in ms for the onset and decay of compression.
+	
+Wet/Dry: sets the ratio of affected/unaffected output signal.
+	
+Output:  adjusts the percentage of output gain of the affected signal. 
+	
+	
+A unique distortion unit with adjustable crunch, drive, and filter settings.
+	
+Crunch:  sets the intensity of the distortion and accents high frequency content.
+	
+Drive: sets the amount of distortion of the input signal.
+	
+HP/LP: set the cutoff frequency of a highpass and lowpass filter on the output. 
+	
+Wet/Dry: sets the ratio of affected/unaffected output signal.
+	
+Output:  adjusts the percentage of output gain of the affected signal.
+
+
+---PAGE 8---
+ Owner’s Manual
+6
+Rhythms Overview
+	
+MOVEMENT creates rhythms in three ways: step sequencers, LFOs, and an external 
+Sidechain input signal converted into an envelope follower. Each engine has two dedicated 
+rhythm generators that will modulate any parameter of an effect loaded in one of the four 
+FX slots of the given engine (in addition to the engine volume and pan). 
+	
+To assign a rhythm to a parameter, simply click on the round numbered icon and drag 
+it to any knob that will fit the circle. The colored rhythm amount slider beneath the knob sets 
+the overall amount of rhythmic modulation happening on the selected parameter.
+LFO
+	
+MOVEMENT’s LFO will modulate the value of a parameter above and below the set 
+knob position depending on the selected LFO shape, rate (speed), chaos, and flux. FX Mod-
+ule output knobs will not modulate past the current knob position. To select an LFO shape, 
+open the LFO wave shape menu by clicking on the ‘Shape’ button. Either double click a 
+shape, or single click and select ‘OK.’ 
+	
+	
+LFO Wave Shapes
+•	 Sine - Simple sinusodial wave. 
+•	 Trapezoid - Linear movement across the zero point with a brief hold at either end.
+•	 Triangle - Linear ramp up and down to a momentary peak.
+•	 Quad Stepped Sawtooth - A downwards sawtooth with four ‘stepped’ notches.  
+•	 Sawtooth Up - Quick burst down and linear slope upwards. 
+•	 Pulse - Simple square wave. 
+•	 Notch - a momentary dip or notch, then return to zero value.
+•	 Wide Pulse -  Similar to ‘Quick Dip’ but without a slope.
+•	 Sawtooth Down - Quick burst up and linear slope downwards. 
+•	 Tri Stepped Sawtooth - A downwards sawtooth with three ‘stepped’ notches. 
+•	 Random - waveform randomly switches between tirangle, saw, wide pulse, narrow pulse, 
+and square waves. 
+•	 Narrow Pulse - A quick jump up to 1 and back to zero. 
+	
+	
+The phase offset of the LFO can be adjusted freely by the ‘phase’ knob. The Chaos 
+knob applies a random amplitude value onto each cycle of the LFO. 
+
+
+---PAGE 9---
+ Owner’s Manual
+7
+Rhythms Overview
+LFO cont’d
+Set the rate (speed) of the LFO by choosing a musical division of your host’s tempo. 
+	
+Step Sequencer
+	
+MOVEMENT’s step sequencer spans from 1 to 32 steps. Set the time du-
+ration of each step (the sequencer’s rate) by choosing a value in the rate menu. 
+Like the LFO, sequencer rates are displayed as divisions of your host’s tempo. 
+Sequencer rates range from 8 bars to 1/64 triplet duration. Adjust the ‘Swing’ 
+knob for a more human groove. 
+
+
+---PAGE 10---
+ Owner’s Manual
+8
+Step Sequencer cont’d
+	
+MOVEMENT’s step sequencer features four different step shapes which provide dif-
+ferent envelope characteristics. Think of each step having it’s own Attack and Release en-
+velope characteristic. This means that on each step the modulation value goes from zero to 
+the set value, then back to zero. The square shape does not necessarily follow this behavior, 
+it jumps from step value to step value without returning to zero (thus behaving like a tradi-
+tional step sequencer). 
+	
+Open the sequence pattern menu to choose from 36 different preset sequences by 
+clicking on the ‘pattern’ button. Click the ‘random’ button to have MOVEMENT generate a 
+random sequence. You can also clear a sequence by clicking the ‘clear’ button.  
+
+
+---PAGE 11---
+ Owner’s Manual
+9
+Sidechain
+	
+Sidechain creates a modulation curve by following an external signal coming from 
+your DAW. MOVEMENT listens to the sidechain audio input and creates a corresponding at-
+tack/release envelope curve that is used as a modulation source. The sidechain modulation 
+signal can either ‘boost’ or ‘duck’ a given parameter. Think of a Boost as a right knob turn and 
+Duck as a left knob turn. 
+	
+The extent of this knob turn is determined by the ‘full range’ button. With ‘full range’ 
+enabled, the duck/boost modulation is bipolar. This means that after a value is ducked or 
+boosted, it’s possible for the value to momentarily exceed its original setting on the way 
+back depending on the strength of the input signal. Full Range is particularly useful when a 
+Sidechain rhythm is assigned to something like panning. With ‘full range’ disabled, the duck/
+boost is unipolar - respectively moving below or above the knob position, but never crossing 
+the original knob position on the way back. 
+Note: Sidechain works best with transient input sources with a medium-quick decay (like a 
+kick drum). Input sources that take a long time to return to silence (such as a full mix)  might 
+not result in interesting modulation signals.
+Additional options to customize the sidechain modulation include:
+•	 Gain: adds volume to the sidechain input signal. Increase to intensify the boost/ducking.
+•	 Attack: time in ms for the modulation to begin.
+•	 Release: time in ms for the modulation signal to return to zero.
+•	 Offset: delay in ms of the sidechain input. Increase to syncopate the sidechain input sig-
+nal with the resulting modulation curve.
+	
+Routing audio to MOVEMENT’s Sidechain input varies for each DAW. Click the link 
+below ‘Full Range’ to see how Sidechain works in your DAW. 
+
+
+---PAGE 12---
+ Owner’s Manual
+10
+Flux
+	
+Flux is the method of modulating the rate of one rhythm with the rate of the other 
+rhythm on the same engine. To activate, simply click the ‘on’ status of the Flux button locat-
+ed on the rhythm menu. Alternatively you can drag the rhythm circle 1 into the rate knob of 
+Rhythm 2 and vice versa. This way you can create fluctuating rhythm rates that go from 8 
+bars to 1/64th and anything in between.
+	
+As with any other assignable parameter in MOVEMENT, the amount of Flux modula-
+tion can be scaled up or down by adjusting the rhythm slider beneath the knob.
+
+
+---PAGE 13---
+ Owner’s Manual
+11
+XY Pad
+Assigning a Macro
+	
+MOVEMENT’s XY Pad is a powerful macro controller and performance tool that can 
+be used to quickly and creatively dial in and modify your sound. First set the effect knobs 
+and rhythm slider to your liking. Then, assign the parameter to a macro with a right click and 
+you’re all set!
+	
+Use the XY Pad to simultaneously alter multiple effects parameters and the modula-
+tion amount of those parameters on both engines. Advancements of the XY position in the 
+Y (vertical/orange) axis correspond to Engine A, settings along the X (horizontal/blue) axis 
+correspond to Engine B. 
+	
+Note: the term ‘advancements of the XY’ means increasing the position either up-
+wards from the bottom (Y) and/or right from left (X).
+For example, assign rhythm 1 to modulate filter cutoff (on engine A). 
+	
+	
+The knob, as pictured above, is set around three o’clock. The grey slider beneath the 
+knob is the rhythm slider - it’s set to about 50%. At this point, you’ll hear some modulation 
+of the filter cutoff frequency. If you move the rhythm slider to the right - you’ll hear more 
+intense modulation. If you move the rhythm slider to the left, you’ll hear less modulation.
+	
+Right click on the Cutoff knob and select ‘Assign to XY Control.’ You’ve now assigned 
+filter cutoff to be controlled by the XY Macro controller.
+
+
+---PAGE 14---
+ Owner’s Manual
+12
+You’ll then be presented with the following macro edit menu.
+	
+Adjustments to the vertical ‘knob range’ slider will determine the range and direction 
+that the knob ‘turns’ with advancements of the XY. Settings above the midpoint will turn the 
+knob to the right when the XY position increases, settings below midpoint will turn the knob 
+left as the XY position increases. 
+	
+Adjustments to the horizontal ‘rhythm amount range’ slider will impact the extent in 
+which rhythmic modulation increase or decreases when the XY position advances. Settings 
+to the left will result in decreased modulation with advancement of the XY while settings to 
+the right will result in increased modulation. 
+	
+It’s important to note that the ‘rhythm amount range’ is directly correlated to the 
+rhythm slider beneath the knob. If you set the rhythm slider to zero and the rhythm amount 
+range fully right, advancements of the XY will result in more rhythm modulation. If the rhythm 
+slider and rhythm amount range are set to max, you won’t hear any increase in modulation 
+when the XY advances because you had previously set modulation amount to max.
+Click on the small ‘power’ buttons to turn on/off the respective macro controls.
+	
+The small circular XY icon that appears to the left of the knob indicates that a knob is 
+macro assigned. 
+	
+	
+You can also click on this icon to return to the Macro Edit menu and edit your Macro 
+settings. Alternatively you can right click on the knob and select ‘Edit XY Control.’
+XY Pad cont’d
+
+
+---PAGE 15---
+ Owner’s Manual
+13
+Presets
+	
+MOVEMENT’s User presets are saved as XML files in the following directories: 
+Mac: /Users/Shared/Output/Movement/Presets
+PC:  OS (C:)/Users/Public/Documents/Output/Movement/Presets
+Note: You can also right click on a preset in the browser and select ‘Show File in Folder’ to nav-
+igate directly to the folder location containing your Movement presets.
+To save a preset, click on the save icon in the top left corner of MOVEMENT’s interface. Type 
+the preset name, choose some applicable tags and click save.
+	
+	
+	
+To access your presets, open the preset menu by clicking on the name of the current 
+preset in the top left corner. You’ll then be able to sort by tags or search directly using the 
+search bar. When you select a tag in the preset menu, click the previous/next buttons to sort 
+through presets containing the selected tag. You can also click on the star icon to move all of 
+your favorite presets at the top of the list. If you’d rather not open the preset menu, you can 
+simply scroll one preset to the left or right using the left/right buttons next to the save icon. 
+
+
+---PAGE 16---
+ Owner’s Manual
+14
+	
+Low CPU Mode 
+	
+Click the low CPU mode button to bypass MOVEMENT’s motion graphics and cut down 
+on CPU usage. Though the animation in MOVEMENT’s GUI will freeze, there is no change hap-
+pening to the audio processing.  
+ 
+On Screen Help Menu
+	
+Click on the ‘?’ icon to view the on-screen help menu which expains the general func-
+tions of any and all items in MOVEMENT.
+
+
+---PAGE 17---
+ Owner’s Manual
+15
+ Owner’s Manual
+www.output.com

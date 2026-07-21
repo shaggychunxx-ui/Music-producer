@@ -1,0 +1,8 @@
+[project]
+name = "movement-kb"
+version = "1.0.0"
+description = "Output MOVEMENT knowledge base for GitHub agents"
+requires-python = ">=3.10"
+
+[project.scripts]
+movement-kb = "movement_kb.__main__:main"
