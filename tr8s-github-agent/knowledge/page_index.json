@@ -1,0 +1,202 @@
+[
+  {
+    "page": 1,
+    "head": "Copyright \u00a9 2018 ROLAND CORPORATION | 01 | Reference Manual | System Update | This manual applies to program version 1.02 or later. | For details on updating the system, refer to the following URL. | "
+  },
+  {
+    "page": 2,
+    "head": "2 | Panel Descriptions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 4 | Top Panel. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  },
+  {
+    "page": 3,
+    "head": "3 | Contents | Convenient Functions and Settings (UTILITY) . . . . . . . . . . . . \t 41 | GENERAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . \t 41 | REL"
+  },
+  {
+    "page": 4,
+    "head": "4 | Panel Descriptions | 1\t Common section 1 | [VOLUME] knob | Adjusts the MIX OUT jack, PHONES jack\u2019s volume. | *\t This does not affect the volume of the ASSIGNABLE OUT jack (p. 7). | [EXT IN] knob |"
+  },
+  {
+    "page": 5,
+    "head": "5 | Panel Descriptions | [STEP] button | During TR-REC, you can use pads [1]\u2013[16] to select steps at which | an accent is added. | 3\t REVERB section | [LEVEL] knob | Adjusts the volume of the reverb."
+  },
+  {
+    "page": 6,
+    "head": "6 | Panel Descriptions | 10\tPad [1]\u2013[16] | Mode | Explanation | TR-REC | For each step, specify whether the instrument\u2019s | tone will sound."
+  },
+  {
+    "page": 7,
+    "head": "7 | Introduction | F\t TRIGGER OUT jack | A trigger pulse is output from this jack at the timing that is | specified in the dedicated trigger out track ([CC] + [RC] button). | G\t EXT IN (L/MONO, R) jac"
+  },
+  {
+    "page": 8,
+    "head": "8 | Overview of the TR-8S | PATTERN No. 8-16 | PATTERN No. 1-3 | PATTERN No. 1-2 | PATTERN No. 1-1 | 128 patterns | (16 x 8 banks)"
+  },
+  {
+    "page": 9,
+    "head": "9 | Overview of the TR-8S | What Is a \u201cPATTERN\u201d? | The performance data that you | record using TR-REC or INST-REC is | called a \u201cpattern.\u201d | The TR-8S has 128 patterns (16 | patterns x 8 banks); each"
+  },
+  {
+    "page": 10,
+    "head": "10 | Main Screens | TR-REC | Create a pattern by specifying the steps at | which each track plays a sound. | PTN SELECT | Select the pattern to play. | Bank"
+  },
+  {
+    "page": 11,
+    "head": "11 | Playing Patterns | Playing Patterns | 1.\tPress the [START/STOP] button. | 2.\tUse the controllers of the instrument edit section to | modify the sound. | 3.\tPress the [START/STOP] button once agai"
+  },
+  {
+    "page": 12,
+    "head": "12 | Playing Patterns | Clearing a track\u2019s Last Step setting | 1.\tPress the [LAST] button. | The [LAST] button is lit. | 2.\tPress the instrument select button [BD]\u2013[RC] of the | track whose setting yo"
+  },
+  {
+    "page": 13,
+    "head": "13 | Playing Patterns | Selecting a Fill-In Variation | 1.\tWhile holding down the AUTO FILL IN [ON] button, | press a pad [14]\u2013[16] or an [A]\u2013[H] button. | You can also use a variation A\u2013H as a FILL I"
+  },
+  {
+    "page": 14,
+    "head": "14 | Playing Patterns | Master Effects | 1.\tPress the MASTER FX [ON] button to make it light. | 2.\tUse the MASTER FX [CTRL] knob to adjust the | depth of the effect. | Assigning a Parameter to the MAS"
+  },
+  {
+    "page": 15,
+    "head": "15 | Playing Patterns | Finely Adjusting the Timing of Notes | (Nudge Function) | The \u201cnudge\u201d function lets you adjust the timing of notes forward or | backward. | Using the nudge function changes the"
+  },
+  {
+    "page": 16,
+    "head": "16 | Recording Knob Movements at Steps (Motion) | Recording/Playing MOTION | While the MOTION [REC] button is lit, movements of the instrument | [TUNE] knobs, [DECAY] knobs, and [CTRL] knobs are recor"
+  },
+  {
+    "page": 17,
+    "head": "17 | Editing the Pattern Settings (Pattern Setting) | Here\u2019s how to specify the kit and tempo used by a pattern. | 1.\tHold down the [SHIFT] button and press the [PTN | SELECT] button. | The PTN SETTIN"
+  },
+  {
+    "page": 18,
+    "head": "18 | Editing the Pattern Settings (Pattern Setting) | A confirmation message appears. | 4.\tTo save, use the [VALUE] knob to select \u201cOK,\u201d and | press the [ENTER] button. | If you decide to cancel, use "
+  },
+  {
+    "page": 19,
+    "head": "19 | TR-REC (Step Recording) | In this method of recording, you create a pattern by specifying the | steps at which each track will sound. You can even play back the | pattern while you\u2019re creating it"
+  },
+  {
+    "page": 20,
+    "head": "20 | INST REC (Realtime Recording) | In this method of recording, you create a pattern by realtime- | recording your performance on pads [1] (BD)\u2013[11] (RC). This modifies | the selected pattern. | *\t "
+  },
+  {
+    "page": 21,
+    "head": "21 | INST PLAY (Performing) | You can use pads [1] (BD)\u2013[11] (RC) to perform in real time. | Your performance does not modify the pattern. | 1.\tPress the [INST PLAY] button. | 2.\tPerform using pads [1"
+  },
+  {
+    "page": 22,
+    "head": "22 | Editing a Kit\u2019s Settings (KIT Edit) | Here\u2019s how to edit the settings of the currently selected kit. | *\t If you want to keep the edited kit settings, you must save the kit | (p. 29). | 1.\tHold d"
+  },
+  {
+    "page": 23,
+    "head": "23 | Editing a Kit\u2019s Settings (KIT Edit) | Parameter | Value | Explanation | Low Cut | FLAT, 20Hz, | 25Hz, 31.5Hz,"
+  },
+  {
+    "page": 24,
+    "head": "24 | Editing a Kit\u2019s Settings (KIT Edit) | Parameter | Value | Explanation | Sw | MASTER FX [ON] | OFF, ON"
+  },
+  {
+    "page": 25,
+    "head": "25 | Editing a Kit\u2019s Settings (KIT Edit) | Parameter | Value | Explanation | HP Level | -INF, -53.0dB\u2013 | 0.0dB\u2013+10.0dB"
+  },
+  {
+    "page": 26,
+    "head": "26 | Editing a Kit\u2019s Settings (KIT Edit) | Parameter | Value | Explanation | FUZZ | Balance | MASTER FX"
+  },
+  {
+    "page": 27,
+    "head": "27 | Editing a Kit\u2019s Settings (KIT Edit) | Parameter | Value | Explanation | NOISE | Color | MASTER FX"
+  },
+  {
+    "page": 28,
+    "head": "28 | Editing a Kit\u2019s Settings (KIT Edit) | KIT: CTRL | Parameter | Value | Explanation | Sel | [CTRL SELECT]"
+  },
+  {
+    "page": 29,
+    "head": "29 | Editing a Kit\u2019s Settings (KIT Edit) | Saving the Pattern, Kit, or System Settings (WRITE) | Here\u2019s how to save a pattern or kit. | 1.\tPress the [WRITE] button. | The WRITE screen appears. | 2.\tUs"
+  },
+  {
+    "page": 30,
+    "head": "30 | Editing an Instrument\u2019s Sound (INST Edit) | 1.\tHold down the [SHIFT] button and press the [INST] | button. | The INST Edit screen appears | 2.\tSelect a parameter. | 2-1.\t Use the [VALUE] knob to "
+  },
+  {
+    "page": 31,
+    "head": "31 | Editing an Instrument\u2019s Sound (INST Edit) | Parameter | Value | Explanation | Only for ACB tones of the TOM category | Color | INST [CTRL] *2"
+  },
+  {
+    "page": 32,
+    "head": "32 | Editing an Instrument\u2019s Sound (INST Edit) | Parameter | Value | Explanation | LPF/HPF | Cutoff | INST [CTRL] *4"
+  },
+  {
+    "page": 33,
+    "head": "33 | Editing an Instrument\u2019s Sound (INST Edit) | Parameter | Value | Explanation | PreEqH | -INF, -53.0dB\u2013 | 0.0dB\u2013+10.0dB"
+  },
+  {
+    "page": 34,
+    "head": "34 | Importing or Exporting a Pattern or Kit | Exporting a Pattern or Kit | Here\u2019s how you can export a kit or pattern to an SD card. | Exporting a Pattern | Insert the SD card into the TR-8S. | 1.\tPr"
+  },
+  {
+    "page": 35,
+    "head": "35 | Importing or Exporting a Pattern or Kit | Importing a Pattern or Kit | Here\u2019s how you can import a saved kit or pattern from an SD card. | File formats that can be imported | 55 Backup files crea"
+  },
+  {
+    "page": 36,
+    "head": "36 | Importing or Exporting a Pattern or Kit | Importing a Kit | 1.\tInsert the SD card into the TR-8S. | 2.\tPress the [UTILITY] button to make it light. | The Utility screen appears. | 3.\tUse the [VAL"
+  },
+  {
+    "page": 37,
+    "head": "37 | Assigning an Imported User Sample to an Instrument | Importing a User Sample (SAMPLE Import) | Here\u2019s how an audio file saved on an SD card can be imported as a | user sample. | *\t Use the TR-8S "
+  },
+  {
+    "page": 38,
+    "head": "38 | Assigning an Imported User Sample to an Instrument | Selecting a Sample (SAMPLE) | 1.\tPress the [SAMPLE] button. | The [SAMPLE] button and the [BD]\u2013[RC] button (that had been | selected in [TR-RE"
+  },
+  {
+    "page": 39,
+    "head": "39 | Assigning an Imported User Sample to an Instrument | Deleting a User Sample (SAMPLE Delete) | 1.\tPress the [UTILITY] button to make it light. | 2.\tUse the [VALUE] knob to select \u201cSAMPLE:Delete,\u201d "
+  },
+  {
+    "page": 40,
+    "head": "40 | Assigning an Imported User Sample to an Instrument | Optimizing the User Sample Area (OPTIMIZE) | Here\u2019s how to optimize the user sample area. | If you repeatedly import and delete user samples, "
+  },
+  {
+    "page": 41,
+    "head": "41 | Convenient Functions and Settings (UTILITY) | Here\u2019s how to make system settings for the TR-8S itself, or back up | and restore data. | 1.\tPress the [UTILITY] button to make it light. | The setti"
+  },
+  {
+    "page": 42,
+    "head": "42 | Convenient Functions and Settings (UTILITY) | SAMPLE | Function | Explanation | Import | Loads an audio file from the SD card into the TR-8S | (import)."
+  },
+  {
+    "page": 43,
+    "head": "43 | Convenient Functions and Settings (UTILITY) | SOUND | Parameter | Value | Explanation | LocalSw | OFF, ON,"
+  },
+  {
+    "page": 44,
+    "head": "44 | Initializing, Backing-Up, Restoring | Returning to the Factory Settings | (FACTORY RESET) | Here\u2019s how to return the TR-8S to its factory-set state. | NOTE | Be aware that when you execute FACTOR"
+  },
+  {
+    "page": 45,
+    "head": "45 | Initializing, Backing-Up, Restoring | Restoring Data That Was Backed Up to SD Card | (RESTORE) | 1.\tInsert the SD card into the TR-8S. | 2.\tPress the [UTILITY] button to make it light. | The UTIL"
+  },
+  {
+    "page": 46,
+    "head": "46 | Synchronizing/Recording with Other Devices | The TR-8S can receive MIDI Clock (F8) data to synchronize its tempo. | It can also receive MIDI Start (FA) and MIDI Stop (FC) to start/stop | itself. "
+  },
+  {
+    "page": 47,
+    "head": "47 | Synchronizing/Recording with Other Devices | Assigning an Instrument to the ASSIGNABLE | OUT/TRIGGER OUT jacks | 1.\tHold down the [SHIFT] button and press the [KIT] | button. | The setting screen"
+  },
+  {
+    "page": 48,
+    "head": "48 | Synchronizing/Recording with Other Devices | Using a Computer to Manage the Connected SD | Card (STORAGE MODE) | By connecting in Storage mode, you can use your computer to | manage the contents "
+  },
+  {
+    "page": 49,
+    "head": "49 | Error Messages | Message | Meaning | Action | SDCard | NotReady! | The SD card is not"
+  },
+  {
+    "page": 50,
+    "head": "50 | TR-8S Audio Diagram | TR-8S Audio Diagram | INST FX | TONE | INST | : BD | Level"
+  }
+]
