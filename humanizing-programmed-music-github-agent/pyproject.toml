@@ -1,0 +1,8 @@
+[project]
+name = "humanize-kb"
+version = "1.0.0"
+description = "Knowledge base for humanizing programmed/MIDI music"
+requires-python = ">=3.10"
+
+[project.scripts]
+humanize-kb = "humanize_kb.__main__:main"
