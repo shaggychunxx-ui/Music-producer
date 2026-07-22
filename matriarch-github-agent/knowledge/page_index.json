@@ -1,0 +1,370 @@
+[
+  {
+    "page": 1,
+    "head": ""
+  },
+  {
+    "page": 2,
+    "head": ""
+  },
+  {
+    "page": 3,
+    "head": "3"
+  },
+  {
+    "page": 4,
+    "head": "IMPORTANT SAFETY INSTRUCTIONS | WARNING - WHEN USING ELECTRIC PRODUCTS, THESE BASIC PRECAUTIONS SHOULD ALWAYS | BE FOLLOWED: | 1. Read all the instructions before using the product. | 2. Do not use th"
+  },
+  {
+    "page": 5,
+    "head": "TABLE OF CONTENTS | UNPACKING & INSPECTION | SETUP & CONNECTIONS | ABOUT MATRIARCH | SIGNAL FLOW | FEATURES & CONTROLS | KEYBOARD | LEFT-HAND CONTROLLER"
+  },
+  {
+    "page": 6,
+    "head": "6 | 16\u2019 | 8\u2019 | 4\u2019 | 2\u2019 | + | - | +"
+  },
+  {
+    "page": 7,
+    "head": "7 | STEREO DELAY | 20Hz | 20kHz | 200Hz | 2kHz | + | -"
+  },
+  {
+    "page": 8,
+    "head": "8 | SETUP & CONNECTIONS | Check the contents of the shipping carton. Be careful when unpacking your new Moog Matriarch\u00ae so | that nothing is lost or damaged. Moog recommends saving the carton and all "
+  },
+  {
+    "page": 9,
+    "head": "9 | Matriarch sits at the pinnacle of the Moog family of semi-modular synthesizers. The patchable architecture | and classic Moog circuits reward open exploration with endless sonic possibilities and "
+  },
+  {
+    "page": 10,
+    "head": "10 | SIGNAL FLOW | REFERENCE: To view the full Signal Flow diagram see Page 70-71. | FEATURES & CONTROLS | Matriarch\u2019s panel is comprised largely of single-function knobs, switches, and buttons that a"
+  },
+  {
+    "page": 11,
+    "head": "11 | The Left-Hand Controller (LHC) is home to a number of | performance-enriching controls. The PITCH (Pitch Bend) and | MOD (Modulation) wheels deliver real-time expression, while | the GLIDE knob p"
+  },
+  {
+    "page": 12,
+    "head": "12 | OCTAVE TRANSPOSE | The Transport Buttons can also be used to shift the pitch of the | keyboard up or down in one-octave increments. This allows | the range of the keyboard to be extended without "
+  },
+  {
+    "page": 13,
+    "head": "13 | Matriarch\u2019s analog sound begins with four | voltage-controlled oscillators (VCOs) of | nearly identical design. Each oscillator provides | individual control of the Octave and Waveform | settings"
+  },
+  {
+    "page": 14,
+    "head": "14 | FREQUENCY (Oscillators 2, 3, & 4) | The FREQUENCY knob detunes each oscillator from the pitch of Oscillator 1 over | a range of +/- 7 semitones (or a musical 5th). The center position (12 O\u2019clock"
+  },
+  {
+    "page": 15,
+    "head": "15 | 2      3 SYNC | Pressing this button (On/lit red) will cause Oscillator 3 to become sync\u2019d to | Oscillator 2. In this case, changing the Frequency of Oscillator 3 will vary the | degree of the Sy"
+  },
+  {
+    "page": 16,
+    "head": "16 | SQUARE | A Square wave is simply a Pulse wave with a 50% duty cycle, meaning that in | a single cycle, it is on half of the time and off half of the time. If the frequency | is 440 Hz, it turns o"
+  },
+  {
+    "page": 17,
+    "head": "17 | OSCILLATORS (Continued) | LIN FM IN (Linear Frequency Modulation) | Connecting an audio signal or high-frequency control signal to this input | introduces Linear Frequency Modulation (FM) to a pa"
+  },
+  {
+    "page": 18,
+    "head": "18 | NOISE | Matriarch features a built-in White Noise generator. Noise is an unpitched | sound source that can be a useful tool for creating powerful percussion sounds, | or for adding a gentle breat"
+  },
+  {
+    "page": 19,
+    "head": "19 | MIXER PATCH POINTS | These Mixer module patch points provide a convenient | way to replace any or all of the internal sound sources | entering the Mixer with an external sound source, such as | a"
+  },
+  {
+    "page": 20,
+    "head": "20 | OSC 4 IN | When an external audio source is patched to this input, Oscillator 4 will be | removed from the signal path, and the OSCILLATOR 4 knob will control the | level of the new source. | AUD"
+  },
+  {
+    "page": 21,
+    "head": "21 | FILTERS (Continued) | CUTOFF | Matriarch\u2019s CUTOFF knob specifies the Filter Cutoff frequency for both | VCF 1 and VCF 2 in a linked fashion. The SPACING knob is used to offset | the frequency of "
+  },
+  {
+    "page": 22,
+    "head": "22 | RESONANCE 1 & 2 | Resonance channels a portion of the Filter\u2019s output back | to the input of the Filter, creating an emphasis peak at the | Filter\u2019s Cutoff frequency. This is useful for adding fo"
+  },
+  {
+    "page": 23,
+    "head": "23 | FILTER PATCH POINTS | These Filter module patch points | provide a convenient way to | independently modulate the Cutoff | frequency of VCF 1 and/or VCF 2, | and to modulate the value of the | EN"
+  },
+  {
+    "page": 24,
+    "head": "24 | CUTOFF 1 IN | A control signal connected here will modulate the Cutoff frequency of | VCF 1. This is based on the current CUTOFF, SPACING, ENVELOPE AMT, | and KB TRACKING knob settings. | CV INPU"
+  },
+  {
+    "page": 25,
+    "head": "25 | Sounds change over time. How they change | over time is part of what makes each one unique. | Some sounds begin abruptly, like the strike of a | drum. Some sounds end just as quickly, and some | "
+  },
+  {
+    "page": 26,
+    "head": "26 | DECAY | The DECAY knob determines the amount of time required for the control signal | to fall from the maximum level achieved by the Attack stage to the Sustain | level as the key is held. The D"
+  },
+  {
+    "page": 27,
+    "head": "27 | ENVELOPE GENERATOR | PATCH POINTS | These patch points allow each | Envelope Generator to be | triggered from a source other | than the Matriarch keyboard and | can be used to modulate any"
+  },
+  {
+    "page": 28,
+    "head": "28 | AMPLITUDE ENVELOPE GENERATOR | ENV OUT (Amplitude EG) | This output provides a control-voltage signal created by the current Amplitude | Envelope Generator panel settings. | CV OUTPUT: 0V to +8V "
+  },
+  {
+    "page": 29,
+    "head": "29 | Matriarch is equipped with two Voltage-Controlled Amplifiers, VCA 1 and VCA 2. | Before the sounds created by Matriarch can be output and monitored through | speakers or recorded, they pass throu"
+  },
+  {
+    "page": 30,
+    "head": "30 | VCA PATCH POINTS | All of the VCA patch points are inputs. The upper row (VCA 1 IN and VCA 2 IN) | are audio inputs, while the second row (VCA 1 CV IN and VCA 2 CV IN) are | control signal inputs"
+  },
+  {
+    "page": 31,
+    "head": "31 | VCA 2 CV IN | A control signal connected here will determine the output level of VCA 2. | Normally, this control signal comes from the Amplitude Envelope Generator. | With the VCA MODE switch set"
+  },
+  {
+    "page": 32,
+    "head": "32 | The Stereo Delay is, in fact, two individual BBD-based analog delays that | share certain parameters. In the Matriarch signal path, the Stereo Delay is | positioned after VCA 1 and VCA 2, and bef"
+  },
+  {
+    "page": 33,
+    "head": "33 | FEEDBACK | Feedback routes a portion of the Stereo Delay\u2019s output back to its input, | to build multiple repeats and a cascade of delay trails. Feedback is variable | from single to infinite repe"
+  },
+  {
+    "page": 34,
+    "head": "34 | STEREO DELAY (Continued) | STEREO DELAY PATCH POINTS | The Stereo Delay module features both Audio and | Control signal inputs. The Audio inputs override | and replace the normal hardwired audio "
+  },
+  {
+    "page": 35,
+    "head": "35 | MIX IN | The value of a Control signal connected to this input will be summed with the | current position of the MIX knob to determine the balance between the dry | (unprocessed) audio signal, an"
+  },
+  {
+    "page": 36,
+    "head": "36 | Modulation is a vital facet of synthesizer performance and sound design. | In short, whenever one signal is used to change the value of another\u2013 it | is known as modulation. Modulation can come f"
+  },
+  {
+    "page": 37,
+    "head": "37 | PITCH MOD ASSIGN (1&3, All, 2&4) | Using this three-position switch, the amount of Pitch Modulation set using the | PITCH AMT knob (above) can be assigned to all of the Matriarch oscillators, | t"
+  },
+  {
+    "page": 38,
+    "head": "38 | MODULATION PATCH POINTS | Control signals connected to the RATE IN and SYNC IN | patch point jacks can set the rate and reset the starting | point of the Modulation oscillator. In addition, three"
+  },
+  {
+    "page": 39,
+    "head": "39 | S/H OUT (Continued) | TIP: A control or gate signal received at the SYNC IN jack will reset the Modulation | oscillator to the beginning of its wave cycle, meaning the Sample and Hold feature can"
+  },
+  {
+    "page": 40,
+    "head": "40 | Matriarch is equipped with two Utilities modules. Each is filled with an assortment of | tools that are key to the exploration of modular synthesis. A signal can be split and | sent to multiple l"
+  },
+  {
+    "page": 41,
+    "head": "41 | INPUT | Any audio or control signal connected to this jack will be fed into the Attenuator. | CV/AUDIO INPUT: -8V to +8V | NOTE: An 8-Volt DC source is normalled to the input of each Attenuator. "
+  },
+  {
+    "page": 42,
+    "head": "42 | Matriarch is equipped with two Utilities modules. Each is filled with an assortment of | tools that are key to the exploration of modular synthesis. A signal can be split and | sent to multiple l"
+  },
+  {
+    "page": 43,
+    "head": "43 | UTILITIES (2) (Continued) | INPUT | Any audio or control signal connected to this jack will be fed into the Attenuator. | CV/AUDIO INPUT: -8V to +8V | NOTE: An 8-Volt DC source is normalled to th"
+  },
+  {
+    "page": 44,
+    "head": "44 | TRI OUT | The frequency of the Triangle wave available here, either as a modulation | source or an audio source, is determined by the current value of the LFO RATE | knob, plus or minus the value"
+  },
+  {
+    "page": 45,
+    "head": "45 | RATE | The RATE knob sets the playback speed of the Arpeggiator and the Sequencer, | with a tempo range of 20 \u2013 280 BPM (Beats Per Minute). The accompanying | LED flashes at the current Rate sett"
+  },
+  {
+    "page": 46,
+    "head": "46 | DIRECTION | The DIRECTION switch selects the order in which arpeggiated or sequenced | notes are played. The same setting may have a different result based on | whether the Arpeggiator or Sequenc"
+  },
+  {
+    "page": 47,
+    "head": "47 | OCT / BANK (Continued) | 1 | ARPEGGIATOR Mode (1 Octave) | Only the original notes played will be arpeggiated. | SEQUENCER Mode (BANK 1) | BANK 1 is chosen as the sequence source. | 2"
+  },
+  {
+    "page": 48,
+    "head": "48 | REST, TIE, RATCHET (Continued) | TIE | Press the green TIE button to enter a Tie for the current sequence step. A Tie is used to string two | or more individual sequence steps together as if they"
+  },
+  {
+    "page": 49,
+    "head": "49 | VELOCITY OUT | The control signal available at this output is based on the Velocity of the notes | entered into the Arpeggiator or Sequencer with the keyboard. | CV OUTPUT: 0V to +5V (0V to +10V "
+  },
+  {
+    "page": 50,
+    "head": "50 | TAP | Using the yellow TAP button, the playback tempo of the Arpeggiator or Sequencer can be entered | using a series of successive button taps. Once a Tempo has been entered using the TAP button"
+  },
+  {
+    "page": 51,
+    "head": "51 | VOICE MODE | The VOICE MODE switch selects whether Matriarch will play as a 1-Voice | monophonic synthesizer, as a 2-Note paraphonic synthesizer, or as a 4-Note | paraphonic synthesizer. | 1 (One"
+  },
+  {
+    "page": 52,
+    "head": "52 | Matriarch\u2019s rear panel expands the instrument as a powerful tool for | interconnective expression. Process external sound sources, grow your | Moog semi-modular family, or control a Eurorack modu"
+  },
+  {
+    "page": 53,
+    "head": "53"
+  },
+  {
+    "page": 54,
+    "head": "54 | The rear panel of your Matriarch is populated with various audio, control, MIDI and USB jacks, as well as | a global fine turning knob, power switch, the DC power connection jack, and a Kensingto"
+  },
+  {
+    "page": 55,
+    "head": "55 | MAIN OUTS | Connect Matriarch to an amplifier, monitoring system, or | audio interface using the 1/4\u201d MAIN OUT LEFT (MONO) | and MAIN OUT RIGHT jacks to enjoy sounds in stereo. | If this is not p"
+  },
+  {
+    "page": 56,
+    "head": "56 | STEREO DELAY JACKS | The STEREO DELAY section of the rear panel relates | to the operation and control of the Stereo Delay. | Other jacks and controls for the Stereo Delay are | found on the fron"
+  },
+  {
+    "page": 57,
+    "head": "57 | KEYBOARD JACKS (Continued) | Matriarch both accepts and creates a number of keyboard control signals that can greatly enhance | performance. In addition to jacks accepting a Sustain Pedal and an "
+  },
+  {
+    "page": 58,
+    "head": "58 | MOD WHL OUT (Modulation Wheel CV Out) | The position of the MOD wheel generates a control-voltage signal that is | available here. The signal available here can be routed to any controllable | pa"
+  },
+  {
+    "page": 59,
+    "head": "59 | ON / OFF IN | By default, a signal received here will arm and disarm the playback of the | Arpeggiator or Sequencer. Press the notes to be arpeggiated, or the starting | note of the sequence, to "
+  },
+  {
+    "page": 60,
+    "head": "60 | MIDI PORTS (Continued) | MIDI THRU | The MIDI signal received at the MIDI IN port is passed along unchanged | via this MIDI THRU port. | MIDI OUT | By default, MIDI signals created by and origina"
+  },
+  {
+    "page": 61,
+    "head": "61 | GLOBAL SETTINGS | Most Matriarch front-panel controls relate to creating sound. Below the surface, there is another level | of parameters known as the Global Settings, which determine how the ins"
+  },
+  {
+    "page": 62,
+    "head": "62 | Global Parameters | Default Group (Group 0) | Group Select | Key | Parameter | Select Key | Sync Enable"
+  },
+  {
+    "page": 63,
+    "head": "63 | (Continued) | Global Parameters | Default Group (Group 0) | Group Select | Key | Parameter | Select Key"
+  },
+  {
+    "page": 64,
+    "head": "64 | (Continued) | Global Parameters | Group 1 | Group Select | Key | Parameter | Select Key"
+  },
+  {
+    "page": 65,
+    "head": "65 | Global Parameters | Group 2 | Group Select | Key | Parameter | Select Key | Sync Enable"
+  },
+  {
+    "page": 66,
+    "head": "66 | (Continued) | Global Parameters | Group 2 | Group Select | Key | Parameter | Select Key"
+  },
+  {
+    "page": 67,
+    "head": "67 | (Continued) | Global Parameters | Group 3 | Group Select | Key | Parameter | Select Key"
+  },
+  {
+    "page": 68,
+    "head": "68 | (Continued) | Global Parameters | Group 3 | Group Select | Key | Parameter | Select Key"
+  },
+  {
+    "page": 69,
+    "head": "69 | (Continued) | Global Parameters | Group 4 | Group Select | Key | Parameter | Select Key"
+  },
+  {
+    "page": 70,
+    "head": "70 | NOTE: Tuning scales are imported into Matriarch via MIDI, and can be sent from tuning software such as Scala, | or the Moog Phatty Tuner. Matriarch supports the following MIDI TUNING STANDARD mes"
+  },
+  {
+    "page": 71,
+    "head": "71 | MIDI DOCUMENTATION | 1 - Basic Information | Transmit / | Export | Recognize / | Import | Remarks"
+  },
+  {
+    "page": 72,
+    "head": "72 | MIDI DOCUMENTATION (Continued) | 1 - Basic Information | Transmit / | Export | Recognize / | Import | Remarks"
+  },
+  {
+    "page": 73,
+    "head": "73 | MIDI DOCUMENTATION (Continued) | 2 - MIDI Timing and | Synchronization | Transmit / | Export | Recognize / | Import"
+  },
+  {
+    "page": 74,
+    "head": "74 | MIDI DOCUMENTATION (Continued) | Parameter | CC Number | (MSB) | CC Number | (LSB) | Values"
+  },
+  {
+    "page": 75,
+    "head": "75 | Parameter | CC Number | (MSB) | CC Number | (LSB) | Values | Hard Sync Enable"
+  },
+  {
+    "page": 76,
+    "head": "76 | EDITING PARAMETERS USING MIDI SYSEX MESSAGES | You can edit the global and some panel parameters using MIDI System Exclusive (SysEx) messages. The | template for these SysEx messages is shown bel"
+  },
+  {
+    "page": 77,
+    "head": "77 | Parameter ID | Parameter Name | Values | 10 | MIDI Channel IN | 0-15 = MIDI Channel 1-16 (Default: 0 / MIDI Channel 1) | 11"
+  },
+  {
+    "page": 78,
+    "head": "78 | Parameter ID | Parameter Name | Values | 35 | Clock Input PPQN Index | 0-15 (Default: 3 / sixteenth notes [4PPQN]) | 36"
+  },
+  {
+    "page": 79,
+    "head": "79 | Parameter ID | Parameter Name | Values | 62 | Arp/Seq VEL OUT Range | 0 = -5V to +5V, 1 = 0V to 10V (Default: 0 / -5 to +5) | 63"
+  },
+  {
+    "page": 80,
+    "head": "80 | SIGNAL FLOW | MOD | OSC | MOD | WHEEL | VCA | NOISE"
+  },
+  {
+    "page": 81,
+    "head": "81 | INPUT 1 | LEVEL | INPUT 2 | LEVEL"
+  },
+  {
+    "page": 82,
+    "head": "82 | NOTE: The arrows entering jacks from the bottom are normalled input connections into the associated jack. | HP / LP SERIES | In this mode, VCF 1 is configured as a High Pass filter and VCF 2 is c"
+  },
+  {
+    "page": 83,
+    "head": "83 | HP / LP PARALLEL | In this mode, VCF 1 is configured as a High Pass filter and VCF 2 is configured as a Low Pass filter. | Both receive the same signal from the Mixer module out, and their output"
+  },
+  {
+    "page": 84,
+    "head": "84 | PRESET NAME: | NOTES: | PRESET NAME: | NOTES: | Additional patch sheets can be downloaded at www.moogmusic.com."
+  },
+  {
+    "page": 85,
+    "head": "85"
+  },
+  {
+    "page": 86,
+    "head": "86 | Additional patch sheets can be downloaded at www.moogmusic.com. | PRESET NAME: | NOTES: | PRESET NAME: | NOTES:"
+  },
+  {
+    "page": 87,
+    "head": "87"
+  },
+  {
+    "page": 88,
+    "head": "88 | Additional patch sheets can be downloaded at www.moogmusic.com. | PRESET NAME: | NOTES: | PRESET NAME: | NOTES:"
+  },
+  {
+    "page": 89,
+    "head": "89"
+  },
+  {
+    "page": 90,
+    "head": "90 | TYPE: Semi-Modular Analog Synthesizer | SOUND ENGINE: Analog | NUMBER OF KEYS: 49 Full-Size Keys | TYPE OF KEYS: Velocity + Aftertouch | NOTE: There are no hardwired connections for Velocity and "
+  },
+  {
+    "page": 91,
+    "head": "91 | SERVICE & SUPPORT INFORMATION | MOOG\u2019S STANDARD WARRANTY | Moog warrants its products to be free of defects in materials or workmanship and conforming to specifications at the | time of shipment."
+  },
+  {
+    "page": 92,
+    "head": "92 | Moog Music Is An Employee-Owned Company Located In Asheville, NC"
+  }
+]

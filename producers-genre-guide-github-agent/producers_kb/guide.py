@@ -9,7 +9,7 @@ BOOK = {
     "subtitle": "How to Create Music Across Genres — From First Sound to Finished Track",
     "edition": "Desktop Reference Edition • Comprehensive Handbook",
     "pages": 49,
-    "source_path": r"C:\Users\Box One\Desktop\Music_Producers_Genre_Guide.pdf",
+    "source_path": "knowledge/Music_Producers_Genre_Guide.pdf",
     "tags": [
         "production blueprints",
         "mixing notes",

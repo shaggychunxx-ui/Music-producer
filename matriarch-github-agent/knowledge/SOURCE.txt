@@ -1,0 +1,3 @@
+Official manual: https://cdn.inmusicbrands.com/Moog/Matriarch/Matriarch_Manual_012023.pdf
+Local file: Matriarch_Manual_012023.pdf
+Note: PDF is largely non-OCR; structured knowledge is in ../matriarch_kb and AGENTS.md.

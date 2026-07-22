@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+.python-version
+
+# Tools / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+*.log
+
+# Local download / extract scratch (not part of the library)
+_download_tmp/
+*.part
+*.tmp
+
+# Large regeneratable dumps (keep extracts that are committed intentionally)
+# Uncomment if PDFs should stay local-only:
+# **/knowledge/*.pdf

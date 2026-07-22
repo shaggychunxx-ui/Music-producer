@@ -1,0 +1,6 @@
+[project]
+name = "studiolive-kb"
+version = "1.0.0"
+requires-python = ">=3.10"
+[project.scripts]
+studiolive-kb = "studiolive_kb.__main__:main"

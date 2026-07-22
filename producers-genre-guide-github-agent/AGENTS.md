@@ -17,7 +17,7 @@ Ground answers in `producers_kb/` and `knowledge/manual_extract.txt`.
 |-------|--------|
 | Title | The Music Producer’s Complete Genre Guide |
 | Subtitle | How to Create Music Across Genres — From First Sound to Finished Track |
-| Local file | `C:\Users\Box One\Desktop\Music_Producers_Genre_Guide.pdf` |
+| Local file | `knowledge/Music_Producers_Genre_Guide.pdf` |
 | Pages | 49 |
 | Audience | Producers, beatmakers, songwriters, engineers |
 
