@@ -1,0 +1,174 @@
+SONG CREATION PIPELINE — WORKFLOW EXTRACT
+=========================================
+Song-agnostic standing process for original tracks.
+Do not maintain a list of past song titles in this knowledge base.
+
+CORE IDEAS
+----------
+1. Ship a simple song that sounds good; add complexity only after each layer is approved.
+2. Technique follows order — right tool at wrong stage still fails.
+3. Producer temperature is per task: cool for mix/QC; hot humanize only after foundation lock.
+
+FAILURE MODES → RULES
+---------------------
+- Full song + many layers in one shot → MVP first (drums + bass only)
+- Many masters with nothing locked → approval gates; stop and wait
+- Muddy/cheap fixed only with more FX → fix sources first, then mix
+- Dense arrangement from bar 1 at max temp → compose temp 6–7 until foundation locked
+- User dislikes everything → shelf; re-brief; no silent full rewrite
+- Skip pro mix path → signal flow stages 1–8 on every master
+- Bass/kick or lead/pad masking → frequency ownership + one mid hero
+- Over-limiting early → headroom first, loudness last
+- User asked part organization; agent rewrote form → parts ≠ arrangement
+- Aggressive sidechain pump → mild duck first; release controls pump tail
+- Too happy/bright on a dark ref → mood lock in brief
+- Full rewrite when only length/tempo/start is wrong → late arrange on locked stems
+- Gates left unchecked after approvals → update GATES + NOTES on every lock
+
+PIPELINE
+--------
+A  Brief + reference analysis + mood lock + fingerprint file
+B  Arrangement sketch (form, contrast, mute map, frequency owners) — light
+C  MVP: drums + bass (temp 6–7) — kick/bass as one system
+D  Gate: user approves pocket — STOP
+E  Add ONE part at a time (lead → bed → color) each with STOP
+F  Full mix: signal flow 1–8 + stereo discipline
+G  Automation after static mix works
+H  QC / A-B / mono / version archive
+I  Optional late form on LOCKED stems only (length, start bar, tempo, section map)
+J  Optional DAW final 10% polish
+K  FINAL lock when user is done — stop rework
+
+PHASE A — BRIEF
+---------------
+- Capture reference (system loopback on primary audio device when possible)
+- Fingerprint: peak, RMS, crest, band energy, tempo estimate, rough key/mode
+- Goals: 3–5 attributes to chase; non-goals: do not clone melody/hooks
+- Mood lock: dark/minor vs bright/major; lead leap limits
+- Complexity budget S/M/C default S
+- Target length if known (demo vs full ~4.5–5 min) — detailed form can wait
+
+PHASE B — SKETCH
+----------------
+- Map intro/A/B/break/outro even roughly
+- Density: what plays when
+- Frequency owners per role
+- Do not write heavy poly/automation maps before MVP approval
+
+PHASE C — MVP
+-------------
+Allowed: drums (kick, snare/clap, simple hats) + bass
+Forbidden: lead, poly, pads, stabs, FX, heavy automation
+- Kick leaves sidechain space for bass
+- Bass locks to kick; shorter notes reduce mud
+- Dry render peak-safe; mono low end
+- MVP mix: faders → subtractive EQ → selective dyn → light master
+- Desktop MVP master → ask drums? bass? pocket? WAIT
+
+PHASE D — LAYERS
+----------------
+D1 Lead: own 1–5 kHz; HPF mud; delay/plate on send later
+D2 One bed: HPF; low level; duck under kick/bass if competing
+D3 Color: sparse stabs/FX
+Voice focus: lock other dry stems; re-render only named part; one master
+
+SIGNAL FLOW 1–8
+---------------
+1 Dry sources — multi-sample/factory first; no creative insert verb for vibe
+2 Fader balance — hierarchy; headroom ~-6 dBFS before heavy processing
+3 Cleanup EQ — HPF non-low tracks; cut mud 200–500; cut before boost
+4 Dynamics — selective; not loudness
+5 Shared FX sends — room + plate + tempo delay; pre-EQ wet
+   Lead wet/dry dial: air on send; "dry -3 / aux +3" is a valid one-move pass
+6 Groups — drums glue; bass mono; music beds ducked; lead forward
+7 Mix bus — light glue only; preserve crest
+8 Master last — ceiling; match ref crest ballpark
+
+DUCK DIALING
+------------
+Prefer ducking when kick must cut through bass.
+Symptom → move:
+  Kick buried → enable duck + kick presence (amount 0.35–0.5, floor 0.55–0.65)
+  Too aggressive/hollow → amount 0.28–0.35, floor 0.70–0.78
+  Still pumps → release 40–80 ms (not 150–200)
+  Clicks/snappy → release 60–100 or softer amount
+  Beds fight kick → duck pads harder than bass
+Mild short-release preset: amount 0.30, floor 0.74, attack 3 ms, release 40 ms, key LPF 120 Hz
+Long release = pump tail; short release = kick hole without whoosh
+
+STEREO / WIDE PAD
+-----------------
+Kick, snare, bass, lead body: center
+Pads wide: HPF sides ≥150–200 Hz; hard L/R + Haas ~10–18 ms; presence 2.5–4.5 kHz
+Mono fold check required
+
+PARTS VS ARRANGEMENT
+--------------------
+Parts organized better → PARTS_STRUCTURE + role stems — NOT form rewrite
+Arrangement/form/length/start → late pass on locked stems only
+Structure ambiguous → ask once: parts hierarchy or song form?
+
+LATE ARRANGE (LOCKED STEMS)
+---------------------------
+1 Freeze approved stems (do not re-voice)
+2 Detect lead/hook entry bar
+3 Cut pre-hook intro if user wants start on lead
+4 Tempo ± few BPM (document pitch side-effect if resampling)
+5 Section map from existing blocks only — loop/reorder; no new melodies
+6 Re-apply mix carries (duck, pad width, presence, sends)
+7 Write STRUCTURE + arrange stems + master
+8 Stop and wait
+
+TEMPERATURE BY TASK
+-------------------
+New MVP compose: 7 MIDI / 2–3 mix
+More human/looser: raise humanize only after pocket OK
+Muddy/fix mix: 2–4 surgical
+Don't like any: 1–2 shelf
+
+FEEDBACK PHRASE MAP
+-------------------
+Likes X → lock stems; tick gates + notes; only change what they name next
+Bass muddy / lead thin → one-focus pass
+Don't like any → shelf
+Parts structured/organized → roles/stems only
+Didn't want song changed → restore last good; archive experiment
+Add dense color / swirl / wet → sparse; keep modest
+Fewer / less air → cut sends first
+Dry -N / aux +N / repeat → exact lead dial
+Kick cut through / prefer ducking → mild duck + presence
+Not so aggressive → lower amount / raise floor
+Still pumps / reduce release → shorten duck release
+Hard pan pad / wide presence → hard L/R + presence + HPF
+Start on lead bar → cut pre-lead; late arrange
+Speed up few BPM → tempo nudge; keep compositions
+4.5–5 minute song → longform section map on locked stems
+As good as we'll get / done → FINAL LOCK; stop
+Workflow/knowledge → update process docs; no song work unless asked
+
+DEFINITION OF DONE
+------------------
+MVP approved; lead approved if present; flow 1–8; A/B not wild; user not requesting more;
+FINAL language logged; form documented if longform requested.
+Desktop file alone is not done. User done language = stop.
+
+SCAFFOLD FILES (PER SONG)
+-------------------------
+VOICE_BRIEF.txt — timbre match before picking patches
+GATES.txt — checklist; tick on locks
+NOTES.txt — decision log + mood lock + status
+PARTS_STRUCTURE.txt — instrument roles / stems
+STRUCTURE.txt — bar order / tempo / length only
+Stems_Dry, Stems_MVP, Stems_Parts, Stems_Arrange
+MIDI, Voice_AB, _reference_captures, Audio
+
+AUDIO / GIT
+-----------
+No audio/stems/sessions in git. Control code and docs only.
+
+EXCELLENCE PRIORITIES
+---------------------
+P0 MVP + gates + sources
+P1 Contrast, kick/bass marriage, true A/B while mixing
+P2 Stereo discipline, note length, print with tails
+P3 Micro-timing, velocity story, final DAW 10%

@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # (folder, module, args for a cheap "info-like" call)
 AGENTS: list[tuple[str, str, list[str]]] = [
+    ("song-creation-pipeline-github-agent", "song_pipeline_kb", ["info"]),
     ("producers-genre-guide-github-agent", "producers_kb", ["info"]),
     ("genre-mixing-github-agent", "genre_mix_kb", ["info"]),
     ("matriarch-github-agent", "matriarch_kb", ["info"]),

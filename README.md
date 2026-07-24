@@ -18,6 +18,7 @@ Each agent is intentionally isolated: one knowledge base, one system prompt, one
 | [`movement-github-agent`](movement-github-agent/) | Output MOVEMENT | `movement_kb` | Movement User Guide |
 | [`producers-genre-guide-github-agent`](producers-genre-guide-github-agent/) | Genre production blueprints | `producers_kb` | Music Producer's Complete Genre Guide |
 | [`genre-mixing-github-agent`](genre-mixing-github-agent/) | Recording & mixing by genre | `genre_mix_kb` | [Pirate.com article](https://pirate.com/en/blog/recording-mixing-techniques-different-genres/) |
+| [`song-creation-pipeline-github-agent`](song-creation-pipeline-github-agent/) | Gated original song pipeline (MVP → mix → late form) | `song_pipeline_kb` | Standing studio process extract |
 | [`music-theory-advanced-github-agent`](music-theory-advanced-github-agent/) | Modes, modulation, advanced theory | `theory_kb` | Music Theory Advanced |
 | [`schoenberg-github-agent`](schoenberg-github-agent/) | Composition fundamentals | `schoenberg_kb` | Schoenberg *Fundamentals of Musical Composition* |
 | [`msp-techniques-github-agent`](msp-techniques-github-agent/) | Electronic music technique | `msp_kb` | Miller Puckette *Theory and Technique of Electronic Music* |
@@ -57,8 +58,15 @@ python scripts/verify_agents.py
 ### Example queries
 
 ```powershell
+# Song creation pipeline (gates, recipes, phrase book)
+cd song-creation-pipeline-github-agent
+python -m song_pipeline_kb info
+python -m song_pipeline_kb phases
+python -m song_pipeline_kb recipe duck_mild_short
+python -m song_pipeline_kb phrase "still pumps"
+
 # Genre blueprints
-cd producers-genre-guide-github-agent
+cd ..\producers-genre-guide-github-agent
 python -m producers_kb genres
 python -m producers_kb genre trap
 python -m producers_kb foundation mix_master

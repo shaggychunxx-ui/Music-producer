@@ -14,6 +14,7 @@ You are working inside a **library of separate music-production agents**. Do not
 | Output MOVEMENT | `movement-github-agent/` |
 | How to produce a **genre** (BPM, drums, arrangement, vibe) | `producers-genre-guide-github-agent/` |
 | **Recording/mixing techniques** by genre (EQ, comp, low end) | `genre-mixing-github-agent/` |
+| **Original song pipeline** (MVP gates, one part at a time, late form, final lock) | `song-creation-pipeline-github-agent/` |
 | Modes, modulation, advanced theory drills | `music-theory-advanced-github-agent/` |
 | Motives, form, classical composition craft | `schoenberg-github-agent/` |
 | Synthesis / electronic music **technique** (MSP / Puckette) | `msp-techniques-github-agent/` |
@@ -27,9 +28,16 @@ You are working inside a **library of separate music-production agents**. Do not
 4. Never invent hardware CC maps, SysEx IDs, or edition-locked DAW features.
 5. Manufacturer and publisher materials remain their copyright; you restate operational knowledge only.
 
+## Standing production workflow (user preference)
+
+**Before creating any new original song, ask the user for a reference track** (title + artist, similar vibe). Do not start arranging or instrument design until they name one (or explicitly waive it). Capture/analyze when possible; design voices and mix toward that reference.
+
+For the full gated process (MVP → layers → mix → late form → final lock), use **`song-creation-pipeline-github-agent/`** (`python -m song_pipeline_kb …`). Process is song-agnostic; per-song status stays in that song’s notes only.
+
 ## Quick CLI map
 
 ```text
+song_pipeline_kb  song-creation-pipeline-github-agent
 producers_kb      producers-genre-guide-github-agent
 genre_mix_kb      genre-mixing-github-agent
 matriarch_kb      matriarch-github-agent
