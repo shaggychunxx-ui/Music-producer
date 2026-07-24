@@ -6,6 +6,7 @@ You are working inside a **library of separate music-production agents**. Do not
 
 | User is asking about… | Open this folder first |
 |----------------------|-------------------------|
+| **Anything across multiple domains** (full production session, genre + DAW + hardware + mix in one context) | `producer-agent/` |
 | Studio One DAW (record, edit, mix, master, instruments, effects) | `studio-one-6.6-agent-knowledge/` |
 | StudioLive mixer / Series III | `studiolive-github-agent/` |
 | Moog Matriarch patches, MIDI, modules | `matriarch-github-agent/` |
