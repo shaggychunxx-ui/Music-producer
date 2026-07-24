@@ -114,4 +114,7 @@ Reports: `FULL_MANUAL_WALK_REPORT.md`, `MANUAL_MISSED_REPORT.md`, `MANUAL_WALK_S
 | Repo | Role |
 |------|------|
 | **Music-producer** `studio-one-6.6-agent-knowledge/` | Manual extract + this ops memory |
-| **Studio-One** (s1-remote) | Runtime control code + `docs/` walk + `S1_NOTES_PORT_SETUP.md` |
+| **Music-producer** `production-workflow-knowledge/` | Full standing `PRODUCTION_WORKFLOW.md` |
+| **Studio-One** (s1-remote) | Runtime + `docs/S1_UI_PIPELINE.md` (preferred use) + `docs/ARM_RECORD_LESSONS.md` + `tools/` eyes |
+
+Deep arm detail: **`ARM_RECORD_LESSONS.md`**. Preferred session mode: **`S1_UI_PIPELINE.md`**.

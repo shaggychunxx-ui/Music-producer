@@ -19,6 +19,8 @@ Each agent is intentionally isolated: one knowledge base, one system prompt, one
 | [`producers-genre-guide-github-agent`](producers-genre-guide-github-agent/) | Genre production blueprints | `producers_kb` | Music Producer's Complete Genre Guide |
 | [`genre-mixing-github-agent`](genre-mixing-github-agent/) | Recording & mixing by genre | `genre_mix_kb` | [Pirate.com article](https://pirate.com/en/blog/recording-mixing-techniques-different-genres/) |
 | [`song-creation-pipeline-github-agent`](song-creation-pipeline-github-agent/) | Gated original song pipeline (MVP → mix → late form) | `song_pipeline_kb` | Standing studio process extract |
+| [`production-workflow-knowledge`](production-workflow-knowledge/) | **Full** song-agnostic `PRODUCTION_WORKFLOW.md` | — | Standing rules (gates, temp, duck, parts≠form) |
+| [`studio-one-6.6-agent-knowledge`](studio-one-6.6-agent-knowledge/) | Studio One 6.6 manual + UI ops + arm lessons | — | Prefer `S1_UI_PIPELINE.md` when DAW open |
 | [`music-theory-advanced-github-agent`](music-theory-advanced-github-agent/) | Modes, modulation, advanced theory | `theory_kb` | Music Theory Advanced |
 | [`schoenberg-github-agent`](schoenberg-github-agent/) | Composition fundamentals | `schoenberg_kb` | Schoenberg *Fundamentals of Musical Composition* |
 | [`msp-techniques-github-agent`](msp-techniques-github-agent/) | Electronic music technique | `msp_kb` | Miller Puckette *Theory and Technique of Electronic Music* |

@@ -14,7 +14,11 @@ All product behavior, UI names, workflows, and feature availability in this pack
 - Machine manifest: `manifest.json`
 - **Function map (learned ops):** `FUNCTIONS.md` — record-enable, tracks, transport, browser, mix, Control Link
 - **Live agent ops:** `AGENT_OPS_LEARNED.md` — ports, arm toggles, MCU vs Arrange, what needs user mouse
+- **Arm/record deep lessons:** `ARM_RECORD_LESSONS.md` — toggles, MCU≠Arrange, eyes screenshots
+- **Preferred use (S1-first):** `S1_UI_PIPELINE.md` — agent KB/MIDI vs user mouse
 - **Manual walk catalog:** `MANUAL_WALKTHROUGH_CATALOG.md` + walk reports (`FULL_MANUAL_WALK_REPORT.md`, etc.)
+- **Standing music process (standalone pack):** `../production-workflow-knowledge/PRODUCTION_WORKFLOW.md`
+- **Runtime tools (Studio-One repo):** `tools/` path-agnostic scripts + producer **eyes**
 
 When answering, ground claims in these files. If something is not covered, say so rather than inventing Studio One behavior.
 
@@ -24,8 +28,9 @@ When answering, ground claims in these files. If something is not covered, say s
 2. **`[R]` is a toggle** — never multi-press; Rec must stay **red** on the target track.
 3. **MCU strip index is not guaranteed to be Arrange Track N.**
 4. **browser_load / agent search ≠ VST assigned** — user Browser-drags instruments.
-5. **MIDI stream `note_ons` log ≠ clip recorded** — confirm in Arrange UI.
+5. **MIDI stream `note_ons` log ≠ clip recorded** — confirm in Arrange UI (eyes).
 6. Stay on **Song page**, not Start page.
+7. Prefer **S1_UI_PIPELINE.md** when a Song is open.
 
 ## Edition awareness
 

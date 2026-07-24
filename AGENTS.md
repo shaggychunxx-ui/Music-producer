@@ -15,6 +15,8 @@ You are working inside a **library of separate music-production agents**. Do not
 | How to produce a **genre** (BPM, drums, arrangement, vibe) | `producers-genre-guide-github-agent/` |
 | **Recording/mixing techniques** by genre (EQ, comp, low end) | `genre-mixing-github-agent/` |
 | **Original song pipeline** (MVP gates, one part at a time, late form, final lock) | `song-creation-pipeline-github-agent/` |
+| **Full production workflow** (standalone standing rules) | `production-workflow-knowledge/PRODUCTION_WORKFLOW.md` |
+| **Studio One preferred UI use + arm lessons** | `studio-one-6.6-agent-knowledge/S1_UI_PIPELINE.md`, `ARM_RECORD_LESSONS.md` |
 | Modes, modulation, advanced theory drills | `music-theory-advanced-github-agent/` |
 | Motives, form, classical composition craft | `schoenberg-github-agent/` |
 | Synthesis / electronic music **technique** (MSP / Puckette) | `msp-techniques-github-agent/` |
