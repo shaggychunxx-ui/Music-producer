@@ -7,6 +7,12 @@ Structured extract of the **PreSonus Studio One 6.6 Reference Manual (EN)** for 
 | Path | Purpose |
 |------|---------|
 | `AGENTS.md` | Agent role, edition rules, retrieval instructions (copy this into agent config) |
+| `FUNCTIONS.md` | Quick function map: record MIDI, arm, transport, views, devices |
+| `AGENT_OPS_LEARNED.md` | Live session ops: S1 Notes port, arm failures, agent vs user |
+| `MANUAL_WALKTHROUGH_CATALOG.md` | Phase catalog from full manual walk (KB/MIDI/user) |
+| `FULL_MANUAL_WALK_REPORT.md` | Ch.1–22 walk results |
+| `MANUAL_MISSED_REPORT.md` | Follow-up missed-ops results |
+| `MANUAL_WALK_SUMMARY.md` | Short summary of light walk |
 | `INDEX.md` | Human/agent table of contents with links to chapters |
 | `manifest.json` | Machine-readable section map (slug, pages, topics, paths) |
 | `chapters/*.md` | Full manual text split by major section |
