@@ -19,8 +19,23 @@ Song/
   s1_jobs/
     current.json     ← producer writes
     last_result.json ← Studio-One writes
+    session.json     ← Studio-One writes at Template→Save As start
   _vision/           ← Studio-One eyes screenshots
 ```
+
+## Song start (Studio-One hands — required)
+
+Production **must** open the standing Template, then **Save As** a new song before any stream/record:
+
+```bat
+cd C:\Users\Box One\s1-remote
+set PYTHONPATH=%CD%;%CD%\tools
+py -3.12 tools\start_from_template.py --name SongName
+:: S1_SONG_DIR now points at ...\Songs\SongName
+```
+
+Default template: `Documents\Studio One\Songs\Template\Template.song`  
+Do **not** write production takes into the Template package.
 
 ## CLI (this package)
 
@@ -43,7 +58,8 @@ python -m song_pipeline_kb gate pocket locked --song-dir PATH   # after user OK
 
 ```bash
 cd path/to/Studio-One   # e.g. C:\Users\Box One\s1-remote
-set PYTHONPATH=%CD%
+set PYTHONPATH=%CD%;%CD%\tools
+:: Prefer: start_from_template first, then:
 set S1_SONG_DIR=PATH
 py -3.12 tools/execute_job.py
 py -3.12 tools/execute_job.py --no-prompt --max-sec 8
