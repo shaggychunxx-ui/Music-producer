@@ -127,11 +127,27 @@ def observe(song_dir: Path) -> Dict[str, Any]:
                 "If approved: gate pocket locked. "
                 "Do NOT auto-lock artistic pocket from metrics alone."
             )
-            # Soft suggestion only — still user gate
             auto_gate = None
         else:
             recommendation = "next_after_pocket"
             detail = nxt.get("message") or "Pocket locked — plan next part"
+    elif conf["overall"] >= 0.72 and str(result.get("job_id", "")).startswith("lead"):
+        if gates.get("lead") != "locked":
+            recommendation = "user_listen_lead"
+            detail = (
+                "Lead stream cues look healthy (notes + audio/clips). "
+                "USER should listen to lead. "
+                "If approved: gate lead locked — then bed."
+            )
+        else:
+            recommendation = "next_after_lead"
+            detail = nxt.get("message") or "Lead locked — plan bed or skip"
+    elif conf["overall"] >= 0.55 and result.get("ok"):
+        recommendation = "verify_with_ears_eyes"
+        detail = (
+            "Useful confidence. Review _vision screenshots + ears WAVs, "
+            "then lock the phase gate or re-run."
+        )
     elif conf["overall"] >= 0.45 and result.get("ok"):
         recommendation = "verify_with_ears_eyes"
         detail = (
