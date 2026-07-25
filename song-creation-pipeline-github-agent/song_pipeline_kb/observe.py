@@ -49,6 +49,7 @@ def _confidence_from_cues(result: Dict[str, Any]) -> Dict[str, Any]:
     notes_ok = 0
     armed_ok = 0
     import_ok = 0
+    clip_ok = 0
     for s in stream_steps:
         if (s.get("note_ons") or 0) > 0:
             notes_ok += 1
@@ -57,31 +58,50 @@ def _confidence_from_cues(result: Dict[str, Any]) -> Dict[str, Any]:
         if s.get("method") == "import_fallback" and s.get("imported"):
             import_ok += 1
             notes_ok += 1  # import counts as delivered material
+            clip_ok += 1
         if s.get("clip_growth"):
             notes.append("clip_growth_seen")
+            clip_ok += 1
+        lane = s.get("lane") or {}
+        if lane.get("growth"):
+            notes.append(f"lane_growth delta={lane.get('delta')}")
+            clip_ok += 1
         # Per-step audio
         a = s.get("audio") or {}
         if a.get("has_signal"):
             scores["audio_signal"] = max(scores.get("audio_signal", 0.0), 0.8)
+        if (s.get("live_shots") or 0) > 0:
+            notes.append(f"live_vision_frames={s.get('live_shots')}")
     if stream_steps:
         scores["stream_notes"] = min(1.0, notes_ok / len(stream_steps))
         scores["stream_armed"] = armed_ok / len(stream_steps)
+        scores["clip_evidence"] = min(1.0, clip_ok / len(stream_steps))
         if import_ok:
             notes.append(f"import_fallback_used={import_ok}")
             # Import path doesn't need rec arm
             scores["stream_armed"] = max(scores["stream_armed"], 0.5)
+        if scores.get("clip_evidence", 0) < 0.5 and notes_ok > 0:
+            notes.append("notes_without_clip_growth — do not treat as recorded")
     else:
         scores["stream_notes"] = 0.0
         scores["stream_armed"] = 0.0
+        scores["clip_evidence"] = 0.0
         if ok:
             notes.append("no_stream_steps")
 
+    # Require eyes artifacts when job claimed stream
+    shot_count = vision.get("shot_count") or result.get("shot_count") or 0
+    if stream_steps and shot_count < 2:
+        notes.append("insufficient_eyes_shots — observe refuses high confidence")
+        scores["shots"] = 0.0
+
     # Weighted overall (execution health, not "sounds good")
     weights = {
-        "job_ok": 0.25,
-        "stream_notes": 0.2,
-        "stream_armed": 0.2,
-        "any_rec_red": 0.15,
+        "job_ok": 0.2,
+        "stream_notes": 0.1,
+        "stream_armed": 0.15,
+        "clip_evidence": 0.25,
+        "any_rec_red": 0.1,
         "audio_signal": 0.15,
         "blue_clip_hint": 0.05,
     }
@@ -94,12 +114,32 @@ def _confidence_from_cues(result: Dict[str, Any]) -> Dict[str, Any]:
     if scores.get("stream_armed", 0) < 0.5 and stream_steps:
         notes.append("rec_arm not confirmed in screenshots")
 
+    # Surface structured arm failure causes (fix root cause, do not thrash)
+    for s in stream_steps:
+        ad = s.get("arm_diagnosis") or {}
+        if ad.get("primary_cause"):
+            notes.append(f"arm_cause={ad.get('primary_cause')}")
+            if ad.get("next_action"):
+                notes.append(f"arm_next={ad.get('next_action')}")
+            for rem in (ad.get("remediations") or [])[:2]:
+                notes.append(f"arm_fix: {rem}")
+
     return {
         "overall": round(overall, 3),
         "scores": {k: round(v, 3) for k, v in scores.items()},
         "notes": notes,
         "stream_step_count": len(stream_steps),
     }
+
+
+def _load_last_failure(song: Path) -> Optional[Dict[str, Any]]:
+    p = Path(song) / "s1_jobs" / "last_failure.json"
+    if not p.is_file():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
 
 
 def observe(song_dir: Path) -> Dict[str, Any]:
@@ -110,6 +150,15 @@ def observe(song_dir: Path) -> Dict[str, Any]:
     inv = summary(song)
     conf = _confidence_from_cues(result or {})
     nxt = next_action(song)
+    last_failure = _load_last_failure(song)
+    if last_failure and not last_failure.get("ok", True):
+        conf.setdefault("notes", []).append(
+            f"last_failure={last_failure.get('primary_cause')} domain={last_failure.get('domain')}"
+        )
+        for rem in (last_failure.get("remediations") or [])[:3]:
+            conf["notes"].append(f"fix: {rem}")
+        if last_failure.get("next_action"):
+            conf["notes"].append(f"next_action={last_failure.get('next_action')}")
 
     recommendation = "continue"
     detail = nxt.get("message") or ""
@@ -156,11 +205,16 @@ def observe(song_dir: Path) -> Dict[str, Any]:
         )
     elif not result.get("ok"):
         recommendation = "fix_and_retry"
+        lf = last_failure or (result or {}).get("failure") or {}
+        cause = lf.get("primary_cause") or result.get("error") or "unknown"
         detail = (
-            f"Job failed: {result.get('error')}. "
-            f"Cues: {', '.join(conf['notes']) or 'see scores'}. "
-            "Fix MIDI ports / arm / instruments, re-plan, re-execute."
+            f"Job failed primary_cause={cause}. "
+            f"See s1_jobs/last_failure.json remediations. "
+            f"Cues: {', '.join(conf['notes'][:5]) or 'see scores'}. "
+            "Fix root cause (not thrash), re-plan, re-execute."
         )
+        if lf.get("next_action"):
+            detail += f" next_action={lf.get('next_action')}"
     else:
         recommendation = "investigate"
         detail = "Low cue confidence. Inspect eyes + ears before advancing."
@@ -175,6 +229,7 @@ def observe(song_dir: Path) -> Dict[str, Any]:
         "recommendation": recommendation,
         "detail": detail,
         "next_action": nxt,
+        "last_failure": last_failure,
         "eyes_dir": None if result is None else result.get("eyes_dir"),
         "audio_captures": len((result or {}).get("audio") or []),
         "vision_summary": (result or {}).get("vision"),

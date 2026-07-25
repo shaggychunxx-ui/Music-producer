@@ -59,11 +59,15 @@ python -m song_pipeline_kb gate pocket locked --song-dir PATH   # after user OK
 ```bash
 cd path/to/Studio-One   # e.g. C:\Users\Box One\s1-remote
 set PYTHONPATH=%CD%;%CD%\tools
-:: Prefer: start_from_template first, then:
+:: Full orchestrator (Template → Save As → one part per job, live eyes/ears):
+py -3.12 tools\produce.py --name SongName --parts drums,bass --max-sec 15
+:: Or manual:
+py -3.12 tools\start_from_template.py --name SongName
 set S1_SONG_DIR=PATH
-py -3.12 tools/execute_job.py
-py -3.12 tools/execute_job.py --no-prompt --max-sec 8
+py -3.12 tools/execute_job.py --no-prompt --max-sec 15
 ```
+
+Hands policy: max 3 arm tries, human-like clicks, live vision ~2.5s, import on arm fail, `tracks.json` roles.
 
 ## Cues (autonomy)
 
