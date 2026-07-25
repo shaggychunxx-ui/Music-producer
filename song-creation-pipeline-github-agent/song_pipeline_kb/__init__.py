@@ -1,4 +1,8 @@
-"""Song creation pipeline knowledge base (gated original production process)."""
+"""Song creation pipeline knowledge base (gated original production process).
+
+Brain only: phases, gates, recipes, and S1 *job plans*.
+Studio One (separate repo) executes jobs — it does not choose production steps.
+"""
 
 from song_pipeline_kb.pipeline import (
     GATES,
@@ -27,4 +31,4 @@ __all__ = [
     "match_phrase",
     "search_kb",
 ]
-__version__ = "1.0.0"
+__version__ = "1.1.0"

@@ -21,6 +21,7 @@ This agent is **song-agnostic**. Do not name or rank past tracks. Per-song statu
 5. **Stop on user lock language** — “sounds good / go next / as good as we’ll get” → log lock and stop creative rework unless reopened.
 6. **No audio in git** — masters/stems stay local; agent ships process + code only.
 7. **Shelf** if user dislikes the whole concept — re-brief; do not silent full rewrite of the same stack.
+8. **Brain ≠ hands** — This agent plans production and writes `s1_jobs/current.json`. Studio-One repo **executes** only. Do not implement DAW control here; do not let S1 tools lock creative gates.
 
 ## Pipeline map
 

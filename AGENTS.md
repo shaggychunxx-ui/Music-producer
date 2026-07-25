@@ -36,6 +36,15 @@ You are working inside a **library of separate music-production agents**. Do not
 
 For the full gated process (MVP → layers → mix → late form → final lock), use **`song-creation-pipeline-github-agent/`** (`python -m song_pipeline_kb …`). Process is song-agnostic; per-song status stays in that song’s notes only.
 
+### Brain vs hands (do not merge)
+
+| Repo | Role |
+|------|------|
+| **Music-producer** (this monorepo) | Production choices, gates, recipes; **plan** `s1_jobs/current.json` |
+| **Studio-One** (separate repo) | **Execute** jobs only (`tools/execute_job.py`) — no creative gates |
+
+Handoff: `song-creation-pipeline-github-agent/S1_HANDOFF.md`.
+
 ## Quick CLI map
 
 ```text

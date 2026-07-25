@@ -1,5 +1,6 @@
 import argparse
 import json
+from pathlib import Path
 
 from song_pipeline_kb import (
     GATES,
@@ -13,6 +14,7 @@ from song_pipeline_kb import (
     search_kb,
 )
 from song_pipeline_kb.recipes import RECIPES
+from song_pipeline_kb import song_state, s1_jobs, observe as observe_mod
 
 
 def _p(o):
@@ -20,7 +22,13 @@ def _p(o):
 
 
 def main(argv=None):
-    p = argparse.ArgumentParser(prog="song_pipeline_kb")
+    p = argparse.ArgumentParser(
+        prog="song_pipeline_kb",
+        description=(
+            "Production brain: phases, gates, recipes, S1 job plans, and "
+            "vision/audio observation. Studio-One execute_job.py is the hands."
+        ),
+    )
     s = p.add_subparsers(dest="cmd", required=True)
 
     s.add_parser("info")
@@ -38,10 +46,79 @@ def main(argv=None):
     q.add_argument("query")
     q.add_argument("--limit", type=int, default=20)
 
+    # --- song production state (brain) ---
+    init_p = s.add_parser("init-song", help="Create GATES/NOTES/scaffold in a song folder")
+    init_p.add_argument("--song-dir", type=Path, required=True)
+    init_p.add_argument("--name", default=None)
+
+    st = s.add_parser("status", help="Song gates + MIDI inventory")
+    st.add_argument("--song-dir", type=Path, required=True)
+
+    gt = s.add_parser("gate", help="Set a production gate open|locked|skipped")
+    gt.add_argument("name")
+    gt.add_argument("status", choices=["open", "locked", "skipped", "yes", "no"])
+    gt.add_argument("--song-dir", type=Path, required=True)
+
+    nxt = s.add_parser("next", help="What production should do next (no DAW control)")
+    nxt.add_argument("--song-dir", type=Path, required=True)
+
+    # --- plan S1 execution jobs (brain → hands handoff) ---
+    plan = s.add_parser("plan", help="Write s1_jobs/current.json for Studio-One executor")
+    plan_sub = plan.add_subparsers(dest="plan_cmd", required=True)
+
+    mvp = plan_sub.add_parser("mvp", help="Plan MVP drums+bass stream job")
+    mvp.add_argument("--song-dir", type=Path, required=True)
+    mvp.add_argument("--no-create-tracks", action="store_true")
+    mvp.add_argument("--tracks", type=int, default=2)
+    mvp.add_argument("--drums-track", type=int, default=1)
+    mvp.add_argument("--bass-track", type=int, default=2)
+    mvp.add_argument("--skip-brief-gate", action="store_true")
+    mvp.add_argument("--max-sec", type=float, default=None)
+    mvp.add_argument("--load", nargs="*", default=[], help="Optional browser_load names")
+
+    part = plan_sub.add_parser("stream", help="Plan single-part stream job")
+    part.add_argument("--song-dir", type=Path, required=True)
+    part.add_argument("--part", required=True, help="lead|bed|color|name")
+    part.add_argument("--track", type=int, required=True)
+    part.add_argument("--midi", default=None)
+    part.add_argument("--no-require-pocket", action="store_true")
+
+    # --- observe vision/audio cues from Studio-One last_result ---
+    obs = s.add_parser(
+        "observe",
+        help="Read last_result.json (eyes+ears cues) and recommend next step",
+    )
+    obs.add_argument("--song-dir", type=Path, required=True)
+
+    dec = s.add_parser(
+        "decide",
+        help="Observe + log decision (never auto-locks artistic gates by default)",
+    )
+    dec.add_argument("--song-dir", type=Path, required=True)
+    dec.add_argument(
+        "--auto-tech",
+        action="store_true",
+        help="Log high-confidence technical note only (still no pocket auto-lock)",
+    )
+
+    cyc = s.add_parser(
+        "cycle",
+        help="next → plan if ready → optional execute_job → observe",
+    )
+    cyc.add_argument("--song-dir", type=Path, required=True)
+    cyc.add_argument("--execute", action="store_true", help="Run Studio-One execute_job.py")
+    cyc.add_argument("--s1-remote", type=Path, default=None)
+    cyc.add_argument("--max-sec", type=float, default=None)
+    cyc.add_argument("--allow-prompt", action="store_true")
+    cyc.add_argument("--no-plan", action="store_true")
+
     a = p.parse_args(argv)
 
     if a.cmd == "info":
-        _p(META)
+        meta = dict(META)
+        meta["role"] = "production brain — plans jobs; Studio-One executes"
+        meta["s1_handoff"] = "s1_jobs/current.json → Studio-One tools/execute_job.py"
+        _p(meta)
     elif a.cmd == "phases":
         for k in list_phases():
             z = get_phase(k)
@@ -63,6 +140,60 @@ def main(argv=None):
         _p(match_phrase(a.text))
     elif a.cmd == "search":
         _p(search_kb(a.query, a.limit))
+    elif a.cmd == "init-song":
+        _p(song_state.init_song(a.song_dir, name=a.name))
+    elif a.cmd == "status":
+        _p(song_state.summary(a.song_dir))
+    elif a.cmd == "gate":
+        _p(song_state.set_gate(a.song_dir, a.name, a.status))
+    elif a.cmd == "next":
+        _p(s1_jobs.next_action(a.song_dir))
+    elif a.cmd == "plan":
+        if a.plan_cmd == "mvp":
+            _p(
+                s1_jobs.plan_mvp(
+                    a.song_dir,
+                    create_tracks=not a.no_create_tracks,
+                    track_count=a.tracks,
+                    drums_track=a.drums_track,
+                    bass_track=a.bass_track,
+                    browser_loads=a.load,
+                    skip_brief_gate=a.skip_brief_gate,
+                    max_sec=a.max_sec,
+                )
+            )
+        elif a.plan_cmd == "stream":
+            _p(
+                s1_jobs.plan_stream_part(
+                    a.song_dir,
+                    part=a.part,
+                    track=a.track,
+                    midi=a.midi,
+                    require_pocket=not a.no_require_pocket,
+                )
+            )
+        else:
+            return 2
+    elif a.cmd == "observe":
+        _p(observe_mod.observe(a.song_dir))
+    elif a.cmd == "decide":
+        _p(
+            observe_mod.decide(
+                a.song_dir,
+                auto_approve_technical=a.auto_tech,
+            )
+        )
+    elif a.cmd == "cycle":
+        _p(
+            observe_mod.run_cycle(
+                a.song_dir,
+                s1_remote=a.s1_remote,
+                execute=a.execute,
+                max_sec=a.max_sec,
+                no_prompt=not a.allow_prompt,
+                plan_if_ready=not a.no_plan,
+            )
+        )
     return 0
 
 

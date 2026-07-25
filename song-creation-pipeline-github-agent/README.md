@@ -25,7 +25,16 @@ python -m song_pipeline_kb recipe duck_mild_short
 python -m song_pipeline_kb phrase "parts structured better"
 python -m song_pipeline_kb scaffold
 python -m song_pipeline_kb search "sidechain"
+
+# Production state + S1 job plans (brain; does not control the DAW)
+python -m song_pipeline_kb init-song --song-dir PATH --name MySong
+python -m song_pipeline_kb next --song-dir PATH
+python -m song_pipeline_kb gate brief locked --song-dir PATH
+python -m song_pipeline_kb plan mvp --song-dir PATH
+python -m song_pipeline_kb status --song-dir PATH
 ```
+
+Studio One **execution** is a separate repo: see [`S1_HANDOFF.md`](S1_HANDOFF.md).
 
 ## When to use
 
