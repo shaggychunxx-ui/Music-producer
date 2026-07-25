@@ -48,18 +48,28 @@ def _confidence_from_cues(result: Dict[str, Any]) -> Dict[str, Any]:
     stream_steps = [s for s in (result.get("steps") or []) if s.get("op") == "stream_record"]
     notes_ok = 0
     armed_ok = 0
+    import_ok = 0
     for s in stream_steps:
         if (s.get("note_ons") or 0) > 0:
             notes_ok += 1
         if s.get("armed_confirmed"):
             armed_ok += 1
+        if s.get("method") == "import_fallback" and s.get("imported"):
+            import_ok += 1
+            notes_ok += 1  # import counts as delivered material
+        if s.get("clip_growth"):
+            notes.append("clip_growth_seen")
         # Per-step audio
         a = s.get("audio") or {}
         if a.get("has_signal"):
             scores["audio_signal"] = max(scores.get("audio_signal", 0.0), 0.8)
     if stream_steps:
-        scores["stream_notes"] = notes_ok / len(stream_steps)
+        scores["stream_notes"] = min(1.0, notes_ok / len(stream_steps))
         scores["stream_armed"] = armed_ok / len(stream_steps)
+        if import_ok:
+            notes.append(f"import_fallback_used={import_ok}")
+            # Import path doesn't need rec arm
+            scores["stream_armed"] = max(scores["stream_armed"], 0.5)
     else:
         scores["stream_notes"] = 0.0
         scores["stream_armed"] = 0.0

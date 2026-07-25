@@ -364,6 +364,40 @@ def next_action(song_dir: Path) -> Dict[str, Any]:
 
     # After pocket: one part at a time
     if gates.get("lead") != "locked":
+        midi = inv.get("midi") or {}
+        real_last = last if last and not last.get("dry_run") else None
+        if real_last and real_last.get("ok") and str(real_last.get("job_id", "")).startswith("lead"):
+            return {
+                "status": "awaiting_lead_approval",
+                "action": "user_listen",
+                "message": (
+                    "Last lead job ok. User listens. "
+                    "If approved: python -m song_pipeline_kb gate lead locked"
+                ),
+                "gates": gates,
+                "phase": phase_blob("lead"),
+                "last_result": real_last,
+            }
+        if not midi.get("lead.mid"):
+            return {
+                "status": "need_lead",
+                "action": "plan_lead_or_compose",
+                "message": "Pocket locked. Compose MIDI/lead.mid then plan stream lead --track 3",
+                "gates": gates,
+                "phase": phase_blob("lead"),
+            }
+        if inv.get("has_current_job"):
+            return {
+                "status": "ready_execute_lead",
+                "action": "execute_job",
+                "message": (
+                    "Lead job planned. Run: "
+                    f'py -3.12 tools/execute_job.py --song-dir "{song}"'
+                ),
+                "gates": gates,
+                "phase": phase_blob("lead"),
+                "execute_hint": f'py -3.12 tools/execute_job.py --song-dir "{song}"',
+            }
         return {
             "status": "need_lead",
             "action": "plan_lead_or_compose",
