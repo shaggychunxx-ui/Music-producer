@@ -4,10 +4,26 @@
 
 | Repo | Role |
 |------|------|
-| **Music-producer** (this agent) | Production choices: brief, gates, recipes, MIDI intent, **plan jobs** |
-| **Studio-One** (`s1-remote`) | Execution only: run `s1_jobs/current.json` via `tools/execute_job.py` |
+| **Music-producer** (this agent) | Production choices: brief, gates, **compose MIDI**, recipes, **plan jobs** |
+| **Studio-One** | Execution only: Template→Save As, stream/import, mix MCU, export intent |
 
-Studio One must not decide pocket/lead approval or phase order.
+Studio One must not decide pocket/lead approval unless producer runs **unattended** policy.
+
+## Paths
+
+Prefer GitHub Desktop clone (synced with live tools):
+
+```
+%USERPROFILE%\Documents\GitHub\Studio-One
+```
+
+Fallback / legacy:
+
+```
+%USERPROFILE%\s1-remote
+```
+
+Set `S1_REMOTE` to override. `song_pipeline_kb` auto-discovers either tree.
 
 ## Song folder (shared disk, split ownership)
 
@@ -15,80 +31,69 @@ Studio One must not decide pocket/lead approval or phase order.
 Song/
   GATES.txt          ← producer only
   NOTES.txt          ← producer only
-  MIDI/              ← producer supplies files; S1 streams them
+  MIDI/              ← producer compose writes; S1 streams
+  tracks.json        ← Template roles (S1 hands)
   s1_jobs/
     current.json     ← producer writes
     last_result.json ← Studio-One writes
-    session.json     ← Studio-One writes at Template→Save As start
-  _vision/           ← Studio-One eyes screenshots
+    autonomy_result.json
+  _vision/           ← eyes + ears
+  Masters/           ← export target
 ```
 
-## Song start (Studio-One hands — required)
-
-Production **must** open the standing Template, then **Save As** a new song before any stream/record:
+## Zero-human path
 
 ```bat
-cd C:\Users\Box One\s1-remote
-set PYTHONPATH=%CD%;%CD%\tools
-py -3.12 tools\start_from_template.py --name SongName
-:: S1_SONG_DIR now points at ...\Songs\SongName
-```
-
-Default template: `Documents\Studio One\Songs\Template\Template.song`  
-Do **not** write production takes into the Template package.
-
-## CLI (this package)
-
-```bash
-cd song-creation-pipeline-github-agent
-
-python -m song_pipeline_kb init-song --song-dir PATH --name Song
-python -m song_pipeline_kb next --song-dir PATH
+:: Brain
+cd %USERPROFILE%\Documents\GitHub\Music-producer\song-creation-pipeline-github-agent
+python -m song_pipeline_kb init-song --song-dir PATH --name MySong
+python -m song_pipeline_kb compose --song-dir PATH --genre dark_pulse
 python -m song_pipeline_kb gate brief locked --song-dir PATH
-python -m song_pipeline_kb plan mvp --song-dir PATH
-python -m song_pipeline_kb plan stream --song-dir PATH --part lead --track 3
-python -m song_pipeline_kb status --song-dir PATH
-python -m song_pipeline_kb observe --song-dir PATH   # vision+audio cues → decision
-python -m song_pipeline_kb decide --song-dir PATH
-python -m song_pipeline_kb cycle --song-dir PATH --execute --max-sec 8
-python -m song_pipeline_kb gate pocket locked --song-dir PATH   # after user OK
+python -m song_pipeline_kb run-unattended --song-dir PATH --genre dark_pulse --max-sec 40 --prefer-import
+
+:: Or hands-only orchestrator
+cd %USERPROFILE%\Documents\GitHub\Studio-One
+set PYTHONPATH=%CD%;%CD%\tools
+py -3.12 tools\autonomous_run.py --name MySong --parts drums,bass,lead --max-sec 40
 ```
 
-## Execute (other repo)
+## CLI (brain package)
 
 ```bash
-cd path/to/Studio-One   # e.g. C:\Users\Box One\s1-remote
-set PYTHONPATH=%CD%;%CD%\tools
-:: Full orchestrator (Template → Save As → one part per job, live eyes/ears):
-py -3.12 tools\produce.py --name SongName --parts drums,bass --max-sec 15
-:: Or manual:
-py -3.12 tools\start_from_template.py --name SongName
-set S1_SONG_DIR=PATH
-py -3.12 tools/execute_job.py --no-prompt --max-sec 15
+python -m song_pipeline_kb compose --song-dir PATH --genre trap
+python -m song_pipeline_kb plan mvp --song-dir PATH
+python -m song_pipeline_kb plan mix --song-dir PATH
+python -m song_pipeline_kb cycle --song-dir PATH --compose --execute --unattended --max-sec 40
+python -m song_pipeline_kb observe --song-dir PATH
+python -m song_pipeline_kb decide --song-dir PATH --unattended
+python -m song_pipeline_kb qc --song-dir PATH
 ```
 
-Hands policy: max 3 arm tries, human-like clicks, live vision ~2.5s, import on arm fail, `tracks.json` roles.
+## Execute (hands)
 
-## Cues (autonomy)
+```bat
+cd path\to\Studio-One
+set PYTHONPATH=%CD%;%CD%\tools
+py -3.12 tools\setup_check.py
+py -3.12 tools\start_from_template.py --name SongName
+py -3.12 tools\execute_job.py --no-prompt --max-sec 40
+py -3.12 tools\produce.py --resume --song-dir PATH --parts drums,bass
+py -3.12 tools\overnight_queue.py --names A,B --max-sec 30
+```
 
-| Cue | Where | Used for |
-|-----|-------|----------|
-| Screenshots | `Song/_vision/arm_watch/` | Rec red, UI presence, clip hints |
-| Loopback WAV | `Song/_vision/ears/` | has_signal / RMS / activity |
-| `last_result.json` | `Song/s1_jobs/` | Structured evidence for `observe` |
+## Policies
 
-**Policy:** metrics can recommend retry / user-listen; they **do not** lock pocket/lead.
-Taste gates stay human (or explicit CLI). Programmer agents should open eyes PNGs
-to verify, not trust `note_ons` alone.
+| Policy | Behavior |
+|--------|----------|
+| **taste** (default) | Metrics recommend only; human locks pocket/lead |
+| **unattended** | Metric/QC auto-locks capture gates (not a taste claim) |
 
-## MVP flow
+## Cues
 
-1. `init-song` + reference / `gate brief locked`
-2. Create `MIDI/drums.mid` + `MIDI/bass.mid` (producer or composer tools)
-3. `plan mvp` → writes job **or** `cycle --execute`
-4. Studio-One `execute_job.py` (eyes + ears)
-5. `observe` → confidence + recommendation
-6. User listens → `gate pocket locked` only if approved
-7. Later: `plan stream --part lead …` after pocket
+| Cue | Where |
+|-----|-------|
+| Screenshots | `Song/_vision/arm_watch/` |
+| Loopback WAV | `Song/_vision/ears/` |
+| `last_result.json` | `Song/s1_jobs/` |
 
-See Studio-One `docs/EXECUTION_JOBS.md` for job ops.
+See Studio-One `docs/AUTONOMY.md`, `docs/TEMPLATE_CONTRACT.md`, `docs/EXECUTION_JOBS.md`.

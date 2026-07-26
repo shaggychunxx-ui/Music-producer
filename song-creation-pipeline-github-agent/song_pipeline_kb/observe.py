@@ -236,47 +236,101 @@ def observe(song_dir: Path) -> Dict[str, Any]:
     }
 
 
+def _default_s1_remote() -> Path:
+    """Resolve Studio-One hands repo: env → GitHub Desktop → legacy s1-remote."""
+    import os
+
+    env = (os.environ.get("S1_REMOTE") or "").strip()
+    if env:
+        return Path(env)
+    candidates = [
+        Path.home() / "Documents" / "GitHub" / "Studio-One",
+        Path(r"C:\Users\Box One\Documents\GitHub\Studio-One"),
+        Path(r"C:\Users\Box One\s1-remote"),
+        Path.home() / "s1-remote",
+    ]
+    for c in candidates:
+        if (c / "tools" / "execute_job.py").is_file():
+            return c
+    return candidates[0]
+
+
 def decide(
     song_dir: Path,
     *,
     auto_approve_technical: bool = False,
     min_confidence: float = 0.85,
+    policy: str = "taste",
+    unattended_min: float = 0.62,
 ) -> Dict[str, Any]:
     """
     Apply producer policy after observe.
 
-    Artistic gates (pocket/lead/...) never auto-lock unless user passes
-    auto_approve_technical AND confidence is very high AND only for
-    non-taste technical acknowledgements. Default: no gate writes.
+    policy:
+      - taste (default): never auto-lock artistic gates
+      - unattended: auto-lock capture gates when confidence/QC pass
+        (brief/pocket/lead/bed technical capture only — not final taste claim)
     """
     song = Path(song_dir)
     obs = observe(song)
     actions: List[str] = []
+    gates_locked: List[str] = []
+    conf = float(obs.get("confidence", {}).get("overall") or 0.0)
+    rec = obs.get("recommendation") or ""
+    job_id = str(obs.get("job_id") or "")
 
-    # Technical: if brief open and job planned, do not touch
-    # Only optional auto: skip nothing artistic
-    if auto_approve_technical and obs["confidence"]["overall"] >= min_confidence:
-        # Still never lock pocket/lead from metrics — log only
+    if policy == "unattended" and conf >= unattended_min and obs.get("last_result_ok"):
+        # Capture gates only — mark as metric-approved, not human taste
+        try:
+            from song_pipeline_kb.qc import score_vs_ref
+
+            qc = score_vs_ref(song)
+            obs["qc"] = qc.get("qc")
+            qc_pass = bool((qc.get("qc") or {}).get("pass"))
+        except Exception:
+            qc_pass = conf >= unattended_min
+
+        if qc_pass or conf >= max(unattended_min, 0.72):
+            gates = obs.get("gates") or {}
+            if job_id.startswith("mvp") and gates.get("pocket") != "locked":
+                set_gate(song, "pocket", "locked")
+                gates_locked.append("pocket")
+                actions.append("unattended_lock_pocket")
+            elif job_id.startswith("lead") and gates.get("lead") != "locked":
+                set_gate(song, "lead", "locked")
+                gates_locked.append("lead")
+                actions.append("unattended_lock_lead")
+            elif "bed" in job_id and gates.get("bed") != "locked":
+                set_gate(song, "bed", "locked")
+                gates_locked.append("bed")
+                actions.append("unattended_lock_bed")
+            append_notes(
+                song,
+                f"UNATTENDED metric gate lock conf={conf} rec={rec} locked={gates_locked}",
+            )
+        else:
+            append_notes(song, f"unattended hold conf={conf} qc_fail rec={rec}")
+            actions.append("unattended_hold")
+    elif auto_approve_technical and conf >= min_confidence:
         append_notes(
             song,
-            f"observe auto-tech conf={obs['confidence']['overall']} "
-            f"rec={obs['recommendation']} (no artistic gate change)",
+            f"observe auto-tech conf={conf} rec={rec} (no artistic gate change)",
         )
         actions.append("logged_high_confidence_no_gate_change")
     else:
-        append_notes(
-            song,
-            f"observe rec={obs['recommendation']} conf={obs['confidence']['overall']}",
-        )
+        append_notes(song, f"observe rec={rec} conf={conf}")
         actions.append("logged_observation")
 
     return {
         **obs,
         "actions_taken": actions,
+        "gates_locked": gates_locked,
         "policy": {
-            "artistic_gates_auto": False,
+            "mode": policy,
+            "artistic_gates_auto": policy == "unattended",
             "auto_approve_technical": auto_approve_technical,
             "min_confidence": min_confidence,
+            "unattended_min": unattended_min,
         },
     }
 
@@ -289,10 +343,13 @@ def run_cycle(
     max_sec: Optional[float] = None,
     no_prompt: bool = True,
     plan_if_ready: bool = True,
+    policy: str = "taste",
+    compose_if_missing: bool = False,
+    genre: str = "dark_pulse",
 ) -> Dict[str, Any]:
     """
     One autonomous cycle:
-      next → optionally plan mvp → optionally shell out to execute_job → observe
+      next → optionally compose → plan mvp → execute_job → observe/decide
 
     execute=True requires Studio One open and S1 Notes wired.
     """
@@ -306,27 +363,49 @@ def run_cycle(
     nxt = next_action(song)
     out["phases"].append({"stage": "next", "data": nxt})
 
+    if compose_if_missing and nxt.get("action") == "compose_mvp_midi":
+        from song_pipeline_kb.compose import compose_song
+
+        comp = compose_song(song, genre=genre)
+        out["phases"].append({"stage": "compose", "data": comp})
+        nxt = next_action(song)
+        out["phases"].append({"stage": "next_after_compose", "data": nxt})
+
     if plan_if_ready and nxt.get("action") == "plan_mvp":
         planned = plan_mvp(song, max_sec=max_sec)
+        # Unattended: no_prompt on job options
+        if planned.get("ok") and policy == "unattended":
+            job = planned.get("job") or {}
+            opts = job.setdefault("options", {})
+            opts["no_prompt"] = True
+            opts["import_on_arm_fail"] = True
+            from song_pipeline_kb.s1_jobs import write_job
+
+            write_job(song, job)
         out["phases"].append({"stage": "plan_mvp", "data": planned})
         if not planned.get("ok"):
             out["ok"] = False
             out["observe"] = observe(song)
             return out
     elif nxt.get("status") in ("need_brief", "need_mvp_midi", "final_locked", "awaiting_pocket_approval"):
-        out["ok"] = True
-        out["blocked"] = nxt.get("status")
-        out["observe"] = observe(song)
-        return out
+        if policy == "unattended" and nxt.get("status") == "awaiting_pocket_approval":
+            # Fall through to decide for metric lock
+            pass
+        elif nxt.get("status") == "need_mvp_midi" and compose_if_missing:
+            pass
+        else:
+            out["ok"] = True
+            out["blocked"] = nxt.get("status")
+            out["observe"] = observe(song)
+            return out
 
     if execute:
-        remote = Path(s1_remote) if s1_remote else Path(
-            os.environ.get("S1_REMOTE", r"C:\Users\Box One\s1-remote")
-        )
+        remote = Path(s1_remote) if s1_remote else _default_s1_remote()
         exe = remote / "tools" / "execute_job.py"
         if not exe.is_file():
             out["ok"] = False
             out["error"] = f"execute_job.py missing at {exe}"
+            out["s1_remote"] = str(remote)
             out["observe"] = observe(song)
             return out
         cmd = [
@@ -340,20 +419,115 @@ def run_cycle(
         if max_sec is not None:
             cmd.extend(["--max-sec", str(max_sec)])
         env = os.environ.copy()
-        env["PYTHONPATH"] = str(remote) + os.pathsep + env.get("PYTHONPATH", "")
+        env["PYTHONPATH"] = str(remote) + os.pathsep + str(remote / "tools") + os.pathsep + env.get(
+            "PYTHONPATH", ""
+        )
         env["S1_SONG_DIR"] = str(song)
         env["S1_REMOTE"] = str(remote)
         proc = subprocess.run(cmd, capture_output=True, text=True, env=env, cwd=str(remote))
         out["phases"].append(
             {
                 "stage": "execute",
+                "s1_remote": str(remote),
                 "returncode": proc.returncode,
                 "stdout_tail": (proc.stdout or "")[-2000:],
                 "stderr_tail": (proc.stderr or "")[-1000:],
             }
         )
 
-    obs = decide(song)
+    obs = decide(song, policy=policy)
     out["observe"] = obs
     out["ok"] = True
+    return out
+
+
+def run_full_unattended(
+    song_dir: Path,
+    *,
+    s1_remote: Optional[Path] = None,
+    name: Optional[str] = None,
+    genre: str = "dark_pulse",
+    max_sec: float = 40.0,
+    parts: str = "drums,bass,lead",
+    prefer_import: bool = False,
+    skip_s1_hands: bool = False,
+) -> Dict[str, Any]:
+    """
+    Full unattended path:
+      init + brief lock → compose → call Studio-One autonomous_run (or cycle)
+
+    skip_s1_hands=True only does brain-side compose + plan (for dry tests).
+    """
+    import os
+    import subprocess
+    import sys
+
+    song = Path(song_dir)
+    from song_pipeline_kb.song_state import init_song, set_gate, is_locked
+    from song_pipeline_kb.compose import compose_song
+
+    init_song(song, name=name or song.name)
+    if not is_locked(song, "brief"):
+        set_gate(song, "brief", "locked")
+    comp = compose_song(song, genre=genre)
+    out: Dict[str, Any] = {
+        "song_dir": str(song.resolve()),
+        "policy": "unattended",
+        "compose": comp,
+        "phases": [],
+    }
+
+    if skip_s1_hands:
+        planned = plan_mvp(song, max_sec=max_sec)
+        out["phases"].append({"stage": "plan_mvp", "data": planned})
+        out["ok"] = bool(planned.get("ok"))
+        return out
+
+    remote = Path(s1_remote) if s1_remote else _default_s1_remote()
+    auto = remote / "tools" / "autonomous_run.py"
+    if auto.is_file():
+        cmd = [
+            sys.executable,
+            str(auto),
+            "--resume",
+            "--song-dir",
+            str(song),
+            "--parts",
+            parts,
+            "--max-sec",
+            str(max_sec),
+        ]
+        if prefer_import:
+            cmd.append("--prefer-import")
+        env = os.environ.copy()
+        env["PYTHONPATH"] = str(remote) + os.pathsep + str(remote / "tools") + os.pathsep + env.get(
+            "PYTHONPATH", ""
+        )
+        env["S1_SONG_DIR"] = str(song)
+        env["S1_REMOTE"] = str(remote)
+        proc = subprocess.run(cmd, capture_output=True, text=True, env=env, cwd=str(remote))
+        out["phases"].append(
+            {
+                "stage": "autonomous_run",
+                "returncode": proc.returncode,
+                "stdout_tail": (proc.stdout or "")[-2500:],
+                "stderr_tail": (proc.stderr or "")[-1000:],
+            }
+        )
+        out["ok"] = proc.returncode == 0
+    else:
+        # Fallback: plan + execute cycle
+        cyc = run_cycle(
+            song,
+            s1_remote=remote,
+            execute=True,
+            max_sec=max_sec,
+            policy="unattended",
+            compose_if_missing=False,
+            genre=genre,
+        )
+        out["phases"].append({"stage": "cycle_fallback", "data": cyc})
+        out["ok"] = bool(cyc.get("ok"))
+
+    out["observe"] = decide(song, policy="unattended")
     return out

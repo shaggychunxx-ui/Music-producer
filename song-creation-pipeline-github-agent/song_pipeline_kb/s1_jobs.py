@@ -87,10 +87,10 @@ def _base_job(
 def plan_mvp(
     song_dir: Path,
     *,
-    create_tracks: bool = True,
+    create_tracks: bool = False,
     track_count: int = 2,
-    drums_track: int = 1,
-    bass_track: int = 2,
+    drums_track: Optional[int] = None,
+    bass_track: Optional[int] = None,
     drums_midi: str = "MIDI/drums.mid",
     bass_midi: str = "MIDI/bass.mid",
     browser_loads: Optional[List[str]] = None,
@@ -100,6 +100,8 @@ def plan_mvp(
     """
     Production choice: run MVP capture (drums + bass) in Studio One, then stop
     for pocket approval (producer gate — not S1 logic).
+
+    Default tracks match Template roles (drums=1, bass=5) via role names.
     """
     song = Path(song_dir)
     init_song(song)
@@ -127,7 +129,7 @@ def plan_mvp(
             "ok": False,
             "error": "midi_missing",
             "missing_midi": missing,
-            "hint": "Place MIDI under song/MIDI/ then re-run plan mvp",
+            "hint": "python -m song_pipeline_kb compose --song-dir <song>",
             "phase": phase,
         }
 
@@ -140,22 +142,27 @@ def plan_mvp(
     for name in browser_loads or []:
         steps.append({"op": "browser_load", "name": name, "optional": True})
 
-    steps.append(
-        {
-            "op": "stream_record",
-            "midi": drums_midi,
-            "track": drums_track,
-            "label": "DRUMS",
-        }
-    )
-    steps.append(
-        {
-            "op": "stream_record",
-            "midi": bass_midi,
-            "track": bass_track,
-            "label": "BASS",
-        }
-    )
+    # Prefer role-based resolve (Template tracks.json); fall back to ints
+    drums_step: Dict[str, Any] = {
+        "op": "stream_record",
+        "midi": drums_midi,
+        "label": "DRUMS",
+        "role": "drums",
+    }
+    bass_step: Dict[str, Any] = {
+        "op": "stream_record",
+        "midi": bass_midi,
+        "label": "BASS",
+        "role": "bass",
+    }
+    if drums_track is not None:
+        drums_step["track"] = drums_track
+        del drums_step["role"]
+    if bass_track is not None:
+        bass_step["track"] = bass_track
+        del bass_step["role"]
+    steps.append(drums_step)
+    steps.append(bass_step)
     steps.append({"op": "save"})
     steps.append(
         {
@@ -416,17 +423,81 @@ def next_action(song_dir: Path) -> Dict[str, Any]:
     if gates.get("mix") != "locked":
         return {
             "status": "need_mix",
-            "action": "mix_guidance",
-            "message": "Parts far enough — follow full_mix phase (S1 mix is mostly manual/MCU)",
+            "action": "plan_mix",
+            "message": (
+                "Parts far enough — plan mix job: "
+                "python -m song_pipeline_kb plan mix --song-dir <song> "
+                "then execute_job (MCU balance + export intent)"
+            ),
             "gates": gates,
             "phase": phase_blob("full_mix"),
+            "command": "plan mix",
+        }
+
+    if gates.get("qc") != "locked":
+        return {
+            "status": "need_qc",
+            "action": "run_qc",
+            "message": "python -m song_pipeline_kb qc --song-dir <song>",
+            "gates": gates,
+            "phase": phase_blob("qc"),
         }
 
     return {
         "status": "advanced",
         "action": "see_phase",
-        "message": "Use phases/gates CLI for mix/qc/late_form/final",
+        "message": "Use phases/gates CLI for late_form/final or unattended run",
         "gates": gates,
         "inventory": inv,
         "last_result": last,
+    }
+
+
+def plan_mix(
+    song_dir: Path,
+    *,
+    preset: str = "full_static",
+    export: bool = True,
+    listen_sec: float = 4.0,
+) -> Dict[str, Any]:
+    """Plan MCU static balance + optional export_mixdown (hands)."""
+    song = Path(song_dir)
+    init_song(song)
+    steps: List[Dict[str, Any]] = [
+        {"op": "check_setup"},
+        {"op": "ensure_workspace"},
+        {"op": "mix_balance", "preset": preset},
+        {"op": "play_listen", "seconds": listen_sec},
+        {"op": "ears_check", "seconds": 2.5, "min_peak_db": -50.0, "optional": True},
+    ]
+    if export:
+        steps.append({"op": "export_mixdown", "optional": True})
+    steps.append({"op": "save"})
+    steps.append(
+        {
+            "op": "report",
+            "message": "Mix balance attempted. Producer: QC then gate mix locked if OK.",
+        }
+    )
+    job = _base_job(
+        song,
+        job_id=f"mix-{_utc().replace(':', '')}",
+        notes=f"MCU mix_balance preset={preset}",
+        steps=steps,
+        options={
+            "user_armed": False,
+            "no_prompt": True,
+            "no_eyes": False,
+            "max_sec": None,
+            "save_after": True,
+        },
+    )
+    path = write_job(song, job)
+    append_notes(song, f"Planned mix job {job['id']}")
+    return {
+        "ok": True,
+        "job_path": str(path),
+        "job": job,
+        "phase": get_phase("full_mix"),
+        "execute_hint": f'py -3.12 tools/execute_job.py --song-dir "{song}" --no-prompt',
     }
