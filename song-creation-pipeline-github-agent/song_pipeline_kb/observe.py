@@ -245,8 +245,6 @@ def _default_s1_remote() -> Path:
         return Path(env)
     candidates = [
         Path.home() / "Documents" / "GitHub" / "Studio-One",
-        Path(r"C:\Users\Box One\Documents\GitHub\Studio-One"),
-        Path(r"C:\Users\Box One\s1-remote"),
         Path.home() / "s1-remote",
     ]
     for c in candidates:
