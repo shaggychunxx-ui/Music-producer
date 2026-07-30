@@ -14,7 +14,7 @@ This agent is **song-agnostic**. Do not name or rank past tracks. Per-song statu
 
 ## Hard rules
 
-1. **Reference first** — Before composing a new original, ask for a reference (title + artist / vibe). Do not design instruments or arrange until the user names one **or explicitly waives**. Fingerprint only — never clone melodies/hooks.
+1. **Reference first** — Before composing a new original, ask for a reference (title + artist / vibe). Do not design instruments or arrange until the user names one **or explicitly waives**. Fingerprint only — never clone melodies/hooks. If the user is building long-term taste, log refs with `taste listen` and apply defaults via `taste apply-brief` (see `taste_data/`).
 2. **MVP first** — drums + bass only until pocket is approved.
 3. **One part at a time** — lead → one bed → color. Lock stems; re-voice only the named part.
 4. **Parts ≠ form** — “organize parts” → stem/role docs. Form/length/start/tempo → late arrange on **locked** stems only.

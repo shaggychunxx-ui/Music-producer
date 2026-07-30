@@ -1,6 +1,6 @@
 [project]
 name = "song-pipeline-kb"
-version = "1.0.0"
+version = "1.2.0"
 description = "Gated original song creation pipeline knowledge base"
 requires-python = ">=3.10"
 

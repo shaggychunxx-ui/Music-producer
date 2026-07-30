@@ -17,10 +17,109 @@ from song_pipeline_kb.recipes import RECIPES
 from song_pipeline_kb import song_state, s1_jobs, observe as observe_mod
 from song_pipeline_kb import compose as compose_mod
 from song_pipeline_kb import qc as qc_mod
+from song_pipeline_kb import taste as taste_mod
 
 
 def _p(o):
     print(json.dumps(o, indent=2, ensure_ascii=False) if isinstance(o, (dict, list)) else o)
+
+
+def _parse_bands(raw: str | None) -> dict | None:
+    if not raw:
+        return None
+    out = {}
+    for part in raw.split(","):
+        part = part.strip()
+        if not part or "=" not in part:
+            continue
+        k, v = part.split("=", 1)
+        try:
+            out[k.strip().lower()] = float(v.strip())
+        except ValueError:
+            continue
+    return out or None
+
+
+def _cmd_taste(a) -> int:
+    data_dir = getattr(a, "data_dir", None)
+    cmd = a.taste_cmd
+    if cmd == "status":
+        _p(taste_mod.status(data_dir))
+        return 0
+    if cmd == "log":
+        rows = taste_mod.load_listens(data_dir, limit=a.limit)
+        _p({"count": len(rows), "listens": rows})
+        return 0
+    if cmd == "profile":
+        _p(taste_mod.load_profile(data_dir))
+        return 0
+    if cmd == "rebuild":
+        _p(taste_mod.rebuild_profile(data_dir))
+        return 0
+    if cmd == "listen":
+        fp: dict = {}
+        if a.fingerprint_json:
+            try:
+                fp.update(json.loads(Path(a.fingerprint_json).read_text(encoding="utf-8")))
+            except Exception as exc:
+                _p({"ok": False, "error": f"fingerprint-json: {exc}"})
+                return 2
+        if a.bpm is not None:
+            fp["tempo_bpm"] = a.bpm
+        if a.peak_db is not None:
+            fp["peak_db"] = a.peak_db
+        if a.rms_db is not None:
+            fp["rms_db"] = a.rms_db
+        if a.crest_db is not None:
+            fp["crest_db"] = a.crest_db
+        if a.key:
+            fp["key"] = a.key
+        bands = _parse_bands(a.bands)
+        if bands:
+            fp["bands"] = bands
+        try:
+            _p(
+                taste_mod.log_listen(
+                    artist=a.artist,
+                    title=a.title,
+                    rating=a.rating,
+                    source=a.source,
+                    url=a.url,
+                    tags=a.tags,
+                    notes=a.notes,
+                    mood=a.mood,
+                    genre_hint=a.genre_hint,
+                    fingerprint=fp or None,
+                    audio_path=a.audio_path,
+                    data_dir=data_dir,
+                )
+            )
+        except ValueError as exc:
+            _p({"ok": False, "error": str(exc)})
+            return 2
+        return 0
+    if cmd == "rate":
+        _p(
+            taste_mod.rate_listen(
+                a.id,
+                a.rating,
+                data_dir=data_dir,
+                notes=a.notes,
+            )
+        )
+        return 0
+    if cmd == "apply-brief":
+        _p(
+            taste_mod.apply_brief_to_song(
+                a.song_dir,
+                data_dir=data_dir,
+                reference=a.reference,
+                lock_gate=a.lock,
+                force=a.force,
+            )
+        )
+        return 0
+    return 2
 
 
 def main(argv=None):
@@ -28,7 +127,8 @@ def main(argv=None):
         prog="song_pipeline_kb",
         description=(
             "Production brain: phases, gates, recipes, compose, S1 job plans, "
-            "and vision/audio observation. Studio-One execute_job.py is the hands."
+            "taste memory (listen log + profile), and vision/audio observation. "
+            "Studio-One execute_job.py is the hands."
         ),
     )
     s = p.add_subparsers(dest="cmd", required=True)
@@ -52,6 +152,16 @@ def main(argv=None):
     init_p = s.add_parser("init-song", help="Create GATES/NOTES/scaffold in a song folder")
     init_p.add_argument("--song-dir", type=Path, required=True)
     init_p.add_argument("--name", default=None)
+    init_p.add_argument(
+        "--apply-taste",
+        action="store_true",
+        help="Apply persistent taste profile to BRIEF.json after init",
+    )
+    init_p.add_argument(
+        "--lock-brief",
+        action="store_true",
+        help="With --apply-taste, also lock the brief gate",
+    )
 
     st = s.add_parser("status", help="Song gates + MIDI inventory")
     st.add_argument("--song-dir", type=Path, required=True)
@@ -156,6 +266,103 @@ def main(argv=None):
     full.add_argument("--prefer-import", action="store_true")
     full.add_argument("--brain-only", action="store_true", help="Compose+plan only (no S1)")
 
+    # --- taste memory (persistent listen log + profile) ---
+    taste_p = s.add_parser(
+        "taste",
+        help="Listen log + taste profile (develop preferences from refs)",
+    )
+    taste_sub = taste_p.add_subparsers(dest="taste_cmd", required=True)
+
+    t_stat = taste_sub.add_parser("status", help="Profile summary + recent listens")
+    t_stat.add_argument("--data-dir", type=Path, default=None)
+
+    t_log = taste_sub.add_parser("log", help="Show recent listen log entries")
+    t_log.add_argument("--limit", type=int, default=20)
+    t_log.add_argument("--data-dir", type=Path, default=None)
+
+    t_prof = taste_sub.add_parser("profile", help="Print full taste_profile.json")
+    t_prof.add_argument("--data-dir", type=Path, default=None)
+
+    t_rebuild = taste_sub.add_parser("rebuild", help="Rebuild profile from listen log")
+    t_rebuild.add_argument("--data-dir", type=Path, default=None)
+
+    t_listen = taste_sub.add_parser(
+        "listen",
+        help="Log a reference listen (metadata + optional numeric fingerprint)",
+    )
+    t_listen.add_argument("--artist", default="")
+    t_listen.add_argument("--title", default="")
+    t_listen.add_argument(
+        "--rating",
+        default="unrated",
+        help="love|ok|no|unrated (aliases: like, meh, skip)",
+    )
+    t_listen.add_argument(
+        "--source",
+        default="manual",
+        help="manual|spotify|phone|loopback|…",
+    )
+    t_listen.add_argument("--url", default=None)
+    t_listen.add_argument("--tags", default="", help="comma-separated vibe tags")
+    t_listen.add_argument("--notes", default="")
+    t_listen.add_argument("--mood", default=None, help="e.g. dark minor")
+    t_listen.add_argument(
+        "--genre",
+        default=None,
+        dest="genre_hint",
+        help="dark_pulse|trap|house|ambient",
+    )
+    t_listen.add_argument("--bpm", type=float, default=None)
+    t_listen.add_argument("--peak-db", type=float, default=None)
+    t_listen.add_argument("--rms-db", type=float, default=None)
+    t_listen.add_argument("--crest-db", type=float, default=None)
+    t_listen.add_argument(
+        "--bands",
+        default=None,
+        help="sub=0.2,low=0.3,... (relative band energy)",
+    )
+    t_listen.add_argument("--key", default=None)
+    t_listen.add_argument(
+        "--fingerprint-json",
+        type=Path,
+        default=None,
+        help="Path to fingerprint JSON (numbers only; merges with flags)",
+    )
+    t_listen.add_argument(
+        "--audio-path",
+        default=None,
+        help="Local capture path only (not committed; optional)",
+    )
+    t_listen.add_argument("--data-dir", type=Path, default=None)
+
+    t_rate = taste_sub.add_parser("rate", help="Update rating on a listen by id")
+    t_rate.add_argument("id")
+    t_rate.add_argument("rating")
+    t_rate.add_argument("--notes", default=None)
+    t_rate.add_argument("--data-dir", type=Path, default=None)
+
+    t_apply = taste_sub.add_parser(
+        "apply-brief",
+        help="Write BRIEF.json + NOTES from taste profile into a song folder",
+    )
+    t_apply.add_argument("--song-dir", type=Path, required=True)
+    t_apply.add_argument(
+        "--reference",
+        default=None,
+        help="Optional per-song ref label (overrides soft ref from loves)",
+    )
+    t_apply.add_argument(
+        "--lock",
+        action="store_true",
+        help="Also lock the brief gate after applying",
+    )
+    t_apply.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite existing BRIEF.json",
+    )
+    t_apply.add_argument("--data-dir", type=Path, default=None)
+
     a = p.parse_args(argv)
 
     if a.cmd == "info":
@@ -185,7 +392,15 @@ def main(argv=None):
     elif a.cmd == "search":
         _p(search_kb(a.query, a.limit))
     elif a.cmd == "init-song":
-        _p(song_state.init_song(a.song_dir, name=a.name))
+        out = song_state.init_song(a.song_dir, name=a.name)
+        if getattr(a, "apply_taste", False):
+            applied = taste_mod.apply_brief_to_song(
+                a.song_dir,
+                lock_gate=bool(getattr(a, "lock_brief", False)),
+                force=True,
+            )
+            out["taste_brief"] = applied
+        _p(out)
     elif a.cmd == "status":
         _p(song_state.summary(a.song_dir))
     elif a.cmd == "gate":
@@ -193,15 +408,29 @@ def main(argv=None):
     elif a.cmd == "next":
         _p(s1_jobs.next_action(a.song_dir))
     elif a.cmd == "compose":
+        genre = a.genre
+        bpm = a.bpm
+        # Prefer song BRIEF.json from taste apply-brief when user left defaults
+        brief = taste_mod.load_song_brief(a.song_dir)
+        if brief:
+            if genre == "dark_pulse" and brief.get("genre"):
+                genre = str(brief["genre"])
+            if bpm is None and brief.get("bpm") is not None:
+                try:
+                    bpm = int(round(float(brief["bpm"])))
+                except (TypeError, ValueError):
+                    pass
         _p(
             compose_mod.compose_song(
                 a.song_dir,
-                genre=a.genre,
+                genre=genre,
                 seed=a.seed,
-                bpm=a.bpm,
+                bpm=bpm,
                 bars=a.bars,
             )
         )
+    elif a.cmd == "taste":
+        return _cmd_taste(a)
     elif a.cmd == "genres":
         _p(compose_mod.list_genres())
     elif a.cmd == "plan":

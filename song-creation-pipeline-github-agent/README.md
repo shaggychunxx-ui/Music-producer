@@ -32,7 +32,15 @@ python -m song_pipeline_kb next --song-dir PATH
 python -m song_pipeline_kb gate brief locked --song-dir PATH
 python -m song_pipeline_kb plan mvp --song-dir PATH
 python -m song_pipeline_kb status --song-dir PATH
+
+# Taste memory (persistent listen log + profile → brief defaults)
+python -m song_pipeline_kb taste listen --artist "X" --title "Y" --rating love --genre dark_pulse --tags "dark,dry kick"
+python -m song_pipeline_kb taste status
+python -m song_pipeline_kb taste apply-brief --song-dir PATH --lock --force
+python -m song_pipeline_kb init-song --song-dir PATH --name MySong --apply-taste --lock-brief
 ```
+
+Taste data lives in [`taste_data/`](taste_data/) (`listen_log.jsonl`, `taste_profile.json`). Numbers + tags only — no audio in git.
 
 Studio One **execution** is a separate repo: see [`S1_HANDOFF.md`](S1_HANDOFF.md).
 

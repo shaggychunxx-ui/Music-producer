@@ -31,4 +31,4 @@ __all__ = [
     "match_phrase",
     "search_kb",
 ]
-__version__ = "1.1.0"
+__version__ = "1.2.0"

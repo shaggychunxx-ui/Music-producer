@@ -299,16 +299,45 @@ def next_action(song_dir: Path) -> Dict[str, Any]:
         }
 
     if gates.get("brief") != "locked":
+        from song_pipeline_kb.taste import load_profile, load_song_brief
+
+        profile = load_profile()
+        song_brief = load_song_brief(song)
+        has_taste = int(profile.get("listen_count") or 0) > 0
+        has_brief = bool(song_brief)
+        if has_brief:
+            msg = (
+                "BRIEF.json present (taste/ref). Confirm mood lock, then: "
+                "python -m song_pipeline_kb gate brief locked"
+            )
+            action = "confirm_brief"
+        elif has_taste:
+            msg = (
+                "Taste profile has listens — apply defaults, then lock brief: "
+                f'python -m song_pipeline_kb taste apply-brief --song-dir "{song}" --lock --force'
+            )
+            action = "apply_taste_brief"
+        else:
+            msg = (
+                "Confirm reference (or waive) + mood lock, or log listens first "
+                "(python -m song_pipeline_kb taste listen ...). Then: "
+                "python -m song_pipeline_kb gate brief locked"
+            )
+            action = "lock_brief"
         return {
             "status": "need_brief",
-            "action": "lock_brief",
-            "message": (
-                "Confirm reference (or waive) + mood lock, then: "
-                "python -m song_pipeline_kb gate brief locked"
-            ),
+            "action": action,
+            "message": msg,
             "gates": gates,
             "phase": phase_blob("brief"),
             "gate_help": GATE_HELP["brief"],
+            "taste": {
+                "listen_count": profile.get("listen_count", 0),
+                "summary": profile.get("summary"),
+                "default_genre": profile.get("default_genre"),
+                "mood_lock": profile.get("mood_lock"),
+                "song_has_brief_json": has_brief,
+            },
         }
 
     if gates.get("pocket") != "locked":

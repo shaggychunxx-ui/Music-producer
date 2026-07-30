@@ -51,6 +51,7 @@ DEFAULT_NOTES = """# Song notes (production — Music-producer)
 - Mood lock:
 - Complexity budget: S
 - Target length:
+- Taste profile: (optional — python -m song_pipeline_kb taste apply-brief --song-dir .)
 
 ## Pocket
 - Approved: no

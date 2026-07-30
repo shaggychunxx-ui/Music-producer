@@ -31,7 +31,8 @@ PHASES: dict[str, dict[str, Any]] = {
         "temp": "2–4",
         "do": [
             "Name reference (title+artist) or get explicit waive",
-            "Capture + fingerprint (peak/RMS/crest/bands/tempo)",
+            "Or apply taste profile defaults: taste apply-brief --song-dir PATH",
+            "Capture + fingerprint (peak/RMS/crest/bands/tempo); log loves via taste listen",
             "Mood lock (dark/bright, lead limits)",
             "Fill VOICE_BRIEF for kick+bass before patches",
             "Complexity budget S default; note target length if known",

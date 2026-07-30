@@ -34,6 +34,15 @@ You are working inside a **library of separate music-production agents**. Do not
 
 **Before creating any new original song, ask the user for a reference track** (title + artist, similar vibe). Do not start arranging or instrument design until they name one (or explicitly waive it). Capture/analyze when possible; design voices and mix toward that reference.
 
+**Taste memory (persistent):** log refs the user cares about so the producer develops preference defaults over time (not one-off song only):
+
+```text
+python -m song_pipeline_kb taste listen --artist … --title … --rating love|ok|no --tags "…"
+python -m song_pipeline_kb taste apply-brief --song-dir PATH --lock --force
+```
+
+Data: `song-creation-pipeline-github-agent/taste_data/` (listen log + profile JSON; **no audio files**). Per-song ref still overrides when named.
+
 For the full gated process (MVP → layers → mix → late form → final lock), use **`song-creation-pipeline-github-agent/`** (`python -m song_pipeline_kb …`). Process is song-agnostic; per-song status stays in that song’s notes only.
 
 ### Brain vs hands (do not merge)
