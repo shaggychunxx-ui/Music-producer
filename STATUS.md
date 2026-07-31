@@ -1,9 +1,9 @@
 # Status
 
 **Last updated:** 2026-07-31
-**Updated by:** AI-CODING
+**Updated by:** PHONE-OXYGEN
 **Active owner:** none
-**Act on:** none
+**Act on:** AI-CODING
 
 Standing instructions for contributors and agents working in this **public** repo.
 
@@ -24,3 +24,6 @@ GitStatus phone bus fields (Act on / Next / Notes) are intentional so PHONE can 
 
 - Armed for HUMAN GitStatus test: send **test** from phone; AI-CODING will confirm receipt per repo.
 - [x] **AI-CODING:** GitStatus remote probe `gitstatus-remote-probe-20260731-042147` — **RECEIPT OK**. GitStatus bus scaffold added (Act on/Next/Notes); probe write OK.
+- [ ] **AI-CODING** test
+- PHONE: test → Act on AI-CODING
+
