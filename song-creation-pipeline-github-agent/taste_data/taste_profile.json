@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-30T14:14:36Z",
+  "listen_count": 5,
+  "rated": {
+    "love": 5,
+    "ok": 0,
+    "no": 0,
+    "unrated": 0
+  },
+  "preferred_bpm": {
+    "mean": 99.1,
+    "min": 77.1,
+    "max": 143.5
+  },
+  "preferred_crest_db": {
+    "mean": 10.81
+  },
+  "preferred_peak_db": {
+    "mean": -1.05
+  },
+  "preferred_rms_db": {
+    "mean": -11.87
+  },
+  "preferred_bands": {
+    "sub": 0.3765,
+    "low": 0.3044,
+    "lowmid": 0.1109,
+    "mid": 0.1627,
+    "himid": 0.0346,
+    "high": 0.0088,
+    "air": 0.0018
+  },
+  "mood_lock": "dark minor pulse",
+  "listen_goals": [
+    "dark",
+    "electronic",
+    "stream",
+    "pro_mix"
+  ],
+  "anti_goals": [],
+  "genre_weights": {
+    "dark_pulse": 1.0,
+    "trap": 0.0,
+    "house": 0.0,
+    "ambient": 0.0
+  },
+  "default_genre": "dark_pulse",
+  "complexity_budget": "S",
+  "mix_targets": {
+    "crest_db": 10.81,
+    "peak_db": -1.05,
+    "rms_db": -11.87,
+    "band_emphasis": "sub",
+    "band_deemphasis": "air"
+  },
+  "top_tags": [
+    "dark",
+    "electronic",
+    "pro_mix",
+    "stream"
+  ],
+  "summary": "5 listen(s) · 5 love · BPM ~99.1 · mood: dark minor pulse · genre: dark_pulse · goals: dark, electronic, stream, pro_mix",
+  "source": "music-producer-taste"
+}

@@ -181,6 +181,17 @@ def main(argv=None):
     comp.add_argument("--seed", type=int, default=None)
     comp.add_argument("--bpm", type=int, default=None)
     comp.add_argument("--bars", type=int, default=None)
+    comp.add_argument(
+        "--key",
+        default=None,
+        help="Tonic e.g. E# F Am (E# = F enharmonic); transposes roots/scale",
+    )
+    comp.add_argument(
+        "--min-minutes",
+        type=float,
+        default=None,
+        help="Ensure length is at least this many minutes (raises bars)",
+    )
     s.add_parser("genres", help="List compose genre profiles")
 
     # --- plan S1 execution jobs (brain → hands handoff) ---
@@ -427,6 +438,8 @@ def main(argv=None):
                 seed=a.seed,
                 bpm=bpm,
                 bars=a.bars,
+                key=getattr(a, "key", None),
+                min_minutes=getattr(a, "min_minutes", None),
             )
         )
     elif a.cmd == "taste":
