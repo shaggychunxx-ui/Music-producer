@@ -1,11 +1,16 @@
 # Status
 
-**Last updated:** 2026-07-31
-**Updated by:** AI-CODING
+**Last updated:** 2026-08-06
+**Updated by:** GROMIT
 **Active owner:** none
 **Act on:** none
 
 Standing instructions for contributors and agents working in this **public** repo.
+
+## Fleet policy (standing)
+
+**GROMIT runs all background / unattended agent work** for this repo (phone Send, docs, agent routing).  
+Studio One 6 DAW operations remain **LAPTOP only** when host-local. Phone default → **`Act on: GROMIT`**.
 
 GitStatus phone bus fields (Act on / Next / Notes) are intentional so PHONE can Send commands.
 

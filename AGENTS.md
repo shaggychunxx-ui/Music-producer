@@ -2,6 +2,11 @@
 
 You are working inside a **library of separate music-production agents**. Do not merge their knowledge. Pick the **single best agent folder** for the user’s question, then follow that folder’s `AGENTS.md`.
 
+## Fleet background policy
+
+**GROMIT runs all background / unattended tasks** for this bus (phone Send, STATUS automation, planning).  
+Helpers only when `Act on` / `target` matches them. **Studio One 6** host-local work stays **LAPTOP**.
+
 ## Route by topic
 
 | User is asking about… | Open this folder first |
