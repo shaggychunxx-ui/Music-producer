@@ -96,24 +96,22 @@ GENRE_PROFILES: Dict[str, Dict[str, Any]] = {
 def parse_key(key: Optional[str]) -> Tuple[Optional[int], str]:
     """
     Parse a key string into pitch-class 0–11 and a display label.
-    E# → F (pc 5). Returns (None, 'default') if unset/invalid.
+    E# → F (pc 5). Am/Fm/F#m accepted (trailing m|min|minor|maj|major stripped).
+    Returns (None, 'default') if unset/invalid.
     """
     if not key or not str(key).strip():
         return None, "default"
     raw = str(key).strip()
-    # strip mode words if present
+    # Normalize then strip trailing mode suffixes (Am, F#m, C minor, Bb maj)
+    core = raw.replace(" ", "").replace("♯", "#").replace("♭", "b")
     core = re.sub(
-        r"\b(major|minor|maj|min|m)\b",
+        r"(?i)(major|minor|maj|min|m)$",
         "",
-        raw,
-        flags=re.I,
+        core,
     ).strip()
-    core = core.replace(" ", "").replace("♯", "#").replace("♭", "b")
-    # unicode sharp/flat already handled; normalize
     low = core.lower()
     if low in _PC:
         pc = _PC[low]
-        # Prefer user's spelling when enharmonic
         label = raw if len(raw) <= 8 else core
         return pc, label
     # single letter + accidental
