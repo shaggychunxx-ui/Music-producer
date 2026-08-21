@@ -5,7 +5,7 @@ You are working inside a **library of separate music-production agents**. Do not
 ## Fleet background policy
 
 **GROMIT runs all background / unattended tasks** for this bus (phone Send, STATUS automation, planning).  
-Helpers only when `Act on` / `target` matches them. **Studio One 6** host-local work stays **LAPTOP**.
+Only remaining helper is **LAPTOP**. **BOXONE** and **AI-CODING** are out of the fleet.
 
 ## Route by topic
 
@@ -23,6 +23,7 @@ Helpers only when `Act on` / `target` matches them. **Studio One 6** host-local 
 | **Full production workflow** (standalone standing rules) | `production-workflow-knowledge/PRODUCTION_WORKFLOW.md` |
 | **Studio One preferred UI use + arm lessons** | `studio-one-6.6-agent-knowledge/S1_UI_PIPELINE.md`, `ARM_RECORD_LESSONS.md` |
 | Modes, modulation, advanced theory drills | `music-theory-advanced-github-agent/` |
+| **Songwriting techniques from Signals Music Studio** (progressions, modes-in-songs, rhythm grids) | `signals-music-studio-github-agent/` |
 | Motives, form, classical composition craft | `schoenberg-github-agent/` |
 | Synthesis / electronic music **technique** (MSP / Puckette) | `msp-techniques-github-agent/` |
 | DSP math, filters, transforms (Zölzer) | `dsp-wiley-github-agent/` |
@@ -37,16 +38,15 @@ Helpers only when `Act on` / `target` matches them. **Studio One 6** host-local 
 
 ## Standing production workflow (user preference)
 
-**Before creating any new original song, ask the user for a reference track** (title + artist, similar vibe). Do not start arranging or instrument design until they name one (or explicitly waive it). Capture/analyze when possible; design voices and mix toward that reference.
-
-**Taste memory (persistent):** log refs the user cares about so the producer develops preference defaults over time (not one-off song only):
+**Reference tracks come from Spotify clips** — GitStatus on the phone (`spotify_phone`) **or** this PC (`spotify_pc` WASAPI loopback). For each new song, pick **10 random clips** (`taste pick`) and mix toward that family. Do not ask the user to type a title. Do not clone melodies.
 
 ```text
-python -m song_pipeline_kb taste listen --artist … --title … --rating love|ok|no --tags "…"
+python -m song_pipeline_kb taste refs
+python -m song_pipeline_kb taste pick
 python -m song_pipeline_kb taste apply-brief --song-dir PATH --lock --force
 ```
 
-Data: `song-creation-pipeline-github-agent/taste_data/` (listen log + profile JSON; **no audio files**). Per-song ref still overrides when named.
+If the log has no Spotify rows, **wait for a phone capture** — do not invent a reference or quiz the user. Optional named override is allowed; it is not required.
 
 For the full gated process (MVP → layers → mix → late form → final lock), use **`song-creation-pipeline-github-agent/`** (`python -m song_pipeline_kb …`). Process is song-agnostic; per-song status stays in that song’s notes only.
 
@@ -71,6 +71,7 @@ tr8s_kb           tr8s-github-agent
 movement_kb       movement-github-agent
 studiolive_kb     studiolive-github-agent
 theory_kb         music-theory-advanced-github-agent
+signals_kb        signals-music-studio-github-agent
 schoenberg_kb     schoenberg-github-agent
 msp_kb            msp-techniques-github-agent
 dsp_kb            dsp-wiley-github-agent
