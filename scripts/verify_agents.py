@@ -21,6 +21,7 @@ AGENTS: list[tuple[str, str, list[str]]] = [
     ("movement-github-agent", "movement_kb", ["info"]),
     ("studiolive-github-agent", "studiolive_kb", ["info"]),
     ("music-theory-advanced-github-agent", "theory_kb", ["info"]),
+    ("signals-music-studio-github-agent", "signals_kb", ["info"]),
     ("schoenberg-github-agent", "schoenberg_kb", ["info"]),
     ("msp-techniques-github-agent", "msp_kb", ["info"]),
     ("dsp-wiley-github-agent", "dsp_kb", ["info"]),

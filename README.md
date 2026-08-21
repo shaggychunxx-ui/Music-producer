@@ -22,6 +22,7 @@ Each agent is intentionally isolated: one knowledge base, one system prompt, one
 | [`production-workflow-knowledge`](production-workflow-knowledge/) | **Full** song-agnostic `PRODUCTION_WORKFLOW.md` | — | Standing rules (gates, temp, duck, parts≠form) |
 | [`studio-one-6.6-agent-knowledge`](studio-one-6.6-agent-knowledge/) | Studio One 6.6 manual + UI ops + arm lessons | — | Prefer `S1_UI_PIPELINE.md` when DAW open |
 | [`music-theory-advanced-github-agent`](music-theory-advanced-github-agent/) | Modes, modulation, advanced theory | `theory_kb` | Music Theory Advanced |
+| [`signals-music-studio-github-agent`](signals-music-studio-github-agent/) | Songwriting techniques (progressions, modes, rhythm) | `signals_kb` | [Signals Music Studio](https://www.youtube.com/@SignalsMusicStudio/videos) |
 | [`schoenberg-github-agent`](schoenberg-github-agent/) | Composition fundamentals | `schoenberg_kb` | Schoenberg *Fundamentals of Musical Composition* |
 | [`msp-techniques-github-agent`](msp-techniques-github-agent/) | Electronic music technique | `msp_kb` | Miller Puckette *Theory and Technique of Electronic Music* |
 | [`dsp-wiley-github-agent`](dsp-wiley-github-agent/) | Digital audio signal processing | `dsp_kb` | Zölzer *Digital Audio Signal Processing* 2e |
@@ -57,7 +58,16 @@ cd path\to\Music-producer
 python scripts/verify_agents.py
 ```
 
-### Example queries
+### Unified search (all KBs + Studio One)
+
+```powershell
+cd path\to\Music-producer
+python scripts/kb_search.py "sidechain"
+python scripts/kb_search.py "arm track" --only studio-one
+python scripts/kb_search.py "matriarch filter" --limit 8
+```
+
+### Example queries (single agent)
 
 ```powershell
 # Song creation pipeline (gates, recipes, phrase book)
@@ -83,6 +93,12 @@ python -m matriarch_kb search "ping pong"
 # Mix by genre
 cd ..\genre-mixing-github-agent
 python -m genre_mix_kb genre dance
+
+# Signals Music Studio techniques
+cd ..\signals-music-studio-github-agent
+python -m signals_kb study harmony_writer
+python -m signals_kb mode dorian
+python -m signals_kb recipe four_bar_loop
 ```
 
 ### Wire up a GitHub / Copilot agent

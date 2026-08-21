@@ -1,0 +1,12 @@
+numpy>=1.26
+soundcard>=0.4
+sounddevice>=0.5
+# SMTC now-playing (optional; window-title fallback works without these)
+winrt-runtime>=2.3
+winrt-Windows.Foundation>=2.3
+winrt-Windows.Foundation.Collections>=2.3
+winrt-Windows.Media>=2.3
+winrt-Windows.Media.Control>=2.3
+# optional volume percent
+pycaw>=20240210
+comtypes>=1.4

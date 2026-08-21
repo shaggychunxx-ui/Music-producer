@@ -1,0 +1,224 @@
+# Signals Music Studio — operational extracts
+# Source: https://www.youtube.com/@SignalsMusicStudio/videos
+# Written recaps: https://signalsmusic.studio/lessons
+# Restated for local study. © Jake Lizzio — do not republish.
+
+---PAGE writing-chord-progressions ---
+Diatonic major is the default launch pad (Jake's estimate: most public music).
+C major notes: C D E F G A B. Formula W-W-H-W-W-W-H.
+Diatonic triads: I ii iii IV V vi vii°  (C Dm Em F G Am Bdim).
+Beginners ignore vii° at first.
+
+Three rules for a first loop:
+1. Write four measures.
+2. Start on I (tonic).
+3. End the loop on IV or V so it wants to return to I.
+
+IV→I = plagal (soft landing). V→I = authentic (decisive).
+Repeating a chord (e.g. V for two bars) is allowed.
+Fill the middle with any of I–vi. Guessing still works if the three rules hold.
+
+Most popular modern loop: I–V–vi–IV
+  G: G D Em C
+  C: C G Am F
+Examples Jake lists: I'm Yours, Paparazzi chorus, Someone Like You chorus, What's My Age Again chorus.
+
+95% of writing is methodical; ~5% is effortless inspiration. Brute-force a loop when stuck.
+Practice: a new key every day. Electronic: program the same loops as strings/synths.
+
+Next expansions (same series): 7ths, inversions, secondary dominants, borrowed chords, key changes.
+
+Watch: https://www.youtube.com/watch?v=M8eItITv8QA
+
+---PAGE writing-chord-progressions-series ---
+Full writer ladder:
+1. Pick major or minor; write diatonic triads + roman numerals.
+2. 4- or 8-chord loop starting on tonic.
+3. Upgrade to diatonic sevenths (I/IV = maj7, V = 7, ii/iii/vi = m7).
+4. Inversions so the bass is not glued to roots.
+5. Sus2/sus4 to delay color or stretch one chord.
+6. Secondary dominants (leave the key, land back in it).
+7. Passing dim7 between chords a whole step apart.
+8. Borrow from parallel modes (easiest: parallel minor).
+9. Modulate.
+
+Minor starter palette: i, iv, bVI, bVII. Any mix works.
+Then "break" minor with V (needs raised 7 / harmonic minor). That V–i is the Andalusian last move when the first three chords are i–bVII–bVI.
+
+Dominant vocabulary:
+- THE dominant = V (major triad on degree 5), in any key.
+- A dominant chord = dominant-7th quality (1 3 5 b7). Not the same phrase.
+
+Inversions: C → G/B → Am → F gives a bass half-step C–B–A instead of C–G–A–F.
+Sus: almost every diatonic triad can become sus2 or sus4. Exceptions Jake flags: iii usually only sus2; IV usually sus4 not sus2.
+
+Secondary dominant example in C: C – E7 – Am – G  (E7 = V7/vi). Mini-modulation, then back.
+
+Passing dim7: C – F – F#dim7 – G plugs the whole-step gap IV–V.
+
+Borrowed from parallel minor in C:
+  C – Am – F – Fm        (iv)
+  C – F – Ab – G         (bVI)
+  C – Bb – F – G         (bVII)
+
+Do not switch scales per chord on a diatonic loop. One parent scale covers all seven chords.
+
+---PAGE writing-in-minor ---
+Minor roman numerals (C minor): i ii° bIII iv v bVI bVII.
+Beginner loops: i, iv, bVI, bVII.
+Adding V (major) is extremely common even though it is not natural-minor. Use harmonic minor (raised 7) over that V.
+Watch: https://www.youtube.com/watch?v=j-j4g0ktPGw
+
+---PAGE andalusian-cadence ---
+Pattern: i – bVII – bVI – V
+Em: Em D C B
+Dm: Dm C Bb A
+Am: Am G F E
+
+First three chords are Aeolian. Final V has the leading tone (D# in Em) → harmonic minor over V only.
+
+Style transformations of the SAME numerals:
+- Latin/flamenco: sus4 ornaments, bVI add#11, from the home minor scale.
+- Metal: power chords + palm mute + syncopation; minor over first three, harmonic minor over V; do not only loop — write a longer section.
+- Psychedelia: pedal/drone the tonic under i–bVII–bVI so the bass does not walk; pads/synths.
+
+You will not invent a new 4-chord recipe. Originality is rhythm, inversion, voicing, arpeggio, and arrangement.
+
+Examples: Runaway (Del Shannon), Stray Cat Strut, Sultans of Swing (hidden), Walk Don't Run.
+Watch: https://www.youtube.com/watch?v=qbeRVJMT5CY
+
+---PAGE seven-ways-to-use-modes ---
+Article details the first three of seven Codex methods.
+
+1) Stay inside one mode.
+   A Dorian triads: Am Bm C D Em F#° G
+   Notes alone are not enough — promote the tonic (A / Am) as home. Easy: two bars of Am, then IV (D), then bIII (Cmaj7). Melody stays in A Dorian.
+
+2) Write in the mode, then break it on purpose.
+   A Dorian wants G. G# (leading tone) + E major (V) is a desirable break. Melody over E should use G# not G. This is also the door to melodic minor (raise Dorian's 7).
+   Example: Am Am D E.
+
+3) Relative modulation.
+   Same seven notes, new tonic. Verse B minor / chorus D major = Comfortably Numb.
+   Demo: E Phrygian → A Aeolian (same notes as C major / A minor). Ear prefers landing on the more stable Aeolian.
+
+Remaining methods (watch the video; Codex ch.21): parallel-mode color, modal interchange, modal melody over mixed harmony, and mode-as-scale-choice over a vamp/chord. Expand later to harmonic/melodic minor modes.
+
+Watch: https://www.youtube.com/watch?v=sC2qXLnVU3A
+
+---PAGE understanding-the-modes ---
+Teach PARALLEL modes first (same root, different flavors). Relative "start on degree 2" is technically true but a bad first frame — the ear still hears the parent tonic.
+
+To actually be in a mode: reinforce a tonal center that is not Ionian's I. Drown the ear in that pitch + its tonic triad.
+  Notes of C, home = C → C Ionian
+  Notes of C, home = Dm → D Dorian
+  Notes of C, home = G → G Mixolydian
+
+Guitar shortcut: one scale shape, change which note is home (minor pentatonic box can be reused this way).
+
+Tonic quality groups:
+  Major tonic: Ionian (default bright), Lydian (dreamier), Mixolydian (rougher/rock)
+  Minor tonic: Aeolian (default dark), Dorian (wistful / nat6), Phrygian (evil / b2)
+  Locrian: diminished tonic — unstable, almost never a home.
+
+Dorian: raise Aeolian 6. Signature move i–IV (Am–D). Solo: promote nat6.
+Phrygian: b2 is the Jaws half-step. Pedal the tonic; use bII or bvii (both contain b2). Full-song Phrygian is rare; dip in, then leave. Phrygian Dominant (harmonic-minor 5th) has a major 3rd — different scale.
+Lydian: raise 4. Identity notes 1–3–#4–5. Stay on I; dip to II or vii. Avoid camping on V or the ear resets to that major key. Fragile.
+Mixolydian: lower 7. Signature I–bVII–IV (G–F–C, AC/DC). Also I–v. Mixolydian pentatonic for leads.
+Aeolian: "in minor" usually also uses harmonic minor to get V.
+Locrian: leftover. Diminished tonic will not sit still. Know why it fails; use as a color over dim chords.
+
+Watch parallel: https://www.youtube.com/watch?v=bwaeBUYcO5o
+Watch relative: https://www.youtube.com/watch?v=lPDVo-7Ua28
+
+---PAGE modal-mixture-major-keys ---
+Writing in the KEY of A major ≠ using only the A major SCALE. Key = A major triad is home. Outside notes (b7, b6, #4) are normal.
+
+Borrowed chords do not "come from" one place. bVII (G in A) lives in Mixolydian, Dorian, and Aeolian. You prove an origin by the scale you play on top.
+
+Poke-one-note model:
+  Lower 7 of major → Mixolydian / neighbor key (A major vs D major share all but G#/G).
+  Raise 4 of major → Lydian / other neighbor (A vs E).
+  Lower 3+6+7 → parallel minor (bigger jump, quarter-turn on the circle).
+
+Avoid conflict: do not play G# over a G triad, or G over E (two thirds = blues color, clouds rich harmony).
+
+Extensions disambiguate origin: Amaj7 cannot be Mixolydian; Gmaj7 cannot be A Aeolian (that would be G7).
+
+Neighbor-key thinking is optional. Prefer: "I'm in A, with a flexible 7th (or 4th)."
+
+When a chord needs only one foreign note, do not automatically jump to full parallel minor. iv (Dm in A) only needs F; A harmonic major (lower 6 only) or Mixolydian b6 can fit and keep the major 3rd. Weezer Buddy Holly lick keeps C# over Dm. Layla closing Bb7 in C: Mixolydian b6 preserves the major 3rd.
+
+Watch: https://www.youtube.com/watch?v=TZtc_gWnMa0
+
+---PAGE voice-leading ---
+Think notes inside chords, not only "chord X then Y."
+Melodic momentum: stepwise motion creates expectation in that direction.
+Neighbor tones (half or whole step off a chord tone) make the arrival feel wanted.
+Expendable fifth: drop 5 to free a voice or to voice a 7th chord in 3 parts.
+
+Four motions:
+  Parallel — same direction, same interval class
+  Similar — same direction, different intervals
+  Contrary — opposite directions (V7 tritone resolving is a classic)
+  Oblique — one voice moves, one stays
+
+Demo IV–V–I in C as 3 voices:
+  Bass: F G C
+  Mid:  A B C
+  Top:  C D E
+Each line is smooth; 5ths optional.
+
+Watch: https://www.youtube.com/watch?v=UkatcvIuF4U
+
+---PAGE 7-simple-rhythm-exercises ---
+No metronome first. Sync body + voice + instrument, then add click.
+
+1. Six even notes. Foot every 3 ("1 2 3") = 6/8 feel. Foot every 2 ("1 2") = 3/4 feel.
+2. Pattern grouped in 3s; switch foot grouping. Clap on 1s, then clap every 2 against a 3-count.
+3. Pattern grouped in 2s; switch foot grouping. Clap on 1s, then clap every 3 against a 2-count.
+4. Twelve even notes. Foot every 3 vs every 4 (12/8 vs 3/4 / 4-feel).
+5. Group-of-3 riff felt in 3-pulse vs 4-pulse.
+6. Group-of-4 riff felt in 3-pulse vs 4-pulse. This is 12/8's dual world — gateway to metric modulation (same pattern, new pulse = new tempo).
+7. Add rests (e.g. four-note group with 4 silent). "The Mirror" (Dream Theater) opening is this idea.
+
+Polymeter ≈ two meters at one tempo (foot vs hands in these drills).
+Polyrhythm ≈ keep only the first attack of each polymetric voice.
+Watch: https://www.youtube.com/watch?v=CoBTWll93yE
+
+---PAGE stealing-musical-ideas ---
+Steal a RHYTHM, not a melody. Double tresillo = 3+3+3+3+4. Write original pitches on that grid. Arrangement can change after the mix (Jake dropped the riff over a Picardy third).
+Watch: https://www.youtube.com/watch?v=na-W43-6JUc
+
+---PAGE secondary-dominants ---
+Non-diatonic chords that resolve to a diatonic target. Mini-modulations. V7/vi is especially common in modern music. Work best in stable major/minor; harder in fragile modes.
+Watch: https://www.youtube.com/watch?v=py4HaueW50Q
+
+---PAGE inversions-slash-chords ---
+Root-position only = bass leaps with the roots. Inversions free a stepwise bass. First inversion = 6/3 = C/E. Second = 6/4 = C/G. Slash chord = Chord/BassNote.
+Watch: https://www.youtube.com/watch?v=LFN-eKved_8
+
+---PAGE motifs-and-chords ---
+Pipeline: invent a short melodic motif → build chords under it → modify + reharmonize the same motif into a piece.
+Watch: https://www.youtube.com/watch?v=z3Dy6Mnp5Og
+
+---PAGE songwriting-concepts ---
+Jake's "more helpful than theory" composing philosophies. Pair with the 95/5 methodical-writing note and the Andalusian originality-is-arrangement note. Watch rather than guess the three labels.
+Watch: https://www.youtube.com/watch?v=yCfTVqapPQY
+
+---PAGE famous-chords-nicknames ---
+Named working chords: Neapolitan (bII), augmented sixth, backdoor (bVII7 → I), cadential 6/4. Write with them, do not only name them.
+Watch: https://www.youtube.com/watch?v=BHwYlzpdsRI
+
+---PAGE mario-cadence ---
+I – bVI – bVII – I. Modal mixture. Super Mario Bros, I Am the Walrus, Kiss From A Rose.
+
+---PAGE power-chords ---
+Root+5 (no 3). Ambiguous major/minor — can sit under either quality. Building block of rock/metal riffs.
+
+---PAGE lofi-production ---
+Lo-fi "slop" can be designed (unconventional meters, e.g. 33/32) rather than only vinyl noise. Harmony can hover between relative major/minor.
+
+---PAGE extra-map ---
+43 Music Theory Concepts / Music Theory Map: https://www.youtube.com/watch?v=qeS8txkoUH4
+Use as a syllabus index after the two core series (progressions + modes).

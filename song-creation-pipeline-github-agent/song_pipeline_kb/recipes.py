@@ -9,7 +9,7 @@ RECIPES: dict[str, dict[str, Any]] = {
         "title": "Start a new original song",
         "steps": [
             "Scaffold song folder (VOICE_BRIEF, GATES, NOTES, PARTS, STRUCTURE).",
-            "Ask for reference track (or explicit waive).",
+            "Pick 10 random Spotify clips (taste pick) — do not ask for a title.",
             "Capture + fingerprint; fill mood lock + kick/bass voice brief.",
             "Light form sketch only.",
             "Build MVP drums+bass; STOP for pocket approval.",

@@ -47,11 +47,11 @@ GATE_HELP: Dict[str, str] = {
 DEFAULT_NOTES = """# Song notes (production — Music-producer)
 
 ## Brief
-- Reference (title + artist) or WAIVED:
+- References (10 random Spotify clips — python -m song_pipeline_kb taste pick):
 - Mood lock:
 - Complexity budget: S
 - Target length:
-- Taste profile: (optional — python -m song_pipeline_kb taste apply-brief --song-dir .)
+- Taste profile: python -m song_pipeline_kb taste apply-brief --song-dir .
 
 ## Pocket
 - Approved: no

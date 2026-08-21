@@ -34,7 +34,8 @@ python -m song_pipeline_kb plan mvp --song-dir PATH
 python -m song_pipeline_kb status --song-dir PATH
 
 # Taste memory (persistent listen log + profile → brief defaults)
-python -m song_pipeline_kb taste listen --artist "X" --title "Y" --rating love --genre dark_pulse --tags "dark,dry kick"
+python -m song_pipeline_kb taste refs
+python -m song_pipeline_kb taste pick
 python -m song_pipeline_kb taste status
 python -m song_pipeline_kb taste apply-brief --song-dir PATH --lock --force
 python -m song_pipeline_kb init-song --song-dir PATH --name MySong --apply-taste --lock-brief

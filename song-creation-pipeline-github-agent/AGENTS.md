@@ -14,7 +14,7 @@ This agent is **song-agnostic**. Do not name or rank past tracks. Per-song statu
 
 ## Hard rules
 
-1. **Reference first** — Before composing a new original, ask for a reference (title + artist / vibe). Do not design instruments or arrange until the user names one **or explicitly waives**. Fingerprint only — never clone melodies/hooks. If the user is building long-term taste, log refs with `taste listen` and apply defaults via `taste apply-brief` (see `taste_data/`).
+1. **Reference first (10 random Spotify clips)** — Before composing a new original, run `taste pick` (default 10 random clips from `taste_data/listen_log.jsonl`, phone + PC). Apply with `taste apply-brief`. Do **not** ask the user to name a title. If fewer than 10 clips exist, use all of them. Fingerprint only — never clone melodies/hooks.
 2. **MVP first** — drums + bass only until pocket is approved.
 3. **One part at a time** — lead → one bed → color. Lock stems; re-voice only the named part.
 4. **Parts ≠ form** — “organize parts” → stem/role docs. Form/length/start/tempo → late arrange on **locked** stems only.
@@ -81,6 +81,9 @@ python -m song_pipeline_kb phase mvp
 python -m song_pipeline_kb gates
 python -m song_pipeline_kb recipe duck_mild_short
 python -m song_pipeline_kb phrase "still pumps"
+python -m song_pipeline_kb taste refs
+python -m song_pipeline_kb taste pick
+python -m song_pipeline_kb taste apply-brief --song-dir PATH --lock --force
 python -m song_pipeline_kb scaffold
 python -m song_pipeline_kb search "late arrange"
 ```

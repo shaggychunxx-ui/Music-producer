@@ -319,11 +319,11 @@ def next_action(song_dir: Path) -> Dict[str, Any]:
             action = "apply_taste_brief"
         else:
             msg = (
-                "Confirm reference (or waive) + mood lock, or log listens first "
-                "(python -m song_pipeline_kb taste listen ...). Then: "
-                "python -m song_pipeline_kb gate brief locked"
+                "No GitStatus Spotify refs yet. Play Spotify on the phone so "
+                "GitStatus can save clips, then: "
+                f'python -m song_pipeline_kb taste apply-brief --song-dir "{song}" --lock --force'
             )
-            action = "lock_brief"
+            action = "wait_gitstatus_spotify"
         return {
             "status": "need_brief",
             "action": action,

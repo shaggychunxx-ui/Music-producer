@@ -25,6 +25,11 @@ _download_tmp/
 *.part
 *.tmp
 
+# Local singing-training dumps (scripts + README are committed; audio is not)
+datasets/raw/
+datasets/**/raw/
+datasets/**/*.zip
+
 # Large regeneratable dumps (keep extracts that are committed intentionally)
 # Uncomment if PDFs should stay local-only:
 # **/knowledge/*.pdf

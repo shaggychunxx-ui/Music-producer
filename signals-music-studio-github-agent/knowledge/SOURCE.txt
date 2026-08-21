@@ -1,0 +1,19 @@
+Signals Music Studio — Jake Lizzio
+
+Primary video catalog (user-requested study source):
+  https://www.youtube.com/@SignalsMusicStudio/videos
+
+Official lesson site (same videos + written recaps, series, PDFs):
+  https://signalsmusic.studio/lessons
+
+About:
+  https://signalsmusic.studio/about
+
+Paid references Jake cites (not extracted here; do not republish):
+  Chord Progression Codex — https://signalsmusic.studio/courses/codex
+  Theory & Songwriting Course — https://signalsmusic.studio/courses/songwriting-course
+
+Copyright:
+  Videos, lesson text, charts, and PDFs remain © Jake Lizzio / Signals Music Studio.
+  This agent restates operational songwriting techniques for local study only.
+  Do not copy transcripts, sheet music, or paid-course material into git.

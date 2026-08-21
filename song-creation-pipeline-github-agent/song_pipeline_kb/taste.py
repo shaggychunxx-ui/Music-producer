@@ -20,6 +20,7 @@ Ratings
 from __future__ import annotations
 
 import json
+import random
 import re
 import secrets
 from datetime import datetime, timezone
@@ -34,6 +35,7 @@ _PKG_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_TASTE_DIR = _PKG_ROOT / "taste_data"
 LISTEN_LOG_NAME = "listen_log.jsonl"
 PROFILE_NAME = "taste_profile.json"
+REF_SET_SIZE = 10
 
 RATINGS = ("love", "ok", "no", "unrated")
 RATING_WEIGHT = {
@@ -44,6 +46,13 @@ RATING_WEIGHT = {
 }
 
 BAND_KEYS = ("sub", "low", "lowmid", "mid", "himid", "high", "air")
+
+# GitStatus phone captures land as source=spotify_phone.
+# This PC (WASAPI loopback) uses source=spotify_pc.
+# Older local loopback clips used spotify_clip.
+SPOTIFY_SOURCES = frozenset({"spotify_phone", "spotify_pc", "spotify_clip", "spotify"})
+_PLACEHOLDER_ARTISTS = frozenset({"", "spotify capture", "spotify", "unknown"})
+_PLACEHOLDER_TITLES = frozenset({"", "unknown"})
 
 # Map free tags / mood words → compose genre profiles
 _GENRE_HINTS: Dict[str, tuple[str, ...]] = {
@@ -195,6 +204,210 @@ def load_listens(
     if limit is not None and limit > 0:
         return rows[-limit:]
     return rows
+
+
+def is_spotify_listen(entry: Dict[str, Any]) -> bool:
+    src = str(entry.get("source") or "").strip().lower()
+    return src in SPOTIFY_SOURCES or "spotify" in src
+
+
+def _is_named_ref(entry: Dict[str, Any]) -> bool:
+    artist = str(entry.get("artist") or "").strip()
+    title = str(entry.get("title") or "").strip()
+    if artist.lower() in _PLACEHOLDER_ARTISTS and (
+        title.lower() in _PLACEHOLDER_TITLES or title.lower().endswith(".wav")
+    ):
+        return False
+    if not artist and title.lower().endswith(".wav"):
+        return False
+    return bool(artist or title)
+
+
+def spotify_refs(
+    data_dir: Optional[Path] = None,
+    *,
+    unique: bool = True,
+    named_only: bool = False,
+) -> List[Dict[str, Any]]:
+    """Listens saved by GitStatus Spotify (and older spotify_clip rows)."""
+    rows = [e for e in load_listens(data_dir) if is_spotify_listen(e)]
+    if named_only:
+        rows = [e for e in rows if _is_named_ref(e)]
+    if not unique:
+        return rows
+    by_key: Dict[tuple[str, str], Dict[str, Any]] = {}
+    for entry in rows:
+        key = (
+            str(entry.get("artist") or "").strip().lower(),
+            str(entry.get("title") or "").strip().lower(),
+        )
+        by_key[key] = entry
+    return sorted(by_key.values(), key=lambda e: str(e.get("ts") or ""))
+
+
+def _clip_label(entry: Dict[str, Any]) -> str:
+    bits = [x for x in (entry.get("artist"), entry.get("title")) if x]
+    return " / ".join(bits) if bits else "(unnamed Spotify clip)"
+
+
+def _clip_card(entry: Dict[str, Any]) -> Dict[str, Any]:
+    fp = entry.get("fingerprint") if isinstance(entry.get("fingerprint"), dict) else {}
+    return {
+        "id": entry.get("id"),
+        "ts": entry.get("ts"),
+        "artist": entry.get("artist"),
+        "title": entry.get("title"),
+        "source": entry.get("source"),
+        "rating": entry.get("rating"),
+        "label": _clip_label(entry),
+        "audio_path": entry.get("audio_path"),
+        "bpm": fp.get("tempo_bpm"),
+        "peak_db": fp.get("peak_db"),
+        "rms_db": fp.get("rms_db"),
+        "crest_db": fp.get("crest_db"),
+        "bands": fp.get("bands"),
+        "duration_sec": fp.get("duration_sec"),
+    }
+
+
+def _blend_clip_fingerprints(entries: List[Dict[str, Any]]) -> Dict[str, Any]:
+    bpm_vals: List[float] = []
+    crest_vals: List[float] = []
+    peak_vals: List[float] = []
+    rms_vals: List[float] = []
+    band_acc: Dict[str, List[float]] = {b: [] for b in BAND_KEYS}
+    for entry in entries:
+        fp = entry.get("fingerprint") if isinstance(entry.get("fingerprint"), dict) else {}
+        if fp.get("tempo_bpm") is not None:
+            try:
+                bpm_vals.append(float(fp["tempo_bpm"]))
+            except (TypeError, ValueError):
+                pass
+        if fp.get("crest_db") is not None:
+            try:
+                crest_vals.append(float(fp["crest_db"]))
+            except (TypeError, ValueError):
+                pass
+        if fp.get("peak_db") is not None:
+            try:
+                peak_vals.append(float(fp["peak_db"]))
+            except (TypeError, ValueError):
+                pass
+        if fp.get("rms_db") is not None:
+            try:
+                rms_vals.append(float(fp["rms_db"]))
+            except (TypeError, ValueError):
+                pass
+        bands = fp.get("bands") if isinstance(fp.get("bands"), dict) else {}
+        for b in BAND_KEYS:
+            if bands.get(b) is not None:
+                try:
+                    band_acc[b].append(float(bands[b]))
+                except (TypeError, ValueError):
+                    pass
+    out: Dict[str, Any] = {}
+    if bpm_vals:
+        mean = sum(bpm_vals) / len(bpm_vals)
+        out["tempo_bpm"] = round(mean, 1)
+        out["bpm_range"] = {
+            "mean": round(mean, 1),
+            "min": round(max(60.0, min(bpm_vals) - 4), 1),
+            "max": round(min(180.0, max(bpm_vals) + 4), 1),
+        }
+    if crest_vals:
+        out["crest_db"] = round(sum(crest_vals) / len(crest_vals), 2)
+    if peak_vals:
+        out["peak_db"] = round(sum(peak_vals) / len(peak_vals), 2)
+    if rms_vals:
+        out["rms_db"] = round(sum(rms_vals) / len(rms_vals), 2)
+    pref_bands = {
+        b: round(sum(vs) / len(vs), 4) for b, vs in band_acc.items() if vs
+    }
+    if pref_bands:
+        out["bands"] = pref_bands
+    return out
+
+
+def pick_spotify_reference_set(
+    data_dir: Optional[Path] = None,
+    *,
+    count: int = REF_SET_SIZE,
+) -> Dict[str, Any]:
+    """Pick up to `count` random Spotify clips as the song's reference family."""
+    pool = spotify_refs(data_dir, unique=False)
+    named = [e for e in pool if _is_named_ref(e)]
+    loves = [e for e in named if _normalize_rating(e.get("rating")) == "love"]
+    # Prefer named clips; fall back to the full pool if needed.
+    draw_from = named or pool
+    if not draw_from:
+        return {
+            "ok": False,
+            "error": "no Spotify refs in listen_log.jsonl",
+            "requested": count,
+            "hint": (
+                "Play Spotify in Chrome on this PC or on the phone (GitStatus) "
+                "so clips land in taste_data/listen_log.jsonl."
+            ),
+        }
+    n = min(count, len(draw_from))
+    chosen = random.sample(draw_from, n)
+    chosen.sort(key=lambda e: str(e.get("ts") or ""))
+    labels = [_clip_label(e) for e in chosen]
+    primary = chosen[0]
+    blend = _blend_clip_fingerprints(chosen)
+    return {
+        "ok": True,
+        "requested": count,
+        "picked": n,
+        "pool": len(draw_from),
+        "reference": (
+            f"{n} random Spotify clips: " + "; ".join(labels) + " (fingerprint family; not clones)"
+        ),
+        "references": [_clip_card(e) for e in chosen],
+        "listen": primary,
+        "blend": blend,
+        "source": "spotify_set",
+        "count": len(pool),
+        "named_count": len(named),
+        "loved_named": len(loves),
+    }
+
+
+def pick_spotify_reference(
+    data_dir: Optional[Path] = None,
+    *,
+    count: int = REF_SET_SIZE,
+) -> Dict[str, Any]:
+    """Default song refs: random set of Spotify clips (10 unless count is set)."""
+    return pick_spotify_reference_set(data_dir, count=count)
+
+
+def list_spotify_refs(
+    data_dir: Optional[Path] = None,
+    *,
+    limit: int = 20,
+) -> Dict[str, Any]:
+    all_refs = spotify_refs(data_dir)
+    shown = all_refs[-limit:] if limit else all_refs
+    pick = pick_spotify_reference(data_dir)
+    return {
+        "count": len(all_refs),
+        "pick": pick,
+        "refs": [
+            {
+                "id": e.get("id"),
+                "ts": e.get("ts"),
+                "artist": e.get("artist"),
+                "title": e.get("title"),
+                "source": e.get("source"),
+                "rating": e.get("rating"),
+                "bpm": (e.get("fingerprint") or {}).get("tempo_bpm")
+                if isinstance(e.get("fingerprint"), dict)
+                else None,
+            }
+            for e in shown
+        ],
+    }
 
 
 def load_profile(data_dir: Optional[Path] = None) -> Dict[str, Any]:
@@ -518,26 +731,55 @@ def brief_from_profile(
     if bpm_mean is None:
         bpm_mean = gp.get("bpm")
 
+    pick = pick_spotify_reference_set(data_dir, count=REF_SET_SIZE)
+    blend = pick.get("blend") if pick.get("ok") else {}
+    if isinstance(blend, dict):
+        if blend.get("tempo_bpm") is not None:
+            bpm_mean = blend["tempo_bpm"]
+        if blend.get("bpm_range"):
+            bpm = blend["bpm_range"]
+
     ref_line = song_ref_override
     if not ref_line:
-        # use most recent loved listen as soft reference label
-        loves = [e for e in load_listens(data_dir) if _normalize_rating(e.get("rating")) == "love"]
-        if loves:
-            last = loves[-1]
-            bits = [x for x in (last.get("artist"), last.get("title")) if x]
-            ref_line = " / ".join(bits) + " (taste profile; not a clone target)"
+        if pick.get("ok"):
+            ref_line = pick["reference"]
         else:
-            ref_line = "TASTE PROFILE (no per-song ref — fingerprint preferences only)"
+            loves = [
+                e
+                for e in load_listens(data_dir)
+                if _normalize_rating(e.get("rating")) == "love"
+            ]
+            if loves:
+                last = loves[-1]
+                bits = [x for x in (last.get("artist"), last.get("title")) if x]
+                ref_line = " / ".join(bits) + " (taste profile; not a clone target)"
+            else:
+                ref_line = "TASTE PROFILE (no Spotify clips yet)"
 
     goals = list(profile.get("listen_goals") or [])
     anti = list(profile.get("anti_goals") or [])
     mood = profile.get("mood_lock") or gp.get("mood") or "dark minor"
+    mix = dict(profile.get("mix_targets") or {})
+    if isinstance(blend, dict):
+        if blend.get("crest_db") is not None:
+            mix["crest_db"] = blend["crest_db"]
+        if blend.get("peak_db") is not None:
+            mix["peak_db"] = blend["peak_db"]
+        if blend.get("rms_db") is not None:
+            mix["rms_db"] = blend["rms_db"]
+        if blend.get("bands"):
+            strong = max(blend["bands"], key=blend["bands"].get)
+            weak = min(blend["bands"], key=blend["bands"].get)
+            mix["band_emphasis"] = strong
+            mix["band_deemphasis"] = weak
 
     brief = {
         "version": 1,
-        "source": "taste_profile",
+        "source": "spotify_clip_set",
         "applied_at": _utc(),
         "reference": ref_line,
+        "references": pick.get("references") or [],
+        "reference_count": pick.get("picked") or 0,
         "reference_waived": False,
         "mood_lock": mood,
         "listen_goals": goals,
@@ -546,14 +788,15 @@ def brief_from_profile(
         "genre": genre,
         "bpm": bpm_mean,
         "bpm_range": bpm if isinstance(bpm, dict) else None,
-        "mix_targets": profile.get("mix_targets") or {},
-        "preferred_bands": profile.get("preferred_bands"),
-        "preferred_crest_db": (profile.get("preferred_crest_db") or {}).get("mean"),
+        "mix_targets": mix,
+        "preferred_bands": (blend or {}).get("bands") or profile.get("preferred_bands"),
+        "preferred_crest_db": (blend or {}).get("crest_db")
+        or (profile.get("preferred_crest_db") or {}).get("mean"),
         "top_tags": profile.get("top_tags") or [],
         "profile_summary": profile.get("summary"),
         "notes": (
-            "Fingerprint/taste defaults only — do not clone melodies or signature riffs. "
-            "Per-song reference still preferred when user names one."
+            f"Reference is a random set of {REF_SET_SIZE} Spotify clips "
+            "(phone + this PC). Fingerprint only — do not clone melodies or riffs."
         ),
     }
     return brief
@@ -577,8 +820,8 @@ def apply_brief_to_song(
     if profile.get("listen_count", 0) <= 0 and not force:
         return {
             "ok": False,
-            "error": "taste profile empty — log listens first (taste listen)",
-            "hint": 'python -m song_pipeline_kb taste listen --artist X --title Y --rating love',
+            "error": "no GitStatus Spotify refs — play Spotify on the phone so GitStatus can save clips",
+            "hint": "python -m song_pipeline_kb taste refs",
         }
 
     brief = brief_from_profile(profile, data_dir=data_dir, song_ref_override=reference)
@@ -588,7 +831,11 @@ def apply_brief_to_song(
             existing = json.loads(brief_path.read_text(encoding="utf-8"))
         except Exception:
             existing = {}
-        if existing.get("source") == "taste_profile" and existing.get("locked_by_user"):
+        if existing.get("source") in {
+            "taste_profile",
+            "gitstatus_spotify",
+            "spotify_clip_set",
+        } and existing.get("locked_by_user"):
             return {
                 "ok": False,
                 "error": "BRIEF.json marked locked_by_user — pass --force to overwrite",
@@ -599,7 +846,7 @@ def apply_brief_to_song(
 
     # Also drop a human-readable fingerprint targets file (numbers only)
     fp_targets = {
-        "from": "taste_profile",
+        "from": "spotify_clip_set",
         "applied_at": brief["applied_at"],
         "tempo_bpm": brief.get("bpm"),
         "crest_db": brief.get("preferred_crest_db"),
@@ -608,6 +855,7 @@ def apply_brief_to_song(
         "bands": brief.get("preferred_bands"),
         "mood_lock": brief.get("mood_lock"),
         "genre": brief.get("genre"),
+        "references": brief.get("references") or [],
     }
     (song / "ref_fingerprint.json").write_text(
         json.dumps(fp_targets, indent=2, ensure_ascii=False) + "\n",
@@ -618,7 +866,7 @@ def apply_brief_to_song(
     anti = ", ".join(brief.get("anti_goals") or []) or "(none)"
     notes_block = (
         f"Taste brief applied ({brief['applied_at']})\n"
-        f"  Reference: {brief['reference']}\n"
+        f"  References ({brief.get('reference_count') or 0}): {brief['reference']}\n"
         f"  Mood lock: {brief['mood_lock']}\n"
         f"  Genre default: {brief['genre']} @ ~{brief.get('bpm')} BPM\n"
         f"  Goals: {goals}\n"
@@ -634,7 +882,7 @@ def apply_brief_to_song(
         text = notes_p.read_text(encoding="utf-8", errors="replace")
         text2 = text
         text2 = re.sub(
-            r"(- Reference \(title \+ artist\) or WAIVED:)\s*$",
+            r"(- Reference (?:\(title \+ artist\) or WAIVED|\(GitStatus Spotify[^)]*\)):)\s*$",
             rf"\1 {brief['reference']}",
             text2,
             count=1,
@@ -684,11 +932,14 @@ def load_song_brief(song_dir: Path) -> Optional[Dict[str, Any]]:
 def status(data_dir: Optional[Path] = None) -> Dict[str, Any]:
     profile = load_profile(data_dir)
     recent = load_listens(data_dir, limit=5)
+    spotify = list_spotify_refs(data_dir, limit=5)
     return {
         "taste_dir": str(taste_dir(data_dir).resolve()),
         "listen_log": str(listen_log_path(data_dir).resolve()),
         "profile_path": str(profile_path(data_dir).resolve()),
         "listen_count": profile.get("listen_count", 0),
+        "spotify_ref_count": spotify.get("count", 0),
+        "spotify_pick": spotify.get("pick"),
         "summary": profile.get("summary"),
         "default_genre": profile.get("default_genre"),
         "mood_lock": profile.get("mood_lock"),

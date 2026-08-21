@@ -15,7 +15,7 @@ META: dict[str, Any] = {
     "song_agnostic": True,
     "source": "Standing production workflow (studio process extract)",
     "hard_rules": [
-        "Reference first (or explicit waive) before compose",
+        "Reference first from GitStatus Spotify saves (taste refs) before compose",
         "MVP drums+bass until pocket approved",
         "One part at a time; lock stems",
         "Parts hierarchy ≠ song form",
@@ -30,9 +30,9 @@ PHASES: dict[str, dict[str, Any]] = {
         "name": "Brief & reference",
         "temp": "2–4",
         "do": [
-            "Name reference (title+artist) or get explicit waive",
-            "Or apply taste profile defaults: taste apply-brief --song-dir PATH",
-            "Capture + fingerprint (peak/RMS/crest/bands/tempo); log loves via taste listen",
+            "Pull 10 random Spotify clips: taste pick (phone + PC listen_log)",
+            "Apply: taste apply-brief --song-dir PATH (do not ask the user to type a title)",
+            "If listen_log is empty, wait for phone Spotify capture — do not invent a ref",
             "Mood lock (dark/bright, lead limits)",
             "Fill VOICE_BRIEF for kick+bass before patches",
             "Complexity budget S default; note target length if known",

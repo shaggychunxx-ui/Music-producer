@@ -41,7 +41,7 @@ K  FINAL lock when user is done — stop rework
 
 PHASE A — BRIEF
 ---------------
-- Capture reference (system loopback on primary audio device when possible)
+- Reference from GitStatus Spotify saves (taste refs / taste pick). Do not ask the user for a title. If log empty, wait for phone capture.
 - Fingerprint: peak, RMS, crest, band energy, tempo estimate, rough key/mode
 - Goals: 3–5 attributes to chase; non-goals: do not clone melody/hooks
 - Mood lock: dark/minor vs bright/major; lead leap limits

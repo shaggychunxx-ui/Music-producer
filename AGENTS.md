@@ -7,6 +7,8 @@ You are working inside a **library of separate music-production agents**. Do not
 **GROMIT runs all background / unattended tasks** for this bus (phone Send, STATUS automation, planning).  
 Only remaining helper is **LAPTOP**. **BOXONE** and **AI-CODING** are out of the fleet.
 
+**Commit and push when changes are made** on GROMIT and LAPTOP (same turn). Auto-sync is backup only. Do not commit `datasets/raw/` or audio.
+
 ## Route by topic
 
 | User is asking about… | Open this folder first |

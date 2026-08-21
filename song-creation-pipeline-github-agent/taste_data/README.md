@@ -40,20 +40,30 @@ python -m song_pipeline_kb taste apply-brief --song-dir PATH --lock --force
 
 Created automatically on first `taste listen` or `taste rebuild`.
 
-## Phone (GitStatus) auto-clips
+## Phone (GitStatus) = the reference-track source
 
-**GitStatus** (Oxygen-OS `status-app`) can capture **random 5–50 s** internal-audio clips **only while Spotify is playing** on the phone (no PC).
+**Standing rule:** each new original song gets **10 random Spotify clips** (`python -m song_pipeline_kb taste pick`). Do not ask the user for a title. If fewer than 10 exist, use all of them.
+
+**GitStatus** (phone) and **this PC** both capture short clips **only while Spotify is playing**.
 
 | Path | Role |
 |------|------|
-| `clips/YYYY/MM/clip_*.wav` | Mono 16 kHz WAV clips uploaded by the phone |
-| `listen_log.jsonl` | Each clip appends a listen line (`source: spotify_phone`) |
+| `clips/YYYY/MM/clip_*.wav` | Mono 16 kHz WAV clips |
+| `listen_log.jsonl` | Each clip appends a listen (`spotify_phone` or `spotify_pc`) |
 
-After new phone listens land, rebuild the profile:
+PC capture (WASAPI loopback, 8–25 s):
+
+```powershell
+cd song-creation-pipeline-github-agent
+python tools\spotify_pc_capture.py status
+powershell -ExecutionPolicy Bypass -File tools\Install-SpotifyPcCapture.ps1
+```
 
 ```bash
+python -m song_pipeline_kb taste refs
+python -m song_pipeline_kb taste pick
 python -m song_pipeline_kb taste rebuild
 python -m song_pipeline_kb taste apply-brief --song-dir PATH --lock --force
 ```
 
-If captures are silent, GitStatus **skips** them (no log, no upload). OEM unlock / alternate capture may be needed later.
+If captures are silent, GitStatus **skips** them (no log, no upload). OEM unlock / MediaProjection consent may be needed. If the log is empty, wait for a phone capture — do not invent a reference.

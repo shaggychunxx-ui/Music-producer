@@ -64,7 +64,7 @@ Do **not** compose until the brief is clear.
 
 | Step | Process | Techniques |
 |------|---------|------------|
-| Get reference | Title + artist, or user plays → capture | WASAPI loopback on **Realtek** (`record_system_audio.py`, default `--device Realtek` — not Display Audio/HDMI), 45–60 s, peak ≈ −1 to −6 dBFS (not silent, not clipped). Windows Output should be Speakers (Realtek) so you hear the bus we capture. |
+| Get reference | **10 random Spotify clips** from `taste_data/listen_log.jsonl` (phone + this PC). Do not ask the user to type a title. | `python -m song_pipeline_kb taste pick`. Apply: `taste apply-brief --song-dir PATH`. If fewer than 10 clips exist, use all of them. |
 | Fingerprint | Measure, log to notes | Peak, RMS, **crest** (peak−RMS), band energy (sub / low / lowmid / mid / himid / high / air), tempo estimate, rough key/mode if known |
 | Listen goals | Name 3–5 attributes to chase | e.g. “dry kick”, “round bass”, “wide pad”, “short room”, “not much air” |
 | Non-goals | Explicitly list what *not* to clone | Melody, lyrics, signature riff — **fingerprint only**, original composition |

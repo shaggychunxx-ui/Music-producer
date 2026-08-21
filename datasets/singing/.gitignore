@@ -1,0 +1,14 @@
+# Large audio corpora — never commit
+raw/
+prepared/rvc/
+prepared/diffsinger/*.csv
+*.wav
+*.WAV
+*.zip
+*.part
+*.flac
+*.mp3
+*.npy
+*.pt
+*.ckpt
+__pycache__/

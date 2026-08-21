@@ -1,0 +1,8 @@
+[project]
+name = "signals-kb"
+version = "1.0.0"
+description = "Signals Music Studio (Jake Lizzio) songwriting-technique knowledge base"
+requires-python = ">=3.10"
+
+[project.scripts]
+signals-kb = "signals_kb.__main__:main"

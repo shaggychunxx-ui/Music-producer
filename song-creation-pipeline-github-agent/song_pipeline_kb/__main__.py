@@ -56,6 +56,12 @@ def _cmd_taste(a) -> int:
     if cmd == "rebuild":
         _p(taste_mod.rebuild_profile(data_dir))
         return 0
+    if cmd == "refs":
+        _p(taste_mod.list_spotify_refs(data_dir, limit=a.limit))
+        return 0
+    if cmd == "pick":
+        _p(taste_mod.pick_spotify_reference(data_dir, count=getattr(a, "count", 10)))
+        return 0
     if cmd == "listen":
         fp: dict = {}
         if a.fingerprint_json:
@@ -297,6 +303,20 @@ def main(argv=None):
     t_rebuild = taste_sub.add_parser("rebuild", help="Rebuild profile from listen log")
     t_rebuild.add_argument("--data-dir", type=Path, default=None)
 
+    t_refs = taste_sub.add_parser(
+        "refs",
+        help="List GitStatus Spotify reference tracks from listen_log",
+    )
+    t_refs.add_argument("--limit", type=int, default=20)
+    t_refs.add_argument("--data-dir", type=Path, default=None)
+
+    t_pick = taste_sub.add_parser(
+        "pick",
+        help="Pick 10 random Spotify clips as the song reference family",
+    )
+    t_pick.add_argument("--count", type=int, default=10, help="How many clips (default 10)")
+    t_pick.add_argument("--data-dir", type=Path, default=None)
+
     t_listen = taste_sub.add_parser(
         "listen",
         help="Log a reference listen (metadata + optional numeric fingerprint)",
@@ -360,7 +380,7 @@ def main(argv=None):
     t_apply.add_argument(
         "--reference",
         default=None,
-        help="Optional per-song ref label (overrides soft ref from loves)",
+        help="Optional override; default is the GitStatus Spotify pick",
     )
     t_apply.add_argument(
         "--lock",
