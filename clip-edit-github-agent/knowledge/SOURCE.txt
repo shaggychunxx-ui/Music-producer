@@ -1,0 +1,22 @@
+Ported from Mira-Soline (shaggychunxx-ui/Mira-Soline) on GROMIT 2026-09-06.
+
+Kept (generic, music-useful):
+  scripts/Edit-Video.py   loop / stitch / rife / grain / qc
+  scripts/To-60fps.py     Comfy RIFE 4x (rife49), not ffmpeg minterpolate
+  scripts/Stitch-Clips.py skip-B + short xfade
+  scripts/Make-Loop.ps1   thin wrapper around loop
+  Post-ToX.drop_c2pa      remux video+audio, drop metadata / C2PA
+  docs/VIDEO-EDIT.md      xfade-at-reverse, RIFE after join, grain after RIFE
+  docs/OPENSHOT.md        watermark-free NLE on GROMIT
+
+Not copied (Mira-only):
+  Pick-Body / Pick-Look / Pick-VaultRef / mira_prompt
+  Venice, Vast Wan I2V, HF NSFW toolkit, Manage-Library
+  Draft-XPost / Track-Reach / Fanvue
+
+DAW host is GROMIT, 48 kHz. Studio One 6 Artist has no Video Track
+(Professional-only). Extracted wav still imports as an Audio Track.
+
+Studio-One execution helper:
+  Documents/GitHub/Studio-One/tools/prepare_video_for_s1.py
+  Documents/GitHub/Studio-One/docs/VIDEO_IMPORT.md

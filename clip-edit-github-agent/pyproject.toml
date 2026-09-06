@@ -1,0 +1,12 @@
+[project]
+name = "clip-edit-kb"
+version = "1.0.0"
+description = "Music-video / visualizer / sample-extract tools ported from Mira-Soline Edit-Video"
+requires-python = ">=3.10"
+dependencies = ["imageio-ffmpeg"]
+
+[project.optional-dependencies]
+ffmpeg = ["imageio-ffmpeg"]
+
+[project.scripts]
+clip-edit-kb = "clip_edit_kb.__main__:main"

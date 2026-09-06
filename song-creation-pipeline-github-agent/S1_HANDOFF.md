@@ -9,6 +9,8 @@
 
 Studio One must not decide pocket/lead approval unless producer runs **unattended** policy.
 
+Video/visualizer: Music-producer `clip-edit-github-agent` (`clip_edit_kb`). Studio-One executes `tools/prepare_video_for_s1.py` (48 kHz wav). GROMIT is Artist — no Video Track.
+
 ## Paths
 
 Prefer GitHub Desktop clone (synced with live tools):

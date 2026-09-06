@@ -1,0 +1,45 @@
+Clip-edit for music (ported from Mira-Soline VIDEO-EDIT, stripped of adult pipeline).
+
+LOOP
+Ping-pong loop with xfade at the reverse turn. Default fade 0.18s.
+Do not reverse-concat: that freezes the peak frame.
+Loop is video-only (-an). Reverse would rewind audio. Mux the song after.
+
+STITCH
+Join A then B. Skip ~0.30s of B (duplicate of A's last frame). Short fade 0.15-0.25s.
+Constant fps before xfade or the join flashes black.
+Matched action = hard cut (fade 0). Pose jump = short fade. Never fade-to-black.
+
+RIFE
+Comfy Desktop :8189, rife49, multiplier 4, 16fps -> 60fps, same duration.
+RIFE after the join, not before. Do not ffmpeg minterpolate / MCI.
+Skip RIFE if the reverse smears.
+
+GRAIN
+Fine grain AFTER RIFE (noise alls=8, optional 0.4px blur). Never grain then interpolate.
+
+QC
+Dump frames at 0 / 25 / 50 / 75 / end. Inspect the reverse turn and the stitch seam.
+
+EXTRACT AUDIO
+ffmpeg to 48 kHz PCM wav (GROMIT DAW host). Use for sampling, scoring, or S1 Audio Track.
+
+PREPARE S1
+Constant-fps yuv420p mp4 + 48 kHz wav sidecar.
+Studio One 6 Artist (GROMIT): import the wav as an Audio Track. Video Track is Professional-only.
+Studio One Professional: drag mp4 onto Video Track; optional independent wav if you unlink audio.
+
+MUX
+Attach a bounced master (wav/aiff) to a visualizer loop. AAC 320k, +faststart, 48 kHz.
+
+OPENSHOT
+GROMIT: C:\Program Files\OpenShot Video Editor\openshot-qt.exe (3.5.1, no watermark).
+NLE cuts and 9:16 crop. Do not reverse-concat in OpenShot for loops — use clip_edit loop.
+
+REMUX
+Copy remux, strip metadata, +faststart. Drops C2PA-style boxes that some platforms flag.
+
+NOT THIS AGENT
+Studio One MCU / arm / mix = Studio-One repo.
+Song gates / taste refs = song-creation-pipeline-github-agent.
+Mira identity / I2V / adult QC stay in Mira-Soline.

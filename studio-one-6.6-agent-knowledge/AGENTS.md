@@ -72,7 +72,7 @@ If a feature is Professional-only (or Artist+), call that out.
 - **Built-In Effects** → `chapters/17-built-in-effects.md` — topics: plugins, effects, Pro EQ 3, dynamics, reverb, delay, distortion, modulation
 - **Built-In Virtual Instruments** → `chapters/18-virtual-instruments.md` — topics: Sample One XT, Presence XT, Impact XT, MaiTai, Mojito, Multi Instruments, Note FX
 - **Collaboration** → `chapters/19-collaboration.md` — topics: Studio One+, collaboration, workspaces, sharing documents
-- **Video Playback and Sync** → `chapters/20-video.md` — topics: video player, video track, sync, export video
+- **Video Playback and Sync** → `chapters/20-video.md` — topics: video player, video track, sync, export video. **GROMIT is Artist: no Video Track.** Prep 48 kHz wav via Studio-One `tools/prepare_video_for_s1.py` or Music-producer `clip_edit_kb prepare-s1`. Loops/mux: `clip-edit-github-agent`.
 - **Saving, Import and Export** → `chapters/21-saving-import-export.md` — topics: import song data, export audio, export MIDI, AAF, zip, import other DAWs
 - **Index** → `chapters/22-index.md` — topics: index, lookup
 

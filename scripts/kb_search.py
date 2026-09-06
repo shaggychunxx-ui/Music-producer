@@ -31,6 +31,7 @@ KB_PACKS: list[tuple[str, str, str | None, list[str]]] = [
     ("song-pipeline", "song-creation-pipeline-github-agent", "song_pipeline_kb.search", ["knowledge/workflow_extract.txt"]),
     ("studiolive", "studiolive-github-agent", "studiolive_kb.search", ["knowledge/manual_extract.txt"]),
     ("tr8s", "tr8s-github-agent", "tr8s_kb.search", ["knowledge/manual_extract.txt"]),
+    ("clip-edit", "clip-edit-github-agent", "clip_edit_kb.search", ["knowledge/workflow_extract.txt"]),
 ]
 
 S1_DIR = ROOT / "studio-one-6.6-agent-knowledge"

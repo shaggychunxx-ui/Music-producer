@@ -25,6 +25,7 @@ AGENTS: list[tuple[str, str, list[str]]] = [
     ("schoenberg-github-agent", "schoenberg_kb", ["info"]),
     ("msp-techniques-github-agent", "msp_kb", ["info"]),
     ("dsp-wiley-github-agent", "dsp_kb", ["info"]),
+    ("clip-edit-github-agent", "clip_edit_kb", ["info"]),
 ]
 
 STUDIO_ONE = ROOT / "studio-one-6.6-agent-knowledge"

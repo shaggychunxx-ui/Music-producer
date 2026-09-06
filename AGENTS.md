@@ -29,6 +29,7 @@ Only remaining helper is **LAPTOP**. **BOXONE** and **AI-CODING** are out of the
 | Motives, form, classical composition craft | `schoenberg-github-agent/` |
 | Synthesis / electronic music **technique** (MSP / Puckette) | `msp-techniques-github-agent/` |
 | DSP math, filters, transforms (Zölzer) | `dsp-wiley-github-agent/` |
+| **Clip-edit / visualizer / extract audio from video** (Mira ffmpeg, 48 kHz) | `clip-edit-github-agent/` |
 
 ## Rules
 
@@ -77,6 +78,7 @@ signals_kb        signals-music-studio-github-agent
 schoenberg_kb     schoenberg-github-agent
 msp_kb            msp-techniques-github-agent
 dsp_kb            dsp-wiley-github-agent
+clip_edit_kb      clip-edit-github-agent
 ```
 
 Studio One: use `INDEX.md` / `manifest.json` / `chapters/*.md` (no Python package required).

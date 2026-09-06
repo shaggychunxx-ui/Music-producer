@@ -26,6 +26,7 @@ Each agent is intentionally isolated: one knowledge base, one system prompt, one
 | [`schoenberg-github-agent`](schoenberg-github-agent/) | Composition fundamentals | `schoenberg_kb` | Schoenberg *Fundamentals of Musical Composition* |
 | [`msp-techniques-github-agent`](msp-techniques-github-agent/) | Electronic music technique | `msp_kb` | Miller Puckette *Theory and Technique of Electronic Music* |
 | [`dsp-wiley-github-agent`](dsp-wiley-github-agent/) | Digital audio signal processing | `dsp_kb` | Zölzer *Digital Audio Signal Processing* 2e |
+| [`clip-edit-github-agent`](clip-edit-github-agent/) | Music-video / visualizer / 48 kHz extract from video | `clip_edit_kb` | Mira-Soline `Edit-Video.py` (generic subset) |
 
 ## Layout of each `*-github-agent`
 
