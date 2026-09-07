@@ -1,9 +1,8 @@
-# Status
-
-**Last updated:** 2026-08-06
-**Updated by:** GROMIT
+# Status / Handoff
+**Last updated:** 2026-09-07
+**Updated by:** PHONE
 **Active owner:** none
-**Act on:** none
+**Act on:** GROMIT
 
 Standing instructions for contributors and agents working in this **public** repo.
 
@@ -30,4 +29,15 @@ GitStatus phone bus fields (Act on / Next / Notes) are intentional so PHONE can 
 - Armed for HUMAN GitStatus test: send **test** from phone; AI-CODING will confirm receipt per repo.
 - [x] **AI-CODING:** GitStatus remote probe `gitstatus-remote-probe-20260731-042147` — **RECEIPT OK**. GitStatus bus scaffold added (Act on/Next/Notes); probe write OK.
 - PHONE: test → Act on AI-CODING
+- [ ] **GROMIT** AI temp 7. using studio one and all resources from all other available tools, generate a new, original, profesional, studio quality song, 3.5-5 minutes in length.
+- PHONE: AI temp 7. using studio one and all resources from all other available tools, generate a new, original, profesional, studio quality song, 3.5-5 minutes in length. → Act on GROMIT (GROMIT delegates host-local work)
 
+## Current goal
+
+## NOTIFY
+- (none)
+
+## Done
+
+## Blockers
+- (none)
