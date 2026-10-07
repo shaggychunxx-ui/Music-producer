@@ -73,3 +73,32 @@ datasets/**/*.zip
 **/_vision/**
 **/*_Master*
 **/*Master*.wav
+
+# === Spotify clips + commercial PDFs moved out of repo (user order 2026-10-07) ===
+# Audio, any case (lowercase forms of most are already listed above)
+*.[wW][aA][vV]
+*.[mM][pP]3
+*.[mM]4[aA]
+*.[fF][lL][aA][cC]
+*.[oO][gG][gG]
+*.[aA][aA][cC]
+*.[oO][pP][uU][sS]
+*.[wW][mM][aA]
+*.[aA][iI][fF]
+*.[aA][iI][fF][fF]
+# GitStatus phone + PC capture clip folders: only small .meta.json files may be tracked
+song-creation-pipeline-github-agent/taste_data/clips/**
+!song-creation-pipeline-github-agent/taste_data/clips/**/
+!song-creation-pipeline-github-agent/taste_data/clips/**/*.meta.json
+**/_reference_captures/
+# Commercial / copyrighted books and manuals (local copies only, never in git)
+dsp-wiley-github-agent/knowledge/Wiley_Digital_Audio_Signal_Processing_2nd_Edition.pdf
+matriarch-github-agent/knowledge/Matriarch_Manual_012023.pdf
+monologue-github-agent/knowledge/korg_manual.pdf
+monologue-github-agent/knowledge/monologue_Owners_Manual.pdf
+movement-github-agent/knowledge/Movement_User_Guide.pdf
+msp-techniques-github-agent/knowledge/Theory_and_Technique_of_Electronic_Music.pdf
+schoenberg-github-agent/knowledge/Schoenberg_Fundamentals_of_Musical_Composition.pdf
+schoenberg-github-agent/knowledge/Schoenberg_Fundamentals_text_edition.pdf
+studiolive-github-agent/knowledge/StudioLive_Series_III_OwnersManual_V6_EN.pdf
+tr8s-github-agent/knowledge/TR-8S_Reference_eng01_W.pdf
